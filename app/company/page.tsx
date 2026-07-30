@@ -1,0 +1,235 @@
+"use client";
+
+import Image from "next/image";
+import { SiteShell } from "../components/SiteShell";
+import { useLanguage } from "../components/LanguageProvider";
+
+const copy = {
+  en: {
+    eyebrow: "COMPANY",
+    title: "Building the tactile layer of digital care.",
+    intro:
+      "Plectrum brings together active textiles, software and clinical practice to make touch measurable, controllable and remotely accessible.",
+    tractionLabel: "WHERE WE ARE",
+    tractionTitle: "A platform moving toward scale.",
+    milestones: [
+      ["4", "working wearable prototypes"],
+      ["2026", "global clinical pilot expansion"],
+      ["$2M", "current funding round"],
+      ["US · EU · IL", "patent applications filed and pending"],
+    ],
+    relationshipsLabel: "VALIDATION & RELATIONSHIPS",
+    relationshipsTitle: "Clinical, technical and industrial momentum.",
+    relationships: [
+      ["Hadassah", "Letter of intent supporting clinical validation."],
+      ["IBM", "Adaptive treatment protocols developed in collaboration."],
+      ["NILIT + Delta Galil", "Industrial relationships under NDAs."],
+    ],
+    marketLabel: "COMMERCIAL PATH",
+    marketTitle: "A focused entry into a measurable market.",
+    marketBody:
+      "Plectrum’s current model targets approximately 5,000 pediatric occupational therapy clinics in the United States, with $450 monthly revenue per patient and a $135 technology share—representing a potential $405M ARR opportunity.",
+    teamLabel: "THE TEAM",
+    teamTitle: "A multidisciplinary team, close to the problem.",
+    team: [
+      {
+        name: "Gabriel Lev-Har",
+        role: "Founder; CEO & CTO",
+        credential: "Veteran of IDF Unit 81 & IAI. MBA.",
+        bio: "System Architect & Business Leader. Combining deep Systems Engineering expertise. Proven operational leadership (Ex. COO). Committed to transforming dreams into reality through technology that makes a meaningful difference in people's lives.",
+        image: "/team/team-4.jpeg",
+        linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
+      },
+      {
+        name: "Dr. Nino Rivka Eliahu",
+        role: "VP of Science & Materials",
+        credential: "Ph.D",
+        bio: "Deep tech expertise for developing advanced materials and coatings. Extensive Medical Device R&D, proven experience in polymerization and innovative coating methods, Scale-Up & Manufacturing.",
+        image: "/team/team-3.jpeg",
+        linkedin: null,
+      },
+      {
+        name: "Noam Amram",
+        role: "XR & L.L.M Integration Lead",
+        credential: "Veteran of IDF Tech Unit.",
+        bio: "Specialist in XR simulation systems & interactive software development. Leading system integration and designing immersive, high-end XR experiences.",
+        image: "/team/team-2.jpeg",
+        linkedin: "https://www.linkedin.com/in/noam-amram",
+      },
+      {
+        name: "Omri Arbel",
+        role: "Senior Hardware & Firmware Eng.",
+        credential: "Veteran of IDF Unit 81.",
+        bio: "Specialized experience in digital board design and reverse engineering, and a background in high-stakes military and medical-grade electronics. A key technical leader, also overseeing embedded firmware development and controller programming.",
+        image: "/team/team-1.jpeg",
+        linkedin: null,
+      },
+    ],
+    connectLabel: "CONNECT",
+    connectTitle: "Choose the conversation that fits.",
+    paths: [
+      ["Investors", "Funding round, market path and investor materials.", "Start an investment conversation", "Plectrum investment conversation"],
+      ["Clinical partners", "Pilot design for OT clinics, hospitals and rehabilitation centers.", "Explore a clinical pilot", "Plectrum clinical pilot"],
+      ["Technology & textile", "Integration across fabrics, software and immersive systems.", "Discuss a strategic partnership", "Plectrum strategic partnership"],
+      ["Meet the team", "A direct 30-minute introduction to Plectrum.", "Schedule a meeting", "Meeting with Plectrum"],
+    ],
+  },
+  he: {
+    eyebrow: "החברה",
+    title: "בונים את שכבת המגע של הטיפול הדיגיטלי.",
+    intro:
+      "Plectrum מחברת בין טקסטיל אקטיבי, תוכנה ופרקטיקה קלינית כדי להפוך מגע למדיד, נשלט ונגיש מרחוק.",
+    tractionLabel: "איפה אנחנו היום",
+    tractionTitle: "פלטפורמה שמתקדמת לשלב ההתרחבות.",
+    milestones: [
+      ["4", "אבות טיפוס לבישים ועובדים"],
+      ["2026", "הרחבת פיילוטים קליניים בעולם"],
+      ["$2M", "סבב הגיוס הנוכחי"],
+      ["ארה״ב · אירופה · ישראל", "בקשות פטנט שהוגשו ונמצאות בתהליך"],
+    ],
+    relationshipsLabel: "אימות וקשרים",
+    relationshipsTitle: "תנופה קלינית, טכנולוגית ותעשייתית.",
+    relationships: [
+      ["הדסה", "מכתב כוונות התומך באימות הקליני."],
+      ["IBM", "פיתוח משותף של פרוטוקולי טיפול אדפטיביים."],
+      ["NILIT + דלתא גליל", "קשרים תעשייתיים תחת הסכמי סודיות."],
+    ],
+    marketLabel: "המסלול המסחרי",
+    marketTitle: "כניסה ממוקדת לשוק מדיד.",
+    marketBody:
+      "המודל הנוכחי של Plectrum מכוון לכ־5,000 קליניקות ריפוי בעיסוק לילדים בארצות הברית, עם הכנסה חודשית של 450 דולר למטופל וחלק טכנולוגי של 135 דולר—פוטנציאל ARR של 405 מיליון דולר.",
+    teamLabel: "הצוות",
+    teamTitle: "צוות רב־תחומי, קרוב לבעיה.",
+    team: [
+      {
+        name: "Gabriel Lev-Har",
+        role: "מייסד; מנכ״ל וסמנכ״ל טכנולוגיות",
+        credential: "יוצא יחידה 81 והתעשייה האווירית. MBA.",
+        bio: "ארכיטקט מערכות ומוביל עסקי המשלב מומחיות עמוקה בהנדסת מערכות. בעל ניסיון מוכח במנהיגות תפעולית, לרבות בתפקיד COO. מחויב להפוך חלומות למציאות באמצעות טכנולוגיה שיוצרת שינוי משמעותי בחייהם של אנשים.",
+        image: "/team/team-4.jpeg",
+        linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
+      },
+      {
+        name: "Dr. Nino Rivka Eliahu",
+        role: "סמנכ״לית מדע וחומרים",
+        credential: "Ph.D",
+        bio: "מומחיות דיפ־טק בפיתוח חומרים וציפויים מתקדמים. ניסיון נרחב במחקר ופיתוח של מכשור רפואי, בפולימריזציה ובשיטות ציפוי חדשניות, וכן בהגדלת קנה מידה ובייצור.",
+        image: "/team/team-3.jpeg",
+        linkedin: null,
+      },
+      {
+        name: "Noam Amram",
+        role: "מוביל אינטגרציית XR ו־L.L.M",
+        credential: "יוצא יחידה טכנולוגית בצה״ל.",
+        bio: "מומחה במערכות סימולציית XR ובפיתוח תוכנה אינטראקטיבית. מוביל אינטגרציית מערכות ומתכנן חוויות XR אימרסיביות ומתקדמות.",
+        image: "/team/team-2.jpeg",
+        linkedin: "https://www.linkedin.com/in/noam-amram",
+      },
+      {
+        name: "Omri Arbel",
+        role: "מהנדס חומרה וקושחה בכיר",
+        credential: "יוצא יחידה 81.",
+        bio: "בעל ניסיון ייחודי בתכנון כרטיסים דיגיטליים ובהנדסה לאחור, עם רקע באלקטרוניקה צבאית ואלקטרוניקה רפואית בסביבות עתירות סיכון. מוביל טכנולוגי מרכזי האחראי גם על פיתוח קושחה משובצת ותכנות בקרים.",
+        image: "/team/team-1.jpeg",
+        linkedin: null,
+      },
+    ],
+    connectLabel: "יצירת קשר",
+    connectTitle: "בחרו את השיחה שמתאימה לכם.",
+    paths: [
+      ["משקיעים", "סבב הגיוס, המסלול לשוק וחומרי המשקיעים.", "פתיחת שיחת השקעה", "שיחת השקעה עם Plectrum"],
+      ["שותפים קליניים", "בניית פיילוט לקליניקות, בתי חולים ומרכזי שיקום.", "בדיקת פיילוט קליני", "פיילוט קליני עם Plectrum"],
+      ["טכנולוגיה וטקסטיל", "אינטגרציה בבדים, בתוכנה ובמערכות אימרסיביות.", "שיחה על שותפות אסטרטגית", "שותפות אסטרטגית עם Plectrum"],
+      ["פגישה עם הצוות", "היכרות ישירה בת 30 דקות עם Plectrum.", "קביעת פגישה", "פגישה עם צוות Plectrum"],
+    ],
+  },
+} as const;
+
+export default function CompanyPage() {
+  const { language } = useLanguage();
+  const t = copy[language];
+
+  return (
+    <SiteShell>
+      <section className="page-hero company-hero">
+        <div className="page-hero-copy">
+          <p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p>{t.intro}</p>
+        </div>
+        <div className="company-mark" aria-hidden="true"><Image src="/brand/logo-white.png" alt="" width={460} height={460} priority /></div>
+      </section>
+
+      <section className="light-section">
+        <div className="section-heading compact"><p className="eyebrow dark">{t.tractionLabel}</p><h2>{t.tractionTitle}</h2></div>
+        <div className="company-milestones">
+          {t.milestones.map(([value, label]) => <article key={label}><strong>{value}</strong><span>{label}</span></article>)}
+        </div>
+      </section>
+
+      <section className="blue-section relationship-section">
+        <div className="section-heading"><p className="eyebrow">{t.relationshipsLabel}</p><h2>{t.relationshipsTitle}</h2></div>
+        <div className="relationship-grid">
+          {t.relationships.map(([name, body]) => <article key={name}><h3>{name}</h3><p>{body}</p></article>)}
+        </div>
+      </section>
+
+      <section className="light-section market-section">
+        <div><p className="eyebrow dark">{t.marketLabel}</p><h2>{t.marketTitle}</h2></div><p>{t.marketBody}</p>
+      </section>
+
+      <section className="team-section">
+        <div className="section-heading"><p className="eyebrow">{t.teamLabel}</p><h2>{t.teamTitle}</h2></div>
+        <div className="team-grid">
+          {t.team.map((member) => (
+            <article className="team-card" key={member.name}>
+              <div className="team-portrait">
+                <Image src={member.image} alt={member.name} fill sizes="(max-width: 820px) 100vw, 50vw" />
+              </div>
+              <div className="team-card-copy">
+                <h3>{member.name}</h3>
+                <p className="team-role">{member.role}</p>
+                <p className="team-credential">{member.credential}</p>
+                <p className="team-bio">{member.bio}</p>
+                {member.linkedin ? (
+                  <a
+                    className="team-linkedin"
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={`${member.name} on LinkedIn`}
+                  >
+                    in <span>LinkedIn</span>
+                  </a>
+                ) : null}
+              </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="light-section company-connect" id="connect">
+        <div className="section-heading compact"><p className="eyebrow dark">{t.connectLabel}</p><h2>{t.connectTitle}</h2></div>
+        <div className="company-contact-strip">
+          <a href="mailto:gabriel@plectrum.biz">
+            <span>{language === "en" ? "EMAIL" : "אימייל"}</span>
+            <strong>gabriel@plectrum.biz</strong>
+          </a>
+          <a href="tel:+972526808756">
+            <span>{language === "en" ? "PHONE" : "טלפון"}</span>
+            <strong>+972 52 680 8756</strong>
+          </a>
+          <a href="https://www.linkedin.com/company/plectrum-af/" target="_blank" rel="noreferrer">
+            <span>LINKEDIN</span>
+            <strong>Plectrum ↗</strong>
+          </a>
+        </div>
+        <div className="pathway-grid">
+          {t.paths.map(([title, body, action, subject], index) => (
+            <a className="pathway-card" href={`mailto:gabriel@plectrum.biz?subject=${encodeURIComponent(subject)}`} key={title}>
+              <span>0{index + 1}</span><h3>{title}</h3><p>{body}</p><strong>{action}<i aria-hidden="true">→</i></strong>
+            </a>
+          ))}
+        </div>
+      </section>
+    </SiteShell>
+  );
+}
