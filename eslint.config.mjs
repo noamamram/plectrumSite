@@ -12,6 +12,13 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Cloudflare/vinext leftovers, excluded from the Next.js build.
+    "db/**",
+    "examples/**",
+    "scripts/**",
+    "tests/**",
+    "vite.config.ts",
+    "worker/**",
   ]),
 ]);
 
