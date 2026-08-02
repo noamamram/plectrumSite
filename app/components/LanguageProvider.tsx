@@ -9,13 +9,18 @@ import {
   useState,
 } from "react";
 
-export type Language = "en" | "he";
+export type Language = "en" | "he" | "ar" | "ru";
 
 type LanguageContextValue = {
   language: Language;
   setLanguage: (language: Language) => void;
-  toggleLanguage: () => void;
 };
+
+const supportedLanguages: Language[] = ["en", "he", "ar", "ru"];
+
+function isLanguage(value: string | null): value is Language {
+  return supportedLanguages.includes(value as Language);
+}
 
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
@@ -24,10 +29,10 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const saved = window.localStorage.getItem("plectrum-language");
-    if (saved !== "he") return;
+    if (!isLanguage(saved) || saved === "en") return;
 
     const frame = window.requestAnimationFrame(() => {
-      setLanguageState("he");
+      setLanguageState(saved);
     });
 
     return () => window.cancelAnimationFrame(frame);
@@ -38,18 +43,14 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
     window.localStorage.setItem("plectrum-language", nextLanguage);
   }, []);
 
-  const toggleLanguage = useCallback(() => {
-    setLanguage(language === "en" ? "he" : "en");
-  }, [language, setLanguage]);
-
   useEffect(() => {
     document.documentElement.lang = language;
-    document.documentElement.dir = language === "he" ? "rtl" : "ltr";
+    document.documentElement.dir = language === "he" || language === "ar" ? "rtl" : "ltr";
   }, [language]);
 
   const value = useMemo(
-    () => ({ language, setLanguage, toggleLanguage }),
-    [language, setLanguage, toggleLanguage],
+    () => ({ language, setLanguage }),
+    [language, setLanguage],
   );
 
   return (

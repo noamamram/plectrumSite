@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useLanguage } from "./LanguageProvider";
 
 const copy = {
@@ -26,16 +27,40 @@ const copy = {
     nav: ["בית", "טכנולוגיה", "היישום הקליני", "אבות טיפוס", "החברה"],
     rights: "© 2026 Plectrum. כל הזכויות שמורות.",
   },
+  ar: {
+    line: "نتّصل. نشعر. نتفاعل.",
+    body: "نسد فجوة اللمس في الصحة الرقمية.",
+    contactEyebrow: "ابدأ محادثة",
+    contactTitle: "أدخل اللمس إلى ما تعمل على بنائه.",
+    email: "راسل غابرييل",
+    call: "اتصل بنا",
+    linkedin: "تابع Plectrum",
+    nav: ["الرئيسية", "التكنولوجيا", "التطبيق السريري", "النماذج الأولية", "الشركة"],
+    rights: "© 2026 Plectrum. جميع الحقوق محفوظة.",
+  },
+  ru: {
+    line: "Связывать. Чувствовать. Взаимодействовать.",
+    body: "Устраняем дефицит осязания в цифровой медицине.",
+    contactEyebrow: "НАЧАТЬ ДИАЛОГ",
+    contactTitle: "Добавьте осязание в то, что вы создаёте.",
+    email: "Написать Габриэлю",
+    call: "Позвонить нам",
+    linkedin: "Plectrum в LinkedIn",
+    nav: ["Главная", "Технология", "Клиническое применение", "Прототипы", "Компания"],
+    rights: "© 2026 Plectrum. Все права защищены.",
+  },
 } as const;
 
 export function SiteFooter() {
   const { language } = useLanguage();
+  const pathname = usePathname();
   const t = copy[language];
   const links = ["/", "/technology", "/clinical", "/prototypes", "/company"];
+  const showContactCta = pathname !== "/" && pathname !== "/company";
 
   return (
     <footer className="site-footer">
-      <div className="footer-cta">
+      {showContactCta ? <div className="footer-cta">
         <div>
           <p>{t.contactEyebrow}</p>
           <h2>{t.contactTitle}</h2>
@@ -59,7 +84,7 @@ export function SiteFooter() {
             <strong>LinkedIn ↗</strong>
           </a>
         </div>
-      </div>
+      </div> : null}
       <div className="footer-brand">
         <Link className="brand" href="/">
           <i className="brand-symbol" aria-hidden="true" />

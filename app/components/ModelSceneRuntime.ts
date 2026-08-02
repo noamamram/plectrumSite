@@ -211,9 +211,11 @@ export function mountModelScene(
   onScroll();
 
   let frame = 0;
-  const clock = new THREE.Clock();
-  const render = () => {
-    const time = clock.getElapsedTime();
+  const timer = new THREE.Timer();
+  timer.connect(document);
+  const render = (timestamp?: number) => {
+    timer.update(timestamp);
+    const time = timer.getElapsed();
     if (!reduceMotion) {
       if (mode !== "hero") {
         if (!dragging) idleRotation += 0.0018;
@@ -254,6 +256,7 @@ export function mountModelScene(
     container.removeEventListener("pointerup", onPointerUp);
     container.removeEventListener("pointercancel", onPointerUp);
     window.cancelAnimationFrame(frame);
+    timer.dispose();
     loaded.forEach((object) => {
       object.traverse((child) => {
         if (child instanceof THREE.Mesh) {
