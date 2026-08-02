@@ -7,7 +7,7 @@ import { useLanguage } from "./components/LanguageProvider";
 
 const content = {
   en: {
-    eyebrow: "FABTIVE™ ACTIVE FABRIC",
+    eyebrow: "FABTIVE ACTIVE FABRIC",
     title: "Bringing touch into the digital loop.",
     subtitle:
       "The first platform enabling remote, professional-grade sensory integration through adaptive touch.",
@@ -61,7 +61,7 @@ const content = {
     ],
   },
   he: {
-    eyebrow: "FABTIVE™ בד אקטיבי",
+    eyebrow: "FABTIVE בד אקטיבי",
     title: "מכניסים את המגע אל הלולאה הדיגיטלית.",
     subtitle:
       "הפלטפורמה הראשונה המאפשרת אינטגרציה חושית מקצועית מרחוק באמצעות מגע אדפטיבי.",
@@ -169,10 +169,13 @@ export default function Home() {
       </section>
 
       <section className="blue-section product-section">
-        <div className="section-heading">
-          <p className="eyebrow">{t.productsEyebrow}</p>
-          <h2>{t.productsTitle}</h2>
-          <p>{t.productsBody}</p>
+        <div className="product-story">
+          <div className="section-heading">
+            <p className="eyebrow">{t.productsEyebrow}</p>
+            <h2>{t.productsTitle}</h2>
+            <p>{t.productsBody}</p>
+          </div>
+          <div className="product-hero-visual" aria-hidden="true" />
         </div>
         <div className="product-grid">
           {t.products.map(([name, body], index) => (

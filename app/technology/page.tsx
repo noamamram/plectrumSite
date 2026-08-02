@@ -9,7 +9,7 @@ const copy = {
     eyebrow: "THE TECHNOLOGY",
     title: "A textile that can deliver touch.",
     intro:
-      "FABTIVE™ is Plectrum’s patented active-fabric platform: a software-controlled layer designed to bring localized, continuous tactile output into wearable products.",
+      "FABTIVE is Plectrum’s patented active-fabric platform: a software-controlled layer designed to bring localized, continuous tactile output into wearable products.",
     cta: "Discuss a technology partnership",
     systemLabel: "FROM SIGNAL TO SENSATION",
     systemTitle: "A closed loop, woven into the product.",
@@ -44,7 +44,7 @@ const copy = {
     eyebrow: "הטכנולוגיה",
     title: "טקסטיל שיודע להעביר מגע.",
     intro:
-      "FABTIVE™ היא פלטפורמת הבד האקטיבי המוגנת בפטנט של Plectrum: שכבה הנשלטת בתוכנה ונועדה להכניס פלט מישושי מקומי ורציף למוצרים לבישים.",
+      "FABTIVE היא פלטפורמת הבד האקטיבי המוגנת בפטנט של Plectrum: שכבה הנשלטת בתוכנה ונועדה להכניס פלט מישושי מקומי ורציף למוצרים לבישים.",
     cta: "שיחה על שותפות טכנולוגית",
     systemLabel: "מאות לתחושה",
     systemTitle: "לולאה סגורה, בתוך הבד.",
