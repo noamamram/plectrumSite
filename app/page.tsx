@@ -8,7 +8,7 @@ import { useLanguage } from "./components/LanguageProvider";
 const content = {
   en: {
     eyebrow: "FABTIVE ACTIVE FABRIC",
-    title: "Making touch a digital modality.",
+    title: "Making touch a digital world.",
     subtitle:
       "Four working vibration-based prototypes validate the system today. Plectrum's patented magnetic-fiber textile is the long-term product platform for continuous touch across the fabric.",
     explore: "Explore the technology",
@@ -62,7 +62,7 @@ const content = {
   },
   he: {
     eyebrow: "FABTIVE בד אקטיבי",
-    title: "הופכים את המגע לממד דיגיטלי.",
+    title: "הופכים את המגע לעולם דיגיטלי.",
     subtitle:
       "ארבעה אבות טיפוס פעילים מבוססי רטט מאמתים את המערכת כיום. פלטפורמת המוצר ארוכת הטווח של Plectrum היא בד פטנטי המבוסס על סיבים מגנטיים למגע רציף על פני הבד.",
     explore: "לגלות את הטכנולוגיה",
@@ -116,7 +116,7 @@ const content = {
   },
   ar: {
     eyebrow: "FABTIVE النسيج النشط",
-    title: "نجعل اللمس وسيلة رقمية.",
+    title: "نجعل اللمس عالماً رقمياً.",
     subtitle:
       "تتحقق المنظومة اليوم عبر أربعة نماذج اهتزازية عاملة. أما منصة المنتج طويلة المدى لدى Plectrum فهي نسيج محمي ببراءة يعتمد على ألياف مغناطيسية للمس المستمر عبر القماش.",
     explore: "اكتشف التكنولوجيا",
@@ -170,7 +170,7 @@ const content = {
   },
   ru: {
     eyebrow: "FABTIVE · АКТИВНАЯ ТКАНЬ",
-    title: "Превращаем осязание в цифровую модальность.",
+    title: "Превращаем осязание в цифровой мир.",
     subtitle:
       "Сегодня систему подтверждают четыре действующих вибрационных прототипа. Долгосрочная продуктовая платформа Plectrum — запатентованный текстиль с магнитными волокнами для непрерывного прикосновения по всей ткани.",
     explore: "Изучить технологию",
