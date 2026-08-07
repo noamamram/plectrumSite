@@ -15,9 +15,9 @@ import "./globals.css";
 import { LanguageProvider } from "./components/LanguageProvider";
 
 export const metadata: Metadata = {
-  title: "Plectrum — Active Fabric for Adaptive Touch",
+  title: "Plectrum | Active Fabric for Adaptive Touch",
   description:
-    "Plectrum brings touch into the digital clinical loop through FABTIVE active fabric and adaptive sensory integration.",
+    "Plectrum makes touch a controllable digital modality through FABTIVE active fabric and adaptive sensory integration.",
   other: {
     "codex-preview": "development",
   },

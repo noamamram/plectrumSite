@@ -397,7 +397,7 @@ html[dir="rtl"] .header-cta {
   max-width: none;
   aspect-ratio: auto;
   overflow: hidden;
-  background: url("/media/hero-remote-touch-v3.png") right center / cover no-repeat;
+  background: url("/media/hero-remote-touch-v4.png") right center / cover no-repeat;
   filter: none;
   pointer-events: none;
 }
@@ -1229,6 +1229,28 @@ html[dir="rtl"] .prototype-intro h1 {
   border-block: 1px solid rgba(10, 40, 93, 0.18);
 }
 
+.prototype-facts-heading {
+  max-width: 930px;
+  margin-bottom: clamp(48px, 6vw, 78px);
+}
+
+.prototype-facts-heading h2 {
+  margin: 0;
+  color: var(--blue-deep);
+  font-size: clamp(38px, 4.6vw, 66px);
+  line-height: 1.08;
+  letter-spacing: -0.04em;
+  text-wrap: balance;
+}
+
+.prototype-facts-heading > p:not(.eyebrow) {
+  max-width: 760px;
+  margin: 24px 0 0;
+  color: #46566d;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
 .fact-grid article {
   min-height: 190px;
   padding: 34px 28px;
@@ -1440,6 +1462,7 @@ html[dir="rtl"] .clinical-path-steps {
 }
 
 .prototype-selector button {
+  position: relative;
   min-height: 72px;
   padding: 0;
   display: flex;
@@ -1455,6 +1478,18 @@ html[dir="rtl"] .clinical-path-steps {
   transition: color 180ms ease, padding 180ms ease;
 }
 
+.prototype-selector button::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--cyan-bright);
+  box-shadow: 0 0 0 0 rgba(88, 215, 255, 0.48);
+  opacity: 0;
+}
+
 .prototype-selector button span {
   color: var(--cyan-bright);
   font-size: 10px;
@@ -1465,6 +1500,12 @@ html[dir="rtl"] .clinical-path-steps {
 .prototype-selector button.active {
   padding-inline-start: 14px;
   color: white;
+}
+
+.prototype-selector button:hover::after,
+.prototype-selector button.active::after {
+  opacity: 1;
+  animation: selector-pulse 1.25s ease-out infinite;
 }
 
 .prototype-stage {
@@ -1496,12 +1537,17 @@ html[dir="rtl"] .clinical-path-steps {
 
 .prototype-copy {
   align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
   border-top: 1px solid rgba(255, 255, 255, 0.16);
   padding-top: 25px;
 }
 
-.prototype-copy > span,
-.prototype-copy strong {
+.prototype-tag,
+.prototype-focus {
+  display: block;
   color: var(--cyan-bright);
   font-size: 11px;
   font-weight: 700;
@@ -1510,15 +1556,28 @@ html[dir="rtl"] .clinical-path-steps {
 }
 
 .prototype-copy h2 {
-  margin: 18px 0;
+  margin: 14px 0 18px;
   font-size: clamp(36px, 4vw, 60px);
   letter-spacing: -0.04em;
+  line-height: 1.08;
 }
 
-.prototype-copy p {
-  margin: 0 0 27px;
+.prototype-body,
+.prototype-use {
+  margin: 0 0 24px;
+  max-width: 36ch;
   color: rgba(255, 255, 255, 0.66);
-  line-height: 1.68;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.prototype-focus {
+  margin-bottom: 10px;
+}
+
+.prototype-use {
+  margin-bottom: 0;
 }
 
 .prototype-specs {
@@ -1537,8 +1596,21 @@ html[dir="rtl"] .clinical-path-steps {
 
 .prototype-specs li {
   padding: 17px 0;
+  display: grid;
+  grid-template-columns: minmax(138px, 0.7fr) 1fr;
+  gap: 20px;
+  align-items: baseline;
   border-bottom: 1px solid rgba(10, 40, 93, 0.2);
   color: #44546b;
+}
+
+.prototype-specs li strong {
+  color: var(--blue);
+  font-size: 16px;
+}
+
+.prototype-specs li span {
+  line-height: 1.5;
 }
 
 .company-mark {
@@ -1620,6 +1692,68 @@ html[dir="rtl"] .company-mark {
 
 .market-section {
   margin-top: 0;
+}
+
+.market-case > p {
+  margin: 0;
+  color: #46566d;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+.market-metrics {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border: 1px solid rgba(10, 40, 93, 0.16);
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 22px 55px rgba(10, 40, 93, 0.08);
+}
+
+.market-metric {
+  min-height: 132px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  border-inline-end: 1px solid rgba(10, 40, 93, 0.13);
+  border-bottom: 1px solid rgba(10, 40, 93, 0.13);
+}
+
+.market-metric:nth-child(2) {
+  border-inline-end: 0;
+}
+
+.market-metric strong {
+  color: var(--blue);
+  font-size: clamp(28px, 2.6vw, 41px);
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.market-metric span {
+  color: #526078;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.market-metric.arr {
+  grid-column: 1 / -1;
+  min-height: 150px;
+  border: 0;
+  background: linear-gradient(120deg, var(--blue), #0d3b83);
+}
+
+.market-metric.arr strong {
+  color: var(--cyan-bright);
+  font-size: clamp(40px, 4vw, 62px);
+}
+
+.market-metric.arr span {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 15px;
+  font-weight: 650;
 }
 
 .team-section {
@@ -1846,11 +1980,28 @@ html[dir="rtl"] .company-mark {
 }
 
 .footer-brand h2 {
-  margin: 42px 0 8px;
-  font-size: clamp(30px, 3vw, 46px);
+  margin: 34px 0 8px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.55;
 }
 
-.footer-brand p,
+.footer-brand p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.footer-brand .brand-symbol {
+  width: 76px;
+  height: 76px;
+}
+
+.footer-brand .brand span {
+  font-size: 31px;
+}
+
 .footer-contact p {
   color: rgba(255, 255, 255, 0.5);
   font-size: 13px;
@@ -1882,6 +2033,21 @@ html[dir="rtl"] .company-mark {
 @keyframes fabric-breathe {
   from { transform: scale(1.005); filter: brightness(0.92); }
   to { transform: scale(1.02); filter: brightness(1.06); }
+}
+
+@keyframes tactile-dot {
+  0%, 100% { transform: translate(-50%, -50%) scale(0.82); }
+  50% { transform: translate(-50%, -50%) scale(1.18); }
+}
+
+@keyframes tactile-ring {
+  0% { opacity: 0.72; transform: scale(0.45); }
+  78%, 100% { opacity: 0; transform: scale(1.35); }
+}
+
+@keyframes selector-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(88, 215, 255, 0.48); }
+  80%, 100% { box-shadow: 0 0 0 13px rgba(88, 215, 255, 0); }
 }
 
 @keyframes scroll-line {
@@ -1980,23 +2146,15 @@ html[dir="rtl"] .company-mark {
 
   .prototype-copy {
     grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    gap: 10px 48px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
   }
 
-  .prototype-copy > span,
-  .prototype-copy h2 {
-    grid-column: 1;
-  }
-
-  .prototype-copy > p,
-  .prototype-copy strong {
-    grid-column: 2;
-  }
-
-  .prototype-copy > p {
-    grid-row: 1 / span 2;
+  .prototype-body,
+  .prototype-use {
+    max-width: none;
   }
 
   .prototype-specs {
@@ -2346,6 +2504,9 @@ html[dir="rtl"] .company-mark {
 
   .prototype-copy {
     grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .prototype-specs {
@@ -2570,6 +2731,30 @@ html[dir="rtl"] .company-mark {
     line-height: 1.7;
   }
 
+  .market-case > p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .market-metrics {
+    margin-top: 24px;
+  }
+
+  .market-metric {
+    min-height: 122px;
+    padding: 18px;
+  }
+
+  .footer-brand .brand span {
+    display: inline;
+    font-size: 28px;
+  }
+
+  .footer-brand .brand-symbol {
+    width: 76px;
+    height: 76px;
+  }
+
   .team-grid {
     margin-top: 42px;
     gap: 16px;
@@ -2646,7 +2831,9 @@ html[dir="rtl"] .company-mark {
   }
 
   .prototype-copy {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 
   .prototype-copy h2 {

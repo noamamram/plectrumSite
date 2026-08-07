@@ -9,14 +9,14 @@ const copy = {
     eyebrow: "COMPANY",
     title: "Building the tactile layer of digital care.",
     intro:
-      "Plectrum brings together active textiles, software and clinical practice to make touch measurable, controllable and remotely accessible.",
+      "Plectrum combines software, clinical practice and wearable validation hardware to make touch measurable, controllable and remotely accessible, while building a patented magnetic-fiber textile platform for continuous touch.",
     tractionLabel: "WHERE WE ARE",
-    tractionTitle: "A platform moving toward scale.",
+    tractionTitle: "Working prototypes today. Patented textile platform ahead.",
     milestones: [
-      ["4", "working wearable prototypes"],
+      ["4", "working vibration-based wearable prototypes"],
       ["2026", "global clinical pilot expansion"],
       ["$2M", "current funding round"],
-      ["US · EU · IL", "patent applications filed and pending"],
+      ["IL · US · EU", "patent granted in Israel; US and Europe in process"],
     ],
     relationshipsLabel: "VALIDATION & RELATIONSHIPS",
     relationshipsTitle: "Clinical, technical and industrial momentum.",
@@ -28,7 +28,13 @@ const copy = {
     marketLabel: "COMMERCIAL PATH",
     marketTitle: "A focused entry into a measurable market.",
     marketBody:
-      "Plectrum’s current model targets approximately 5,000 pediatric occupational therapy clinics in the United States, with $450 monthly revenue per patient and a $135 technology share—representing a potential $405M ARR opportunity.",
+      "Plectrum's current model focuses on pediatric occupational therapy clinics in the United States. The opportunity is built from four clear commercial assumptions:",
+    marketMetrics: [
+      ["~5,000", "pediatric OT clinics in the United States"],
+      ["$450", "monthly revenue per patient"],
+      ["$135", "monthly technology share per patient"],
+      ["$405M ARR", "potential annual recurring revenue"],
+    ],
     teamLabel: "THE TEAM",
     teamTitle: "A multidisciplinary team, close to the problem.",
     team: [
@@ -78,14 +84,14 @@ const copy = {
     eyebrow: "החברה",
     title: "בונים את שכבת המגע של הטיפול הדיגיטלי.",
     intro:
-      "Plectrum מחברת בין טקסטיל אקטיבי, תוכנה ופרקטיקה קלינית כדי להפוך מגע למדיד, נשלט ונגיש מרחוק.",
+      "Plectrum מחברת בין תוכנה, פרקטיקה קלינית וחומרת אימות לבישה כדי להפוך מגע למדיד, נשלט ונגיש מרחוק, ובמקביל בונה פלטפורמת בד פטנטית המבוססת על סיבים מגנטיים למגע רציף.",
     tractionLabel: "איפה אנחנו היום",
-    tractionTitle: "פלטפורמה שמתקדמת לשלב ההתרחבות.",
+    tractionTitle: "אבות טיפוס פעילים כיום. פלטפורמת טקסטיל פטנטית בהמשך.",
     milestones: [
-      ["4", "אבות טיפוס לבישים ועובדים"],
+      ["4", "אבות טיפוס לבישים ופעילים המבוססים על רטט"],
       ["2026", "הרחבת פיילוטים קליניים בעולם"],
       ["$2M", "סבב הגיוס הנוכחי"],
-      ["ארה״ב · אירופה · ישראל", "בקשות פטנט שהוגשו ונמצאות בתהליך"],
+      ["ישראל · ארה״ב · אירופה", "פטנט אושר בישראל; ארה״ב ואירופה בתהליך"],
     ],
     relationshipsLabel: "אימות וקשרים",
     relationshipsTitle: "תנופה קלינית, טכנולוגית ותעשייתית.",
@@ -97,7 +103,13 @@ const copy = {
     marketLabel: "המסלול המסחרי",
     marketTitle: "כניסה ממוקדת לשוק מדיד.",
     marketBody:
-      "המודל הנוכחי של Plectrum מכוון לכ־5,000 קליניקות ריפוי בעיסוק לילדים בארצות הברית, עם הכנסה חודשית של 450 דולר למטופל וחלק טכנולוגי של 135 דולר—פוטנציאל ARR של 405 מיליון דולר.",
+      "המודל הנוכחי של Plectrum מתמקד בקליניקות ריפוי בעיסוק לילדים בארצות הברית. ההזדמנות נשענת על ארבע הנחות מסחריות ברורות:",
+    marketMetrics: [
+      ["~5,000", "קליניקות ריפוי בעיסוק לילדים בארצות הברית"],
+      ["$450", "הכנסה חודשית למטופל"],
+      ["$135", "חלק טכנולוגי חודשי למטופל"],
+      ["$405M ARR", "פוטנציאל הכנסה שנתית חוזרת"],
+    ],
     teamLabel: "הצוות",
     teamTitle: "צוות רב־תחומי, קרוב לבעיה.",
     team: [
@@ -147,14 +159,14 @@ const copy = {
     eyebrow: "الشركة",
     title: "نبني طبقة اللمس للرعاية الرقمية.",
     intro:
-      "تجمع Plectrum بين النسيج النشط والبرمجيات والممارسة السريرية لجعل اللمس قابلًا للقياس والتحكم والوصول عن بُعد.",
+      "تجمع Plectrum بين البرمجيات والممارسة السريرية وأجهزة التحقق القابلة للارتداء لجعل اللمس قابلًا للقياس والتحكم والوصول عن بُعد، مع بناء منصة نسيجية محمية ببراءة تعتمد على الألياف المغناطيسية للمس المستمر.",
     tractionLabel: "أين نحن اليوم",
-    tractionTitle: "منصة تتجه نحو التوسع.",
+    tractionTitle: "نماذج عاملة اليوم. منصة نسيج محمية ببراءة لاحقًا.",
     milestones: [
-      ["4", "نماذج أولية عاملة وقابلة للارتداء"],
+      ["4", "نماذج أولية عاملة وقابلة للارتداء تعتمد على الاهتزاز"],
       ["2026", "توسيع التجارب السريرية عالميًا"],
       ["$2M", "جولة التمويل الحالية"],
-      ["الولايات المتحدة · أوروبا · إسرائيل", "طلبات براءة اختراع مقدمة وقيد المراجعة"],
+      ["إسرائيل · الولايات المتحدة · أوروبا", "مُنحت البراءة في إسرائيل؛ التسجيل جار في الولايات المتحدة وأوروبا"],
     ],
     relationshipsLabel: "التحقق والعلاقات",
     relationshipsTitle: "زخم سريري وتقني وصناعي.",
@@ -166,7 +178,13 @@ const copy = {
     marketLabel: "المسار التجاري",
     marketTitle: "دخول مركز إلى سوق قابل للقياس.",
     marketBody:
-      "يستهدف نموذج Plectrum الحالي نحو 5,000 عيادة علاج وظيفي للأطفال في الولايات المتحدة، بإيراد شهري قدره 450 دولارًا لكل مريض وحصة تكنولوجية تبلغ 135 دولارًا، ما يمثل فرصة ARR محتملة بقيمة 405 ملايين دولار.",
+      "يركز نموذج Plectrum الحالي على عيادات العلاج الوظيفي للأطفال في الولايات المتحدة. وتستند الفرصة إلى أربعة افتراضات تجارية واضحة:",
+    marketMetrics: [
+      ["~5,000", "عيادة علاج وظيفي للأطفال في الولايات المتحدة"],
+      ["$450", "إيراد شهري لكل مريض"],
+      ["$135", "حصة تكنولوجية شهرية لكل مريض"],
+      ["$405M ARR", "إيراد سنوي متكرر محتمل"],
+    ],
     teamLabel: "الفريق",
     teamTitle: "فريق متعدد التخصصات وقريب من المشكلة.",
     team: [
@@ -216,14 +234,14 @@ const copy = {
     eyebrow: "КОМПАНИЯ",
     title: "Создаём тактильный слой цифровой медицины.",
     intro:
-      "Plectrum объединяет активный текстиль, программное обеспечение и клиническую практику, чтобы сделать прикосновение измеримым, управляемым и доступным на расстоянии.",
+      "Plectrum объединяет ПО, клиническую практику и носимое оборудование для валидации, чтобы сделать прикосновение измеримым, управляемым и доступным на расстоянии, одновременно создавая запатентованную текстильную платформу с магнитными волокнами для непрерывного прикосновения.",
     tractionLabel: "ГДЕ МЫ СЕЙЧАС",
-    tractionTitle: "Платформа движется к масштабированию.",
+    tractionTitle: "Рабочие прототипы сегодня. Запатентованная текстильная платформа дальше.",
     milestones: [
-      ["4", "работающих носимых прототипа"],
+      ["4", "работающих носимых прототипа на основе вибрации"],
       ["2026", "международное расширение клинических пилотов"],
       ["$2M", "текущий инвестиционный раунд"],
-      ["США · ЕС · Израиль", "патентные заявки поданы и рассматриваются"],
+      ["Израиль · США · Европа", "патент выдан в Израиле; регистрация в США и Европе продолжается"],
     ],
     relationshipsLabel: "ВАЛИДАЦИЯ И ПАРТНЁРСТВА",
     relationshipsTitle: "Клиническая, технологическая и промышленная динамика.",
@@ -235,7 +253,13 @@ const copy = {
     marketLabel: "КОММЕРЧЕСКИЙ ПУТЬ",
     marketTitle: "Сфокусированный выход на измеримый рынок.",
     marketBody:
-      "Текущая модель Plectrum ориентирована примерно на 5 000 клиник детской эрготерапии в США: $450 ежемесячного дохода на пациента и $135 технологической доли формируют потенциальную возможность ARR в $405 млн.",
+      "Текущая модель Plectrum сфокусирована на клиниках детской эрготерапии в США. Возможность опирается на четыре понятные коммерческие предпосылки:",
+    marketMetrics: [
+      ["~5,000", "клиник детской эрготерапии в США"],
+      ["$450", "ежемесячный доход на пациента"],
+      ["$135", "ежемесячная технологическая доля на пациента"],
+      ["$405M ARR", "потенциальный годовой регулярный доход"],
+    ],
     teamLabel: "КОМАНДА",
     teamTitle: "Междисциплинарная команда, близкая к проблеме.",
     team: [
@@ -299,7 +323,7 @@ export default function CompanyPage() {
       <section className="light-section company-traction">
         <div className="section-heading compact"><p className="eyebrow dark">{t.tractionLabel}</p><h2>{t.tractionTitle}</h2></div>
         <div className="company-milestones">
-          {t.milestones.map(([value, label]) => <article key={label}><strong>{value}</strong><span>{label}</span></article>)}
+          {t.milestones.map(([value, label]) => <article key={label}><strong><bdi dir="auto">{value}</bdi></strong><span>{label}</span></article>)}
         </div>
       </section>
 
@@ -311,7 +335,18 @@ export default function CompanyPage() {
       </section>
 
       <section className="light-section market-section">
-        <div><p className="eyebrow dark">{t.marketLabel}</p><h2>{t.marketTitle}</h2></div><p>{t.marketBody}</p>
+        <div><p className="eyebrow dark">{t.marketLabel}</p><h2>{t.marketTitle}</h2></div>
+        <div className="market-case">
+          <p>{t.marketBody}</p>
+          <div className="market-metrics">
+            {t.marketMetrics.map(([value, label], index) => (
+              <article className={index === t.marketMetrics.length - 1 ? "market-metric arr" : "market-metric"} key={label}>
+                <strong><bdi dir="ltr">{value}</bdi></strong>
+                <span>{label}</span>
+              </article>
+            ))}
+          </div>
+        </div>
       </section>
 
       <section className="team-section">
@@ -349,11 +384,11 @@ export default function CompanyPage() {
         <div className="company-contact-strip">
           <a href="mailto:gabriel@plectrum.biz">
             <span>{{ en: "EMAIL", he: "אימייל", ar: "البريد الإلكتروني", ru: "EMAIL" }[language]}</span>
-            <strong>gabriel@plectrum.biz</strong>
+            <strong><bdi dir="ltr">gabriel@plectrum.biz</bdi></strong>
           </a>
           <a href="tel:+972526808756">
             <span>{{ en: "PHONE", he: "טלפון", ar: "الهاتف", ru: "ТЕЛЕФОН" }[language]}</span>
-            <strong>+972 52 680 8756</strong>
+            <strong><bdi dir="ltr">+972 52 680 8756</bdi></strong>
           </a>
           <a href="https://www.linkedin.com/company/plectrum-af/" target="_blank" rel="noreferrer">
             <span>LINKEDIN</span>

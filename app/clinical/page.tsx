@@ -9,20 +9,20 @@ const copy = {
     eyebrow: "CLINICAL APPLICATION",
     title: "Remote care can finally include touch.",
     intro:
-      "Plectrum’s first focused application is professional sensory integration for autistic people and people with sensory processing needs—inside and beyond the clinic.",
+      "Plectrum's first focused application is professional sensory integration for autistic people and people with sensory processing needs, inside and beyond the clinic. Four working vibration-based prototypes support clinical validation today, while the patented magnetic-fiber textile is being developed as the long-term continuous-touch platform.",
     cta: "Explore a clinical pilot",
     problemLabel: "THE TELEHEALTH BLIND SPOT",
     problemTitle: "The therapist can guide. The fabric can deliver.",
     problemBody:
       "Video and audio preserve conversation, but not tactile intervention. Plectrum is designed to let occupational therapists control where, when and how tactile input is delivered through a wearable.",
     controls: [
-      ["Localization", "Select targeted areas across up to 24 tactile points."],
-      ["Pattern", "Configure therapeutic vibration and pressure sequences."],
+      ["Localization", "Select targeted areas across up to 24 controlled vibration points in the current prototypes."],
+      ["Pattern", "Configure therapeutic vibration sequences today, with the same clinical logic intended to carry into future magnetic-fiber touch."],
       ["Intensity", "Adapt delivery to the individual and the moment."],
       ["Follow-up", "Monitor sessions and build structured reports over time."],
     ],
     pathwayLabel: "A CLINICAL WORKFLOW",
-    pathwayTitle: "Designed around the therapist—not around the device.",
+    pathwayTitle: "Designed around the therapist, not around the device.",
     pathway: [
       ["Assess", "Define regulation needs and a personalized treatment objective."],
       ["Configure", "Choose placement, intensity and tactile pattern remotely."],
@@ -32,7 +32,7 @@ const copy = {
     complianceLabel: "REGULATORY PATH",
     complianceTitle: "A clear starting classification.",
     complianceBody:
-      "Plectrum is registered and listed as an FDA Class I therapeutic vibrator under 21 CFR 890.5975. The company’s current reimbursement strategy references CPT 97533 and remote therapeutic monitoring code CPT 98977 with Modifier 95.",
+      "Plectrum's current vibration-based prototypes are registered and listed as an FDA Class I therapeutic vibrator under 21 CFR 890.5975. The reimbursement strategy references CPT 97533 and remote therapeutic monitoring code CPT 98977 with Modifier 95. The magnetic-fiber textile follows a separate product-development and regulatory path.",
     pilotLabel: "CLINICAL COLLABORATION",
     pilotTitle: "Preparing for broader pilot expansion.",
     pilotBody:
@@ -43,20 +43,20 @@ const copy = {
     eyebrow: "היישום הקליני",
     title: "טיפול מרחוק יכול סוף־סוף לכלול מגע.",
     intro:
-      "היישום הראשון והממוקד של Plectrum הוא אינטגרציה חושית מקצועית עבור אנשים על הרצף האוטיסטי ואנשים עם צורכי עיבוד חושי—בתוך הקליניקה ומחוצה לה.",
+      "היישום הראשון והממוקד של Plectrum הוא אינטגרציה חושית מקצועית עבור אנשים על הרצף האוטיסטי ואנשים עם צורכי עיבוד חושי, בתוך הקליניקה ומחוצה לה. ארבעה אבות טיפוס פעילים מבוססי רטט משמשים כיום לאימות קליני, בזמן שטכנולוגיית הסיבים המגנטיים הפטנטית מפותחת כפלטפורמת המגע הרציף ארוכת הטווח.",
     cta: "בדיקת פיילוט קליני",
     problemLabel: "הנקודה העיוורת של הטיפול מרחוק",
     problemTitle: "המטפל מנחה. הבד מעביר.",
     problemBody:
       "וידאו ואודיו משמרים את השיחה, אך לא את ההתערבות המישושית. Plectrum נועדה לאפשר למרפאים בעיסוק לשלוט היכן, מתי ובאיזו צורה יועבר הקלט המישושי דרך לביש.",
     controls: [
-      ["מיקום", "בחירה באזורים ממוקדים מתוך עד 24 נקודות מגע."],
-      ["דפוס", "הגדרת רצפי רטט ולחץ טיפוליים."],
+      ["מיקום", "בחירה באזורים ממוקדים מתוך עד 24 נקודות רטט נשלטות באבות הטיפוס הנוכחיים."],
+      ["דפוס", "הגדרת רצפי רטט טיפוליים כיום, עם אותה לוגיקה קלינית שנועדה לעבור בעתיד למגע מבוסס סיבים מגנטיים."],
       ["עוצמה", "התאמת ההפעלה לאדם ולרגע."],
       ["מעקב", "ניטור מפגשים ובניית דיווח מובנה לאורך זמן."],
     ],
     pathwayLabel: "זרימת עבודה קלינית",
-    pathwayTitle: "מתוכנן סביב המטפל—לא סביב המכשיר.",
+    pathwayTitle: "מתוכנן סביב המטפל, לא סביב המכשיר.",
     pathway: [
       ["הערכה", "הגדרת צורכי הוויסות ומטרה טיפולית אישית."],
       ["הגדרה", "בחירת מיקום, עוצמה ודפוס מישושי מרחוק."],
@@ -66,7 +66,7 @@ const copy = {
     complianceLabel: "המסלול הרגולטורי",
     complianceTitle: "נקודת פתיחה מוגדרת.",
     complianceBody:
-      "Plectrum רשומה ומופיעה ברישומי ה־FDA כמכשיר רטט טיפולי Class I לפי 21 CFR 890.5975. אסטרטגיית ההחזר הנוכחית של החברה מתייחסת ל־CPT 97533 ולקוד הניטור הטיפולי מרחוק CPT 98977 עם Modifier 95.",
+      "אבות הטיפוס מבוססי הרטט של Plectrum רשומים ומופיעים ברישומי ה־FDA כמכשיר רטט טיפולי Class I לפי 21 CFR 890.5975. אסטרטגיית ההחזר מתייחסת ל־CPT 97533 ולקוד הניטור הטיפולי מרחוק CPT 98977 עם Modifier 95. טכנולוגיית הסיבים המגנטיים נמצאת במסלול פיתוח ורגולציה נפרד.",
     pilotLabel: "שיתוף פעולה קליני",
     pilotTitle: "נערכים להרחבת פיילוטים.",
     pilotBody:
@@ -77,15 +77,15 @@ const copy = {
     eyebrow: "التطبيق السريري",
     title: "الرعاية عن بُعد يمكنها أخيرًا أن تشمل اللمس.",
     intro:
-      "التطبيق الأول لـPlectrum هو التكامل الحسي الاحترافي للأشخاص ذوي التوحد واحتياجات المعالجة الحسية، داخل العيادة وخارجها.",
+      "التطبيق الأول لـPlectrum هو التكامل الحسي الاحترافي للأشخاص ذوي التوحد واحتياجات المعالجة الحسية، داخل العيادة وخارجها. تدعم أربعة نماذج اهتزازية عاملة التحقق السريري اليوم، فيما يُطور نسيج الألياف المغناطيسية المحمي ببراءة بوصفه منصة اللمس المستمر طويلة المدى.",
     cta: "استكشف تجربة سريرية",
     problemLabel: "النقطة العمياء في الرعاية عن بُعد",
     problemTitle: "المعالج يوجّه. والنسيج يوصل.",
     problemBody:
       "يحافظ الفيديو والصوت على المحادثة، لكنهما لا ينقلان التدخل اللمسي. صُممت Plectrum لتمكين اختصاصيي العلاج الوظيفي من التحكم بمكان اللمس ووقته وطريقته عبر منتج قابل للارتداء.",
     controls: [
-      ["الموضع", "اختيار مناطق موجهة عبر ما يصل إلى 24 نقطة لمسية."],
-      ["النمط", "ضبط تسلسلات علاجية من الاهتزاز والضغط."],
+      ["الموضع", "اختيار مناطق موجهة عبر ما يصل إلى 24 نقطة اهتزاز متحكم بها في النماذج الحالية."],
+      ["النمط", "ضبط تسلسلات علاجية من الاهتزاز اليوم، مع منطق سريري يُقصد أن ينتقل لاحقًا إلى اللمس القائم على الألياف المغناطيسية."],
       ["الشدة", "تكييف التأثير مع الفرد واللحظة."],
       ["المتابعة", "مراقبة الجلسات وبناء تقارير منظمة مع مرور الوقت."],
     ],
@@ -100,7 +100,7 @@ const copy = {
     complianceLabel: "المسار التنظيمي",
     complianceTitle: "تصنيف أولي واضح.",
     complianceBody:
-      "Plectrum مسجلة ومدرجة لدى FDA كجهاز اهتزاز علاجي من الفئة الأولى وفق 21 CFR 890.5975. وتشير استراتيجية السداد الحالية إلى CPT 97533 ورمز المراقبة العلاجية عن بُعد CPT 98977 مع Modifier 95.",
+      "نماذج Plectrum الحالية القائمة على الاهتزاز مسجلة ومدرجة لدى FDA كجهاز اهتزاز علاجي من الفئة الأولى وفق 21 CFR 890.5975. وتشير استراتيجية السداد إلى CPT 97533 ورمز المراقبة العلاجية عن بُعد CPT 98977 مع Modifier 95. ويتبع نسيج الألياف المغناطيسية مسار تطوير وتنظيم منفصلًا.",
     pilotLabel: "تعاون سريري",
     pilotTitle: "نستعد لتوسيع التجارب.",
     pilotBody:
@@ -111,20 +111,20 @@ const copy = {
     eyebrow: "КЛИНИЧЕСКОЕ ПРИМЕНЕНИЕ",
     title: "Дистанционная терапия наконец может включать прикосновение.",
     intro:
-      "Первое целевое применение Plectrum — профессиональная сенсорная интеграция для аутичных людей и людей с особенностями сенсорной обработки, в клинике и за её пределами.",
+      "Первое целевое применение Plectrum: профессиональная сенсорная интеграция для аутичных людей и людей с особенностями сенсорной обработки, в клинике и за её пределами. Сегодня клиническую валидацию поддерживают четыре действующих вибрационных прототипа, а запатентованный текстиль с магнитными волокнами разрабатывается как долгосрочная платформа непрерывного прикосновения.",
     cta: "Обсудить клинический пилот",
     problemLabel: "СЛЕПАЯ ЗОНА ТЕЛЕМЕДИЦИНЫ",
     problemTitle: "Терапевт направляет. Ткань воздействует.",
     problemBody:
       "Видео и звук сохраняют общение, но не тактильное вмешательство. Plectrum позволяет эрготерапевту дистанционно управлять местом, временем и способом воздействия через носимое устройство.",
     controls: [
-      ["Локализация", "Выбор зон воздействия из числа до 24 тактильных точек."],
-      ["Рисунок", "Настройка терапевтических последовательностей вибрации и давления."],
+      ["Локализация", "Выбор зон воздействия из числа до 24 управляемых точек вибрации в текущих прототипах."],
+      ["Рисунок", "Настройка терапевтических последовательностей вибрации сегодня с той же клинической логикой, которая затем перейдёт в прикосновение на магнитных волокнах."],
       ["Интенсивность", "Адаптация воздействия под человека и конкретный момент."],
       ["Наблюдение", "Мониторинг сессий и формирование отчётов в динамике."],
     ],
     pathwayLabel: "КЛИНИЧЕСКИЙ ПРОЦЕСС",
-    pathwayTitle: "В центре — терапевт, а не устройство.",
+    pathwayTitle: "В центре терапевт, а не устройство.",
     pathway: [
       ["Оценка", "Определить потребности в регуляции и персональную цель."],
       ["Настройка", "Удалённо выбрать зону, интенсивность и тактильный рисунок."],
@@ -134,7 +134,7 @@ const copy = {
     complianceLabel: "РЕГУЛЯТОРНЫЙ ПУТЬ",
     complianceTitle: "Чёткая стартовая классификация.",
     complianceBody:
-      "Plectrum зарегистрирована FDA как терапевтический вибратор класса I по 21 CFR 890.5975. Текущая стратегия возмещения опирается на CPT 97533 и код дистанционного терапевтического мониторинга CPT 98977 с Modifier 95.",
+      "Текущие вибрационные прототипы Plectrum зарегистрированы FDA как терапевтический вибратор класса I по 21 CFR 890.5975. Стратегия возмещения опирается на CPT 97533 и код дистанционного терапевтического мониторинга CPT 98977 с Modifier 95. Текстиль с магнитными волокнами проходит отдельный путь разработки и регулирования.",
     pilotLabel: "КЛИНИЧЕСКОЕ СОТРУДНИЧЕСТВО",
     pilotTitle: "Готовимся расширять пилотную программу.",
     pilotBody:

@@ -8,9 +8,9 @@ import { useLanguage } from "./components/LanguageProvider";
 const content = {
   en: {
     eyebrow: "FABTIVE ACTIVE FABRIC",
-    title: "Bringing touch into the digital loop.",
+    title: "Making touch a digital modality.",
     subtitle:
-      "The first platform enabling remote, professional-grade sensory integration through adaptive touch.",
+      "Four working vibration-based prototypes validate the system today. Plectrum's patented magnetic-fiber textile is the long-term product platform for continuous touch across the fabric.",
     explore: "Explore the technology",
     partner: "Partner with Plectrum",
     scroll: "Scroll to feel the story",
@@ -26,31 +26,31 @@ const content = {
     respondBody: "Deliver targeted tactile input directly through the fabric.",
     learn: "Record & learn",
     learnBody: "Turn every interaction into objective clinical insight.",
-    productsEyebrow: "ONE PLATFORM · FOUR PROTOTYPES",
-    productsTitle: "The fabric becomes the interface.",
+    productsEyebrow: "WORKING TODAY · FOUR VIBRATION PROTOTYPES",
+    productsTitle: "Four working wearables built on controlled vibration.",
     productsBody:
-      "One active textile system, expressed through four wearable forms—each designed for a distinct therapeutic need.",
+      "These four working prototypes are today's validation hardware. They use controlled vibration points to prove the software, control architecture and clinical workflow while the patented magnetic-fiber textile is developed.",
     products: [
-      ["Shirt", "Full-torso deep pressure and regulation · up to 24 tactile points."],
-      ["Sleeve", "Targeted limb regulation for localized sensory input · up to 24 tactile points."],
-      ["Protective cap", "Cranial sensory modulation designed for crisis prevention."],
-      ["Glove", "High-definition tactile stimulation for fine-motor support."],
+      ["Shirt", "Full-torso regulation through up to 24 controlled vibration points."],
+      ["Sleeve", "Targeted limb regulation through up to 24 controlled vibration points."],
+      ["Protective cap", "Targeted cranial vibration designed to support crisis prevention."],
+      ["Glove", "Focused vibration patterns for fine-motor support."],
     ],
-    viewModels: "Explore all 3D prototypes",
+    viewModels: "Explore the four working prototypes",
     tractionEyebrow: "TRACTION",
-    tractionTitle: "Built beyond the concept stage.",
+    tractionTitle: "Validation hardware working now. Patented textile platform ahead.",
     traction: [
-      ["4", "working prototypes"],
+      ["4", "working vibration-based prototypes"],
       ["3", "SDK ecosystems: Android, Windows and XR"],
-      ["US · EU · IL", "patents filed and pending"],
+      ["IL · US · EU", "patent granted in Israel; US and Europe in process"],
     ],
     partnerLine:
       "Clinical validation with Hadassah · Adaptive protocols developed with IBM · Industrial relationships with NILIT and Delta Galil",
-    futureEyebrow: "BEYOND CLINICAL CARE",
-    futureTitle: "A fabric platform for every digital experience that needs touch.",
+    futureEyebrow: "THE PATENTED DESTINATION",
+    futureTitle: "From isolated vibration points to continuous touch in every fiber.",
     futureBody:
-      "Sensory integration is Plectrum’s first focused application. The same active-fabric foundation can later extend into XR, gaming, training and defense.",
-    futureNote: "The clinical path comes first.",
+      "FABTIVE's patent is not about vibration. It is about magnetic fibers integrated into the textile itself, so each active fiber contributes to a continuous, controllable surface of touch with depth across the fabric.",
+    futureNote: "Patent granted in Israel · US and Europe in process · distinct from today's vibration prototypes",
     pathwaysEyebrow: "BUILD THE NEXT LAYER WITH US",
     pathwaysTitle: "Choose your path into Plectrum.",
     pathways: [
@@ -62,9 +62,9 @@ const content = {
   },
   he: {
     eyebrow: "FABTIVE בד אקטיבי",
-    title: "מכניסים את המגע אל הלולאה הדיגיטלית.",
+    title: "הופכים את המגע לממד דיגיטלי.",
     subtitle:
-      "הפלטפורמה הראשונה המאפשרת אינטגרציה חושית מקצועית מרחוק באמצעות מגע אדפטיבי.",
+      "ארבעה אבות טיפוס פעילים מבוססי רטט מאמתים את המערכת כיום. פלטפורמת המוצר ארוכת הטווח של Plectrum היא בד פטנטי המבוסס על סיבים מגנטיים למגע רציף על פני הבד.",
     explore: "לגלות את הטכנולוגיה",
     partner: "לשותפות עם Plectrum",
     scroll: "גללו כדי להרגיש את הסיפור",
@@ -80,31 +80,31 @@ const content = {
     respondBody: "העברת קלט מישושי ממוקד ישירות דרך הבד.",
     learn: "תיעוד ולמידה",
     learnBody: "הפיכת כל אינטראקציה לתובנה קלינית אובייקטיבית.",
-    productsEyebrow: "פלטפורמה אחת · ארבעה אבות טיפוס",
-    productsTitle: "הבד הופך לממשק.",
+    productsEyebrow: "פועלים היום · ארבעה אבות טיפוס מבוססי רטט",
+    productsTitle: "ארבעה לבישים פעילים המבוססים על רטט נשלט.",
     productsBody:
-      "מערכת בד אקטיבי אחת, בארבע תצורות לבישות—כל אחת מותאמת לצורך טיפולי שונה.",
+      "אלה אבות הטיפוס הפעילים של חומרת האימות כיום. הם משתמשים בנקודות רטט נשלטות כדי להוכיח את התוכנה, ארכיטקטורת השליטה והתהליך הקליני, בזמן שטכנולוגיית הסיבים המגנטיים הפטנטית ממשיכה להתפתח.",
     products: [
-      ["חולצה", "לחץ עמוק וויסות לכל פלג הגוף העליון · עד 24 נקודות מגע."],
-      ["שרוול", "ויסות ממוקד לגפיים באמצעות קלט חושי מקומי · עד 24 נקודות מגע."],
-      ["כובע מגן", "מודולציה חושית באזור הראש המיועדת למניעת מצבי משבר."],
-      ["כפפה", "גירוי מישושי ברזולוציה גבוהה לתמיכה במוטוריקה עדינה."],
+      ["חולצה", "ויסות לפלג הגוף העליון באמצעות עד 24 נקודות רטט נשלטות."],
+      ["שרוול", "ויסות ממוקד לגפיים באמצעות עד 24 נקודות רטט נשלטות."],
+      ["כובע מגן", "רטט ממוקד באזור הראש לתמיכה במניעת מצבי משבר."],
+      ["כפפה", "דפוסי רטט ממוקדים לתמיכה במוטוריקה עדינה."],
     ],
-    viewModels: "לצפייה בכל אבות הטיפוס בתלת־ממד",
+    viewModels: "לצפייה בארבעת אבות הטיפוס הפעילים",
     tractionEyebrow: "התקדמות",
-    tractionTitle: "הרבה מעבר לשלב הרעיון.",
+    tractionTitle: "חומרת אימות פעילה כיום. פלטפורמת טקסטיל פטנטית בהמשך.",
     traction: [
-      ["4", "אבות טיפוס עובדים"],
+      ["4", "אבות טיפוס פעילים המבוססים על רטט"],
       ["3", "סביבות SDK: ‏Android, ‏Windows ו־XR"],
-      ["ארה״ב · אירופה · ישראל", "פטנטים שהוגשו ונמצאים בתהליך"],
+      ["ישראל · ארה״ב · אירופה", "פטנט מאושר בישראל; ארה״ב ואירופה בתהליך"],
     ],
     partnerLine:
       "אימות קליני עם הדסה · פרוטוקולים אדפטיביים בפיתוח משותף עם IBM · קשרים תעשייתיים עם NILIT ודלתא גליל",
-    futureEyebrow: "מעבר לטיפול הקליני",
-    futureTitle: "פלטפורמת בד לכל חוויה דיגיטלית שזקוקה למגע.",
+    futureEyebrow: "היעד הפטנטי",
+    futureTitle: "מנקודות רטט מבודדות למגע רציף בכל סיב.",
     futureBody:
-      "אינטגרציה חושית היא היישום הראשון והממוקד של Plectrum. בהמשך, אותה תשתית של בד אקטיבי תוכל להשתלב ב־XR, גיימינג, הדרכה וביטחון.",
-    futureNote: "המסלול הקליני קודם.",
+      "הפטנט של FABTIVE אינו עוסק ברטט. הוא עוסק בסיבים מגנטיים המשתלבים בתוך הטקסטיל עצמו, כך שכל סיב אקטיבי משתתף ביצירת משטח מגע רציף, נשלט ובעל עומק על פני הבד.",
+    futureNote: "פטנט מאושר בישראל · ארה״ב ואירופה בתהליך · נפרד מאבות הטיפוס הרוטטים של היום",
     pathwaysEyebrow: "בואו לבנות איתנו את השכבה הבאה",
     pathwaysTitle: "בחרו את הדרך שלכם אל Plectrum.",
     pathways: [
@@ -116,9 +116,9 @@ const content = {
   },
   ar: {
     eyebrow: "FABTIVE النسيج النشط",
-    title: "ندخل اللمس إلى الحلقة الرقمية.",
+    title: "نجعل اللمس وسيلة رقمية.",
     subtitle:
-      "أول منصة تتيح التكامل الحسي الاحترافي عن بُعد من خلال لمس تكيفي.",
+      "تتحقق المنظومة اليوم عبر أربعة نماذج اهتزازية عاملة. أما منصة المنتج طويلة المدى لدى Plectrum فهي نسيج محمي ببراءة يعتمد على ألياف مغناطيسية للمس المستمر عبر القماش.",
     explore: "اكتشف التكنولوجيا",
     partner: "شارك Plectrum",
     scroll: "مرّر لتشعر بالقصة",
@@ -134,31 +134,31 @@ const content = {
     respondBody: "توصيل مدخلات لمسية موجهة مباشرة عبر النسيج.",
     learn: "تسجيل وتعلّم",
     learnBody: "تحويل كل تفاعل إلى معرفة سريرية موضوعية.",
-    productsEyebrow: "منصة واحدة · أربعة نماذج أولية",
-    productsTitle: "النسيج يصبح الواجهة.",
+    productsEyebrow: "تعمل اليوم · أربعة نماذج أولية قائمة على الاهتزاز",
+    productsTitle: "أربعة منتجات قابلة للارتداء تعمل اليوم عبر اهتزاز متحكم به.",
     productsBody:
-      "نظام نسيج نشط واحد بأربعة أشكال قابلة للارتداء، صُمم كل منها لحاجة علاجية مختلفة.",
+      "هذه هي أجهزة التحقق العاملة اليوم. وهي تستخدم نقاط اهتزاز متحكمًا بها لإثبات البرمجيات وبنية التحكم وسير العمل السريري، بينما يواصل النسيج المحمي بالألياف المغناطيسية تقدمه.",
     products: [
-      ["قميص", "ضغط عميق وتنظيم لكامل الجذع · حتى 24 نقطة لمسية."],
-      ["كُم", "تنظيم موجه للطرف بمدخلات حسية موضعية · حتى 24 نقطة لمسية."],
-      ["قبعة واقية", "تعديل حسي للرأس مصمم للوقاية من الأزمات."],
-      ["قفاز", "تحفيز لمسي عالي الدقة لدعم المهارات الحركية الدقيقة."],
+      ["قميص", "تنظيم كامل الجذع عبر ما يصل إلى 24 نقطة اهتزاز متحكم بها."],
+      ["كُم", "تنظيم موجه للطرف عبر ما يصل إلى 24 نقطة اهتزاز متحكم بها."],
+      ["قبعة واقية", "اهتزاز موجه للرأس لدعم الوقاية من الأزمات."],
+      ["قفاز", "أنماط اهتزاز مركزة لدعم المهارات الحركية الدقيقة."],
     ],
-    viewModels: "استكشف جميع النماذج ثلاثية الأبعاد",
+    viewModels: "استكشف النماذج الأربعة العاملة",
     tractionEyebrow: "التقدم",
-    tractionTitle: "تجاوزنا مرحلة الفكرة.",
+    tractionTitle: "أجهزة تحقق عاملة اليوم. منصة نسيج محمية ببراءة لاحقًا.",
     traction: [
-      ["4", "نماذج أولية عاملة"],
+      ["4", "نماذج عاملة تعتمد على الاهتزاز"],
       ["3", "بيئات SDK: Android وWindows وXR"],
-      ["الولايات المتحدة · أوروبا · إسرائيل", "براءات اختراع مقدمة وقيد المراجعة"],
+      ["إسرائيل · الولايات المتحدة · أوروبا", "براءة ممنوحة في إسرائيل؛ الولايات المتحدة وأوروبا قيد الإجراء"],
     ],
     partnerLine:
       "تحقق سريري مع هداسا · بروتوكولات تكيفية مطورة مع IBM · علاقات صناعية مع NILIT وDelta Galil",
-    futureEyebrow: "ما بعد الرعاية السريرية",
-    futureTitle: "منصة نسيج لكل تجربة رقمية تحتاج إلى اللمس.",
+    futureEyebrow: "الوجهة المحمية ببراءة اختراع",
+    futureTitle: "من نقاط اهتزاز منفصلة إلى لمس مستمر في كل ليفة.",
     futureBody:
-      "التكامل الحسي هو أول تطبيق مركز لـPlectrum. ويمكن للبنية نفسها أن تمتد لاحقًا إلى XR والألعاب والتدريب والدفاع.",
-    futureNote: "المسار السريري أولًا.",
+      "براءة FABTIVE لا تتعلق بالاهتزاز. إنها تغطي أليافًا مغناطيسية مدمجة في النسيج نفسه بحيث تسهم كل ليفة نشطة في سطح لمس مستمر وقابل للتحكم مع عمق عبر القماش.",
+    futureNote: "براءة ممنوحة في إسرائيل · الولايات المتحدة وأوروبا قيد الإجراء · وهي مختلفة عن نماذج الاهتزاز الحالية",
     pathwaysEyebrow: "ابنِ معنا الطبقة التالية",
     pathwaysTitle: "اختر طريقك إلى Plectrum.",
     pathways: [
@@ -169,17 +169,17 @@ const content = {
     ],
   },
   ru: {
-    eyebrow: "FABTIVE — АКТИВНАЯ ТКАНЬ",
-    title: "Добавляем осязание в цифровой контур.",
+    eyebrow: "FABTIVE · АКТИВНАЯ ТКАНЬ",
+    title: "Превращаем осязание в цифровую модальность.",
     subtitle:
-      "Первая платформа для профессиональной дистанционной сенсорной интеграции с адаптивным тактильным воздействием.",
+      "Сегодня систему подтверждают четыре действующих вибрационных прототипа. Долгосрочная продуктовая платформа Plectrum — запатентованный текстиль с магнитными волокнами для непрерывного прикосновения по всей ткани.",
     explore: "Изучить технологию",
     partner: "Стать партнёром Plectrum",
     scroll: "Прокрутите, чтобы почувствовать историю",
     thesisEyebrow: "НЕДОСТАЮЩАЯ МОДАЛЬНОСТЬ",
     thesisTitle: "Цифровая медицина видит и слышит. Теперь она может прикасаться.",
     thesisBody:
-      "В терапии сенсорной интеграции тактильное воздействие — не опция. Plectrum превращает физическое вмешательство в измеримую цифровую модальность с программным управлением.",
+      "В терапии сенсорной интеграции тактильное воздействие не является опцией. Plectrum превращает физическое вмешательство в измеримую цифровую модальность с программным управлением.",
     sense: "Сбор данных",
     senseBody: "Носимое устройство фиксирует отклик и биометрические данные.",
     analyze: "Анализ",
@@ -188,31 +188,31 @@ const content = {
     respondBody: "Точное тактильное воздействие непосредственно через ткань.",
     learn: "Запись и обучение",
     learnBody: "Каждое взаимодействие становится объективным клиническим знанием.",
-    productsEyebrow: "ОДНА ПЛАТФОРМА · ЧЕТЫРЕ ПРОТОТИПА",
-    productsTitle: "Ткань становится интерфейсом.",
+    productsEyebrow: "РАБОТАЮТ СЕГОДНЯ · ЧЕТЫРЕ ВИБРАЦИОННЫХ ПРОТОТИПА",
+    productsTitle: "Четыре работающих носимых формы на базе управляемой вибрации.",
     productsBody:
-      "Единая система активного текстиля в четырёх носимых формах — для разных терапевтических задач.",
+      "Это действующее оборудование для проверки на текущем этапе. Оно использует управляемые точки вибрации, чтобы подтвердить ПО, архитектуру управления и клинический процесс, пока развивается запатентованный текстиль с магнитными волокнами.",
     products: [
-      ["Футболка", "Глубокое давление и регуляция всего корпуса · до 24 тактильных точек."],
-      ["Рукав", "Локальная сенсорная регуляция конечности · до 24 тактильных точек."],
-      ["Защитная шапочка", "Краниальная сенсорная модуляция для предотвращения кризисов."],
-      ["Перчатка", "Высокоточная тактильная стимуляция мелкой моторики."],
+      ["Футболка", "Регуляция корпуса через сеть до 24 управляемых точек вибрации."],
+      ["Рукав", "Локальная регуляция конечности через сеть до 24 управляемых точек вибрации."],
+      ["Защитная шапочка", "Направленная вибрация в области головы для предотвращения кризисов."],
+      ["Перчатка", "Сфокусированные вибрационные рисунки для поддержки мелкой моторики."],
     ],
-    viewModels: "Все 3D-прототипы",
+    viewModels: "Изучить четыре работающих прототипа",
     tractionEyebrow: "ПРОГРЕСС",
-    tractionTitle: "Далеко за пределами концепции.",
+    tractionTitle: "Рабочее оборудование для валидации сегодня. Запатентованная текстильная платформа дальше.",
     traction: [
-      ["4", "работающих прототипа"],
+      ["4", "работающих вибрационных прототипа"],
       ["3", "SDK-среды: Android, Windows и XR"],
-      ["США · ЕС · Израиль", "патентные заявки поданы и рассматриваются"],
+      ["Израиль · США · ЕС", "патент выдан в Израиле; США и Европа в процессе"],
     ],
     partnerLine:
       "Клиническая валидация с Hadassah · Адаптивные протоколы с IBM · Промышленные связи с NILIT и Delta Galil",
-    futureEyebrow: "ЗА ПРЕДЕЛАМИ КЛИНИКИ",
-    futureTitle: "Текстильная платформа для любой цифровой среды, которой нужно осязание.",
+    futureEyebrow: "ЗАПАТЕНТОВАННАЯ ЦЕЛЬ",
+    futureTitle: "От отдельных точек вибрации к непрерывному прикосновению в каждом волокне.",
     futureBody:
-      "Сенсорная интеграция — первый целевой сценарий Plectrum. Та же основа сможет применяться в XR, играх, обучении и обороне.",
-    futureNote: "Клинический путь — прежде всего.",
+      "Патент FABTIVE относится не к вибрации. Он описывает магнитные волокна, встроенные в сам текстиль, чтобы каждое активное волокно участвовало в создании непрерывной управляемой поверхности прикосновения с глубиной по всей ткани.",
+    futureNote: "Патент выдан в Израиле · США и Европа в процессе · это отдельное направление по сравнению с текущими вибрационными прототипами",
     pathwaysEyebrow: "СОЗДАДИМ СЛЕДУЮЩИЙ СЛОЙ ВМЕСТЕ",
     pathwaysTitle: "Выберите свой путь к Plectrum.",
     pathways: [
@@ -316,7 +316,7 @@ export default function Home() {
         <div className="traction-metrics">
           {t.traction.map(([number, label]) => (
             <article key={label}>
-              <strong>{number}</strong>
+              <strong><bdi dir="auto">{number}</bdi></strong>
               <span>{label}</span>
             </article>
           ))}
@@ -346,7 +346,7 @@ export default function Home() {
             <a
               className="pathway-card"
               href={`mailto:gabriel@plectrum.biz?subject=${encodeURIComponent(
-                `Plectrum — ${track}`,
+                `Plectrum | ${track}`,
               )}`}
               key={title}
             >

@@ -6,144 +6,160 @@ import { useLanguage } from "../components/LanguageProvider";
 
 const copy = {
   en: {
-    eyebrow: "THE TECHNOLOGY",
-    title: "A textile that can deliver touch.",
+    eyebrow: "THE PATENTED DESTINATION",
+    title: "Continuous touch, engineered into every fiber.",
     intro:
-      "FABTIVE is Plectrum’s patented active-fabric platform: a software-controlled layer designed to bring localized, continuous tactile output into wearable products.",
+      "Plectrum works in two clear hardware stages: four working vibration-based prototypes for validation today, and FABTIVE, the patented magnetic-fiber textile platform being built for continuous touch across the fabric.",
     cta: "Discuss a technology partnership",
-    systemLabel: "FROM SIGNAL TO SENSATION",
-    systemTitle: "A closed loop, woven into the product.",
+    systemLabel: "ONE CONTROL ARCHITECTURE · TWO HARDWARE STAGES",
+    systemTitle: "One control system. Two different hardware layers.",
     systemBody:
-      "The platform connects sensing, software and textile actuation—turning a therapist’s intent into targeted tactile input, then recording the response.",
+      "The software, protocol logic and clinical workflow are already being validated through today's localized vibration prototypes. The patented magnetic-fiber architecture is the next hardware layer, carrying that same intelligence into the textile itself.",
     steps: [
-      ["Sense", "The wearable captures response and connected biometric data."],
-      ["Analyze", "Software translates clinical goals into an adaptive protocol."],
-      ["Respond", "The fabric delivers localized patterns, intensity and timing."],
-      ["Learn", "Each session becomes structured information for follow-up."],
+      ["Define", "Translate a clinical goal into a precise tactile protocol."],
+      ["Configure", "Choose location, intensity, timing and progression."],
+      ["Deliver", "Use vibration points today, then magnetic fibers for continuous textile actuation."],
+      ["Learn", "Turn every session into structured information for follow-up."],
     ],
-    fabricLabel: "THE ACTIVE LAYER",
-    fabricTitle: "Depth and continuity—not a collection of gadgets.",
+    fabricLabel: "THE MAGNETIC-FIBER PATENT",
+    fabricTitle: "Depth and continuity, not isolated vibration points.",
     fabricBody:
-      "Plectrum is developing the technology to integrate directly into textile fibers. The goal is an active surface that preserves the familiarity, flexibility and wearability of fabric while adding controllable tactile depth.",
+      "Plectrum's patent covers magnetic fibers integrated directly into textile fibers. The target fabric does not create touch through vibration. Each active fiber contributes to a soft, continuous surface with controllable depth, while preserving the flexibility and familiarity of textile.",
+    prototypeLabel: "WORKING TODAY",
+    prototypeTitle: "Four vibration-based prototypes for clinical validation.",
+    prototypeBody:
+      "These specifications describe the four working prototypes that exist today. They are validation hardware, not the patented magnetic-fiber textile under development.",
     facts: [
-      ["Up to 24", "individually localized tactile points"],
-      ["3.5–5.2V DC", "operating range · 1.2A maximum"],
+      ["Up to 24", "independently controlled vibration points"],
+      ["3.5-5.2V DC", "operating range · 1.2A maximum"],
       ["Bluetooth + USB-C", "wireless control and charging"],
       ["Android · Windows · XR", "cross-platform SDK environments"],
     ],
     ipLabel: "DEFENSIBLE FOUNDATION",
-    ipTitle: "Protected IP. Built for integration.",
+    ipTitle: "Patent granted in Israel. US and Europe in process.",
     ipBody:
-      "Patent applications have been filed in the United States, Europe and Israel. Adaptive protocols have been developed with IBM, alongside industrial relationships with NILIT and Delta Galil.",
-    futureTitle: "Touch belongs in more than one market.",
+      "The magnetic-fiber patent has been granted in Israel, with registration processes underway in the United States and Europe. This is the defensible product direction beyond today's vibration prototypes. Adaptive protocols were developed with IBM, alongside industrial relationships with NILIT and Delta Galil.",
+    futureTitle: "Continuous touch can reach far beyond one market.",
     futureBody:
-      "Clinical sensory integration is the first focused application. The same platform can later extend into XR, gaming, training and defense.",
+      "Clinical sensory integration is the first focused application. After validation, the magnetic-fiber platform can expand into XR, gaming, training and defense.",
     futureNote: "Clinical validation comes first.",
   },
   he: {
-    eyebrow: "הטכנולוגיה",
-    title: "טקסטיל שיודע להעביר מגע.",
+    eyebrow: "היעד הטכנולוגי המוגן בפטנט",
+    title: "מגע רציף, מתוכנן אל תוך כל סיב.",
     intro:
-      "FABTIVE היא פלטפורמת הבד האקטיבי המוגנת בפטנט של Plectrum: שכבה הנשלטת בתוכנה ונועדה להכניס פלט מישושי מקומי ורציף למוצרים לבישים.",
+      "ל־Plectrum יש שני שלבי חומרה ברורים: ארבעה אבות טיפוס פעילים מבוססי רטט לצורכי אימות כיום, ו־FABTIVE, פלטפורמת הבד המוגנת בפטנט המבוססת על סיבים מגנטיים ונבנית למגע רציף על פני הבד.",
     cta: "שיחה על שותפות טכנולוגית",
-    systemLabel: "מאות לתחושה",
-    systemTitle: "לולאה סגורה, בתוך הבד.",
+    systemLabel: "ארכיטקטורת שליטה אחת · שני שלבי חומרה",
+    systemTitle: "מערכת שליטה אחת. שתי שכבות חומרה שונות.",
     systemBody:
-      "הפלטפורמה מחברת בין חישה, תוכנה והפעלה טקסטילית—מתרגמת את כוונת המטפל לקלט מישושי ממוקד ומתעדת את התגובה.",
+      "התוכנה, לוגיקת הפרוטוקול ותהליך העבודה הקליני כבר עוברים אימות באמצעות אבות הטיפוס הרוטטים של היום. ארכיטקטורת הסיבים המגנטיים המוגנת בפטנט היא שכבת החומרה הבאה, שמעבירה את אותה חוכמה אל הטקסטיל עצמו.",
     steps: [
-      ["חישה", "הלביש אוסף תגובות ומדדים ביומטריים ממערכות מחוברות."],
-      ["ניתוח", "התוכנה מתרגמת יעדים קליניים לפרוטוקול אדפטיבי."],
-      ["תגובה", "הבד מעביר דפוסים, עוצמה ותזמון באופן ממוקד."],
-      ["למידה", "כל מפגש הופך למידע מובנה לצורך המשך הטיפול."],
+      ["הגדרה", "תרגום יעד קליני לפרוטוקול מישושי מדויק."],
+      ["תצורה", "בחירת מיקום, עוצמה, תזמון והתקדמות."],
+      ["העברה", "נקודות רטט כיום, ובהמשך סיבים מגנטיים להפעלה רציפה של הבד."],
+      ["למידה", "הפיכת כל מפגש למידע מובנה לצורך המשך הטיפול."],
     ],
-    fabricLabel: "השכבה האקטיבית",
-    fabricTitle: "עומק ורציפות—לא אוסף של גאדג׳טים.",
+    fabricLabel: "פטנט הסיבים המגנטיים",
+    fabricTitle: "עומק ורציפות, לא נקודות רטט מבודדות.",
     fabricBody:
-      "Plectrum מפתחת טכנולוגיה שתשתלב ישירות בסיבי הטקסטיל. המטרה היא משטח אקטיבי ששומר על המוכרות, הגמישות והלבישות של בד, ומוסיף להן עומק מישושי נשלט.",
+      "הפטנט של Plectrum עוסק בסיבים מגנטיים המשתלבים ישירות בסיבי הטקסטיל. בד היעד אינו יוצר מגע באמצעות רטט. כל סיב אקטיבי משתתף ביצירת משטח רך ורציף בעל עומק נשלט, תוך שמירה על הגמישות והטבעיות של הבד.",
+    prototypeLabel: "פועל כיום",
+    prototypeTitle: "ארבעה אבות טיפוס מבוססי רטט לאימות קליני.",
+    prototypeBody:
+      "המפרט שלהלן מתאר את ארבעת אבות הטיפוס הפעילים הקיימים כיום. זוהי חומרת האימות, ולא טכנולוגיית הסיבים המגנטיים המוגנת בפטנט שנמצאת בפיתוח.",
     facts: [
-      ["עד 24", "נקודות מגע הניתנות לשליטה מקומית"],
-      ["3.5–5.2V DC", "טווח הפעלה · עד 1.2A"],
+      ["עד 24", "נקודות רטט הנשלטות בנפרד"],
+      ["3.5-5.2V DC", "טווח הפעלה · עד 1.2A"],
       ["Bluetooth + USB-C", "שליטה אלחוטית וטעינה"],
       ["Android · Windows · XR", "סביבות SDK חוצות־פלטפורמות"],
     ],
     ipLabel: "בסיס בר־הגנה",
-    ipTitle: "קניין רוחני מוגן. מוכן לאינטגרציה.",
+    ipTitle: "הפטנט אושר בישראל. בארה״ב ובאירופה בתהליך רישום.",
     ipBody:
-      "בקשות פטנט הוגשו בארצות הברית, אירופה וישראל. פרוטוקולים אדפטיביים פותחו עם IBM, לצד קשרים תעשייתיים עם NILIT ודלתא גליל.",
-    futureTitle: "מגע שייך ליותר משוק אחד.",
+      "הפטנט על טכנולוגיית הסיבים המגנטיים אושר בישראל, ותהליכי הרישום בארצות הברית ובאירופה נמצאים בעיצומם. זהו כיוון המוצר בר־ההגנה שמעבר לאבות הטיפוס הרוטטים של היום. פרוטוקולים אדפטיביים פותחו עם IBM, לצד קשרים תעשייתיים עם NILIT ודלתא גליל.",
+    futureTitle: "מגע רציף יכול להגיע הרבה מעבר לשוק אחד.",
     futureBody:
-      "אינטגרציה חושית קלינית היא היישום הראשון והממוקד. בהמשך, אותה פלטפורמה תוכל להתרחב ל־XR, גיימינג, הדרכה וביטחון.",
+      "אינטגרציה חושית קלינית היא היישום הראשון והממוקד. לאחר האימות, פלטפורמת הסיבים המגנטיים תוכל להתרחב ל־XR, גיימינג, הדרכה וביטחון.",
     futureNote: "האימות הקליני קודם.",
   },
   ar: {
-    eyebrow: "التكنولوجيا",
-    title: "نسيج قادر على إيصال اللمس.",
+    eyebrow: "الوجهة التكنولوجية المحمية ببراءة",
+    title: "لمس مستمر، مصمم داخل كل ليفة.",
     intro:
-      "FABTIVE هي منصة النسيج النشط المحمية ببراءة اختراع من Plectrum: طبقة تُدار برمجيًا لإضافة خرج لمسي موضعي ومستمر إلى المنتجات القابلة للارتداء.",
+      "تعمل Plectrum عبر مرحلتين واضحتين من الأجهزة: أربعة نماذج اهتزازية عاملة للتحقق اليوم، وFABTIVE، منصة النسيج ذات الألياف المغناطيسية المحمية ببراءة والمصممة للمس المستمر عبر القماش.",
     cta: "ناقش شراكة تكنولوجية",
-    systemLabel: "من الإشارة إلى الإحساس",
-    systemTitle: "حلقة مغلقة منسوجة داخل المنتج.",
+    systemLabel: "بنية تحكم واحدة · مرحلتان للأجهزة",
+    systemTitle: "منظومة تحكم واحدة. طبقتان مختلفتان من الأجهزة.",
     systemBody:
-      "تربط المنصة الاستشعار والبرمجيات وتشغيل النسيج، فتحوّل هدف المعالج إلى مدخل لمسي موجه ثم تسجل الاستجابة.",
+      "تجري بالفعل عملية التحقق من البرمجيات ومنطق البروتوكول وسير العمل السريري عبر النماذج الاهتزازية الحالية. وتمثل بنية الألياف المغناطيسية المحمية ببراءة طبقة الأجهزة التالية التي تنقل هذا الذكاء إلى النسيج نفسه.",
     steps: [
-      ["استشعار", "يلتقط المنتج القابل للارتداء الاستجابة والبيانات الحيوية المتصلة."],
-      ["تحليل", "تحوّل البرمجيات الأهداف السريرية إلى بروتوكول تكيفي."],
-      ["استجابة", "يوصل النسيج الأنماط والشدة والتوقيت بصورة موضعية."],
-      ["تعلّم", "تتحول كل جلسة إلى معلومات منظمة للمتابعة."],
+      ["تحديد", "تحويل الهدف السريري إلى بروتوكول لمسي دقيق."],
+      ["تهيئة", "اختيار الموضع والشدة والتوقيت والتدرج."],
+      ["توصيل", "نقاط اهتزاز اليوم، ثم ألياف مغناطيسية لتشغيل نسيجي مستمر."],
+      ["تعلّم", "تحويل كل جلسة إلى معلومات منظمة للمتابعة."],
     ],
-    fabricLabel: "الطبقة النشطة",
-    fabricTitle: "عمق واستمرارية، لا مجموعة من الأجهزة.",
+    fabricLabel: "براءة الألياف المغناطيسية",
+    fabricTitle: "عمق واستمرارية، لا نقاط اهتزاز معزولة.",
     fabricBody:
-      "تطوّر Plectrum التكنولوجيا لتندمج مباشرة في ألياف النسيج. الهدف سطح نشط يحافظ على ألفة القماش ومرونته وقابليته للارتداء، ويضيف عمقًا لمسيًا قابلًا للتحكم.",
+      "تغطي براءة Plectrum أليافًا مغناطيسية تندمج مباشرة في ألياف النسيج. لا يولد النسيج المستهدف اللمس من خلال الاهتزاز. تسهم كل ليفة نشطة في سطح ناعم ومستمر بعمق قابل للتحكم، مع الحفاظ على مرونة القماش وألفته.",
+    prototypeLabel: "يعمل اليوم",
+    prototypeTitle: "أربعة نماذج أولية قائمة على الاهتزاز للتحقق السريري.",
+    prototypeBody:
+      "تصف المواصفات أدناه النماذج الأربعة العاملة الموجودة اليوم. وهي أجهزة التحقق الحالية، وليست نسيج الألياف المغناطيسية المحمي ببراءة الذي ما زال قيد التطوير.",
     facts: [
-      ["حتى 24", "نقطة لمسية موضعية مستقلة"],
-      ["3.5–5.2V DC", "نطاق التشغيل · 1.2A كحد أقصى"],
+      ["حتى 24", "نقطة اهتزاز يتم التحكم بها بشكل مستقل"],
+      ["3.5-5.2V DC", "نطاق التشغيل · 1.2A كحد أقصى"],
       ["Bluetooth + USB-C", "تحكم لاسلكي وشحن"],
       ["Android · Windows · XR", "بيئات SDK متعددة المنصات"],
     ],
     ipLabel: "أساس قابل للحماية",
-    ipTitle: "ملكية فكرية محمية. جاهزة للتكامل.",
+    ipTitle: "مُنحت البراءة في إسرائيل. التسجيل جار في الولايات المتحدة وأوروبا.",
     ipBody:
-      "قُدمت طلبات براءة اختراع في الولايات المتحدة وأوروبا وإسرائيل. وطُورت بروتوكولات تكيفية مع IBM، إلى جانب علاقات صناعية مع NILIT وDelta Galil.",
-    futureTitle: "اللمس ينتمي إلى أكثر من سوق.",
+      "مُنحت براءة تقنية الألياف المغناطيسية في إسرائيل، فيما تجري إجراءات التسجيل في الولايات المتحدة وأوروبا. وهذا هو اتجاه المنتج القابل للحماية بعد نماذج الاهتزاز الحالية. وطُورت بروتوكولات تكيفية مع IBM، إلى جانب علاقات صناعية مع NILIT وDelta Galil.",
+    futureTitle: "يمكن للمس المستمر أن يصل إلى ما هو أبعد من سوق واحد.",
     futureBody:
-      "التكامل الحسي السريري هو التطبيق الأول. ويمكن للمنصة نفسها أن تمتد لاحقًا إلى XR والألعاب والتدريب والدفاع.",
+      "التكامل الحسي السريري هو التطبيق الأول. وبعد التحقق يمكن لمنصة الألياف المغناطيسية أن تمتد إلى XR والألعاب والتدريب والدفاع.",
     futureNote: "التحقق السريري أولًا.",
   },
   ru: {
-    eyebrow: "ТЕХНОЛОГИЯ",
-    title: "Текстиль, способный передавать прикосновение.",
+    eyebrow: "ЗАПАТЕНТОВАННАЯ ЦЕЛЕВАЯ ТЕХНОЛОГИЯ",
+    title: "Непрерывное прикосновение в каждом волокне.",
     intro:
-      "FABTIVE — запатентованная платформа активной ткани Plectrum: программно управляемый слой для локального непрерывного тактильного воздействия в носимых продуктах.",
+      "У Plectrum есть два чётких аппаратных этапа: четыре действующих вибрационных прототипа для валидации сегодня и FABTIVE — запатентованная текстильная платформа с магнитными волокнами для непрерывного прикосновения по всей ткани.",
     cta: "Обсудить технологическое партнёрство",
-    systemLabel: "ОТ СИГНАЛА К ОЩУЩЕНИЮ",
-    systemTitle: "Замкнутый контур, вплетённый в продукт.",
+    systemLabel: "ОДНА АРХИТЕКТУРА УПРАВЛЕНИЯ · ДВА ЭТАПА ОБОРУДОВАНИЯ",
+    systemTitle: "Одна система управления. Два разных аппаратных слоя.",
     systemBody:
-      "Платформа объединяет сенсоры, программное обеспечение и текстильные приводы: переводит задачу терапевта в точное воздействие и фиксирует отклик.",
+      "ПО, логика протоколов и клинический процесс уже проверяются через сегодняшние вибрационные прототипы. Запатентованная архитектура магнитных волокон — это следующий аппаратный слой, который переносит тот же интеллект в сам текстиль.",
     steps: [
-      ["Сбор данных", "Носимое устройство фиксирует отклик и подключённые биометрические данные."],
-      ["Анализ", "ПО преобразует клинические цели в адаптивный протокол."],
-      ["Воздействие", "Ткань локально задаёт рисунок, интенсивность и время воздействия."],
-      ["Обучение", "Каждая сессия становится структурированными данными для наблюдения."],
+      ["Определить", "Преобразовать клиническую цель в точный тактильный протокол."],
+      ["Настроить", "Выбрать зону, интенсивность, время и динамику."],
+      ["Передать", "Использовать точки вибрации сегодня, а затем магнитные волокна для непрерывного воздействия."],
+      ["Изучить", "Превратить каждую сессию в структурированные данные для наблюдения."],
     ],
-    fabricLabel: "АКТИВНЫЙ СЛОЙ",
-    fabricTitle: "Глубина и непрерывность — не набор гаджетов.",
+    fabricLabel: "ПАТЕНТ НА МАГНИТНЫЕ ВОЛОКНА",
+    fabricTitle: "Глубина и непрерывность, а не отдельные точки вибрации.",
     fabricBody:
-      "Plectrum разрабатывает технологию для интеграции непосредственно в волокна. Цель — активная поверхность, сохраняющая привычность, гибкость и удобство ткани и добавляющая управляемую тактильную глубину.",
+      "Патент Plectrum охватывает магнитные элементы, интегрированные непосредственно в волокна текстиля. Целевая ткань создаёт прикосновение не за счёт вибрации. Каждое активное волокно участвует в создании мягкой непрерывной поверхности с управляемой глубиной, сохраняя гибкость и естественность ткани.",
+    prototypeLabel: "РАБОТАЕТ СЕГОДНЯ",
+    prototypeTitle: "Четыре вибрационных прототипа для клинической проверки.",
+    prototypeBody:
+      "Ниже описаны четыре действующих прототипа, существующие сегодня. Это текущее оборудование для валидации, а не запатентованный текстиль с магнитными волокнами, который находится в разработке.",
     facts: [
-      ["До 24", "независимых локальных тактильных точек"],
-      ["3.5–5.2V DC", "рабочий диапазон · максимум 1.2A"],
+      ["До 24", "независимо управляемых точек вибрации"],
+      ["3.5-5.2V DC", "рабочий диапазон · максимум 1.2A"],
       ["Bluetooth + USB-C", "беспроводное управление и зарядка"],
       ["Android · Windows · XR", "кроссплатформенные SDK-среды"],
     ],
     ipLabel: "ЗАЩИЩАЕМАЯ ОСНОВА",
-    ipTitle: "Защищённая интеллектуальная собственность. Готовность к интеграции.",
+    ipTitle: "Патент выдан в Израиле. Регистрация в США и Европе продолжается.",
     ipBody:
-      "Патентные заявки поданы в США, Европе и Израиле. Адаптивные протоколы разработаны с IBM, выстроены промышленные связи с NILIT и Delta Galil.",
-    futureTitle: "Осязание нужно не одному рынку.",
+      "Патент на технологию магнитных волокон выдан в Израиле, а регистрационные процедуры в США и Европе продолжаются. Это защищаемое продуктовое направление после сегодняшних вибрационных прототипов. Адаптивные протоколы разработаны с IBM, выстроены промышленные связи с NILIT и Delta Galil.",
+    futureTitle: "Непрерывное прикосновение применимо далеко за пределами одного рынка.",
     futureBody:
-      "Клиническая сенсорная интеграция — первый целевой сценарий. Затем платформа сможет выйти в XR, игры, обучение и оборону.",
-    futureNote: "Сначала — клиническая валидация.",
+      "Клиническая сенсорная интеграция является первым целевым сценарием. После проверки платформа магнитных волокон сможет выйти в XR, игры, обучение и оборону.",
+    futureNote: "Сначала клиническая проверка.",
   },
 } as const;
 
@@ -182,6 +198,19 @@ export default function TechnologyPage() {
         </div>
       </section>
 
+      <section className="light-section facts-section">
+        <div className="prototype-facts-heading">
+          <p className="eyebrow dark">{t.prototypeLabel}</p>
+          <h2>{t.prototypeTitle}</h2>
+          <p>{t.prototypeBody}</p>
+        </div>
+        <div className="fact-grid">
+          {t.facts.map(([value, label]) => (
+            <article key={label}><strong><bdi dir="auto">{value}</bdi></strong><span>{label}</span></article>
+          ))}
+        </div>
+      </section>
+
       <section className="blue-section fabric-detail">
         <div className="fabric-detail-visual" aria-hidden="true"><div /></div>
         <div className="fabric-detail-copy">
@@ -191,12 +220,7 @@ export default function TechnologyPage() {
         </div>
       </section>
 
-      <section className="light-section facts-section">
-        <div className="fact-grid">
-          {t.facts.map(([value, label]) => (
-            <article key={label}><strong>{value}</strong><span>{label}</span></article>
-          ))}
-        </div>
+      <section className="light-section">
         <div className="split-story">
           <div><p className="eyebrow dark">{t.ipLabel}</p><h2>{t.ipTitle}</h2></div>
           <p>{t.ipBody}</p>
@@ -210,10 +234,10 @@ export default function TechnologyPage() {
           <span>{t.futureNote}</span>
           <Link className="text-link centered" href="/prototypes">
             {{
-              en: "See the platform take form",
-              he: "לראות את הפלטפורמה הופכת למוצר",
-              ar: "شاهد المنصة وهي تتحول إلى منتج",
-              ru: "Посмотреть, как платформа становится продуктом",
+              en: "Explore the four working prototypes",
+              he: "לצפייה בארבעת אבות הטיפוס הפעילים",
+              ar: "استكشف النماذج الأولية الأربعة العاملة",
+              ru: "Посмотреть четыре действующих прототипа",
             }[language]}
             <b aria-hidden="true">→</b>
           </Link>

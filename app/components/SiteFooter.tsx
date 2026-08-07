@@ -68,11 +68,11 @@ export function SiteFooter() {
         <div className="footer-cta-actions">
           <a className="footer-contact-button primary" href="mailto:gabriel@plectrum.biz">
             <span>{t.email}</span>
-            <strong>gabriel@plectrum.biz</strong>
+            <strong><bdi dir="ltr">gabriel@plectrum.biz</bdi></strong>
           </a>
           <a className="footer-contact-button" href="tel:+972526808756">
             <span>{t.call}</span>
-            <strong>+972 52 680 8756</strong>
+            <strong><bdi dir="ltr">+972 52 680 8756</bdi></strong>
           </a>
           <a
             className="footer-contact-button"
@@ -99,8 +99,8 @@ export function SiteFooter() {
         ))}
       </nav>
       <div className="footer-contact">
-        <a href="mailto:gabriel@plectrum.biz">gabriel@plectrum.biz</a>
-        <a href="tel:+972526808756">+972 52 680 8756</a>
+        <a href="mailto:gabriel@plectrum.biz"><bdi dir="ltr">gabriel@plectrum.biz</bdi></a>
+        <a href="tel:+972526808756"><bdi dir="ltr">+972 52 680 8756</bdi></a>
         <a href="https://www.linkedin.com/company/plectrum-af/" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
