@@ -9,7 +9,7 @@ const copy = {
     eyebrow: "COMPANY",
     title: "Building the tactile layer of digital care.",
     intro:
-      "Plectrum combines software, clinical practice and wearable validation hardware to make touch measurable, controllable and remotely accessible, while building a patented magnetic-fiber textile platform for continuous touch.",
+      "Plectrum combines software, clinical practice and wearable functional prototypes to make physical intervention measurable, controllable and remotely accessible, while developing FABTIVE, a patented active-fabric platform for continuous physical sensation.",
     tractionLabel: "WHERE WE ARE",
     tractionTitle: "Working prototypes today. Patented textile platform ahead.",
     milestones: [
@@ -19,11 +19,10 @@ const copy = {
       ["IL · US · EU", "patent granted in Israel; US and Europe in process"],
     ],
     relationshipsLabel: "VALIDATION & RELATIONSHIPS",
-    relationshipsTitle: "Clinical, technical and industrial momentum.",
+    relationshipsTitle: "Clinical and technical momentum.",
     relationships: [
-      ["Hadassah", "Letter of intent supporting clinical validation."],
+      ["Hadassah", "Signed letter of intent."],
       ["IBM", "Adaptive treatment protocols developed in collaboration."],
-      ["NILIT + Delta Galil", "Industrial relationships under NDAs."],
     ],
     marketLabel: "COMMERCIAL PATH",
     marketTitle: "A focused entry into a measurable market.",
@@ -75,7 +74,7 @@ const copy = {
     connectTitle: "Choose the conversation that fits.",
     paths: [
       ["Investors", "Funding round, market path and investor materials.", "Start an investment conversation", "Plectrum investment conversation"],
-      ["Clinical partners", "Pilot design for OT clinics, hospitals and rehabilitation centers.", "Explore a clinical pilot", "Plectrum clinical pilot"],
+      ["Clinical partners", "Pilot design for OT clinics and hospitals.", "Explore a clinical pilot", "Plectrum clinical pilot"],
       ["Technology & textile", "Integration across fabrics, software and immersive systems.", "Discuss a strategic partnership", "Plectrum strategic partnership"],
       ["Meet the team", "A direct 30-minute introduction to Plectrum.", "Schedule a meeting", "Meeting with Plectrum"],
     ],
@@ -84,7 +83,7 @@ const copy = {
     eyebrow: "החברה",
     title: "בונים את שכבת המגע של הטיפול הדיגיטלי.",
     intro:
-      "Plectrum מחברת בין תוכנה, פרקטיקה קלינית וחומרת אימות לבישה כדי להפוך מגע למדיד, נשלט ונגיש מרחוק, ובמקביל בונה פלטפורמת בד פטנטית המבוססת על סיבים מגנטיים למגע רציף.",
+      "Plectrum מחברת בין תוכנה, פרקטיקה קלינית ואבות טיפוס לבישים פונקציונליים כדי להפוך התערבות פיזית למדידה, נשלטת ונגישה מרחוק, ובמקביל מפתחת את FABTIVE, פלטפורמת בד אקטיבי פטנטית לתחושה פיזית רציפה.",
     tractionLabel: "איפה אנחנו היום",
     tractionTitle: "אבות טיפוס פעילים כיום. פלטפורמת טקסטיל פטנטית בהמשך.",
     milestones: [
@@ -94,11 +93,10 @@ const copy = {
       ["ישראל · ארה״ב · אירופה", "פטנט אושר בישראל; ארה״ב ואירופה בתהליך"],
     ],
     relationshipsLabel: "אימות וקשרים",
-    relationshipsTitle: "תנופה קלינית, טכנולוגית ותעשייתית.",
+    relationshipsTitle: "תנופה קלינית וטכנולוגית.",
     relationships: [
-      ["הדסה", "מכתב כוונות התומך באימות הקליני."],
+      ["הדסה", "מכתב כוונות חתום."],
       ["IBM", "פיתוח משותף של פרוטוקולי טיפול אדפטיביים."],
-      ["NILIT + דלתא גליל", "קשרים תעשייתיים תחת הסכמי סודיות."],
     ],
     marketLabel: "המסלול המסחרי",
     marketTitle: "כניסה ממוקדת לשוק מדיד.",
@@ -150,7 +148,7 @@ const copy = {
     connectTitle: "בחרו את השיחה שמתאימה לכם.",
     paths: [
       ["משקיעים", "סבב הגיוס, המסלול לשוק וחומרי המשקיעים.", "פתיחת שיחת השקעה", "שיחת השקעה עם Plectrum"],
-      ["שותפים קליניים", "בניית פיילוט לקליניקות, בתי חולים ומרכזי שיקום.", "בדיקת פיילוט קליני", "פיילוט קליני עם Plectrum"],
+      ["שותפים קליניים", "בניית פיילוט לקליניקות ובתי חולים.", "בדיקת פיילוט קליני", "פיילוט קליני עם Plectrum"],
       ["טכנולוגיה וטקסטיל", "אינטגרציה בבדים, בתוכנה ובמערכות אימרסיביות.", "שיחה על שותפות אסטרטגית", "שותפות אסטרטגית עם Plectrum"],
       ["פגישה עם הצוות", "היכרות ישירה בת 30 דקות עם Plectrum.", "קביעת פגישה", "פגישה עם צוות Plectrum"],
     ],
@@ -159,7 +157,7 @@ const copy = {
     eyebrow: "الشركة",
     title: "نبني طبقة اللمس للرعاية الرقمية.",
     intro:
-      "تجمع Plectrum بين البرمجيات والممارسة السريرية وأجهزة التحقق القابلة للارتداء لجعل اللمس قابلًا للقياس والتحكم والوصول عن بُعد، مع بناء منصة نسيجية محمية ببراءة تعتمد على الألياف المغناطيسية للمس المستمر.",
+      "تجمع Plectrum بين البرمجيات والممارسة السريرية والنماذج الأولية القابلة للارتداء لجعل التدخل الجسدي قابلًا للقياس والتحكم والوصول عن بُعد، مع تطوير FABTIVE، منصة نسيج نشط محمية ببراءة للإحساس الجسدي المستمر.",
     tractionLabel: "أين نحن اليوم",
     tractionTitle: "نماذج عاملة اليوم. منصة نسيج محمية ببراءة لاحقًا.",
     milestones: [
@@ -169,11 +167,10 @@ const copy = {
       ["إسرائيل · الولايات المتحدة · أوروبا", "مُنحت البراءة في إسرائيل؛ التسجيل جار في الولايات المتحدة وأوروبا"],
     ],
     relationshipsLabel: "التحقق والعلاقات",
-    relationshipsTitle: "زخم سريري وتقني وصناعي.",
+    relationshipsTitle: "زخم سريري وتقني.",
     relationships: [
-      ["هداسا", "خطاب نوايا يدعم التحقق السريري."],
+      ["هداسا", "خطاب نوايا موقع."],
       ["IBM", "تطوير بروتوكولات علاج تكيفية بالتعاون المشترك."],
-      ["NILIT + Delta Galil", "علاقات صناعية بموجب اتفاقيات سرية."],
     ],
     marketLabel: "المسار التجاري",
     marketTitle: "دخول مركز إلى سوق قابل للقياس.",
@@ -225,7 +222,7 @@ const copy = {
     connectTitle: "اختر المحادثة التي تناسبك.",
     paths: [
       ["المستثمرون", "جولة التمويل والمسار إلى السوق ومواد المستثمرين.", "ابدأ محادثة استثمار", "محادثة استثمار مع Plectrum"],
-      ["الشركاء السريريون", "تصميم تجربة للعيادات والمستشفيات ومراكز التأهيل.", "استكشف تجربة سريرية", "تجربة سريرية مع Plectrum"],
+      ["الشركاء السريريون", "تصميم تجربة للعيادات والمستشفيات.", "استكشف تجربة سريرية", "تجربة سريرية مع Plectrum"],
       ["التكنولوجيا والنسيج", "تكامل عبر الأقمشة والبرمجيات والأنظمة الغامرة.", "ناقش شراكة استراتيجية", "شراكة استراتيجية مع Plectrum"],
       ["قابل الفريق", "تعريف مباشر بـPlectrum لمدة 30 دقيقة.", "حدد موعدًا", "لقاء مع فريق Plectrum"],
     ],
@@ -234,7 +231,7 @@ const copy = {
     eyebrow: "КОМПАНИЯ",
     title: "Создаём тактильный слой цифровой медицины.",
     intro:
-      "Plectrum объединяет ПО, клиническую практику и носимое оборудование для валидации, чтобы сделать прикосновение измеримым, управляемым и доступным на расстоянии, одновременно создавая запатентованную текстильную платформу с магнитными волокнами для непрерывного прикосновения.",
+      "Plectrum объединяет ПО, клиническую практику и функциональные носимые прототипы, чтобы сделать физическое вмешательство измеримым, управляемым и доступным на расстоянии, одновременно развивая FABTIVE — запатентованную платформу активной ткани для непрерывного физического ощущения.",
     tractionLabel: "ГДЕ МЫ СЕЙЧАС",
     tractionTitle: "Рабочие прототипы сегодня. Запатентованная текстильная платформа дальше.",
     milestones: [
@@ -244,11 +241,10 @@ const copy = {
       ["Израиль · США · Европа", "патент выдан в Израиле; регистрация в США и Европе продолжается"],
     ],
     relationshipsLabel: "ВАЛИДАЦИЯ И ПАРТНЁРСТВА",
-    relationshipsTitle: "Клиническая, технологическая и промышленная динамика.",
+    relationshipsTitle: "Клиническая и технологическая динамика.",
     relationships: [
-      ["Hadassah", "Письмо о намерениях в поддержку клинической валидации."],
+      ["Hadassah", "Подписанное письмо о намерениях."],
       ["IBM", "Совместная разработка адаптивных протоколов лечения."],
-      ["NILIT + Delta Galil", "Промышленные отношения в рамках NDA."],
     ],
     marketLabel: "КОММЕРЧЕСКИЙ ПУТЬ",
     marketTitle: "Сфокусированный выход на измеримый рынок.",
@@ -300,7 +296,7 @@ const copy = {
     connectTitle: "Выберите подходящий формат разговора.",
     paths: [
       ["Инвесторам", "Раунд, рыночная стратегия и материалы для инвесторов.", "Обсудить инвестиции", "Инвестиции в Plectrum"],
-      ["Клиническим партнёрам", "Проектирование пилота для клиник, больниц и центров реабилитации.", "Обсудить клинический пилот", "Клинический пилот Plectrum"],
+      ["Клиническим партнёрам", "Проектирование пилота для клиник и больниц.", "Обсудить клинический пилот", "Клинический пилот Plectrum"],
       ["Технологии и текстиль", "Интеграция тканей, ПО и иммерсивных систем.", "Обсудить стратегическое партнёрство", "Партнёрство с Plectrum"],
       ["Познакомиться с командой", "Прямая 30-минутная встреча с Plectrum.", "Назначить встречу", "Встреча с Plectrum"],
     ],
@@ -335,17 +331,18 @@ export default function CompanyPage() {
       </section>
 
       <section className="light-section market-section">
-        <div><p className="eyebrow dark">{t.marketLabel}</p><h2>{t.marketTitle}</h2></div>
-        <div className="market-case">
+        <div className="market-copy">
+          <p className="eyebrow dark">{t.marketLabel}</p>
+          <h2>{t.marketTitle}</h2>
           <p>{t.marketBody}</p>
-          <div className="market-metrics">
-            {t.marketMetrics.map(([value, label], index) => (
-              <article className={index === t.marketMetrics.length - 1 ? "market-metric arr" : "market-metric"} key={label}>
-                <strong><bdi dir="ltr">{value}</bdi></strong>
-                <span>{label}</span>
-              </article>
-            ))}
-          </div>
+        </div>
+        <div className="market-metrics">
+          {t.marketMetrics.map(([value, label], index) => (
+            <article className={index === t.marketMetrics.length - 1 ? "market-metric arr" : "market-metric"} key={label}>
+              <strong><bdi dir="ltr">{value}</bdi></strong>
+              <span>{label}</span>
+            </article>
+          ))}
         </div>
       </section>
 

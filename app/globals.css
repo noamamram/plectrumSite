@@ -93,8 +93,8 @@ button {
 .brand img,
 .brand-symbol {
   display: block;
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
   object-fit: contain;
 }
 
@@ -104,7 +104,7 @@ button {
 }
 
 .brand span {
-  font-size: 25px;
+  font-size: 29px;
   font-weight: 500;
   letter-spacing: 0.12em;
 }
@@ -964,6 +964,14 @@ html[dir="rtl"] .traction-metrics article {
   line-height: 1.7;
 }
 
+.patent-emphasis {
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: rgba(10, 40, 93, 0.32);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
 .future-section {
   min-height: 680px;
   display: grid;
@@ -1308,29 +1316,47 @@ html[dir="rtl"] .prototype-intro h1 {
   font-weight: 400;
 }
 
-.clinical-rings {
-  position: absolute;
-  width: min(62vw, 820px);
-  aspect-ratio: 1;
-  right: -5%;
-  border: 1px solid rgba(88, 215, 255, 0.22);
-  border-radius: 50%;
+.clinical-hero {
+  justify-content: flex-start;
 }
 
-html[dir="rtl"] .clinical-rings {
+.clinical-hero-visual {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.clinical-hero-visual img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: min(62vw, 980px);
+  height: 100%;
+  object-fit: cover;
+  object-position: center right;
+}
+
+.clinical-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  background:
+    linear-gradient(90deg, var(--blue-deep) 0%, rgba(4, 24, 56, 0.94) 34%, rgba(4, 24, 56, 0.55) 56%, rgba(4, 24, 56, 0.12) 72%, transparent 84%);
+  pointer-events: none;
+}
+
+html[dir="rtl"] .clinical-hero-visual img {
   right: auto;
-  left: -5%;
+  left: 0;
+  object-position: center left;
 }
 
-.clinical-rings i {
-  position: absolute;
-  inset: 18%;
-  border: 1px solid rgba(88, 215, 255, 0.22);
-  border-radius: 50%;
+html[dir="rtl"] .clinical-hero::before {
+  background:
+    linear-gradient(270deg, var(--blue-deep) 0%, rgba(4, 24, 56, 0.94) 34%, rgba(4, 24, 56, 0.55) 56%, rgba(4, 24, 56, 0.12) 72%, transparent 84%);
 }
-
-.clinical-rings i:nth-child(2) { inset: 35%; background: rgba(24, 184, 242, 0.06); }
-.clinical-rings i:nth-child(3) { inset: 47%; background: var(--cyan); box-shadow: 0 0 80px rgba(24, 184, 242, 0.55); }
 
 .clinical-control-grid {
   margin-top: clamp(70px, 8vw, 120px);
@@ -1666,7 +1692,7 @@ html[dir="rtl"] .company-mark {
 .relationship-grid {
   margin-top: 78px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -1692,6 +1718,14 @@ html[dir="rtl"] .company-mark {
 
 .market-section {
   margin-top: 0;
+  align-items: start;
+}
+
+.market-copy > p:not(.eyebrow) {
+  margin: 24px 0 0;
+  color: #46566d;
+  font-size: 18px;
+  line-height: 1.72;
 }
 
 .market-case > p {
@@ -1702,7 +1736,7 @@ html[dir="rtl"] .company-mark {
 }
 
 .market-metrics {
-  margin-top: 30px;
+  margin-top: 0;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   border: 1px solid rgba(10, 40, 93, 0.16);
@@ -1994,12 +2028,12 @@ html[dir="rtl"] .company-mark {
 }
 
 .footer-brand .brand-symbol {
-  width: 76px;
-  height: 76px;
+  width: 70px;
+  height: 70px;
 }
 
 .footer-brand .brand span {
-  font-size: 31px;
+  font-size: 36px;
 }
 
 .footer-contact p {
@@ -2028,6 +2062,24 @@ html[dir="rtl"] .company-mark {
 
 .footer-contact p {
   margin-top: auto;
+}
+
+.footer-back-to-top {
+  margin-top: 8px;
+  color: rgba(255, 255, 255, 0.52);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.footer-back-to-top:hover {
+  color: var(--cyan-bright);
+}
+
+.footer-back-to-top:focus-visible {
+  outline: 2px solid var(--cyan-bright);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 @keyframes fabric-breathe {
@@ -2098,7 +2150,7 @@ html[dir="rtl"] .company-mark {
   }
 
   .brand span {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .main-nav {
@@ -2459,14 +2511,19 @@ html[dir="rtl"] .company-mark {
     border-bottom: 1px solid rgba(10, 40, 93, 0.18);
   }
 
-  .clinical-rings {
-    width: 88vw;
-    right: -34%;
-    opacity: 0.6;
+  .clinical-hero-visual img {
+    width: min(72vw, 720px);
+    opacity: 0.92;
   }
 
-  html[dir="rtl"] .clinical-rings {
-    left: -34%;
+  .clinical-hero::before {
+    background:
+      linear-gradient(90deg, var(--blue-deep) 0%, rgba(4, 24, 56, 0.95) 42%, rgba(4, 24, 56, 0.72) 62%, rgba(4, 24, 56, 0.2) 80%, transparent 92%);
+  }
+
+  html[dir="rtl"] .clinical-hero::before {
+    background:
+      linear-gradient(270deg, var(--blue-deep) 0%, rgba(4, 24, 56, 0.95) 42%, rgba(4, 24, 56, 0.72) 62%, rgba(4, 24, 56, 0.2) 80%, transparent 92%);
   }
 
   .pilot-section {
@@ -2726,6 +2783,11 @@ html[dir="rtl"] .company-mark {
     align-items: start;
   }
 
+  .market-copy > p:not(.eyebrow) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
   .market-section > p {
     font-size: 16px;
     line-height: 1.7;
@@ -2747,12 +2809,12 @@ html[dir="rtl"] .company-mark {
 
   .footer-brand .brand span {
     display: inline;
-    font-size: 28px;
+    font-size: 32px;
   }
 
   .footer-brand .brand-symbol {
-    width: 76px;
-    height: 76px;
+    width: 70px;
+    height: 70px;
   }
 
   .team-grid {

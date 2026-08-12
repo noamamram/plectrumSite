@@ -9,45 +9,49 @@ const copy = {
     line: "Connect. Sense. Interact.",
     body: "Bridging the tangibility gap in digital health.",
     contactEyebrow: "START A CONVERSATION",
-    contactTitle: "Bring touch into what you’re building.",
+    contactTitle: "Bring a physical dimension into what you're building.",
     email: "Email Gabriel",
     call: "Call us",
     linkedin: "Follow Plectrum",
     nav: ["Home", "Technology", "Clinical", "Prototypes", "Company"],
     rights: "© 2026 Plectrum. All rights reserved.",
+    backToTop: "Back to top ↑",
   },
   he: {
     line: "לחבר. לחוש. לתקשר.",
     body: "מגשרים על פער המגע בבריאות הדיגיטלית.",
     contactEyebrow: "מתחילים שיחה",
-    contactTitle: "בואו להכניס מגע אל הדבר הבא שאתם בונים.",
+    contactTitle: "הוסיפו ממד פיזי למה שאתם בונים.",
     email: "שליחת מייל לגבריאל",
     call: "שיחה איתנו",
     linkedin: "לעמוד של Plectrum",
     nav: ["בית", "טכנולוגיה", "היישום הקליני", "אבות טיפוס", "החברה"],
     rights: "© 2026 Plectrum. כל הזכויות שמורות.",
+    backToTop: "חזרה למעלה ↑",
   },
   ar: {
     line: "نتّصل. نشعر. نتفاعل.",
     body: "نسد فجوة اللمس في الصحة الرقمية.",
     contactEyebrow: "ابدأ محادثة",
-    contactTitle: "أدخل اللمس إلى ما تعمل على بنائه.",
+    contactTitle: "أضف بُعدًا جسديًا إلى ما تعمل على بنائه.",
     email: "راسل غابرييل",
     call: "اتصل بنا",
     linkedin: "تابع Plectrum",
     nav: ["الرئيسية", "التكنولوجيا", "التطبيق السريري", "النماذج الأولية", "الشركة"],
     rights: "© 2026 Plectrum. جميع الحقوق محفوظة.",
+    backToTop: "العودة إلى الأعلى ↑",
   },
   ru: {
     line: "Связывать. Чувствовать. Взаимодействовать.",
     body: "Устраняем дефицит осязания в цифровой медицине.",
     contactEyebrow: "НАЧАТЬ ДИАЛОГ",
-    contactTitle: "Добавьте осязание в то, что вы создаёте.",
+    contactTitle: "Добавьте физическое измерение в то, что вы создаёте.",
     email: "Написать Габриэлю",
     call: "Позвонить нам",
     linkedin: "Plectrum в LinkedIn",
     nav: ["Главная", "Технология", "Клиническое применение", "Прототипы", "Компания"],
     rights: "© 2026 Plectrum. Все права защищены.",
+    backToTop: "Наверх ↑",
   },
 } as const;
 
@@ -104,6 +108,7 @@ export function SiteFooter() {
         <a href="https://www.linkedin.com/company/plectrum-af/" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
+        <a className="footer-back-to-top" href="#top">{t.backToTop}</a>
         <p>{t.rights}</p>
       </div>
     </footer>

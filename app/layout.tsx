@@ -15,9 +15,9 @@ import "./globals.css";
 import { LanguageProvider } from "./components/LanguageProvider";
 
 export const metadata: Metadata = {
-  title: "Plectrum | Active Fabric for Adaptive Touch",
+  title: "Plectrum | Remote Sensory Integration",
   description:
-    "Plectrum makes touch a controllable digital modality through FABTIVE active fabric and adaptive sensory integration.",
+    "Plectrum enables measurable, software-controlled physical intervention through precision vibration prototypes and the patented FABTIVE active-fabric platform.",
   other: {
     "codex-preview": "development",
   },
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" id="top">
       <body>
         <LanguageProvider>{children}</LanguageProvider>
       </body>
