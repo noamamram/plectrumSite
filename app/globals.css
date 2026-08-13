@@ -453,6 +453,46 @@ html[dir="rtl"] .hero-actions {
   color: var(--blue);
 }
 
+.fabtive-mark {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35em 0.45em;
+  margin: 0 0 22px;
+  max-width: 420px;
+  letter-spacing: 0;
+  text-transform: none;
+  direction: ltr;
+}
+
+html[dir="rtl"] .fabtive-mark {
+  margin-inline-start: auto;
+  justify-content: flex-end;
+}
+
+.fabtive-mark-term {
+  color: var(--cyan-bright);
+  font-size: clamp(15px, 1.25vw, 17px);
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.fabtive-mark-sep {
+  color: rgba(255, 255, 255, 0.42);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.fabtive-mark-gloss {
+  color: rgba(255, 255, 255, 0.62);
+  font-size: clamp(12px, 1.05vw, 13px);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
 .hero h1 {
   max-width: 720px;
   margin: 0;
@@ -1646,6 +1686,94 @@ html[dir="rtl"] .clinical-path-steps {
   line-height: 1.5;
 }
 
+.prototype-story {
+  padding: 28px clamp(24px, 4.5vw, 72px) 72px;
+  background: var(--paper);
+  border-top: 1px solid rgba(10, 40, 93, 0.12);
+}
+
+.prototype-story > .eyebrow {
+  margin-bottom: 18px;
+}
+
+.prototype-story h2 {
+  margin: 0 0 22px;
+  max-width: 40rem;
+  color: var(--blue-deep);
+  font-size: clamp(28px, 3.2vw, 42px);
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+.prototype-story-opening {
+  margin: 0 0 18px;
+  max-width: 46rem;
+  color: var(--blue-deep);
+  font-size: clamp(18px, 1.5vw, 22px);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.prototype-story-body {
+  margin: 0 0 20px;
+  max-width: 46rem;
+  color: #46566d;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.prototype-story-closing {
+  margin: 0;
+  max-width: 46rem;
+  color: var(--blue);
+  font-size: clamp(17px, 1.3vw, 20px);
+  font-weight: 650;
+  line-height: 1.45;
+}
+
+.prototype-story-toggle {
+  display: none;
+  margin-top: 18px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--blue);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 650;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+}
+
+.prototype-story-toggle:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+.product-disclaimer {
+  scroll-margin-top: 96px;
+  padding: 56px clamp(24px, 4.5vw, 72px) 72px;
+  background: var(--blue-deep);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.product-disclaimer h2 {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: clamp(22px, 2.2vw, 30px);
+  letter-spacing: -0.02em;
+}
+
+.product-disclaimer p {
+  margin: 0;
+  max-width: 46rem;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
 .company-mark {
   position: absolute;
   top: 50%;
@@ -2112,7 +2240,17 @@ html[dir="rtl"] .media-disclaimer--overlay {
 }
 
 .hero-media-disclaimer {
-  max-width: min(38rem, calc(100% - 48px));
+  left: auto;
+  right: clamp(24px, 4vw, 48px);
+  bottom: 28px;
+  max-width: min(22rem, 42vw);
+  text-align: end;
+}
+
+html[dir="rtl"] .hero-media-disclaimer {
+  right: auto;
+  left: clamp(24px, 4vw, 48px);
+  text-align: start;
 }
 
 .product-section-disclaimer {
@@ -3041,6 +3179,30 @@ html[dir="rtl"] .back-to-top {
     font-size: 42px;
   }
 
+  .prototype-story {
+    padding: 24px 20px 48px;
+  }
+
+  .prototype-story-details {
+    display: none;
+  }
+
+  .prototype-story.is-expanded .prototype-story-details {
+    display: block;
+  }
+
+  .prototype-story-toggle {
+    display: inline-flex;
+  }
+
+  .product-disclaimer {
+    padding: 40px 20px 56px;
+  }
+
+  .product-disclaimer p {
+    font-size: 14px;
+  }
+
   .team-grid figure {
     min-height: 290px;
   }
@@ -3058,6 +3220,14 @@ html[dir="rtl"] .back-to-top {
     margin: 0 20px 18px;
     text-align: start;
     color: rgba(255, 255, 255, 0.62);
+  }
+
+  .hero-media-disclaimer {
+    text-align: end;
+    margin-inline-start: auto;
+    margin-inline-end: 20px;
+    width: auto;
+    max-width: calc(100% - 40px);
   }
 
   .clinical-hero {

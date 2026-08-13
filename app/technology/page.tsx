@@ -26,7 +26,7 @@ const copy = {
     fabricLabel: "THE FABTIVE ACTIVE-FABRIC PATENT",
     fabricTitle: "Beyond localized vibration: depth and continuity.",
     fabricBody:
-      "FABTIVE is based on proprietary fibers that Plectrum integrates into familiar textile structures. The platform is designed to create a soft, continuous surface of controllable physical sensation while preserving the flexibility and familiarity of textile.",
+      "FABTIVE is Plectrum's term for active fabric. It is based on proprietary fibers that Plectrum integrates into familiar textile structures. The platform is designed to create a soft, continuous surface of controllable physical sensation while preserving the flexibility and familiarity of textile.",
     prototypeLabel: "WORKING TODAY",
     prototypeTitle: "Four vibration prototypes for current validation work.",
     prototypeBody:
@@ -65,7 +65,7 @@ const copy = {
     fabricLabel: "פטנט FABTIVE לבד אקטיבי",
     fabricTitle: "מעבר לרטט מקומי: עומק ורציפות.",
     fabricBody:
-      "FABTIVE מבוסס על סיבים ייחודיים ש־Plectrum משלבת במבני טקסטיל מוכרים. הפלטפורמה תוכננה ליצור משטח רך ורציף של תחושה פיזית נשלטת, תוך שמירה על הגמישות והטבעיות של הבד.",
+      "FABTIVE הוא המונח של Plectrum לבד אקטיבי. הוא מבוסס על סיבים ייחודיים ש־Plectrum משלבת במבני טקסטיל מוכרים. הפלטפורמה תוכננה ליצור משטח רך ורציף של תחושה פיזית נשלטת, תוך שמירה על הגמישות והטבעיות של הבד.",
     prototypeLabel: "פועל כיום",
     prototypeTitle: "ארבעה אבות טיפוס רטט לעבודת האימות הנוכחית.",
     prototypeBody:
@@ -104,7 +104,7 @@ const copy = {
     fabricLabel: "براءة FABTIVE للنسيج النشط",
     fabricTitle: "ما بعد الاهتزاز الموضعي: عمق واستمرارية.",
     fabricBody:
-      "FABTIVE مبني على ألياف خاصة تدمجها Plectrum في هياكل نسيجية مألوفة. صُممت المنصة لإنشاء سطح ناعم ومستمر من الإحساس الجسدي القابل للتحكم، مع الحفاظ على مرونة القماش وألفته.",
+      "FABTIVE هو مصطلح Plectrum للنسيج النشط. وهو مبني على ألياف خاصة تدمجها Plectrum في هياكل نسيجية مألوفة. صُممت المنصة لإنشاء سطح ناعم ومستمر من الإحساس الجسدي القابل للتحكم، مع الحفاظ على مرونة القماش وألفته.",
     prototypeLabel: "يعمل اليوم",
     prototypeTitle: "أربعة نماذج اهتزاز لأعمال التحقق الحالية.",
     prototypeBody:
@@ -143,7 +143,7 @@ const copy = {
     fabricLabel: "ПАТЕНТ FABTIVE НА АКТИВНУЮ ТКАНЬ",
     fabricTitle: "За пределами локальной вибрации: глубина и непрерывность.",
     fabricBody:
-      "FABTIVE основан на проприетарных волокнах, которые Plectrum интегрирует в привычные текстильные структуры. Платформа создаёт мягкую непрерывную поверхность управляемого физического ощущения, сохраняя гибкость и естественность ткани.",
+      "FABTIVE — термин Plectrum для активной ткани. Он основан на проприетарных волокнах, которые Plectrum интегрирует в привычные текстильные структуры. Платформа создаёт мягкую непрерывную поверхность управляемого физического ощущения, сохраняя гибкость и естественность ткани.",
     prototypeLabel: "РАБОТАЕТ СЕГОДНЯ",
     prototypeTitle: "Четыре вибрационных прототипа для текущей валидации.",
     prototypeBody:

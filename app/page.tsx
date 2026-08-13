@@ -8,7 +8,8 @@ import { useLanguage } from "./components/LanguageProvider";
 
 const content = {
   en: {
-    eyebrow: "FABTIVE ACTIVE FABRIC",
+    fabtiveTerm: "FABTIVE",
+    fabtiveGloss: "ACTIVE FABRIC",
     title: "Remote Sensory Integration.",
     subtitle:
       "A comprehensive platform for software-controlled tactile feedback. Plectrum provides measurable, adaptive physical interventions using precision vibration hardware to bridge the tangibility gap in digital health.",
@@ -62,7 +63,8 @@ const content = {
     ],
   },
   he: {
-    eyebrow: "FABTIVE בד אקטיבי",
+    fabtiveTerm: "FABTIVE",
+    fabtiveGloss: "בד אקטיבי",
     title: "אינטגרציה חושית מרחוק.",
     subtitle:
       "פלטפורמה מקיפה למשוב מישושי הנשלט בתוכנה. Plectrum מספקת התערבויות פיזיות מדידות ואדפטיביות באמצעות חומרת רטט מדויקת, כדי לגשר על פער המוחשיות בבריאות הדיגיטלית.",
@@ -116,7 +118,8 @@ const content = {
     ],
   },
   ar: {
-    eyebrow: "FABTIVE النسيج النشط",
+    fabtiveTerm: "FABTIVE",
+    fabtiveGloss: "نسيج نشط",
     title: "تكامل حسي عن بُعد.",
     subtitle:
       "منصة شاملة للتغذية الراجعة اللمسية المتحكم بها برمجيًا. توفر Plectrum تدخلات جسدية قابلة للقياس والتكيف عبر أجهزة اهتزاز دقيقة، لتسد فجوة الملموسية في الصحة الرقمية.",
@@ -170,7 +173,8 @@ const content = {
     ],
   },
   ru: {
-    eyebrow: "FABTIVE · АКТИВНАЯ ТКАНЬ",
+    fabtiveTerm: "FABTIVE",
+    fabtiveGloss: "АКТИВНАЯ ТКАНЬ",
     title: "Дистанционная сенсорная интеграция.",
     subtitle:
       "Комплексная платформа программно управляемой тактильной обратной связи. Plectrum обеспечивает измеримые, адаптивные физические вмешательства с помощью прецизионного вибрационного оборудования, устраняя дефицит осязаемости в цифровой медицине.",
@@ -235,7 +239,11 @@ export default function Home() {
         <div className="hero-fabric" aria-hidden="true" />
         <div className="hero-products-visual" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow">{t.eyebrow}</p>
+          <p className="eyebrow fabtive-mark">
+            <bdi dir="ltr" className="fabtive-mark-term">{t.fabtiveTerm}</bdi>
+            <span className="fabtive-mark-sep" aria-hidden="true">:</span>
+            <span className="fabtive-mark-gloss">{t.fabtiveGloss}</span>
+          </p>
           <h1>{t.title}</h1>
           <p className="hero-subtitle">{t.subtitle}</p>
           <div className="hero-actions">

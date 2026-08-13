@@ -15,6 +15,7 @@ const copy = {
     linkedin: "Follow Plectrum",
     nav: ["Home", "Technology", "Clinical", "Prototypes", "Company"],
     rights: "© 2026 Plectrum. All rights reserved.",
+    disclaimerLink: "Product disclaimer",
   },
   he: {
     line: "לחבר. לחוש. לתקשר.",
@@ -26,6 +27,7 @@ const copy = {
     linkedin: "לעמוד של Plectrum",
     nav: ["בית", "טכנולוגיה", "היישום הקליני", "אבות טיפוס", "החברה"],
     rights: "© 2026 Plectrum. כל הזכויות שמורות.",
+    disclaimerLink: "הבהרת מוצר",
   },
   ar: {
     line: "نتّصل. نشعر. نتفاعل.",
@@ -37,6 +39,7 @@ const copy = {
     linkedin: "تابع Plectrum",
     nav: ["الرئيسية", "التكنولوجيا", "التطبيق السريري", "النماذج الأولية", "الشركة"],
     rights: "© 2026 Plectrum. جميع الحقوق محفوظة.",
+    disclaimerLink: "تنويه المنتج",
   },
   ru: {
     line: "Связывать. Чувствовать. Взаимодействовать.",
@@ -48,6 +51,7 @@ const copy = {
     linkedin: "Plectrum в LinkedIn",
     nav: ["Главная", "Технология", "Клиническое применение", "Прототипы", "Компания"],
     rights: "© 2026 Plectrum. Все права защищены.",
+    disclaimerLink: "Уточнение о продукте",
   },
 } as const;
 
@@ -104,6 +108,7 @@ export function SiteFooter() {
         <a href="https://www.linkedin.com/company/plectrum-af/" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
+        <Link href="/prototypes#product-disclaimer">{t.disclaimerLink}</Link>
         <p>{t.rights}</p>
       </div>
     </footer>
