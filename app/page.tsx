@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { ModelScene } from "./components/ModelScene";
+import { MediaDisclaimer } from "./components/MediaDisclaimer";
 import { SiteShell } from "./components/SiteShell";
 import { useLanguage } from "./components/LanguageProvider";
 
@@ -246,6 +247,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
+        <MediaDisclaimer variant="overlay" className="hero-media-disclaimer" />
         <a className="scroll-cue" href="#touch-gap">
           <span>{t.scroll}</span>
           <i aria-hidden="true" />
@@ -285,6 +287,7 @@ export default function Home() {
           </div>
           <div className="product-hero-visual" aria-hidden="true" />
         </div>
+        <MediaDisclaimer variant="below" className="product-section-disclaimer" />
         <div className="product-grid">
           {t.products.map(([name, body], index) => (
             <article className="product-card reveal" key={name}>

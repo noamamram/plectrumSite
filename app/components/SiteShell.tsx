@@ -1,3 +1,4 @@
+import { BackToTop } from "./BackToTop";
 import { SiteFooter } from "./SiteFooter";
 import { SiteHeader } from "./SiteHeader";
 import { ScrollEffects } from "./ScrollEffects";
@@ -9,6 +10,7 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <SiteHeader />
       {children}
       <SiteFooter />
+      <BackToTop />
     </main>
   );
 }

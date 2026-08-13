@@ -15,7 +15,6 @@ const copy = {
     linkedin: "Follow Plectrum",
     nav: ["Home", "Technology", "Clinical", "Prototypes", "Company"],
     rights: "© 2026 Plectrum. All rights reserved.",
-    backToTop: "Back to top ↑",
   },
   he: {
     line: "לחבר. לחוש. לתקשר.",
@@ -27,7 +26,6 @@ const copy = {
     linkedin: "לעמוד של Plectrum",
     nav: ["בית", "טכנולוגיה", "היישום הקליני", "אבות טיפוס", "החברה"],
     rights: "© 2026 Plectrum. כל הזכויות שמורות.",
-    backToTop: "חזרה למעלה ↑",
   },
   ar: {
     line: "نتّصل. نشعر. نتفاعل.",
@@ -39,7 +37,6 @@ const copy = {
     linkedin: "تابع Plectrum",
     nav: ["الرئيسية", "التكنولوجيا", "التطبيق السريري", "النماذج الأولية", "الشركة"],
     rights: "© 2026 Plectrum. جميع الحقوق محفوظة.",
-    backToTop: "العودة إلى الأعلى ↑",
   },
   ru: {
     line: "Связывать. Чувствовать. Взаимодействовать.",
@@ -51,7 +48,6 @@ const copy = {
     linkedin: "Plectrum в LinkedIn",
     nav: ["Главная", "Технология", "Клиническое применение", "Прототипы", "Компания"],
     rights: "© 2026 Plectrum. Все права защищены.",
-    backToTop: "Наверх ↑",
   },
 } as const;
 
@@ -108,7 +104,6 @@ export function SiteFooter() {
         <a href="https://www.linkedin.com/company/plectrum-af/" target="_blank" rel="noreferrer">
           LinkedIn
         </a>
-        <a className="footer-back-to-top" href="#top">{t.backToTop}</a>
         <p>{t.rights}</p>
       </div>
     </footer>

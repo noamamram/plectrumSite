@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import { ModelScene } from "../components/ModelScene";
+import { MediaDisclaimer } from "../components/MediaDisclaimer";
 import { SiteShell } from "../components/SiteShell";
+import { TextWithNoBreak } from "../components/TextWithNoBreak";
 import { useLanguage } from "../components/LanguageProvider";
 
 const products = {
@@ -102,6 +104,7 @@ export default function PrototypesPage() {
         <div className="prototype-stage" id="prototype-stage" role="tabpanel">
           <ModelScene mode="single" modelPath={product.path} />
           <span className="prototype-hint">{t.rotate}</span>
+          <MediaDisclaimer variant="below" className="prototype-stage-disclaimer" />
         </div>
         <aside className="prototype-copy" aria-live="polite">
           <span className="prototype-tag">{product.tag}</span>
@@ -113,7 +116,14 @@ export default function PrototypesPage() {
       </section>
       <section className="light-section prototype-specs">
         <div><p className="eyebrow dark">{t.specs}</p><h2>{t.specTitle}</h2></div>
-        <ul>{t.specItems.map(([value, label]) => <li key={label}><strong><bdi dir="auto">{value}</bdi></strong><span>{label}</span></li>)}</ul>
+        <ul>
+          {t.specItems.map(([value, label]) => (
+            <li key={label}>
+              <strong><bdi dir="auto"><TextWithNoBreak text={value} /></bdi></strong>
+              <span>{label}</span>
+            </li>
+          ))}
+        </ul>
         <a className="button button-primary" href="mailto:gabriel@plectrum.biz?subject=Plectrum%20prototype">
           {t.cta}<span aria-hidden="true">→</span>
         </a>

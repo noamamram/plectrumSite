@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { SiteShell } from "../components/SiteShell";
 import { useLanguage } from "../components/LanguageProvider";
+import { MediaDisclaimer } from "../components/MediaDisclaimer";
 
 const copy = {
   en: {
@@ -150,23 +151,27 @@ export default function ClinicalPage() {
   return (
     <SiteShell>
       <section className="page-hero clinical-hero">
-        <picture className="clinical-hero-visual">
-          <source srcSet="/media/clinical-hero-fabtive.avif" type="image/avif" />
-          <source srcSet="/media/clinical-hero-fabtive.webp" type="image/webp" />
-          <img
-            src="/media/clinical-hero-fabtive.webp"
-            alt="Visualization of continuous controlled vibration across a wearable textile"
-            width={1536}
-            height={1024}
-            decoding="async"
-          />
-        </picture>
+        <div className="clinical-hero-media">
+          <picture className="clinical-hero-visual">
+            <source srcSet="/media/plectrum-clinical-hero-v2.avif" type="image/avif" />
+            <source srcSet="/media/plectrum-clinical-hero-v2.webp" type="image/webp" />
+            <img
+              src="/media/plectrum-clinical-hero-v2.webp"
+              alt="Adult wearing a smart-textile garment delivering targeted tactile stimulation across the shoulder and upper arm"
+              width={1024}
+              height={576}
+              decoding="async"
+              fetchPriority="high"
+            />
+          </picture>
+        </div>
         <div className="page-hero-copy">
           <p className="eyebrow">{t.eyebrow}</p><h1>{t.title}</h1><p>{t.intro}</p>
           <a className="button button-primary" href="mailto:gabriel@plectrum.biz?subject=Plectrum%20clinical%20pilot">
             {t.cta}<span aria-hidden="true">→</span>
           </a>
         </div>
+        <MediaDisclaimer variant="overlay" className="clinical-hero-disclaimer" />
       </section>
 
       <section className="light-section">
@@ -212,6 +217,7 @@ export default function ClinicalPage() {
             ru: "Изучить носимые устройства",
           }[language]}<span aria-hidden="true">→</span>
         </Link>
+        <MediaDisclaimer variant="below" className="pilot-section-disclaimer" />
       </section>
     </SiteShell>
   );

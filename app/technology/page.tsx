@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { SiteShell } from "../components/SiteShell";
 import { useLanguage } from "../components/LanguageProvider";
+import { MediaDisclaimer } from "../components/MediaDisclaimer";
+import { TextWithNoBreak } from "../components/TextWithNoBreak";
 
 const copy = {
   en: {
@@ -179,6 +181,7 @@ export default function TechnologyPage() {
           </a>
         </div>
         <div className="fabric-core" aria-hidden="true"><i /><i /><i /><i /><i /></div>
+        <MediaDisclaimer variant="overlay" className="technology-hero-disclaimer" />
       </section>
 
       <section className="light-section">
@@ -206,7 +209,10 @@ export default function TechnologyPage() {
         </div>
         <div className="fact-grid">
           {t.facts.map(([value, label]) => (
-            <article key={label}><strong><bdi dir="auto">{value}</bdi></strong><span>{label}</span></article>
+            <article key={label}>
+              <strong><bdi dir="auto"><TextWithNoBreak text={value} /></bdi></strong>
+              <span>{label}</span>
+            </article>
           ))}
         </div>
       </section>
