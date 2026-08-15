@@ -9,7 +9,8 @@ import { useLanguage } from "./components/LanguageProvider";
 const content = {
   en: {
     fabtiveTerm: "FABTIVE",
-    fabtiveGloss: "ACTIVE FABRIC",
+    fabtiveGloss: "Plectrum's active-fabric platform",
+    fabtiveLabel: "FABTIVE, Plectrum's active-fabric platform",
     title: "Remote Sensory Integration.",
     subtitle:
       "A comprehensive platform for software-controlled tactile feedback. Plectrum provides measurable, adaptive physical interventions using precision vibration hardware to bridge the tangibility gap in digital health.",
@@ -64,7 +65,8 @@ const content = {
   },
   he: {
     fabtiveTerm: "FABTIVE",
-    fabtiveGloss: "בד אקטיבי",
+    fabtiveGloss: "פלטפורמת הבד האקטיבי של Plectrum",
+    fabtiveLabel: "FABTIVE, פלטפורמת הבד האקטיבי של Plectrum",
     title: "אינטגרציה חושית מרחוק.",
     subtitle:
       "פלטפורמה מקיפה למשוב מישושי הנשלט בתוכנה. Plectrum מספקת התערבויות פיזיות מדידות ואדפטיביות באמצעות חומרת רטט מדויקת, כדי לגשר על פער המוחשיות בבריאות הדיגיטלית.",
@@ -119,7 +121,8 @@ const content = {
   },
   ar: {
     fabtiveTerm: "FABTIVE",
-    fabtiveGloss: "نسيج نشط",
+    fabtiveGloss: "منصة النسيج النشط من Plectrum",
+    fabtiveLabel: "FABTIVE، منصة النسيج النشط من Plectrum",
     title: "تكامل حسي عن بُعد.",
     subtitle:
       "منصة شاملة للتغذية الراجعة اللمسية المتحكم بها برمجيًا. توفر Plectrum تدخلات جسدية قابلة للقياس والتكيف عبر أجهزة اهتزاز دقيقة، لتسد فجوة الملموسية في الصحة الرقمية.",
@@ -174,7 +177,8 @@ const content = {
   },
   ru: {
     fabtiveTerm: "FABTIVE",
-    fabtiveGloss: "АКТИВНАЯ ТКАНЬ",
+    fabtiveGloss: "Платформа активной ткани Plectrum",
+    fabtiveLabel: "FABTIVE, платформа активной ткани Plectrum",
     title: "Дистанционная сенсорная интеграция.",
     subtitle:
       "Комплексная платформа программно управляемой тактильной обратной связи. Plectrum обеспечивает измеримые, адаптивные физические вмешательства с помощью прецизионного вибрационного оборудования, устраняя дефицит осязаемости в цифровой медицине.",
@@ -239,10 +243,11 @@ export default function Home() {
         <div className="hero-fabric" aria-hidden="true" />
         <div className="hero-products-visual" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="eyebrow fabtive-mark">
-            <bdi dir="ltr" className="fabtive-mark-term">{t.fabtiveTerm}</bdi>
-            <span className="fabtive-mark-sep" aria-hidden="true">:</span>
-            <span className="fabtive-mark-gloss">{t.fabtiveGloss}</span>
+          <p className="fabtive-mark" aria-label={t.fabtiveLabel}>
+            <bdi dir="ltr" className="fabtive-mark-term" aria-hidden="true">
+              {t.fabtiveTerm}
+            </bdi>
+            <span className="fabtive-mark-gloss" aria-hidden="true">{t.fabtiveGloss}</span>
           </p>
           <h1>{t.title}</h1>
           <p className="hero-subtitle">{t.subtitle}</p>
@@ -255,7 +260,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <MediaDisclaimer variant="overlay" className="hero-media-disclaimer" />
+        <MediaDisclaimer className="hero-media-disclaimer" />
         <a className="scroll-cue" href="#touch-gap">
           <span>{t.scroll}</span>
           <i aria-hidden="true" />
@@ -295,7 +300,7 @@ export default function Home() {
           </div>
           <div className="product-hero-visual" aria-hidden="true" />
         </div>
-        <MediaDisclaimer variant="below" className="product-section-disclaimer" />
+        <MediaDisclaimer className="product-section-disclaimer" />
         <div className="product-grid">
           {t.products.map(([name, body], index) => (
             <article className="product-card reveal" key={name}>
@@ -308,6 +313,8 @@ export default function Home() {
                   "/models/hat.glb",
                   "/models/glove.glb",
                 ][index]}
+                poster="/media/hero-products-v3.png"
+                label={name}
               />
               <h3>{name}</h3>
               <p>{body}</p>

@@ -1,7 +1,7 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 const revealSelector = [
   ".reveal",
@@ -26,43 +26,58 @@ export function ScrollEffects() {
   const pathname = usePathname();
 
   useEffect(() => {
+    const root = document.documentElement;
+    root.classList.add("js-scroll-reveal");
+
     const elements = Array.from(document.querySelectorAll<HTMLElement>(revealSelector));
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
     elements.forEach((element) => {
       const siblings = element.parentElement ? Array.from(element.parentElement.children) : [];
       const siblingIndex = Math.max(0, siblings.indexOf(element));
-
       element.classList.add("scroll-reveal");
-      element.style.setProperty("--reveal-delay", `${Math.min(siblingIndex % 4, 3) * 65}ms`);
+      element.style.setProperty("--reveal-delay", `${Math.min(siblingIndex % 4, 3) * 40}ms`);
     });
 
     if (reducedMotion || !("IntersectionObserver" in window)) {
       elements.forEach((element) => element.classList.add("is-visible"));
-      return;
+      return () => {
+        root.classList.remove("js-scroll-reveal");
+        elements.forEach((element) => {
+          element.classList.remove("scroll-reveal", "is-visible");
+          element.style.removeProperty("--reveal-delay");
+        });
+      };
     }
 
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
-          entry.target.classList.add("is-visible");
-          observer.unobserve(entry.target);
+          const target = entry.target as HTMLElement;
+          target.classList.add("is-visible");
+          target.style.removeProperty("will-change");
+          observer.unobserve(target);
         });
       },
-      { threshold: 0.1, rootMargin: "0px 0px -8% 0px" },
+      { threshold: 0.05, rootMargin: "0px 0px 18% 0px" },
     );
 
     const frame = window.requestAnimationFrame(() => {
-      elements.forEach((element) => observer.observe(element));
+      elements.forEach((element) => {
+        element.style.willChange = "opacity, transform";
+        observer.observe(element);
+      });
     });
 
     return () => {
       window.cancelAnimationFrame(frame);
       observer.disconnect();
+      root.classList.remove("js-scroll-reveal");
       elements.forEach((element) => {
         element.classList.remove("scroll-reveal", "is-visible");
         element.style.removeProperty("--reveal-delay");
+        element.style.removeProperty("will-change");
       });
     };
   }, [pathname]);

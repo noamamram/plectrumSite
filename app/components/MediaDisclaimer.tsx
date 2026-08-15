@@ -10,22 +10,24 @@ const copy = {
 } as const;
 
 type MediaDisclaimerProps = {
-  /** Overlay sits on media; below sits under it (preferred on small screens for overlays). */
-  variant?: "overlay" | "below" | "caption";
+  /** Use `caption` inside a figure; otherwise a flowing paragraph after media. */
+  as?: "p" | "caption";
   className?: string;
+  tone?: "dark" | "light";
 };
 
 export function MediaDisclaimer({
-  variant = "below",
+  as = "p",
   className = "",
+  tone = "dark",
 }: MediaDisclaimerProps) {
   const { language } = useLanguage();
   const text = copy[language];
-  const classes = ["media-disclaimer", `media-disclaimer--${variant}`, className]
+  const classes = ["media-disclaimer", `media-disclaimer--${tone}`, className]
     .filter(Boolean)
     .join(" ");
 
-  if (variant === "caption") {
+  if (as === "caption") {
     return <figcaption className={classes}>{text}</figcaption>;
   }
 

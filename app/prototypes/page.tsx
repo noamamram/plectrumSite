@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState, type KeyboardEvent } from "react";
 import { ModelScene } from "../components/ModelScene";
 import { MediaDisclaimer } from "../components/MediaDisclaimer";
 import { SiteShell } from "../components/SiteShell";
@@ -9,6 +9,13 @@ import { useLanguage } from "../components/LanguageProvider";
 
 const PRODUCT_ORDER = ["shirt", "sleeve", "cap", "glove"] as const;
 type ProductId = (typeof PRODUCT_ORDER)[number];
+
+const PRODUCT_POSTERS: Record<ProductId, string> = {
+  shirt: "/media/hero-products-v3.png",
+  sleeve: "/media/hero-products-v3.png",
+  cap: "/media/hero-products-v3.png",
+  glove: "/media/hero-products-v3.png",
+};
 
 type ProductStory = {
   opening: string;
@@ -236,6 +243,7 @@ const copy = {
     intro:
       "Explore Plectrum's current functional prototypes in 3D. These four working prototypes deliver localized, high-resolution vibration today and are distinct from FABTIVE, the patented active-fabric platform under development for continuous physical sensation across the fabric.",
     rotate: "Drag or move to explore",
+    rotateTouch: "Swipe to explore",
     focus: "Clinical focus",
     storyLabel: "THE STORY BEHIND THE PRODUCT",
     storyExpand: "Read the full story",
@@ -259,6 +267,7 @@ const copy = {
     intro:
       "גלו בתלת־ממד את אבות הטיפוס הפונקציונליים הנוכחיים של Plectrum. ארבעת אבות הטיפוס הפעילים מספקים כיום רטט מקומי ברזולוציה גבוהה, והם נפרדים מ־FABTIVE, פלטפורמת הבד האקטיבי הפטנטית שבפיתוח לתחושה פיזית רציפה על פני הבד.",
     rotate: "הזיזו כדי לחקור",
+    rotateTouch: "החליקו כדי לחקור",
     focus: "מיקוד קליני",
     storyLabel: "הסיפור מאחורי המוצר",
     storyExpand: "קריאת הסיפור המלא",
@@ -282,6 +291,7 @@ const copy = {
     intro:
       "استكشف نماذج Plectrum الأولية الوظيفية الحالية في 3D. توفر هذه النماذج الأربعة اهتزازًا موضعيًا عالي الدقة اليوم، وهي مختلفة عن FABTIVE، منصة النسيج النشط المحمية ببراءة قيد التطوير للإحساس الجسدي المستمر عبر القماش.",
     rotate: "اسحب أو حرّك للاستكشاف",
+    rotateTouch: "اسحب للاستكشاف",
     focus: "التركيز السريري",
     storyLabel: "القصة وراء المنتج",
     storyExpand: "اقرأ القصة كاملة",
@@ -305,6 +315,7 @@ const copy = {
     intro:
       "Изучите в 3D текущие функциональные прототипы Plectrum. Эти четыре работающих прототипа обеспечивают локальную высокоточную вибрацию сегодня и отличаются от FABTIVE — запатентованной платформы активной ткани для непрерывного физического ощущения по всей ткани.",
     rotate: "Перетаскивайте модель",
+    rotateTouch: "Проведите, чтобы изучить",
     focus: "Клиническая задача",
     storyLabel: "ИСТОРИЯ ПРОДУКТА",
     storyExpand: "Читать полную историю",
@@ -328,14 +339,43 @@ export default function PrototypesPage() {
   const { language } = useLanguage();
   const [activeId, setActiveId] = useState<ProductId>("shirt");
   const [storyOpen, setStoryOpen] = useState(false);
+  const [isTouch, setIsTouch] = useState(false);
   const t = copy[language];
   const catalog = products[language];
   const list = PRODUCT_ORDER.map((id) => ({ id, ...catalog[id] }));
   const product = { id: activeId, ...catalog[activeId] };
 
-  const selectProduct = (id: ProductId) => {
+  useEffect(() => {
+    const media = window.matchMedia("(hover: none), (pointer: coarse)");
+    const sync = () => setIsTouch(media.matches);
+    sync();
+    media.addEventListener("change", sync);
+    return () => media.removeEventListener("change", sync);
+  }, []);
+
+  const selectProduct = useCallback((id: ProductId) => {
     setActiveId(id);
     setStoryOpen(false);
+  }, []);
+
+  const onTabKeyDown = (
+    event: KeyboardEvent<HTMLButtonElement>,
+    index: number,
+  ) => {
+    if (event.key !== "ArrowRight" && event.key !== "ArrowLeft" && event.key !== "Home" && event.key !== "End") {
+      return;
+    }
+    event.preventDefault();
+    const rtl = document.documentElement.dir === "rtl";
+    let nextIndex = index;
+    if (event.key === "Home") nextIndex = 0;
+    else if (event.key === "End") nextIndex = list.length - 1;
+    else if (event.key === "ArrowRight") nextIndex = rtl ? index - 1 : index + 1;
+    else if (event.key === "ArrowLeft") nextIndex = rtl ? index + 1 : index - 1;
+    nextIndex = (nextIndex + list.length) % list.length;
+    selectProduct(list[nextIndex].id);
+    const nextTab = document.getElementById(`prototype-tab-${list[nextIndex].id}`);
+    nextTab?.focus();
   };
 
   return (
@@ -355,7 +395,9 @@ export default function PrototypesPage() {
               aria-selected={activeId === item.id}
               aria-controls="prototype-stage"
               id={`prototype-tab-${item.id}`}
+              tabIndex={activeId === item.id ? 0 : -1}
               onClick={() => selectProduct(item.id)}
+              onKeyDown={(event) => onTabKeyDown(event, index)}
               key={item.id}
             >
               <span>0{index + 1}</span>
@@ -369,9 +411,16 @@ export default function PrototypesPage() {
           role="tabpanel"
           aria-labelledby={`prototype-tab-${product.id}`}
         >
-          <ModelScene mode="single" modelPath={product.path} />
-          <span className="prototype-hint">{t.rotate}</span>
-          <MediaDisclaimer variant="below" className="prototype-stage-disclaimer" />
+          <div className="prototype-viewer">
+            <ModelScene
+              mode="single"
+              modelPath={product.path}
+              poster={PRODUCT_POSTERS[product.id]}
+              label={product.name}
+            />
+            <span className="prototype-hint">{isTouch ? t.rotateTouch : t.rotate}</span>
+          </div>
+          <MediaDisclaimer className="prototype-stage-disclaimer" />
         </div>
         <aside className="prototype-copy" aria-live="polite">
           <span className="prototype-tag">{product.tag}</span>

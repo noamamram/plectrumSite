@@ -180,8 +180,10 @@ export default function TechnologyPage() {
             {t.cta}<span aria-hidden="true">→</span>
           </a>
         </div>
-        <div className="fabric-core" aria-hidden="true"><i /><i /><i /><i /><i /></div>
-        <MediaDisclaimer variant="overlay" className="technology-hero-disclaimer" />
+        <div className="technology-hero-media">
+          <div className="fabric-core" aria-hidden="true"><i /><i /><i /><i /><i /></div>
+        </div>
+        <MediaDisclaimer className="technology-hero-disclaimer" />
       </section>
 
       <section className="light-section">

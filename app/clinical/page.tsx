@@ -171,8 +171,8 @@ export default function ClinicalPage() {
             {t.cta}<span aria-hidden="true">→</span>
           </a>
         </div>
-        <MediaDisclaimer variant="overlay" className="clinical-hero-disclaimer" />
       </section>
+      <MediaDisclaimer className="clinical-hero-disclaimer" />
 
       <section className="light-section">
         <div className="section-grid">
@@ -217,7 +217,7 @@ export default function ClinicalPage() {
             ru: "Изучить носимые устройства",
           }[language]}<span aria-hidden="true">→</span>
         </Link>
-        <MediaDisclaimer variant="below" className="pilot-section-disclaimer" />
+        <MediaDisclaimer className="pilot-section-disclaimer" />
       </section>
     </SiteShell>
   );

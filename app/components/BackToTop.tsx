@@ -47,7 +47,7 @@ export function BackToTop() {
       aria-hidden={!visible}
       tabIndex={visible ? 0 : -1}
     >
-      <span>{t.label}</span>
+      <span className="back-to-top-label">{t.label}</span>
       <span aria-hidden="true">{t.arrow}</span>
     </button>
   );

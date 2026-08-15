@@ -19,6 +19,7 @@ const eslintConfig = defineConfig([
     "tests/**",
     "vite.config.ts",
     "worker/**",
+    "public/**",
   ]),
 ]);
 

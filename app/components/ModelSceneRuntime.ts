@@ -34,10 +34,18 @@ export function mountModelScene(
 
   let renderer: THREE.WebGLRenderer;
   try {
+    const testCanvas = document.createElement("canvas");
+    const gl =
+      testCanvas.getContext("webgl") || testCanvas.getContext("experimental-webgl");
+    if (!gl) {
+      container.dataset.failed = "true";
+      return () => undefined;
+    }
     renderer = new THREE.WebGLRenderer({
       alpha: true,
       antialias: true,
       powerPreference: "high-performance",
+      failIfMajorPerformanceCaveat: false,
     });
   } catch {
     container.dataset.failed = "true";
@@ -49,6 +57,8 @@ export function mountModelScene(
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1;
   container.appendChild(renderer.domElement);
+  container.style.touchAction = "pan-y";
+  renderer.domElement.style.touchAction = "pan-y";
 
   const stage = new THREE.Group();
   scene.add(stage);
@@ -180,18 +190,23 @@ export function mountModelScene(
   };
   const onPointerDown = (event: PointerEvent) => {
     if (mode === "hero") return;
+    if (event.pointerType === "touch" && event.isPrimary === false) return;
     dragging = true;
     lastPointerX = event.clientX;
     lastPointerY = event.clientY;
     dragRotationX = stage.rotation.x;
     dragRotationY = stage.rotation.y;
     idleRotation = 0;
+    container.style.touchAction = "none";
+    renderer.domElement.style.touchAction = "none";
     container.setPointerCapture(event.pointerId);
     container.dataset.dragging = "true";
   };
   const onPointerUp = (event: PointerEvent) => {
     if (mode === "hero") return;
     dragging = false;
+    container.style.touchAction = "pan-y";
+    renderer.domElement.style.touchAction = "pan-y";
     if (container.hasPointerCapture(event.pointerId)) {
       container.releasePointerCapture(event.pointerId);
     }
