@@ -1,10 +1,8 @@
-import type { Metadata } from "next";
+import { generateRouteMetadata } from "../components/generateRouteMetadata";
 
-export const metadata: Metadata = {
-  title: "Company | Plectrum",
-  description:
-    "Plectrum combines software, clinical practice and wearable prototypes while developing FABTIVE active fabric.",
-};
+export async function generateMetadata() {
+  return generateRouteMetadata("/company");
+}
 
 export default function CompanyLayout({
   children,

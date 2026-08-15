@@ -469,22 +469,78 @@ html[dir="rtl"] .fabtive-mark {
   align-items: flex-start;
 }
 
-.fabtive-mark-term {
-  color: var(--cyan-bright);
+.fabtive-mark-word {
+  display: inline-flex;
+  direction: ltr;
+  unicode-bidi: isolate;
   font-size: clamp(15px, 1.35vw, 17px);
   font-weight: 700;
   letter-spacing: 0.14em;
+  line-height: 1.2;
+}
+
+.fabtive-mark-fab {
+  color: var(--white);
+}
+
+.fabtive-mark-tive {
+  color: var(--cyan-bright);
+}
+
+.fabtive-mark-equation {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: clamp(12px, 1.05vw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.12em;
   direction: ltr;
   unicode-bidi: isolate;
 }
 
-.fabtive-mark-gloss {
-  color: rgba(255, 255, 255, 0.65);
-  font-size: clamp(12px, 1.05vw, 13px);
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  text-transform: none;
-  max-width: 26rem;
+.fabtive-etymology {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0 0 28px;
+  max-width: 36rem;
+}
+
+.fabtive-etymology-word {
+  margin: 0;
+  display: inline-flex;
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-size: clamp(28px, 3.2vw, 42px);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  line-height: 1.05;
+}
+
+.fabtive-etymology-fab {
+  color: var(--white);
+}
+
+.fabtive-etymology-tive {
+  color: var(--cyan-bright);
+}
+
+.fabtive-etymology-equation {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: clamp(13px, 1.2vw, 15px);
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+.fabtive-etymology-note {
+  margin: 4px 0 0;
+  max-width: 34rem;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: clamp(14px, 1.15vw, 16px);
+  line-height: 1.55;
+  font-weight: 400;
 }
 
 .hero h1 {
@@ -1206,15 +1262,6 @@ html[dir="rtl"] .prototype-intro h1 {
   flex-wrap: wrap;
   align-content: center;
   row-gap: 28px;
-}
-
-.technology-hero .technology-hero-disclaimer {
-  position: relative;
-  z-index: 3;
-  width: 100%;
-  max-width: 42rem;
-  margin: 0;
-  align-self: flex-end;
 }
 
 .fabric-core i {
@@ -1982,7 +2029,7 @@ html[dir="rtl"] .company-mark {
 }
 
 .team-grid {
-  margin-top: 72px;
+  margin-top: 64px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
@@ -1990,7 +2037,8 @@ html[dir="rtl"] .company-mark {
 
 .team-card {
   display: grid;
-  grid-template-columns: minmax(180px, 0.72fr) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
+  align-items: stretch;
   overflow: hidden;
   background: rgba(10, 40, 93, 0.72);
   border: 1px solid rgba(255, 255, 255, 0.12);
@@ -1998,41 +2046,50 @@ html[dir="rtl"] .company-mark {
 
 .team-portrait {
   position: relative;
-  min-height: 420px;
+  aspect-ratio: 1 / 1;
+  min-height: 0;
   overflow: hidden;
+  background: rgba(2, 13, 36, 0.55);
 }
 
 .team-portrait img {
   object-fit: cover;
-  filter: saturate(0.74) contrast(1.05);
-  transition: transform 500ms ease, filter 500ms ease;
-}
-
-.team-card:hover img {
-  transform: scale(1.025);
-  filter: saturate(0.95) contrast(1.02);
+  object-position: center center;
 }
 
 .team-card-copy {
-  padding: 34px 30px;
+  padding: 28px 26px;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .team-card-copy h3 {
   margin: 0;
-  font-size: clamp(23px, 2vw, 31px);
+  font-size: clamp(22px, 1.9vw, 28px);
+  line-height: 1.2;
 }
 
 .team-role {
-  margin: 8px 0 0;
+  margin: 10px 0 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
   color: var(--cyan-bright);
   font-weight: 700;
   line-height: 1.45;
 }
 
+.team-role-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex: 0 0 auto;
+  margin-top: 0.15em;
+  object-fit: contain;
+}
+
 .team-credential {
-  margin: 30px 0 0;
+  margin: 22px 0 0;
   color: rgba(255, 255, 255, 0.86);
   font-size: 14px;
   font-weight: 700;
@@ -2040,16 +2097,17 @@ html[dir="rtl"] .company-mark {
 }
 
 .team-bio {
-  margin: 14px 0 0;
+  margin: 12px 0 0;
   color: rgba(255, 255, 255, 0.64);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 .team-linkedin {
   width: fit-content;
+  min-height: 44px;
   margin-top: auto;
-  padding-top: 24px;
+  padding-top: 18px;
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -2256,8 +2314,8 @@ html[dir="rtl"] .company-mark {
 }
 
 .media-disclaimer {
-  position: relative;
-  margin: 10px 0 0;
+  position: static;
+  margin: 8px 0 0;
   max-width: 42rem;
   color: rgba(255, 255, 255, 0.6);
   font-size: 12px;
@@ -2271,20 +2329,16 @@ html[dir="rtl"] .company-mark {
 }
 
 .hero-media-disclaimer {
-  position: relative;
-  z-index: 5;
-  grid-column: 2;
-  grid-row: 1;
-  align-self: end;
-  justify-self: end;
-  max-width: min(22rem, 100%);
-  margin: 0;
-  text-align: end;
+  position: static;
+  z-index: 1;
+  width: min(100% - 48px, 42rem);
+  max-width: 42rem;
+  margin: 10px clamp(24px, 5vw, 76px) 0;
+  text-align: start;
 }
 
 html[dir="rtl"] .hero-media-disclaimer {
   text-align: start;
-  justify-self: start;
 }
 
 .product-section-disclaimer {
@@ -2294,11 +2348,13 @@ html[dir="rtl"] .hero-media-disclaimer {
 }
 
 .technology-hero-disclaimer {
-  max-width: min(36rem, 100%);
+  position: static;
+  max-width: 42rem;
+  margin: 10px clamp(24px, 7vw, 110px) 0;
 }
 
 .clinical-hero-disclaimer {
-  position: relative;
+  position: static;
   z-index: 2;
   max-width: 42rem;
   margin: 0 auto;
@@ -2695,7 +2751,7 @@ html[dir="rtl"] .back-to-top {
     margin-bottom: 22px;
   }
 
-  .fabtive-mark-term {
+  .fabtive-mark-word {
     font-size: 15px;
   }
 
@@ -2724,24 +2780,8 @@ html[dir="rtl"] .back-to-top {
     mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
   }
 
-  .hero-media-disclaimer {
-    order: 3;
-    grid-column: auto;
-    grid-row: auto;
-    align-self: stretch;
-    justify-self: stretch;
-    width: 100%;
-    max-width: 42rem;
-    margin: 10px 0 0;
-    text-align: start;
-  }
-
-  html[dir="rtl"] .hero-media-disclaimer {
-    text-align: start;
-  }
-
   .scroll-cue {
-    order: 4;
+    order: 3;
   }
 
   .hero::before {
@@ -2868,11 +2908,6 @@ html[dir="rtl"] .back-to-top {
   .fabric-core {
     inset: 42% -45% -8% 18%;
     opacity: 0.35;
-  }
-
-  .technology-hero .technology-hero-disclaimer {
-    margin-top: 24px;
-    align-self: stretch;
   }
 
   .fabric-detail,
@@ -3004,10 +3039,11 @@ html[dir="rtl"] .back-to-top {
 
   .team-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .team-card {
-    grid-template-columns: minmax(210px, 0.75fr) minmax(0, 1fr);
+    grid-template-columns: 1fr;
   }
 }
 
@@ -3228,13 +3264,14 @@ html[dir="rtl"] .back-to-top {
 
   .team-grid {
     margin-top: 42px;
-    gap: 16px;
+    gap: 24px;
   }
 
   .team-card {
-    border-radius: 16px;
-    background: linear-gradient(145deg, rgba(14, 55, 116, 0.88), rgba(6, 29, 70, 0.96));
-    box-shadow: 0 22px 52px rgba(0, 8, 28, 0.24);
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    background: rgba(10, 40, 93, 0.72);
+    box-shadow: none;
   }
 
   .page-hero-copy .button,
@@ -3247,25 +3284,26 @@ html[dir="rtl"] .back-to-top {
     grid-template-columns: 1fr;
   }
 
-  .team-card {
-    grid-template-columns: 1fr;
-  }
-
   .team-portrait {
     min-height: 0;
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 1 / 1;
   }
 
   .team-portrait img {
-    object-position: center 20%;
+    object-position: center center;
   }
 
   .team-card-copy {
-    padding: 26px 22px 28px;
+    padding: 22px 20px 24px;
+  }
+
+  .team-role-icon {
+    width: 1.125rem;
+    height: 1.125rem;
   }
 
   .team-credential {
-    margin-top: 22px;
+    margin-top: 18px;
   }
 
   .company-contact-strip {
@@ -3342,14 +3380,10 @@ html[dir="rtl"] .back-to-top {
   .hero-media-disclaimer,
   .technology-hero-disclaimer,
   .clinical-hero-disclaimer {
-    position: relative;
-    left: auto;
-    right: auto;
-    bottom: auto;
-    z-index: 5;
+    position: static;
     max-width: 42rem;
-    width: 100%;
-    margin: 10px 0 0;
+    width: calc(100% - 40px);
+    margin: 10px 20px 0;
     text-align: start;
     color: rgba(255, 255, 255, 0.6);
   }
@@ -3357,6 +3391,7 @@ html[dir="rtl"] .back-to-top {
   .clinical-hero-disclaimer {
     margin: 0;
     padding: 10px 20px 22px;
+    width: 100%;
   }
 
   .clinical-hero {

@@ -16,41 +16,15 @@ import "./globals.css";
 import { LanguageProvider } from "./components/LanguageProvider";
 import {
   LANGUAGE_COOKIE,
-  type Language,
   languageDirection,
   readLanguageCookie,
 } from "./components/language";
-
-const homeMeta: Record<Language, { title: string; description: string }> = {
-  en: {
-    title: "Plectrum | Remote Sensory Integration",
-    description:
-      "Plectrum enables measurable, software-controlled physical intervention through precision vibration prototypes and the patented FABTIVE active-fabric platform.",
-  },
-  he: {
-    title: "Plectrum | אינטגרציה חושית מרחוק",
-    description:
-      "Plectrum מאפשרת התערבות פיזית מדידה הנשלטת בתוכנה באמצעות אבות טיפוס של רטט מדויק ופלטפורמת FABTIVE לבד אקטיבי.",
-  },
-  ar: {
-    title: "Plectrum | تكامل حسي عن بُعد",
-    description:
-      "تتيح Plectrum تدخلاً جسديًا قابلاً للقياس والتحكم عبر نماذج اهتزاز دقيقة ومنصة FABTIVE للنسيج النشط.",
-  },
-  ru: {
-    title: "Plectrum | Дистанционная сенсорная интеграция",
-    description:
-      "Plectrum обеспечивает измеримое программное физическое вмешательство через вибрационные прототипы и запатентованную платформу активной ткани FABTIVE.",
-  },
-};
+import { generateRouteMetadata } from "./components/generateRouteMetadata";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const cookieStore = await cookies();
-  const language = readLanguageCookie(cookieStore.get(LANGUAGE_COOKIE)?.value);
-  const meta = homeMeta[language];
+  const meta = await generateRouteMetadata("/");
   return {
-    title: meta.title,
-    description: meta.description,
+    ...meta,
     other: {
       "codex-preview": "development",
     },

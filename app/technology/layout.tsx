@@ -1,10 +1,8 @@
-import type { Metadata } from "next";
+import { generateRouteMetadata } from "../components/generateRouteMetadata";
 
-export const metadata: Metadata = {
-  title: "Technology | Plectrum",
-  description:
-    "Working vibration prototypes for current validation work and FABTIVE, the patented active-fabric platform for continuous sensory integration.",
-};
+export async function generateMetadata() {
+  return generateRouteMetadata("/technology");
+}
 
 export default function TechnologyLayout({
   children,

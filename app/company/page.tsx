@@ -42,7 +42,8 @@ const copy = {
         role: "Founder; CEO & CTO",
         credential: "Veteran of IDF Unit 81 & IAI. MBA.",
         bio: "System Architect & Business Leader. Combining deep Systems Engineering expertise. Proven operational leadership (Ex. COO). Committed to transforming dreams into reality through technology that makes a meaningful difference in people's lives.",
-        image: "/team/team-4.jpeg",
+        image: "/team/gabriel-lev-har-neutral.png",
+        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
@@ -50,15 +51,17 @@ const copy = {
         role: "VP of Science & Materials",
         credential: "Ph.D",
         bio: "Deep tech expertise for developing advanced materials and coatings. Extensive Medical Device R&D, proven experience in polymerization and innovative coating methods, Scale-Up & Manufacturing.",
-        image: "/team/team-3.jpeg",
+        image: "/team/nino-rivka-eliahu-neutral.png",
+        icon: "/team/icons/nino-materials.svg",
         linkedin: null,
       },
       {
         name: "Noam Amram",
-        role: "XR & L.L.M Integration Lead",
+        role: "XR & LLM Integration Lead",
         credential: "Veteran of IDF Tech Unit.",
         bio: "Specialist in XR simulation systems & interactive software development. Leading system integration and designing immersive, high-end XR experiences.",
-        image: "/team/team-2.jpeg",
+        image: "/team/noam-amram-neutral.png",
+        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -66,7 +69,8 @@ const copy = {
         role: "Senior Hardware & Firmware Eng.",
         credential: "Veteran of IDF Unit 81.",
         bio: "Specialized experience in digital board design and reverse engineering, and a background in high-stakes military and medical-grade electronics. A key technical leader, also overseeing embedded firmware development and controller programming.",
-        image: "/team/team-1.jpeg",
+        image: "/team/omri-arbel-neutral.png",
+        icon: "/team/icons/omri-cpu.svg",
         linkedin: null,
       },
     ],
@@ -116,7 +120,8 @@ const copy = {
         role: "מייסד; מנכ״ל וסמנכ״ל טכנולוגיות",
         credential: "יוצא יחידה 81 והתעשייה האווירית. MBA.",
         bio: "ארכיטקט מערכות ומוביל עסקי המשלב מומחיות עמוקה בהנדסת מערכות. בעל ניסיון מוכח במנהיגות תפעולית, לרבות בתפקיד COO. מחויב להפוך חלומות למציאות באמצעות טכנולוגיה שיוצרת שינוי משמעותי בחייהם של אנשים.",
-        image: "/team/team-4.jpeg",
+        image: "/team/gabriel-lev-har-neutral.png",
+        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
@@ -124,15 +129,17 @@ const copy = {
         role: "סמנכ״לית מדע וחומרים",
         credential: "Ph.D",
         bio: "מומחיות דיפ־טק בפיתוח חומרים וציפויים מתקדמים. ניסיון נרחב במחקר ופיתוח של מכשור רפואי, בפולימריזציה ובשיטות ציפוי חדשניות, וכן בהגדלת קנה מידה ובייצור.",
-        image: "/team/team-3.jpeg",
+        image: "/team/nino-rivka-eliahu-neutral.png",
+        icon: "/team/icons/nino-materials.svg",
         linkedin: null,
       },
       {
         name: "Noam Amram",
-        role: "מוביל אינטגרציית XR ו־L.L.M",
+        role: "מוביל אינטגרציית XR ו־LLM",
         credential: "יוצא יחידה טכנולוגית בצה״ל.",
         bio: "מומחה במערכות סימולציית XR ובפיתוח תוכנה אינטראקטיבית. מוביל אינטגרציית מערכות ומתכנן חוויות XR אימרסיביות ומתקדמות.",
-        image: "/team/team-2.jpeg",
+        image: "/team/noam-amram-neutral.png",
+        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -140,7 +147,8 @@ const copy = {
         role: "מהנדס חומרה וקושחה בכיר",
         credential: "יוצא יחידה 81.",
         bio: "בעל ניסיון ייחודי בתכנון כרטיסים דיגיטליים ובהנדסה לאחור, עם רקע באלקטרוניקה צבאית ואלקטרוניקה רפואית בסביבות עתירות סיכון. מוביל טכנולוגי מרכזי האחראי גם על פיתוח קושחה משובצת ותכנות בקרים.",
-        image: "/team/team-1.jpeg",
+        image: "/team/omri-arbel-neutral.png",
+        icon: "/team/icons/omri-cpu.svg",
         linkedin: null,
       },
     ],
@@ -190,7 +198,8 @@ const copy = {
         role: "المؤسس؛ الرئيس التنفيذي ومدير التكنولوجيا",
         credential: "خريج الوحدة 81 وIAI. حاصل على MBA.",
         bio: "مهندس أنظمة وقائد أعمال يجمع خبرة عميقة في هندسة الأنظمة مع قيادة تشغيلية مثبتة، منها منصب COO. ملتزم بتحويل الأفكار إلى واقع عبر تكنولوجيا تُحدث فرقًا حقيقيًا في حياة الناس.",
-        image: "/team/team-4.jpeg",
+        image: "/team/gabriel-lev-har-neutral.png",
+        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
@@ -198,15 +207,17 @@ const copy = {
         role: "نائبة الرئيس للعلوم والمواد",
         credential: "Ph.D",
         bio: "خبيرة في تطوير المواد والطلاءات المتقدمة. تتمتع بخبرة واسعة في البحث والتطوير للأجهزة الطبية والبلمرة وطرق الطلاء المبتكرة، والتوسع الصناعي والتصنيع.",
-        image: "/team/team-3.jpeg",
+        image: "/team/nino-rivka-eliahu-neutral.png",
+        icon: "/team/icons/nino-materials.svg",
         linkedin: null,
       },
       {
         name: "Noam Amram",
-        role: "قائد تكامل XR وL.L.M",
+        role: "قائد تكامل XR وLLM",
         credential: "خريج وحدة تكنولوجية في الجيش الإسرائيلي.",
         bio: "متخصص في أنظمة محاكاة XR وتطوير البرمجيات التفاعلية. يقود تكامل الأنظمة وتصميم تجارب XR غامرة ومتقدمة.",
-        image: "/team/team-2.jpeg",
+        image: "/team/noam-amram-neutral.png",
+        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -214,7 +225,8 @@ const copy = {
         role: "مهندس أول للأجهزة والبرامج الثابتة",
         credential: "خريج الوحدة 81.",
         bio: "متخصص في تصميم اللوحات الرقمية والهندسة العكسية، مع خلفية في الإلكترونيات العسكرية والطبية عالية الحساسية. قائد تقني يشرف أيضًا على تطوير البرامج الثابتة المدمجة وبرمجة المتحكمات.",
-        image: "/team/team-1.jpeg",
+        image: "/team/omri-arbel-neutral.png",
+        icon: "/team/icons/omri-cpu.svg",
         linkedin: null,
       },
     ],
@@ -264,7 +276,8 @@ const copy = {
         role: "Основатель; CEO и CTO",
         credential: "Ветеран подразделения 81 и IAI. MBA.",
         bio: "Системный архитектор и бизнес-лидер с глубокой экспертизой в системной инженерии и подтверждённым опытом операционного управления, включая роль COO. Превращает идеи в технологии, значимые для жизни людей.",
-        image: "/team/team-4.jpeg",
+        image: "/team/gabriel-lev-har-neutral.png",
+        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
@@ -272,15 +285,17 @@ const copy = {
         role: "VP по науке и материалам",
         credential: "Ph.D",
         bio: "Эксперт по передовым материалам и покрытиям. Обширный опыт R&D медицинских устройств, полимеризации, инновационных методов нанесения покрытий, масштабирования и производства.",
-        image: "/team/team-3.jpeg",
+        image: "/team/nino-rivka-eliahu-neutral.png",
+        icon: "/team/icons/nino-materials.svg",
         linkedin: null,
       },
       {
         name: "Noam Amram",
-        role: "Руководитель интеграции XR и L.L.M",
+        role: "Руководитель интеграции XR и LLM",
         credential: "Ветеран технологического подразделения ЦАХАЛ.",
         bio: "Специалист по XR-симуляциям и интерактивному ПО. Руководит системной интеграцией и проектирует высокотехнологичные иммерсивные XR-среды.",
-        image: "/team/team-2.jpeg",
+        image: "/team/noam-amram-neutral.png",
+        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -288,7 +303,8 @@ const copy = {
         role: "Старший инженер аппаратного и встроенного ПО",
         credential: "Ветеран подразделения 81.",
         bio: "Специалист по цифровым платам и обратной инженерии с опытом в военной и медицинской электронике. Ключевой технический лидер, отвечающий также за встроенное ПО и программирование контроллеров.",
-        image: "/team/team-1.jpeg",
+        image: "/team/omri-arbel-neutral.png",
+        icon: "/team/icons/omri-cpu.svg",
         linkedin: null,
       },
     ],
@@ -352,11 +368,27 @@ export default function CompanyPage() {
           {t.team.map((member) => (
             <article className="team-card" key={member.name}>
               <div className="team-portrait">
-                <Image src={member.image} alt={member.name} fill sizes="(max-width: 820px) 100vw, 50vw" />
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  fill
+                  sizes="(max-width: 820px) 92vw, (max-width: 1280px) 36vw, 280px"
+                />
               </div>
               <div className="team-card-copy">
                 <h3>{member.name}</h3>
-                <p className="team-role">{member.role}</p>
+                <p className="team-role">
+                  {/* eslint-disable-next-line @next/next/no-img-element -- small decorative SVG/PNG role icons */}
+                  <img
+                    className="team-role-icon"
+                    src={member.icon}
+                    alt=""
+                    aria-hidden="true"
+                    width={20}
+                    height={20}
+                  />
+                  <span>{member.role}</span>
+                </p>
                 <p className="team-credential">{member.credential}</p>
                 <p className="team-bio">{member.bio}</p>
                 {member.linkedin ? (

@@ -16,6 +16,7 @@ type MediaDisclaimerProps = {
   tone?: "dark" | "light";
 };
 
+/** Always in document flow — never absolutely positioned over media. */
 export function MediaDisclaimer({
   as = "p",
   className = "",

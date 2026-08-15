@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { SiteShell } from "../components/SiteShell";
 import { useLanguage } from "../components/LanguageProvider";
+import { FabtiveEtymology } from "../components/FabtiveEtymology";
 import { MediaDisclaimer } from "../components/MediaDisclaimer";
 import { TextWithNoBreak } from "../components/TextWithNoBreak";
 
@@ -183,8 +184,8 @@ export default function TechnologyPage() {
         <div className="technology-hero-media">
           <div className="fabric-core" aria-hidden="true"><i /><i /><i /><i /><i /></div>
         </div>
-        <MediaDisclaimer className="technology-hero-disclaimer" />
       </section>
+      <MediaDisclaimer className="technology-hero-disclaimer" />
 
       <section className="light-section">
         <div className="section-grid">
@@ -223,6 +224,7 @@ export default function TechnologyPage() {
         <div className="fabric-detail-visual" aria-hidden="true"><div /></div>
         <div className="fabric-detail-copy">
           <p className="eyebrow">{t.fabricLabel}</p>
+          <FabtiveEtymology />
           <h2>{t.fabricTitle}</h2>
           <p>{t.fabricBody}</p>
         </div>
