@@ -43,6 +43,7 @@ const copy = {
         credential: "Veteran of IDF Unit 81 & IAI. MBA.",
         bio: "System architect and business leader with deep systems-engineering expertise and proven operational leadership, including as COO. Focused on turning ambitious ideas into technology that makes a meaningful difference in people's lives.",
         image: "/team/gabriel-lev-har-neutral.png",
+        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
@@ -51,6 +52,7 @@ const copy = {
         credential: "PhD",
         bio: "Deep-tech expertise in advanced materials and coatings, with extensive medical-device R&D experience spanning polymerization, innovative coating methods, scale-up, and manufacturing.",
         image: "/team/nino-rivka-eliahu-neutral.png",
+        icon: "/team/icons/nino-materials.svg",
         linkedin: "https://www.linkedin.com/in/dr-nino-rebecca-eliahu-65037851/",
       },
       {
@@ -59,6 +61,7 @@ const copy = {
         credential: "Veteran of IDF Tech Unit.",
         bio: "Specialist in XR simulation systems and interactive software development. Leads system integration and designs immersive, high-end XR experiences.",
         image: "/team/noam-amram-neutral.png",
+        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -67,6 +70,7 @@ const copy = {
         credential: "Veteran of IDF Unit 81.",
         bio: "Specialized in digital board design and reverse engineering, with a background in high-stakes military and medical-grade electronics. A key technical leader overseeing embedded firmware development and controller programming.",
         image: "/team/omri-arbel-neutral.png",
+        icon: "/team/icons/omri-cpu.svg",
         linkedin: "https://www.linkedin.com/in/omri-arbel-345796195/",
       },
     ],
@@ -117,6 +121,7 @@ const copy = {
         credential: "יוצא יחידה 81 והתעשייה האווירית. MBA.",
         bio: "ארכיטקט מערכות ומוביל עסקי המשלב מומחיות עמוקה בהנדסת מערכות. בעל ניסיון מוכח במנהיגות תפעולית, לרבות בתפקיד COO. מחויב להפוך רעיונות למציאות באמצעות טכנולוגיה שיוצרת שינוי משמעותי בחייהם של אנשים.",
         image: "/team/gabriel-lev-har-neutral.png",
+        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
@@ -125,6 +130,7 @@ const copy = {
         credential: "PhD",
         bio: "מומחיות דיפ־טק בפיתוח חומרים וציפויים מתקדמים. ניסיון נרחב במחקר ופיתוח של מכשור רפואי, בפולימריזציה ובשיטות ציפוי חדשניות, וכן בהגדלת קנה מידה ובייצור.",
         image: "/team/nino-rivka-eliahu-neutral.png",
+        icon: "/team/icons/nino-materials.svg",
         linkedin: "https://www.linkedin.com/in/dr-nino-rebecca-eliahu-65037851/",
       },
       {
@@ -133,6 +139,7 @@ const copy = {
         credential: "יוצא יחידה טכנולוגית בצה״ל.",
         bio: "מומחה במערכות סימולציית XR ובפיתוח תוכנה אינטראקטיבית. מוביל אינטגרציית מערכות ומתכנן חוויות XR אימרסיביות ומתקדמות.",
         image: "/team/noam-amram-neutral.png",
+        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -141,6 +148,7 @@ const copy = {
         credential: "יוצא יחידה 81.",
         bio: "בעל ניסיון ייחודי בתכנון כרטיסים דיגיטליים ובהנדסה לאחור, עם רקע באלקטרוניקה צבאית ואלקטרוניקה רפואית בסביבות עתירות סיכון. מוביל טכנולוגי מרכזי האחראי גם על פיתוח קושחה משובצת ותכנות בקרים.",
         image: "/team/omri-arbel-neutral.png",
+        icon: "/team/icons/omri-cpu.svg",
         linkedin: "https://www.linkedin.com/in/omri-arbel-345796195/",
       },
     ],
@@ -191,6 +199,7 @@ const copy = {
         credential: "خريج الوحدة 81 وIAI. حاصل على MBA.",
         bio: "مهندس أنظمة وقائد أعمال يجمع خبرة عميقة في هندسة الأنظمة مع قيادة تشغيلية مثبتة، منها منصب COO. ملتزم بتحويل الأفكار إلى واقع عبر تكنولوجيا تُحدث فرقًا حقيقيًا في حياة الناس.",
         image: "/team/gabriel-lev-har-neutral.png",
+        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
@@ -199,6 +208,7 @@ const copy = {
         credential: "PhD",
         bio: "خبيرة في تطوير المواد والطلاءات المتقدمة. تتمتع بخبرة واسعة في البحث والتطوير للأجهزة الطبية والبلمرة وطرق الطلاء المبتكرة، والتوسع الصناعي والتصنيع.",
         image: "/team/nino-rivka-eliahu-neutral.png",
+        icon: "/team/icons/nino-materials.svg",
         linkedin: "https://www.linkedin.com/in/dr-nino-rebecca-eliahu-65037851/",
       },
       {
@@ -207,6 +217,7 @@ const copy = {
         credential: "خريج وحدة تكنولوجية في الجيش الإسرائيلي.",
         bio: "متخصص في أنظمة محاكاة XR وتطوير البرمجيات التفاعلية. يقود تكامل الأنظمة وتصميم تجارب XR غامرة ومتقدمة.",
         image: "/team/noam-amram-neutral.png",
+        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -215,6 +226,7 @@ const copy = {
         credential: "خريج الوحدة 81.",
         bio: "متخصص في تصميم اللوحات الرقمية والهندسة العكسية، مع خلفية في الإلكترونيات العسكرية والطبية عالية الحساسية. قائد تقني يشرف أيضًا على تطوير البرامج الثابتة المدمجة وبرمجة المتحكمات.",
         image: "/team/omri-arbel-neutral.png",
+        icon: "/team/icons/omri-cpu.svg",
         linkedin: "https://www.linkedin.com/in/omri-arbel-345796195/",
       },
     ],
@@ -265,6 +277,7 @@ const copy = {
         credential: "Ветеран подразделения 81 и IAI. MBA.",
         bio: "Системный архитектор и бизнес-лидер с глубокой экспертизой в системной инженерии и подтверждённым опытом операционного управления, включая роль COO. Превращает идеи в технологии, значимые для жизни людей.",
         image: "/team/gabriel-lev-har-neutral.png",
+        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
@@ -273,6 +286,7 @@ const copy = {
         credential: "PhD",
         bio: "Эксперт по передовым материалам и покрытиям. Обширный опыт R&D медицинских устройств, полимеризации, инновационных методов нанесения покрытий, масштабирования и производства.",
         image: "/team/nino-rivka-eliahu-neutral.png",
+        icon: "/team/icons/nino-materials.svg",
         linkedin: "https://www.linkedin.com/in/dr-nino-rebecca-eliahu-65037851/",
       },
       {
@@ -281,6 +295,7 @@ const copy = {
         credential: "Ветеран технологического подразделения ЦАХАЛ.",
         bio: "Специалист по XR-симуляциям и интерактивному ПО. Руководит системной интеграцией и проектирует высокотехнологичные иммерсивные XR-среды.",
         image: "/team/noam-amram-neutral.png",
+        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -289,6 +304,7 @@ const copy = {
         credential: "Ветеран подразделения 81.",
         bio: "Специалист по цифровым платам и обратной инженерии с опытом в военной и медицинской электронике. Ключевой технический лидер, отвечающий также за встроенное ПО и программирование контроллеров.",
         image: "/team/omri-arbel-neutral.png",
+        icon: "/team/icons/omri-cpu.svg",
         linkedin: "https://www.linkedin.com/in/omri-arbel-345796195/",
       },
     ],
@@ -364,24 +380,39 @@ export default function CompanyPage() {
                     src={member.image}
                     alt={member.name}
                     fill
-                    sizes="(max-width: 560px) 92vw, 200px"
+                    sizes="(max-width: 900px) 104px, 168px"
                     loading="lazy"
                   />
                 </div>
-                <div className="team-card-copy">
+                <div className="team-card-identity">
                   <h3><bdi dir="auto">{member.name}</bdi></h3>
-                  <p className="team-role"><bdi dir="auto">{member.role}</bdi></p>
+                  <p className="team-role">
+                    {/* eslint-disable-next-line @next/next/no-img-element -- small decorative role icons */}
+                    <img
+                      className="team-role-icon"
+                      src={member.icon}
+                      alt=""
+                      aria-hidden="true"
+                      width={18}
+                      height={18}
+                    />
+                    <span><bdi dir="auto">{member.role}</bdi></span>
+                  </p>
                   <p className="team-credential"><bdi dir="auto">{member.credential}</bdi></p>
+                </div>
+                <div className="team-card-body">
+                  <div className="team-divider" aria-hidden="true" />
                   <p className="team-bio">{member.bio}</p>
                   {member.linkedin ? (
                     <a
                       className="team-linkedin"
                       href={member.linkedin}
                       target="_blank"
-                      rel="noreferrer"
+                      rel="noopener noreferrer"
                       aria-label={`${member.name} on LinkedIn`}
                     >
-                      in <span>LinkedIn</span>
+                      <span className="team-linkedin-mark" aria-hidden="true">in</span>
+                      <span>LinkedIn</span>
                     </a>
                   ) : null}
                 </div>

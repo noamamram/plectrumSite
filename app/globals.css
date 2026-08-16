@@ -2096,31 +2096,41 @@ html[dir="rtl"] .company-mark {
 }
 
 .team-section .section-heading {
-  width: min(100%, var(--page-max));
+  width: min(100%, 720px);
   margin-inline: auto;
+  text-align: center;
+}
+
+.team-section .section-heading .eyebrow {
+  color: var(--cyan-bright);
 }
 
 .team-section .section-heading h2 {
-  font-size: clamp(36px, 4.2vw, 56px);
-  max-width: 16ch;
+  margin-inline: auto;
+  max-width: 18ch;
+  font-size: clamp(30px, 3.6vw, 44px);
+  line-height: 1.12;
+  letter-spacing: -0.03em;
 }
 
 .team-grid {
-  width: min(100%, var(--page-max));
+  width: min(100%, 1160px);
   margin-inline: auto;
-  margin-top: clamp(40px, 5vw, 64px);
+  margin-top: clamp(56px, 6vw, 72px);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 44px 48px;
+  column-gap: clamp(64px, 6vw, 80px);
+  row-gap: clamp(64px, 6vw, 72px);
 }
 
 .team-card {
   display: grid;
-  grid-template-columns: 200px minmax(0, 1fr);
-  column-gap: 26px;
+  grid-template-columns: clamp(130px, 11vw, 168px) minmax(0, 1fr);
+  grid-template-rows: auto auto;
+  column-gap: 24px;
+  row-gap: 0;
   align-items: start;
   min-width: 0;
-  max-height: none;
   background: transparent;
   border: 0;
   padding: 0;
@@ -2128,11 +2138,17 @@ html[dir="rtl"] .company-mark {
 
 .team-portrait {
   position: relative;
-  width: 200px;
-  max-width: 100%;
-  aspect-ratio: 4 / 5;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
   overflow: hidden;
   background: rgba(2, 13, 36, 0.72);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+  transition:
+    box-shadow 200ms ease,
+    transform 200ms ease;
 }
 
 .team-portrait img {
@@ -2147,7 +2163,7 @@ html[dir="rtl"] .company-mark {
 }
 
 .team-card[data-member="nino"] .team-portrait img {
-  object-position: center 20%;
+  object-position: center 22%;
 }
 
 .team-card[data-member="noam"] .team-portrait img {
@@ -2158,40 +2174,77 @@ html[dir="rtl"] .company-mark {
   object-position: center 14%;
 }
 
-.team-card-copy {
-  min-width: 0;
-  margin-top: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+.team-card:hover .team-portrait,
+.team-card:focus-within .team-portrait {
+  box-shadow:
+    inset 0 0 0 1px rgba(88, 215, 255, 0.55),
+    0 0 0 1px rgba(88, 215, 255, 0.28);
+  transform: scale(1.015);
 }
 
-.team-card-copy h3 {
+.team-card-identity {
+  grid-column: 2;
+  grid-row: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card-identity h3 {
   margin: 0;
-  font-size: clamp(24px, 2vw, 30px);
+  color: var(--white);
+  font-size: clamp(24px, 1.8vw, 28px);
   line-height: 1.15;
   letter-spacing: -0.02em;
 }
 
 .team-role {
   margin: 8px 0 0;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
   color: var(--cyan-bright);
   font-size: 15px;
   font-weight: 650;
-  line-height: 1.45;
+  line-height: 1.4;
+}
+
+.team-role-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+  flex: 0 0 auto;
+  margin-top: 0.15em;
+  object-fit: contain;
 }
 
 .team-credential {
-  margin: 12px 0 0;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.5;
+  margin: 8px 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.team-card-body {
+  grid-column: 2;
+  grid-row: 2;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.team-divider {
+  width: 100%;
+  max-width: 11rem;
+  height: 1px;
+  margin: 14px 0 0;
+  background: rgba(88, 215, 255, 0.22);
 }
 
 .team-bio {
-  margin: 10px 0 0;
-  color: rgba(255, 255, 255, 0.78);
+  margin: 14px 0 0;
+  color: rgba(255, 255, 255, 0.76);
   font-size: 15px;
   line-height: 1.6;
   max-width: 46ch;
@@ -2201,22 +2254,50 @@ html[dir="rtl"] .company-mark {
   width: fit-content;
   min-height: 44px;
   margin-top: 12px;
-  padding-top: 0;
   display: inline-flex;
   align-items: center;
   gap: 8px;
   color: var(--cyan-bright);
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 650;
+  text-decoration: none;
+  transition: opacity 180ms ease, text-decoration-color 180ms ease;
 }
 
-.team-linkedin::first-letter {
-  font-family: Arial, sans-serif;
+.team-linkedin-mark {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
-.team-linkedin span {
+.team-linkedin span:last-child {
   color: rgba(255, 255, 255, 0.78);
   font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 3px;
+}
+
+.team-linkedin:hover span:last-child,
+.team-linkedin:focus-visible span:last-child {
+  text-decoration-color: rgba(88, 215, 255, 0.7);
+}
+
+.team-linkedin:focus-visible {
+  outline: 2px solid var(--cyan-bright);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-portrait {
+    transition: none;
+  }
+
+  .team-card:hover .team-portrait,
+  .team-card:focus-within .team-portrait {
+    transform: none;
+  }
 }
 
 .company-connect {
@@ -2558,20 +2639,38 @@ html[dir="rtl"] .back-to-top {
   to { transform: scale(1.08) rotate(8deg); opacity: 1; }
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 900px) {
   .team-grid {
-    width: min(100%, 720px);
+    width: min(100%, 640px);
     grid-template-columns: 1fr;
-    gap: 44px;
+    column-gap: 0;
+    row-gap: 56px;
   }
 
   .team-card {
-    grid-template-columns: 180px minmax(0, 1fr);
-    column-gap: 24px;
+    grid-template-columns: 104px minmax(0, 1fr);
+    column-gap: 18px;
+    row-gap: 14px;
   }
 
   .team-portrait {
-    width: 180px;
+    grid-column: 1;
+    grid-row: 1;
+    width: 104px;
+  }
+
+  .team-card-identity {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .team-card-body {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .team-divider {
+    max-width: none;
   }
 }
 
@@ -3140,27 +3239,6 @@ html[dir="rtl"] .back-to-top {
     border-inline-end: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.18);
   }
-
-  .team-grid {
-    width: min(100%, 640px);
-    grid-template-columns: 1fr;
-    gap: 44px;
-  }
-
-  .team-card {
-    grid-template-columns: 160px minmax(0, 1fr);
-    column-gap: 20px;
-  }
-
-  .team-portrait {
-    width: 160px;
-    aspect-ratio: 4 / 5;
-    max-height: none;
-  }
-
-  .team-card-copy {
-    margin-top: 0;
-  }
 }
 
 @media (max-width: 560px) {
@@ -3290,10 +3368,14 @@ html[dir="rtl"] .back-to-top {
   .company-traction h2,
   .relationship-section h2,
   .market-section h2,
-  .team-section h2,
   .company-connect h2 {
     font-size: clamp(35px, 10vw, 43px);
     line-height: 1.08;
+  }
+
+  .team-section .section-heading h2 {
+    font-size: clamp(28px, 7.5vw, 36px);
+    line-height: 1.12;
   }
 
   .company-milestones {
@@ -3379,40 +3461,32 @@ html[dir="rtl"] .back-to-top {
     height: 70px;
   }
 
+  .team-section .section-heading {
+    width: min(100%, 36rem);
+  }
+
   .team-grid {
-    margin-top: 36px;
-    gap: 44px;
+    margin-top: 48px;
+    row-gap: 48px;
   }
 
   .team-card {
-    grid-template-columns: 1fr;
-    row-gap: 14px;
+    grid-template-columns: 96px minmax(0, 1fr);
+    column-gap: 14px;
+    row-gap: 12px;
   }
 
   .team-portrait {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    max-height: 320px;
+    width: 96px;
   }
 
-  .team-card-copy {
-    margin-top: 0;
-  }
-
-  .team-card-copy h3 {
-    font-size: clamp(22px, 6vw, 26px);
-  }
-
-  .team-credential {
-    margin-top: 12px;
+  .team-card-identity h3 {
+    font-size: clamp(22px, 5.8vw, 26px);
   }
 
   .team-bio {
     font-size: 15px;
-  }
-
-  .team-linkedin {
-    margin-top: 12px;
+    max-width: none;
   }
 
   .page-hero-copy .button,
