@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { SiteShell } from "../components/SiteShell";
 import { useLanguage } from "../components/LanguageProvider";
-import { MediaDisclaimer } from "../components/MediaDisclaimer";
+import { IllustrativeNote } from "../components/IllustrativeNote";
 
 const copy = {
   en: {
@@ -171,8 +171,10 @@ export default function ClinicalPage() {
             {t.cta}<span aria-hidden="true">→</span>
           </a>
         </div>
+        <div className="hero-footer-meta page-hero-footer-meta">
+          <IllustrativeNote />
+        </div>
       </section>
-      <MediaDisclaimer className="clinical-hero-disclaimer" />
 
       <section className="light-section">
         <div className="section-grid">
@@ -217,7 +219,9 @@ export default function ClinicalPage() {
             ru: "Изучить носимые устройства",
           }[language]}<span aria-hidden="true">→</span>
         </Link>
-        <MediaDisclaimer className="pilot-section-disclaimer" />
+        <div className="pilot-section-meta">
+          <IllustrativeNote />
+        </div>
       </section>
     </SiteShell>
   );

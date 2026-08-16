@@ -372,7 +372,7 @@ export default function CompanyPage() {
                   src={member.image}
                   alt={member.name}
                   fill
-                  sizes="(max-width: 820px) 92vw, (max-width: 1280px) 36vw, 280px"
+                  sizes="(max-width: 820px) 92vw, 520px"
                 />
               </div>
               <div className="team-card-copy">

@@ -453,49 +453,6 @@ html[dir="rtl"] .hero-actions {
   color: var(--blue);
 }
 
-.fabtive-mark {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 6px;
-  margin: 0 0 24px;
-  max-width: 28rem;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-html[dir="rtl"] .fabtive-mark {
-  margin-inline-start: 0;
-  align-items: flex-start;
-}
-
-.fabtive-mark-word {
-  display: inline-flex;
-  direction: ltr;
-  unicode-bidi: isolate;
-  font-size: clamp(15px, 1.35vw, 17px);
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  line-height: 1.2;
-}
-
-.fabtive-mark-fab {
-  color: var(--white);
-}
-
-.fabtive-mark-tive {
-  color: var(--cyan-bright);
-}
-
-.fabtive-mark-equation {
-  color: rgba(255, 255, 255, 0.65);
-  font-size: clamp(12px, 1.05vw, 13px);
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  direction: ltr;
-  unicode-bidi: isolate;
-}
-
 .fabtive-etymology {
   display: flex;
   flex-direction: column;
@@ -664,9 +621,9 @@ html[dir="rtl"] .text-link:hover span {
 }
 
 .scroll-cue {
-  position: absolute;
+  position: relative;
   z-index: 5;
-  inset: auto auto 32px 48px;
+  inset: auto;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -677,7 +634,84 @@ html[dir="rtl"] .text-link:hover span {
 }
 
 html[dir="rtl"] .scroll-cue {
-  inset: auto 48px 32px auto;
+  inset: auto;
+}
+
+.hero-footer-meta {
+  position: absolute;
+  z-index: 6;
+  inset-inline: clamp(24px, 5vw, 76px);
+  bottom: calc(28px + env(safe-area-inset-bottom, 0px));
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  pointer-events: none;
+}
+
+.hero-footer-meta > * {
+  pointer-events: auto;
+}
+
+.page-hero-footer-meta {
+  inset-inline: clamp(24px, 7vw, 110px);
+  justify-content: flex-end;
+}
+
+.illustrative-note {
+  display: inline-block;
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+  max-width: min(100%, 28rem);
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.45;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  text-wrap: pretty;
+  overflow-wrap: anywhere;
+}
+
+.illustrative-note:hover {
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.illustrative-note:focus-visible {
+  outline: 2px solid var(--cyan-bright);
+  outline-offset: 3px;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.product-media-block {
+  display: none;
+}
+
+.product-visuals-meta {
+  position: relative;
+  z-index: 2;
+  margin-top: clamp(36px, 4vw, 56px);
+  isolation: isolate;
+}
+
+.product-visuals-meta .illustrative-note {
+  color: rgba(255, 255, 255, 0.52);
+}
+
+.product-hero-caption,
+.pilot-section-meta,
+.prototype-stage-meta {
+  position: relative;
+  z-index: 2;
+  margin-top: 8px;
+  isolation: isolate;
+}
+
+.pilot-section-meta {
+  grid-column: 1 / -1;
 }
 
 .scroll-cue i {
@@ -889,7 +923,7 @@ html[dir="rtl"] .product-story .section-heading {
 }
 
 .product-grid {
-  margin-top: clamp(62px, 7vw, 96px);
+  margin-top: 16px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -1645,18 +1679,35 @@ html[dir="rtl"] .clinical-path-steps {
   animation: selector-pulse 1.25s ease-out infinite;
 }
 
+.prototype-canvas {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  align-self: stretch;
+}
+
 .prototype-stage {
   position: relative;
   min-height: 510px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  overflow: visible;
 }
 
 .prototype-viewer {
   position: relative;
-  flex: 1 1 auto;
-  min-height: 460px;
+  z-index: 0;
+  min-height: 510px;
+  height: 100%;
+}
+
+.prototype-stage-meta {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 auto;
+  margin-top: 0;
+  padding: 0;
+  isolation: isolate;
 }
 
 .model-scene-single {
@@ -2028,69 +2079,91 @@ html[dir="rtl"] .company-mark {
   background: var(--blue-deep);
 }
 
+.team-section .section-heading {
+  width: min(100%, 1100px);
+  margin-inline: auto;
+}
+
+.team-section .section-heading h2 {
+  font-size: clamp(40px, 4.5vw, 60px);
+  max-width: 18ch;
+}
+
 .team-grid {
-  margin-top: 64px;
+  width: min(100%, 1100px);
+  margin-inline: auto;
+  margin-top: clamp(56px, 7vw, 88px);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 28px;
+  column-gap: clamp(40px, 5vw, 72px);
+  row-gap: clamp(64px, 8vw, 104px);
 }
 
 .team-card {
-  display: grid;
-  grid-template-columns: minmax(0, 0.42fr) minmax(0, 0.58fr);
-  align-items: stretch;
-  overflow: hidden;
-  background: rgba(10, 40, 93, 0.72);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: transparent;
+  border: 0;
+  padding: 0;
 }
 
 .team-portrait {
   position: relative;
-  aspect-ratio: 1 / 1;
-  min-height: 0;
+  width: 100%;
+  aspect-ratio: 4 / 5;
   overflow: hidden;
-  background: rgba(2, 13, 36, 0.55);
+  background:
+    linear-gradient(160deg, rgba(24, 184, 242, 0.12), transparent 42%),
+    rgba(2, 13, 36, 0.72);
 }
 
 .team-portrait img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center 18%;
 }
 
 .team-card-copy {
-  padding: 28px 26px;
+  min-width: 0;
+  margin-top: 26px;
   display: flex;
   flex-direction: column;
-  min-width: 0;
+  flex: 1;
 }
 
 .team-card-copy h3 {
   margin: 0;
-  font-size: clamp(22px, 1.9vw, 28px);
-  line-height: 1.2;
+  font-size: clamp(24px, 2.2vw, 32px);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
 }
 
 .team-role {
-  margin: 10px 0 0;
+  margin: 12px 0 0;
   display: flex;
   align-items: flex-start;
-  gap: 8px;
+  gap: 10px;
   color: var(--cyan-bright);
+  font-size: 15px;
   font-weight: 700;
   line-height: 1.45;
 }
 
 .team-role-icon {
-  width: 1.25rem;
-  height: 1.25rem;
+  width: 1.35rem;
+  height: 1.35rem;
   flex: 0 0 auto;
-  margin-top: 0.15em;
+  margin-top: 0.12em;
   object-fit: contain;
 }
 
 .team-credential {
-  margin: 22px 0 0;
-  color: rgba(255, 255, 255, 0.86);
+  margin: 20px 0 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.55;
@@ -2099,15 +2172,16 @@ html[dir="rtl"] .company-mark {
 .team-bio {
   margin: 12px 0 0;
   color: rgba(255, 255, 255, 0.64);
-  font-size: 14px;
-  line-height: 1.65;
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 42ch;
 }
 
 .team-linkedin {
   width: fit-content;
   min-height: 44px;
   margin-top: auto;
-  padding-top: 18px;
+  padding-top: 22px;
   display: inline-flex;
   align-items: center;
   gap: 9px;
@@ -2313,72 +2387,15 @@ html[dir="rtl"] .company-mark {
   hyphens: none;
 }
 
-.media-disclaimer {
-  position: static;
-  margin: 8px 0 0;
-  max-width: 42rem;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 12px;
-  line-height: 1.45;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-}
-
-.media-disclaimer--light {
-  color: #3d4b5f;
-}
-
-.hero-media-disclaimer {
-  position: static;
-  z-index: 1;
-  width: min(100% - 48px, 42rem);
-  max-width: 42rem;
-  margin: 10px clamp(24px, 5vw, 76px) 0;
-  text-align: start;
-}
-
-html[dir="rtl"] .hero-media-disclaimer {
-  text-align: start;
-}
-
-.product-section-disclaimer {
-  margin: 10px 0 0;
-  color: rgba(255, 255, 255, 0.58);
-  max-width: 42rem;
-}
-
-.technology-hero-disclaimer {
-  position: static;
-  max-width: 42rem;
-  margin: 10px clamp(24px, 7vw, 110px) 0;
-}
-
-.clinical-hero-disclaimer {
-  position: static;
-  z-index: 2;
-  max-width: 42rem;
-  margin: 0 auto;
-  padding: 10px clamp(24px, 7vw, 110px) 28px;
-  color: rgba(255, 255, 255, 0.6);
-  background: var(--blue-deep);
-}
-
-html[dir="rtl"] .clinical-hero-disclaimer {
-  text-align: start;
-}
-
-.pilot-section-disclaimer {
-  grid-column: 1 / -1;
-  margin-top: 8px;
-  color: rgba(255, 255, 255, 0.58);
-}
-
+.media-disclaimer,
+.hero-media-disclaimer,
+.product-section-disclaimer,
+.technology-hero-disclaimer,
+.clinical-hero-disclaimer,
+.pilot-section-disclaimer,
 .prototype-stage-disclaimer {
-  position: relative;
-  flex: 0 0 auto;
-  margin: 0;
-  max-width: 42rem;
-  color: rgba(255, 255, 255, 0.58);
+  /* Legacy disclaimer strip classes removed; use .illustrative-note instead. */
+  display: none;
 }
 
 .back-to-top {
@@ -2519,6 +2536,13 @@ html[dir="rtl"] .back-to-top {
 @keyframes orbit-drift {
   from { transform: scale(0.88) rotate(-5deg); opacity: 0.35; }
   to { transform: scale(1.08) rotate(8deg); opacity: 1; }
+}
+
+@media (max-width: 1050px) and (min-width: 821px) {
+  .team-grid {
+    column-gap: 32px;
+    row-gap: 72px;
+  }
 }
 
 @media (max-width: 1120px) {
@@ -2747,14 +2771,6 @@ html[dir="rtl"] .back-to-top {
     font-size: clamp(40px, 10.5vw, 48px);
   }
 
-  .fabtive-mark {
-    margin-bottom: 22px;
-  }
-
-  .fabtive-mark-word {
-    font-size: 15px;
-  }
-
   .hero-subtitle {
     max-width: 560px;
   }
@@ -2778,6 +2794,28 @@ html[dir="rtl"] .back-to-top {
     background-position: 68% center;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  }
+
+  .hero-footer-meta {
+    position: relative;
+    inset: auto;
+    order: 3;
+    margin-top: 16px;
+    bottom: auto;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  .page-hero-footer-meta {
+    position: relative;
+    inset: auto;
+    margin-top: 28px;
+    justify-content: flex-start;
+  }
+
+  .page-hero {
+    padding-bottom: 48px;
+    overflow: visible;
   }
 
   .scroll-cue {
@@ -2817,6 +2855,10 @@ html[dir="rtl"] .back-to-top {
     width: 100%;
   }
 
+  .product-media-block {
+    display: block;
+  }
+
   .product-hero-visual {
     position: relative;
     width: calc(100% + (2 * clamp(24px, 7vw, 110px)));
@@ -2827,6 +2869,14 @@ html[dir="rtl"] .back-to-top {
     background: url("/media/hero-products-v3.png") 80% center / cover no-repeat;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 9%, black 91%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 9%, black 91%, transparent 100%);
+  }
+
+  .product-hero-caption {
+    margin-top: 10px;
+  }
+
+  .product-hero-caption .illustrative-note {
+    color: rgba(255, 255, 255, 0.5);
   }
 
   .scroll-cue {
@@ -2965,10 +3015,10 @@ html[dir="rtl"] .back-to-top {
   }
 
   .prototype-page {
-    min-height: 1100px;
+    min-height: 0;
     padding: 130px 22px 52px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 500px auto;
+    grid-template-rows: auto;
   }
 
   .prototype-intro {
@@ -2986,7 +3036,18 @@ html[dir="rtl"] .back-to-top {
   }
 
   .prototype-stage {
-    min-height: 500px;
+    min-height: 0;
+  }
+
+  .prototype-viewer {
+    min-height: 0;
+    width: 100%;
+    aspect-ratio: 1 / 1.02;
+    max-height: min(68svh, 520px);
+  }
+
+  .prototype-stage-meta {
+    margin-top: 0;
   }
 
   .prototype-copy {
@@ -2994,6 +3055,7 @@ html[dir="rtl"] .back-to-top {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-top: 8px;
   }
 
   .prototype-specs {
@@ -3006,15 +3068,25 @@ html[dir="rtl"] .back-to-top {
   }
 
   .company-mark {
-    top: auto;
-    right: -8%;
-    bottom: 26px;
+    position: static;
+    inset: auto;
+    width: auto;
+    margin: 28px auto 0;
+    display: flex;
+    justify-content: center;
     transform: none;
-    opacity: 0.1;
+    opacity: 0.07;
+    filter: none;
   }
 
   html[dir="rtl"] .company-mark {
-    left: -8%;
+    left: auto;
+    right: auto;
+  }
+
+  .company-mark img {
+    width: 120px;
+    height: auto;
   }
 
   .relationship-grid {
@@ -3038,12 +3110,18 @@ html[dir="rtl"] .back-to-top {
   }
 
   .team-grid {
+    width: min(100%, 640px);
     grid-template-columns: 1fr;
-    gap: 24px;
+    row-gap: 56px;
   }
 
-  .team-card {
-    grid-template-columns: 1fr;
+  .team-portrait {
+    aspect-ratio: 3 / 4;
+    max-height: 520px;
+  }
+
+  .team-card-copy {
+    margin-top: 22px;
   }
 }
 
@@ -3131,6 +3209,7 @@ html[dir="rtl"] .back-to-top {
   }
 
   .company-hero {
+    display: block;
     min-height: auto;
     padding: 126px 20px 78px;
   }
@@ -3149,17 +3228,17 @@ html[dir="rtl"] .back-to-top {
   }
 
   .company-mark {
-    right: -34px;
-    bottom: -22px;
+    margin-top: 24px;
+    opacity: 0.07;
   }
 
   html[dir="rtl"] .company-mark {
+    left: auto;
     right: auto;
-    left: -34px;
   }
 
   .company-mark img {
-    width: 190px;
+    width: 104px;
   }
 
   .company-traction,
@@ -3263,15 +3342,39 @@ html[dir="rtl"] .back-to-top {
   }
 
   .team-grid {
-    margin-top: 42px;
-    gap: 24px;
+    margin-top: 40px;
+    row-gap: 48px;
   }
 
-  .team-card {
-    grid-template-columns: 1fr;
-    border-radius: 0;
-    background: rgba(10, 40, 93, 0.72);
-    box-shadow: none;
+  .team-portrait {
+    aspect-ratio: 4 / 5;
+    max-height: none;
+  }
+
+  .team-card-copy {
+    margin-top: 18px;
+  }
+
+  .team-card-copy h3 {
+    font-size: 24px;
+  }
+
+  .team-role-icon {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .team-credential {
+    margin-top: 16px;
+    padding-top: 16px;
+  }
+
+  .team-bio {
+    font-size: 14px;
+  }
+
+  .team-linkedin {
+    padding-top: 18px;
   }
 
   .page-hero-copy .button,
@@ -3282,28 +3385,6 @@ html[dir="rtl"] .back-to-top {
   .fact-grid,
   .clinical-control-grid {
     grid-template-columns: 1fr;
-  }
-
-  .team-portrait {
-    min-height: 0;
-    aspect-ratio: 1 / 1;
-  }
-
-  .team-portrait img {
-    object-position: center center;
-  }
-
-  .team-card-copy {
-    padding: 22px 20px 24px;
-  }
-
-  .team-role-icon {
-    width: 1.125rem;
-    height: 1.125rem;
-  }
-
-  .team-credential {
-    margin-top: 18px;
   }
 
   .company-contact-strip {
@@ -3331,12 +3412,16 @@ html[dir="rtl"] .back-to-top {
   }
 
   .prototype-page {
-    min-height: 1080px;
-    grid-template-rows: auto auto 420px auto;
+    min-height: 0;
+    grid-template-rows: auto;
   }
 
   .prototype-stage {
-    min-height: 420px;
+    min-height: 0;
+  }
+
+  .prototype-viewer {
+    max-height: min(62svh, 460px);
   }
 
   .prototype-copy {
@@ -3374,24 +3459,7 @@ html[dir="rtl"] .back-to-top {
   }
 
   .team-grid figure {
-    min-height: 290px;
-  }
-
-  .hero-media-disclaimer,
-  .technology-hero-disclaimer,
-  .clinical-hero-disclaimer {
-    position: static;
-    max-width: 42rem;
-    width: calc(100% - 40px);
-    margin: 10px 20px 0;
-    text-align: start;
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .clinical-hero-disclaimer {
-    margin: 0;
-    padding: 10px 20px 22px;
-    width: 100%;
+    min-height: 0;
   }
 
   .clinical-hero {

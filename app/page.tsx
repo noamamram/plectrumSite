@@ -1,14 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { IllustrativeNote } from "./components/IllustrativeNote";
 import { ModelScene } from "./components/ModelScene";
-import { MediaDisclaimer } from "./components/MediaDisclaimer";
 import { SiteShell } from "./components/SiteShell";
 import { useLanguage } from "./components/LanguageProvider";
 
 const content = {
   en: {
-    fabtiveLabel: "FABTIVE — FABRIC plus ACTIVE",
     title: "Remote Sensory Integration.",
     subtitle:
       "A comprehensive platform for software-controlled tactile feedback. Plectrum provides measurable, adaptive physical interventions using precision vibration hardware to bridge the tangibility gap in digital health.",
@@ -62,7 +61,6 @@ const content = {
     ],
   },
   he: {
-    fabtiveLabel: "FABTIVE — FABRIC plus ACTIVE",
     title: "אינטגרציה חושית מרחוק.",
     subtitle:
       "פלטפורמה מקיפה למשוב מישושי הנשלט בתוכנה. Plectrum מספקת התערבויות פיזיות מדידות ואדפטיביות באמצעות חומרת רטט מדויקת, כדי לגשר על פער המוחשיות בבריאות הדיגיטלית.",
@@ -116,7 +114,6 @@ const content = {
     ],
   },
   ar: {
-    fabtiveLabel: "FABTIVE — FABRIC plus ACTIVE",
     title: "تكامل حسي عن بُعد.",
     subtitle:
       "منصة شاملة للتغذية الراجعة اللمسية المتحكم بها برمجيًا. توفر Plectrum تدخلات جسدية قابلة للقياس والتكيف عبر أجهزة اهتزاز دقيقة، لتسد فجوة الملموسية في الصحة الرقمية.",
@@ -170,7 +167,6 @@ const content = {
     ],
   },
   ru: {
-    fabtiveLabel: "FABTIVE — FABRIC plus ACTIVE",
     title: "Дистанционная сенсорная интеграция.",
     subtitle:
       "Комплексная платформа программно управляемой тактильной обратной связи. Plectrum обеспечивает измеримые, адаптивные физические вмешательства с помощью прецизионного вибрационного оборудования, устраняя дефицит осязаемости в цифровой медицине.",
@@ -235,15 +231,6 @@ export default function Home() {
         <div className="hero-fabric" aria-hidden="true" />
         <div className="hero-products-visual" aria-hidden="true" />
         <div className="hero-copy">
-          <p className="fabtive-mark" aria-label={t.fabtiveLabel}>
-            <span className="fabtive-mark-word" dir="ltr" aria-hidden="true">
-              <span className="fabtive-mark-fab">FAB</span>
-              <span className="fabtive-mark-tive">TIVE</span>
-            </span>
-            <span className="fabtive-mark-equation" dir="ltr" aria-hidden="true">
-              FABRIC + ACTIVE
-            </span>
-          </p>
           <h1>{t.title}</h1>
           <p className="hero-subtitle">{t.subtitle}</p>
           <div className="hero-actions">
@@ -255,12 +242,14 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <a className="scroll-cue" href="#touch-gap">
-          <span>{t.scroll}</span>
-          <i aria-hidden="true" />
-        </a>
+        <div className="hero-footer-meta">
+          <a className="scroll-cue" href="#touch-gap">
+            <span>{t.scroll}</span>
+            <i aria-hidden="true" />
+          </a>
+          <IllustrativeNote />
+        </div>
       </section>
-      <MediaDisclaimer className="hero-media-disclaimer" />
 
       <section className="light-section thesis-section" id="touch-gap">
         <div className="section-grid">
@@ -293,9 +282,16 @@ export default function Home() {
             <h2>{t.productsTitle}</h2>
             <p>{t.productsBody}</p>
           </div>
-          <div className="product-hero-visual" aria-hidden="true" />
+          <div className="product-media-block">
+            <div className="product-hero-visual" aria-hidden="true" />
+            <div className="product-hero-caption">
+              <IllustrativeNote />
+            </div>
+          </div>
         </div>
-        <MediaDisclaimer className="product-section-disclaimer" />
+        <div className="product-visuals-meta">
+          <IllustrativeNote />
+        </div>
         <div className="product-grid">
           {t.products.map(([name, body], index) => (
             <article className="product-card reveal" key={name}>

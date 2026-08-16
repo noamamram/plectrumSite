@@ -41,22 +41,14 @@ const languageBootstrap = `(() => {
     var supported = ["en", "he", "ar", "ru"];
     var match = document.cookie.match(new RegExp("(?:^|; )" + key + "=([^;]+)"));
     var cookieLang = match ? decodeURIComponent(match[1]) : "";
+    // Cookie already present: server HTML used it. Do not mutate lang/dir before hydration.
+    if (supported.indexOf(cookieLang) >= 0) return;
     var stored = "";
     try { stored = window.localStorage.getItem(key) || ""; } catch (e) {}
-    var lang = supported.indexOf(cookieLang) >= 0
-      ? cookieLang
-      : supported.indexOf(stored) >= 0
-        ? stored
-        : "";
-    if (!lang) return;
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === "he" || lang === "ar" ? "rtl" : "ltr";
-    if (supported.indexOf(cookieLang) < 0) {
-      document.cookie = key + "=" + lang + "; path=/; max-age=31536000; SameSite=Lax";
-      if (supported.indexOf(stored) >= 0) {
-        location.reload();
-      }
-    }
+    if (supported.indexOf(stored) < 0) return;
+    document.cookie = key + "=" + stored + "; path=/; max-age=31536000; SameSite=Lax";
+    // Reload so the next response is server-rendered in the stored locale.
+    location.replace(location.href);
   } catch (e) {}
 })();`;
 
@@ -70,7 +62,7 @@ export default async function RootLayout({
   const dir = languageDirection(language);
 
   return (
-    <html lang={language} dir={dir} id="top" suppressHydrationWarning>
+    <html lang={language} dir={dir} id="top">
       <head>
         <script dangerouslySetInnerHTML={{ __html: languageBootstrap }} />
       </head>

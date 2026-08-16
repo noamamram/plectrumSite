@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useLanguage } from "./LanguageProvider";
 
 const revealSelector = [
   ".reveal",
@@ -22,15 +23,22 @@ const revealSelector = [
   ".footer-cta",
 ].join(",");
 
+function isInInitialViewport(element: HTMLElement) {
+  const rect = element.getBoundingClientRect();
+  return rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
+}
+
 export function ScrollEffects() {
   const pathname = usePathname();
+  const { language } = useLanguage();
 
   useEffect(() => {
     const root = document.documentElement;
-    root.classList.add("js-scroll-reveal");
-
     const elements = Array.from(document.querySelectorAll<HTMLElement>(revealSelector));
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // Progressive enhancement: only hide after JS init, and reveal anything already on screen.
+    root.classList.add("js-scroll-reveal");
 
     elements.forEach((element) => {
       const siblings = element.parentElement ? Array.from(element.parentElement.children) : [];
@@ -60,18 +68,19 @@ export function ScrollEffects() {
           observer.unobserve(target);
         });
       },
-      { threshold: 0.05, rootMargin: "0px 0px 18% 0px" },
+      { threshold: 0.01, rootMargin: "0px 0px 20% 0px" },
     );
 
-    const frame = window.requestAnimationFrame(() => {
-      elements.forEach((element) => {
-        element.style.willChange = "opacity, transform";
-        observer.observe(element);
-      });
+    elements.forEach((element) => {
+      if (isInInitialViewport(element)) {
+        element.classList.add("is-visible");
+        return;
+      }
+      element.style.willChange = "opacity, transform";
+      observer.observe(element);
     });
 
     return () => {
-      window.cancelAnimationFrame(frame);
       observer.disconnect();
       root.classList.remove("js-scroll-reveal");
       elements.forEach((element) => {
@@ -80,7 +89,7 @@ export function ScrollEffects() {
         element.style.removeProperty("will-change");
       });
     };
-  }, [pathname]);
+  }, [language, pathname]);
 
   return null;
 }

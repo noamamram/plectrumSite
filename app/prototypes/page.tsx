@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useState, type KeyboardEvent } from "react";
 import { ModelScene } from "../components/ModelScene";
-import { MediaDisclaimer } from "../components/MediaDisclaimer";
+import { IllustrativeNote } from "../components/IllustrativeNote";
 import { SiteShell } from "../components/SiteShell";
 import { TextWithNoBreak } from "../components/TextWithNoBreak";
 import { useLanguage } from "../components/LanguageProvider";
@@ -259,7 +259,7 @@ const copy = {
     cta: "Discuss a prototype or pilot",
     disclaimerTitle: "Product disclaimer",
     disclaimerBody:
-      "Plectrum products are intended as assistive tools to improve quality of life and support sensory regulation. The products are not medical devices, are not a substitute for medical, psychological, or professional care, and do not promise or undertake prevention, cure, or protection from injury, risk situations, or any medical conditions. Use of the products is the sole responsibility of the user or guardian, and should be carried out subject to receiving initial guidance and in accordance with the instructions for use.",
+      "Images and visualizations on this site are for illustrative purposes only. Product design, appearance, and specifications may change. Plectrum products are intended as assistive tools to improve quality of life and support sensory regulation. The products are not medical devices, are not a substitute for medical, psychological, or professional care, and do not promise or undertake prevention, cure, or protection from injury, risk situations, or any medical conditions. Use of the products is the sole responsibility of the user or guardian, and should be carried out subject to receiving initial guidance and in accordance with the instructions for use.",
   },
   he: {
     eyebrow: "ארבעה אבות טיפוס פעילים מבוססי רטט",
@@ -283,7 +283,7 @@ const copy = {
     cta: "שיחה על אב טיפוס או פיילוט",
     disclaimerTitle: "הבהרה חשובה",
     disclaimerBody:
-      "מוצרי פלקטרום נועדו לשמש ככלי עזר לשיפור איכות החיים ולתמיכה בוויסות חושי. המוצרים אינם מהווים מכשור רפואי, אינם מהווים תחליף לטיפול רפואי, פסיכולוגי או מקצועי, ואינם מבטיחים או מתחייבים למניעה, ריפוי או הגנה מפני פגיעות, מצבי סיכון או מצבים רפואיים כלשהם. השימוש במוצרים הינו באחריות המשתמש או האפוטרופוס בלבד, ויש לבצעו בכפוף לקבלת הדרכה ראשונית ובהתאם להוראות השימוש.",
+      "התמונות וההדמיות באתר הן להמחשה בלבד. ייתכנו שינויים בעיצוב המוצר, במראהו ובמפרטיו. מוצרי פלקטרום נועדו לשמש ככלי עזר לשיפור איכות החיים ולתמיכה בוויסות חושי. המוצרים אינם מהווים מכשור רפואי, אינם מהווים תחליף לטיפול רפואי, פסיכולוגי או מקצועי, ואינם מבטיחים או מתחייבים למניעה, ריפוי או הגנה מפני פגיעות, מצבי סיכון או מצבים רפואיים כלשהם. השימוש במוצרים הינו באחריות המשתמש או האפוטרופוס בלבד, ויש לבצעו בכפוף לקבלת הדרכה ראשונית ובהתאם להוראות השימוש.",
   },
   ar: {
     eyebrow: "أربعة نماذج اهتزازية عاملة",
@@ -307,7 +307,7 @@ const copy = {
     cta: "ناقش نموذجًا أوليًا أو تجربة",
     disclaimerTitle: "تنويه مهم حول المنتج",
     disclaimerBody:
-      "تهدف منتجات Plectrum إلى أن تكون أدوات مساعدة لتحسين جودة الحياة ودعم التنظيم الحسي. المنتجات ليست أجهزة طبية، وليست بديلاً عن رعاية طبية أو نفسية أو مهنية، ولا تعد ولا تلتزم بالوقاية أو الشفاء أو الحماية من الإصابات أو حالات الخطر أو أي حالات طبية. استخدام المنتجات يقع على مسؤولية المستخدم أو الوصي وحده، ويجب أن يتم بعد تلقي إرشاد أولي ووفقًا لتعليمات الاستخدام.",
+      "الصور والتصورات على هذا الموقع للتوضيح فقط. قد يتغير تصميم المنتج ومظهره ومواصفاته. تهدف منتجات Plectrum إلى أن تكون أدوات مساعدة لتحسين جودة الحياة ودعم التنظيم الحسي. المنتجات ليست أجهزة طبية، وليست بديلاً عن رعاية طبية أو نفسية أو مهنية، ولا تعد ولا تلتزم بالوقاية أو الشفاء أو الحماية من الإصابات أو حالات الخطر أو أي حالات طبية. استخدام المنتجات يقع على مسؤولية المستخدم أو الوصي وحده، ويجب أن يتم بعد تلقي إرشاد أولي ووفقًا لتعليمات الاستخدام.",
   },
   ru: {
     eyebrow: "ЧЕТЫРЕ ДЕЙСТВУЮЩИХ ВИБРАЦИОННЫХ ПРОТОТИПА",
@@ -331,7 +331,7 @@ const copy = {
     cta: "Обсудить прототип или пилот",
     disclaimerTitle: "Важное уточнение о продукте",
     disclaimerBody:
-      "Продукты Plectrum предназначены как вспомогательные средства для улучшения качества жизни и поддержки сенсорной регуляции. Продукты не являются медицинскими изделиями, не заменяют медицинскую, психологическую или профессиональную помощь и не обещают и не обязуются обеспечивать профилактику, лечение или защиту от травм, ситуаций риска или каких-либо медицинских состояний. Использование продуктов осуществляется исключительно на ответственности пользователя или опекуна и должно выполняться после получения первичного инструктажа и в соответствии с инструкцией по применению.",
+      "Изображения и визуализации на этом сайте приведены только для иллюстрации. Дизайн, внешний вид и характеристики продукта могут измениться. Продукты Plectrum предназначены как вспомогательные средства для улучшения качества жизни и поддержки сенсорной регуляции. Продукты не являются медицинскими изделиями, не заменяют медицинскую, психологическую или профессиональную помощь и не обещают и не обязуются обеспечивать профилактику, лечение или защиту от травм, ситуаций риска или каких-либо медицинских состояний. Использование продуктов осуществляется исключительно на ответственности пользователя или опекуна и должно выполняться после получения первичного инструктажа и в соответствии с инструкцией по применению.",
   },
 } as const;
 
@@ -405,22 +405,26 @@ export default function PrototypesPage() {
             </button>
           ))}
         </div>
-        <div
-          className="prototype-stage"
-          id="prototype-stage"
-          role="tabpanel"
-          aria-labelledby={`prototype-tab-${product.id}`}
-        >
-          <div className="prototype-viewer">
-            <ModelScene
-              mode="single"
-              modelPath={product.path}
-              poster={PRODUCT_POSTERS[product.id]}
-              label={product.name}
-            />
-            <span className="prototype-hint">{isTouch ? t.rotateTouch : t.rotate}</span>
+        <div className="prototype-canvas">
+          <div
+            className="prototype-stage"
+            id="prototype-stage"
+            role="tabpanel"
+            aria-labelledby={`prototype-tab-${product.id}`}
+          >
+            <div className="prototype-viewer">
+              <ModelScene
+                mode="single"
+                modelPath={product.path}
+                poster={PRODUCT_POSTERS[product.id]}
+                label={product.name}
+              />
+              <span className="prototype-hint">{isTouch ? t.rotateTouch : t.rotate}</span>
+            </div>
           </div>
-          <MediaDisclaimer className="prototype-stage-disclaimer" />
+          <div className="prototype-stage-meta">
+            <IllustrativeNote />
+          </div>
         </div>
         <aside className="prototype-copy" aria-live="polite">
           <span className="prototype-tag">{product.tag}</span>
@@ -480,6 +484,7 @@ export default function PrototypesPage() {
       <aside
         className="product-disclaimer"
         id="product-disclaimer"
+        tabIndex={-1}
         aria-labelledby="product-disclaimer-heading"
       >
         <h2 id="product-disclaimer-heading">{t.disclaimerTitle}</h2>

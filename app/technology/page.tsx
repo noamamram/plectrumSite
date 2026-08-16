@@ -4,7 +4,7 @@ import Link from "next/link";
 import { SiteShell } from "../components/SiteShell";
 import { useLanguage } from "../components/LanguageProvider";
 import { FabtiveEtymology } from "../components/FabtiveEtymology";
-import { MediaDisclaimer } from "../components/MediaDisclaimer";
+import { IllustrativeNote } from "../components/IllustrativeNote";
 import { TextWithNoBreak } from "../components/TextWithNoBreak";
 
 const copy = {
@@ -184,8 +184,10 @@ export default function TechnologyPage() {
         <div className="technology-hero-media">
           <div className="fabric-core" aria-hidden="true"><i /><i /><i /><i /><i /></div>
         </div>
+        <div className="hero-footer-meta page-hero-footer-meta">
+          <IllustrativeNote />
+        </div>
       </section>
-      <MediaDisclaimer className="technology-hero-disclaimer" />
 
       <section className="light-section">
         <div className="section-grid">

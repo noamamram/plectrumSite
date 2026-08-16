@@ -36,6 +36,7 @@ export function LanguageProvider({
   children: React.ReactNode;
   initialLanguage?: Language;
 }) {
+  // Always hydrate from the server-provided locale so SSR HTML matches the first client render.
   const [language, setLanguageState] = useState<Language>(initialLanguage);
 
   const setLanguage = useCallback((nextLanguage: Language) => {

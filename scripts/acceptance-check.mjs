@@ -34,14 +34,16 @@ for (const lang of langs) {
   });
 
   const fabtive = page.locator(".fabtive-mark");
-  if (await fabtive.count()) {
-    const label = await fabtive.getAttribute("aria-label");
-    results.push({
-      check: `fabtive-lockup-${lang.code}`,
-      ok: Boolean(label && label.includes("FABTIVE")),
-      detail: label,
-    });
-  }
+  results.push({
+    check: `no-fabtive-lockup-${lang.code}`,
+    ok: (await fabtive.count()) === 0,
+    detail: `count=${await fabtive.count()}`,
+  });
+  results.push({
+    check: `no-fabric-active-${lang.code}`,
+    ok: !bodyText.includes("FABRIC + ACTIVE") && !bodyText.includes("FAB\nTIVE"),
+    detail: "ok",
+  });
 
   for (const width of widths) {
     await page.setViewportSize({ width, height: 900 });
@@ -63,7 +65,7 @@ for (const lang of langs) {
         const order = await page.evaluate(() => {
           const copy = document.querySelector(".hero-copy");
           const visual = document.querySelector(".hero-products-visual");
-          const disc = document.querySelector(".hero-media-disclaimer");
+          const disc = document.querySelector(".hero-footer-meta .illustrative-note");
           if (!copy || !visual || !disc) return null;
           return {
             cy: copy.getBoundingClientRect().top,
