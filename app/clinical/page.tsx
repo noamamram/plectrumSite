@@ -170,9 +170,7 @@ export default function ClinicalPage() {
           <a className="button button-primary" href="mailto:gabriel@plectrum.biz?subject=Plectrum%20clinical%20pilot">
             {t.cta}<span aria-hidden="true">→</span>
           </a>
-        </div>
-        <div className="hero-footer-meta page-hero-footer-meta">
-          <IllustrativeNote />
+          <IllustrativeNote className="clinical-hero-note" />
         </div>
       </section>
 

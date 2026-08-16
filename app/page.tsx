@@ -284,13 +284,7 @@ export default function Home() {
           </div>
           <div className="product-media-block">
             <div className="product-hero-visual" aria-hidden="true" />
-            <div className="product-hero-caption">
-              <IllustrativeNote />
-            </div>
           </div>
-        </div>
-        <div className="product-visuals-meta">
-          <IllustrativeNote />
         </div>
         <div className="product-grid">
           {t.products.map(([name, body], index) => (
@@ -311,6 +305,9 @@ export default function Home() {
               <p>{body}</p>
             </article>
           ))}
+        </div>
+        <div className="product-visuals-meta">
+          <IllustrativeNote />
         </div>
         <Link className="text-link" href="/prototypes">
           {t.viewModels}<span aria-hidden="true">→</span>

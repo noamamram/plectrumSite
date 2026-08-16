@@ -373,16 +373,35 @@ export default function CompanyPage() {
                 : member.image.includes("noam")
                   ? "noam"
                   : "omri";
+            const portraitSlug = {
+              gabriel: "gabriel-lev-har-neutral",
+              nino: "nino-rivka-eliahu-neutral",
+              noam: "noam-amram-neutral",
+              omri: "omri-arbel-neutral",
+            }[memberKey];
             return (
               <article className="team-card" data-member={memberKey} key={member.name}>
                 <div className="team-portrait">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    sizes="(max-width: 900px) 104px, 168px"
-                    loading="lazy"
-                  />
+                  <picture>
+                    <source
+                      type="image/avif"
+                      srcSet={`/team/optimized/${portraitSlug}-192.avif 192w, /team/optimized/${portraitSlug}-384.avif 384w`}
+                      sizes="(max-width: 900px) 104px, 168px"
+                    />
+                    <source
+                      type="image/webp"
+                      srcSet={`/team/optimized/${portraitSlug}-192.webp 192w, /team/optimized/${portraitSlug}-384.webp 384w`}
+                      sizes="(max-width: 900px) 104px, 168px"
+                    />
+                    <img
+                      src={`/team/optimized/${portraitSlug}-384.webp`}
+                      alt={member.name}
+                      width={384}
+                      height={384}
+                      decoding="async"
+                      loading="lazy"
+                    />
+                  </picture>
                 </div>
                 <div className="team-card-identity">
                   <h3><bdi dir="auto">{member.name}</bdi></h3>

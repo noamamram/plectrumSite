@@ -706,7 +706,7 @@ html[dir="rtl"] .scroll-cue {
 .product-visuals-meta {
   position: relative;
   z-index: 2;
-  margin-top: clamp(36px, 4vw, 56px);
+  margin-top: 18px;
   isolation: isolate;
 }
 
@@ -1306,9 +1306,20 @@ html[dir="rtl"] .prototype-intro h1 {
 }
 
 .technology-hero {
+  direction: ltr;
   flex-wrap: wrap;
   align-content: center;
   row-gap: 28px;
+}
+
+html[dir="rtl"] .technology-hero .page-hero-copy {
+  direction: rtl;
+  text-align: right;
+}
+
+.technology-hero .page-hero-copy {
+  width: min(100%, 720px);
+  max-width: min(52%, 760px);
 }
 
 .fabric-core i {
@@ -1468,28 +1479,54 @@ html[dir="rtl"] .prototype-intro h1 {
 }
 
 .clinical-hero {
+  direction: ltr;
   justify-content: flex-start;
+  align-items: center;
+  min-height: max(680px, 88svh);
+  overflow: hidden;
+  background: var(--blue-deep);
+}
+
+.clinical-hero .page-hero-copy {
+  position: relative;
+  z-index: 3;
+  width: min(100%, 680px);
+  max-width: min(48%, 720px);
+}
+
+html[dir="rtl"] .clinical-hero .page-hero-copy {
+  direction: rtl;
+  text-align: right;
+}
+
+.clinical-hero-note {
+  display: block;
+  margin-top: 16px;
+  max-width: 28rem;
 }
 
 .clinical-hero-media {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
+  overflow: hidden;
+  background: var(--blue-deep);
 }
 
 .clinical-hero-visual {
   position: absolute;
   inset: 0;
-  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
 }
 
 .clinical-hero-visual img {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: min(62vw, 980px);
+  inset: 0;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: right center;
@@ -1499,21 +1536,24 @@ html[dir="rtl"] .prototype-intro h1 {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: 2;
+  z-index: 1;
   background:
-    linear-gradient(90deg, var(--blue-deep) 0%, rgba(4, 24, 56, 0.9) 32%, rgba(4, 24, 56, 0.48) 54%, rgba(4, 24, 56, 0.1) 70%, transparent 82%);
+    linear-gradient(
+      90deg,
+      var(--blue-deep) 0%,
+      rgba(4, 24, 56, 0.94) 26%,
+      rgba(4, 24, 56, 0.62) 46%,
+      rgba(4, 24, 56, 0.22) 66%,
+      transparent 84%
+    ),
+    linear-gradient(
+      180deg,
+      rgba(4, 24, 56, 0.28) 0%,
+      transparent 28%,
+      transparent 72%,
+      rgba(4, 24, 56, 0.45) 100%
+    );
   pointer-events: none;
-}
-
-html[dir="rtl"] .clinical-hero-visual img {
-  right: auto;
-  left: 0;
-  object-position: left center;
-}
-
-html[dir="rtl"] .clinical-hero::before {
-  background:
-    linear-gradient(270deg, var(--blue-deep) 0%, rgba(4, 24, 56, 0.9) 32%, rgba(4, 24, 56, 0.48) 54%, rgba(4, 24, 56, 0.1) 70%, transparent 82%);
 }
 
 .clinical-control-grid {
@@ -1532,7 +1572,7 @@ html[dir="rtl"] .clinical-hero::before {
 }
 
 .clinical-control-grid article:last-child {
-  border: 0;
+  border-inline-end: 0;
 }
 
 .clinical-control-grid span {
@@ -2151,9 +2191,16 @@ html[dir="rtl"] .company-mark {
     transform 200ms ease;
 }
 
+.team-portrait picture,
 .team-portrait img {
+  position: absolute;
+  inset: 0;
+  display: block;
   width: 100%;
   height: 100%;
+}
+
+.team-portrait img {
   object-fit: cover;
   object-position: center 18%;
 }
@@ -2644,13 +2691,19 @@ html[dir="rtl"] .back-to-top {
     width: min(100%, 640px);
     grid-template-columns: 1fr;
     column-gap: 0;
-    row-gap: 56px;
+    row-gap: 0;
   }
 
   .team-card {
     grid-template-columns: 104px minmax(0, 1fr);
     column-gap: 18px;
     row-gap: 14px;
+  }
+
+  .team-card + .team-card {
+    margin-block-start: 36px;
+    padding-block-start: 36px;
+    border-block-start: 1px solid rgba(255, 255, 255, 0.18);
   }
 
   .team-portrait {
@@ -3114,26 +3167,105 @@ html[dir="rtl"] .back-to-top {
     border-bottom: 1px solid rgba(10, 40, 93, 0.18);
   }
 
+  .clinical-control-grid article:last-child {
+    border-inline-end: 0;
+    border-bottom: 1px solid rgba(10, 40, 93, 0.18);
+  }
+
+  .clinical-hero {
+    min-height: 0;
+    padding: 96px 0 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    overflow: hidden;
+  }
+
+  .clinical-hero-media {
+    position: relative;
+    inset: auto;
+    order: 1;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 10;
+    max-height: min(52svh, 420px);
+    margin: 0;
+    overflow: hidden;
+    background: var(--blue-deep);
+  }
+
+  .clinical-hero-media::before,
+  .clinical-hero-media::after {
+    content: "";
+    position: absolute;
+    inset-inline: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .clinical-hero-media::before {
+    top: 0;
+    height: 28%;
+    background: linear-gradient(
+      to bottom,
+      var(--blue-deep) 0%,
+      rgba(4, 24, 56, 0.55) 45%,
+      transparent 100%
+    );
+  }
+
+  .clinical-hero-media::after {
+    bottom: 0;
+    height: 58%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(4, 24, 56, 0.35) 35%,
+      rgba(4, 24, 56, 0.82) 72%,
+      var(--blue-deep) 100%
+    );
+  }
+
+  .clinical-hero-visual {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
   .clinical-hero-visual img {
-    width: min(72vw, 720px);
-    opacity: 0.92;
-    object-position: right center;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    object-fit: cover;
+    object-position: 70% center;
   }
 
   .clinical-hero::before {
-    background:
-      linear-gradient(90deg, var(--blue-deep) 0%, rgba(4, 24, 56, 0.92) 40%, rgba(4, 24, 56, 0.65) 60%, rgba(4, 24, 56, 0.18) 78%, transparent 92%);
+    display: none;
   }
 
-  html[dir="rtl"] .clinical-hero::before {
-    background:
-      linear-gradient(270deg, var(--blue-deep) 0%, rgba(4, 24, 56, 0.92) 40%, rgba(4, 24, 56, 0.65) 60%, rgba(4, 24, 56, 0.18) 78%, transparent 92%);
-  }
-
-  .clinical-hero-disclaimer {
+  .clinical-hero .page-hero-copy {
+    order: 2;
+    z-index: 2;
+    width: 100%;
     max-width: none;
-    margin: 0;
-    padding: 10px 22px 24px;
+    margin-top: -56px;
+    padding-inline: 22px;
+  }
+
+  .clinical-hero-note {
+    margin-top: 16px;
+    max-width: 100%;
+  }
+
+  .technology-hero .page-hero-copy {
+    width: 100%;
+    max-width: none;
   }
 
   .pilot-section {
@@ -3467,13 +3599,17 @@ html[dir="rtl"] .back-to-top {
 
   .team-grid {
     margin-top: 48px;
-    row-gap: 48px;
   }
 
   .team-card {
     grid-template-columns: 96px minmax(0, 1fr);
     column-gap: 14px;
     row-gap: 12px;
+  }
+
+  .team-card + .team-card {
+    margin-block-start: 32px;
+    padding-block-start: 32px;
   }
 
   .team-portrait {
@@ -3497,6 +3633,21 @@ html[dir="rtl"] .back-to-top {
   .fact-grid,
   .clinical-control-grid {
     grid-template-columns: 1fr;
+  }
+
+  .clinical-control-grid {
+    border: 1px solid rgba(10, 40, 93, 0.18);
+    border-top: 1px solid rgba(10, 40, 93, 0.18);
+  }
+
+  .clinical-control-grid article {
+    border: 0;
+    border-block-end: 1px solid rgba(10, 40, 93, 0.18);
+  }
+
+  .clinical-control-grid article:last-child {
+    border: 0;
+    border-block-end: 0;
   }
 
   .company-contact-strip {
@@ -3572,11 +3723,6 @@ html[dir="rtl"] .back-to-top {
 
   .team-grid figure {
     min-height: 0;
-  }
-
-  .clinical-hero {
-    min-height: 580px;
-    padding-bottom: 48px;
   }
 
   .back-to-top {
