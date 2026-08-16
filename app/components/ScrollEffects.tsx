@@ -28,6 +28,18 @@ function isInInitialViewport(element: HTMLElement) {
   return rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
 }
 
+function revealAroundHash(elements: HTMLElement[]) {
+  const id = window.location.hash.replace(/^#/, "");
+  if (!id) return;
+  const target = document.getElementById(id);
+  if (!target) return;
+  elements.forEach((element) => {
+    if (target === element || target.contains(element) || element.contains(target)) {
+      element.classList.add("is-visible");
+    }
+  });
+}
+
 export function ScrollEffects() {
   const pathname = usePathname();
   const { language } = useLanguage();
@@ -37,7 +49,6 @@ export function ScrollEffects() {
     const elements = Array.from(document.querySelectorAll<HTMLElement>(revealSelector));
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    // Progressive enhancement: only hide after JS init, and reveal anything already on screen.
     root.classList.add("js-scroll-reveal");
 
     elements.forEach((element) => {
@@ -68,8 +79,19 @@ export function ScrollEffects() {
           observer.unobserve(target);
         });
       },
-      { threshold: 0.01, rootMargin: "0px 0px 20% 0px" },
+      { threshold: 0.01, rootMargin: "0px 0px 28% 0px" },
     );
+
+    const syncVisible = () => {
+      revealAroundHash(elements);
+      elements.forEach((element) => {
+        if (element.classList.contains("is-visible")) return;
+        if (isInInitialViewport(element)) {
+          element.classList.add("is-visible");
+          observer.unobserve(element);
+        }
+      });
+    };
 
     elements.forEach((element) => {
       if (isInInitialViewport(element)) {
@@ -80,8 +102,12 @@ export function ScrollEffects() {
       observer.observe(element);
     });
 
+    syncVisible();
+    window.addEventListener("hashchange", syncVisible);
+
     return () => {
       observer.disconnect();
+      window.removeEventListener("hashchange", syncVisible);
       root.classList.remove("js-scroll-reveal");
       elements.forEach((element) => {
         element.classList.remove("scroll-reveal", "is-visible");

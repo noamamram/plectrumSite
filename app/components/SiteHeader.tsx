@@ -105,12 +105,45 @@ export function SiteHeader() {
   useEffect(() => {
     if (!open) return;
 
+    const nav = document.getElementById(navId);
+    const focusable = () =>
+      [
+        menuToggleRef.current,
+        ...(nav
+          ? Array.from(
+              nav.querySelectorAll<HTMLElement>(
+                'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])',
+              ),
+            )
+          : []),
+      ].filter((el): el is HTMLElement => Boolean(el));
+
     const handleKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") closeMenu();
+      if (event.key === "Escape") {
+        closeMenu();
+        return;
+      }
+      if (event.key !== "Tab") return;
+      const items = focusable();
+      if (items.length === 0) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      const active = document.activeElement as HTMLElement | null;
+      if (event.shiftKey && active === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && active === last) {
+        event.preventDefault();
+        first.focus();
+      }
     };
+
     document.addEventListener("keydown", handleKeyDown);
+    const firstLink = nav?.querySelector<HTMLElement>("a[href]");
+    firstLink?.focus();
+
     return () => document.removeEventListener("keydown", handleKeyDown);
-  }, [open]);
+  }, [open, navId]);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";

@@ -39,38 +39,34 @@ const copy = {
     team: [
       {
         name: "Gabriel Lev-Har",
-        role: "Founder; CEO & CTO",
+        role: "Founder · CEO & CTO",
         credential: "Veteran of IDF Unit 81 & IAI. MBA.",
-        bio: "System Architect & Business Leader. Combining deep Systems Engineering expertise. Proven operational leadership (Ex. COO). Committed to transforming dreams into reality through technology that makes a meaningful difference in people's lives.",
+        bio: "System architect and business leader with deep systems-engineering expertise and proven operational leadership, including as COO. Focused on turning ambitious ideas into technology that makes a meaningful difference in people's lives.",
         image: "/team/gabriel-lev-har-neutral.png",
-        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
         name: "Dr. Nino Rivka Eliahu",
         role: "VP of Science & Materials",
-        credential: "Ph.D",
-        bio: "Deep tech expertise for developing advanced materials and coatings. Extensive Medical Device R&D, proven experience in polymerization and innovative coating methods, Scale-Up & Manufacturing.",
+        credential: "PhD",
+        bio: "Deep-tech expertise in advanced materials and coatings, with extensive medical-device R&D experience spanning polymerization, innovative coating methods, scale-up, and manufacturing.",
         image: "/team/nino-rivka-eliahu-neutral.png",
-        icon: "/team/icons/nino-materials.svg",
         linkedin: null,
       },
       {
         name: "Noam Amram",
         role: "XR & LLM Integration Lead",
         credential: "Veteran of IDF Tech Unit.",
-        bio: "Specialist in XR simulation systems & interactive software development. Leading system integration and designing immersive, high-end XR experiences.",
+        bio: "Specialist in XR simulation systems and interactive software development. Leads system integration and designs immersive, high-end XR experiences.",
         image: "/team/noam-amram-neutral.png",
-        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
         name: "Omri Arbel",
-        role: "Senior Hardware & Firmware Eng.",
+        role: "Senior Hardware & Firmware Engineer",
         credential: "Veteran of IDF Unit 81.",
-        bio: "Specialized experience in digital board design and reverse engineering, and a background in high-stakes military and medical-grade electronics. A key technical leader, also overseeing embedded firmware development and controller programming.",
+        bio: "Specialized in digital board design and reverse engineering, with a background in high-stakes military and medical-grade electronics. A key technical leader overseeing embedded firmware development and controller programming.",
         image: "/team/omri-arbel-neutral.png",
-        icon: "/team/icons/omri-cpu.svg",
         linkedin: null,
       },
     ],
@@ -117,20 +113,18 @@ const copy = {
     team: [
       {
         name: "Gabriel Lev-Har",
-        role: "מייסד; מנכ״ל וסמנכ״ל טכנולוגיות",
+        role: "מייסד · מנכ״ל וסמנכ״ל טכנולוגיות",
         credential: "יוצא יחידה 81 והתעשייה האווירית. MBA.",
-        bio: "ארכיטקט מערכות ומוביל עסקי המשלב מומחיות עמוקה בהנדסת מערכות. בעל ניסיון מוכח במנהיגות תפעולית, לרבות בתפקיד COO. מחויב להפוך חלומות למציאות באמצעות טכנולוגיה שיוצרת שינוי משמעותי בחייהם של אנשים.",
+        bio: "ארכיטקט מערכות ומוביל עסקי המשלב מומחיות עמוקה בהנדסת מערכות. בעל ניסיון מוכח במנהיגות תפעולית, לרבות בתפקיד COO. מחויב להפוך רעיונות למציאות באמצעות טכנולוגיה שיוצרת שינוי משמעותי בחייהם של אנשים.",
         image: "/team/gabriel-lev-har-neutral.png",
-        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
         name: "Dr. Nino Rivka Eliahu",
         role: "סמנכ״לית מדע וחומרים",
-        credential: "Ph.D",
+        credential: "PhD",
         bio: "מומחיות דיפ־טק בפיתוח חומרים וציפויים מתקדמים. ניסיון נרחב במחקר ופיתוח של מכשור רפואי, בפולימריזציה ובשיטות ציפוי חדשניות, וכן בהגדלת קנה מידה ובייצור.",
         image: "/team/nino-rivka-eliahu-neutral.png",
-        icon: "/team/icons/nino-materials.svg",
         linkedin: null,
       },
       {
@@ -139,7 +133,6 @@ const copy = {
         credential: "יוצא יחידה טכנולוגית בצה״ל.",
         bio: "מומחה במערכות סימולציית XR ובפיתוח תוכנה אינטראקטיבית. מוביל אינטגרציית מערכות ומתכנן חוויות XR אימרסיביות ומתקדמות.",
         image: "/team/noam-amram-neutral.png",
-        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -148,7 +141,6 @@ const copy = {
         credential: "יוצא יחידה 81.",
         bio: "בעל ניסיון ייחודי בתכנון כרטיסים דיגיטליים ובהנדסה לאחור, עם רקע באלקטרוניקה צבאית ואלקטרוניקה רפואית בסביבות עתירות סיכון. מוביל טכנולוגי מרכזי האחראי גם על פיתוח קושחה משובצת ותכנות בקרים.",
         image: "/team/omri-arbel-neutral.png",
-        icon: "/team/icons/omri-cpu.svg",
         linkedin: null,
       },
     ],
@@ -195,20 +187,18 @@ const copy = {
     team: [
       {
         name: "Gabriel Lev-Har",
-        role: "المؤسس؛ الرئيس التنفيذي ومدير التكنولوجيا",
+        role: "المؤسس · الرئيس التنفيذي ومدير التكنولوجيا",
         credential: "خريج الوحدة 81 وIAI. حاصل على MBA.",
         bio: "مهندس أنظمة وقائد أعمال يجمع خبرة عميقة في هندسة الأنظمة مع قيادة تشغيلية مثبتة، منها منصب COO. ملتزم بتحويل الأفكار إلى واقع عبر تكنولوجيا تُحدث فرقًا حقيقيًا في حياة الناس.",
         image: "/team/gabriel-lev-har-neutral.png",
-        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
         name: "Dr. Nino Rivka Eliahu",
         role: "نائبة الرئيس للعلوم والمواد",
-        credential: "Ph.D",
+        credential: "PhD",
         bio: "خبيرة في تطوير المواد والطلاءات المتقدمة. تتمتع بخبرة واسعة في البحث والتطوير للأجهزة الطبية والبلمرة وطرق الطلاء المبتكرة، والتوسع الصناعي والتصنيع.",
         image: "/team/nino-rivka-eliahu-neutral.png",
-        icon: "/team/icons/nino-materials.svg",
         linkedin: null,
       },
       {
@@ -217,7 +207,6 @@ const copy = {
         credential: "خريج وحدة تكنولوجية في الجيش الإسرائيلي.",
         bio: "متخصص في أنظمة محاكاة XR وتطوير البرمجيات التفاعلية. يقود تكامل الأنظمة وتصميم تجارب XR غامرة ومتقدمة.",
         image: "/team/noam-amram-neutral.png",
-        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -226,7 +215,6 @@ const copy = {
         credential: "خريج الوحدة 81.",
         bio: "متخصص في تصميم اللوحات الرقمية والهندسة العكسية، مع خلفية في الإلكترونيات العسكرية والطبية عالية الحساسية. قائد تقني يشرف أيضًا على تطوير البرامج الثابتة المدمجة وبرمجة المتحكمات.",
         image: "/team/omri-arbel-neutral.png",
-        icon: "/team/icons/omri-cpu.svg",
         linkedin: null,
       },
     ],
@@ -273,20 +261,18 @@ const copy = {
     team: [
       {
         name: "Gabriel Lev-Har",
-        role: "Основатель; CEO и CTO",
+        role: "Основатель · CEO и CTO",
         credential: "Ветеран подразделения 81 и IAI. MBA.",
         bio: "Системный архитектор и бизнес-лидер с глубокой экспертизой в системной инженерии и подтверждённым опытом операционного управления, включая роль COO. Превращает идеи в технологии, значимые для жизни людей.",
         image: "/team/gabriel-lev-har-neutral.png",
-        icon: "/team/icons/gabriel-plectrum-mark.png",
         linkedin: "https://www.linkedin.com/in/gabriel-lev-har-9916573",
       },
       {
         name: "Dr. Nino Rivka Eliahu",
         role: "VP по науке и материалам",
-        credential: "Ph.D",
+        credential: "PhD",
         bio: "Эксперт по передовым материалам и покрытиям. Обширный опыт R&D медицинских устройств, полимеризации, инновационных методов нанесения покрытий, масштабирования и производства.",
         image: "/team/nino-rivka-eliahu-neutral.png",
-        icon: "/team/icons/nino-materials.svg",
         linkedin: null,
       },
       {
@@ -295,7 +281,6 @@ const copy = {
         credential: "Ветеран технологического подразделения ЦАХАЛ.",
         bio: "Специалист по XR-симуляциям и интерактивному ПО. Руководит системной интеграцией и проектирует высокотехнологичные иммерсивные XR-среды.",
         image: "/team/noam-amram-neutral.png",
-        icon: "/team/icons/noam-vr-headset.svg",
         linkedin: "https://www.linkedin.com/in/noam-amram",
       },
       {
@@ -304,7 +289,6 @@ const copy = {
         credential: "Ветеран подразделения 81.",
         bio: "Специалист по цифровым платам и обратной инженерии с опытом в военной и медицинской электронике. Ключевой технический лидер, отвечающий также за встроенное ПО и программирование контроллеров.",
         image: "/team/omri-arbel-neutral.png",
-        icon: "/team/icons/omri-cpu.svg",
         linkedin: null,
       },
     ],
@@ -365,46 +349,45 @@ export default function CompanyPage() {
       <section className="team-section">
         <div className="section-heading"><p className="eyebrow">{t.teamLabel}</p><h2>{t.teamTitle}</h2></div>
         <div className="team-grid">
-          {t.team.map((member) => (
-            <article className="team-card" key={member.name}>
-              <div className="team-portrait">
-                <Image
-                  src={member.image}
-                  alt={member.name}
-                  fill
-                  sizes="(max-width: 820px) 92vw, 520px"
-                />
-              </div>
-              <div className="team-card-copy">
-                <h3>{member.name}</h3>
-                <p className="team-role">
-                  {/* eslint-disable-next-line @next/next/no-img-element -- small decorative SVG/PNG role icons */}
-                  <img
-                    className="team-role-icon"
-                    src={member.icon}
-                    alt=""
-                    aria-hidden="true"
-                    width={20}
-                    height={20}
+          {t.team.map((member) => {
+            const memberKey = member.image.includes("gabriel")
+              ? "gabriel"
+              : member.image.includes("nino")
+                ? "nino"
+                : member.image.includes("noam")
+                  ? "noam"
+                  : "omri";
+            return (
+              <article className="team-card" data-member={memberKey} key={member.name}>
+                <div className="team-portrait">
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    sizes="(max-width: 560px) 92vw, 200px"
+                    loading="lazy"
                   />
-                  <span>{member.role}</span>
-                </p>
-                <p className="team-credential">{member.credential}</p>
-                <p className="team-bio">{member.bio}</p>
-                {member.linkedin ? (
-                  <a
-                    className="team-linkedin"
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                    aria-label={`${member.name} on LinkedIn`}
-                  >
-                    in <span>LinkedIn</span>
-                  </a>
-                ) : null}
-              </div>
-            </article>
-          ))}
+                </div>
+                <div className="team-card-copy">
+                  <h3><bdi dir="auto">{member.name}</bdi></h3>
+                  <p className="team-role"><bdi dir="auto">{member.role}</bdi></p>
+                  <p className="team-credential"><bdi dir="auto">{member.credential}</bdi></p>
+                  <p className="team-bio">{member.bio}</p>
+                  {member.linkedin ? (
+                    <a
+                      className="team-linkedin"
+                      href={member.linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                      aria-label={`${member.name} on LinkedIn`}
+                    >
+                      in <span>LinkedIn</span>
+                    </a>
+                  ) : null}
+                </div>
+              </article>
+            );
+          })}
         </div>
       </section>
 

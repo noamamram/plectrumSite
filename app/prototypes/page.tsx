@@ -17,6 +17,21 @@ const PRODUCT_POSTERS: Record<ProductId, string> = {
   glove: "/media/hero-products-v3.png",
 };
 
+/** Shared group poster focus when WebGL fallback is required. */
+const PRODUCT_POSTER_FOCUS: Record<ProductId, string> = {
+  shirt: "22% 45%",
+  sleeve: "62% 40%",
+  cap: "48% 18%",
+  glove: "82% 72%",
+};
+
+const GROUP_POSTER_LABEL = {
+  en: "Illustrative overview of Plectrum wearable prototypes",
+  he: "תמונה להמחשה של אבות הטיפוס הלבישים של Plectrum",
+  ar: "صورة توضيحية لنماذج Plectrum القابلة للارتداء",
+  ru: "Иллюстративный обзор носимых прототипов Plectrum",
+} as const;
+
 type ProductStory = {
   opening: string;
   body: string;
@@ -244,6 +259,7 @@ const copy = {
       "Explore Plectrum's current functional prototypes in 3D. These four working prototypes deliver localized, high-resolution vibration today and are distinct from FABTIVE, the patented active-fabric platform under development for continuous physical sensation across the fabric.",
     rotate: "Drag or move to explore",
     rotateTouch: "Swipe to explore",
+    overview: "Select a prototype",
     focus: "Clinical focus",
     storyLabel: "THE STORY BEHIND THE PRODUCT",
     storyExpand: "Read the full story",
@@ -268,6 +284,7 @@ const copy = {
       "גלו בתלת־ממד את אבות הטיפוס הפונקציונליים הנוכחיים של Plectrum. ארבעת אבות הטיפוס הפעילים מספקים כיום רטט מקומי ברזולוציה גבוהה, והם נפרדים מ־FABTIVE, פלטפורמת הבד האקטיבי הפטנטית שבפיתוח לתחושה פיזית רציפה על פני הבד.",
     rotate: "הזיזו כדי לחקור",
     rotateTouch: "החליקו כדי לחקור",
+    overview: "בחרו אב טיפוס",
     focus: "מיקוד קליני",
     storyLabel: "הסיפור מאחורי המוצר",
     storyExpand: "קריאת הסיפור המלא",
@@ -292,6 +309,7 @@ const copy = {
       "استكشف نماذج Plectrum الأولية الوظيفية الحالية في 3D. توفر هذه النماذج الأربعة اهتزازًا موضعيًا عالي الدقة اليوم، وهي مختلفة عن FABTIVE، منصة النسيج النشط المحمية ببراءة قيد التطوير للإحساس الجسدي المستمر عبر القماش.",
     rotate: "اسحب أو حرّك للاستكشاف",
     rotateTouch: "اسحب للاستكشاف",
+    overview: "اختر نموذجًا أوليًا",
     focus: "التركيز السريري",
     storyLabel: "القصة وراء المنتج",
     storyExpand: "اقرأ القصة كاملة",
@@ -316,6 +334,7 @@ const copy = {
       "Изучите в 3D текущие функциональные прототипы Plectrum. Эти четыре работающих прототипа обеспечивают локальную высокоточную вибрацию сегодня и отличаются от FABTIVE — запатентованной платформы активной ткани для непрерывного физического ощущения по всей ткани.",
     rotate: "Перетаскивайте модель",
     rotateTouch: "Проведите, чтобы изучить",
+    overview: "Выберите прототип",
     focus: "Клиническая задача",
     storyLabel: "ИСТОРИЯ ПРОДУКТА",
     storyExpand: "Читать полную историю",
@@ -414,12 +433,16 @@ export default function PrototypesPage() {
           >
             <div className="prototype-viewer">
               <ModelScene
+                key={product.id}
                 mode="single"
                 modelPath={product.path}
                 poster={PRODUCT_POSTERS[product.id]}
+                posterPosition={PRODUCT_POSTER_FOCUS[product.id]}
                 label={product.name}
+                posterLabel={GROUP_POSTER_LABEL[language]}
+                exploreHint={isTouch ? t.rotateTouch : t.rotate}
+                overviewHint={t.overview}
               />
-              <span className="prototype-hint">{isTouch ? t.rotateTouch : t.rotate}</span>
             </div>
           </div>
           <div className="prototype-stage-meta">

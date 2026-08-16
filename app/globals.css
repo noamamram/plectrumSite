@@ -10,6 +10,10 @@
   --paper: #f7f7f3;
   --white: #ffffff;
   --line: rgba(255, 255, 255, 0.14);
+  --page-max: 1200px;
+  --page-gutter: clamp(20px, 5vw, 64px);
+  --section-space: clamp(56px, 8vw, 112px);
+  --header-offset: 96px;
 }
 
 * {
@@ -19,6 +23,15 @@
 html {
   scroll-behavior: smooth;
   background: var(--blue-deep);
+}
+
+#touch-gap,
+#connect,
+#product-disclaimer,
+.company-connect,
+.product-disclaimer,
+.thesis-section {
+  scroll-margin-top: var(--header-offset);
 }
 
 body {
@@ -735,7 +748,7 @@ html[dir="rtl"] .scroll-cue {
 .blue-section,
 .future-section {
   position: relative;
-  padding: clamp(90px, 10vw, 156px) clamp(24px, 7vw, 110px);
+  padding: var(--section-space) var(--page-gutter);
 }
 
 .light-section {
@@ -760,8 +773,8 @@ html[dir="rtl"] .scroll-cue {
 .section-heading h2,
 .future-copy h2 {
   margin: 0;
-  font-size: clamp(42px, 5vw, 72px);
-  line-height: 1.07;
+  font-size: clamp(32px, 5vw, 72px);
+  line-height: 1.08;
   letter-spacing: -0.04em;
   text-wrap: balance;
 }
@@ -1250,11 +1263,11 @@ html[dir="rtl"] .pathway-card:nth-child(even) {
 .page-hero h1,
 .prototype-intro h1 {
   margin: 0;
-  font-size: clamp(46px, 6.2vw, 96px);
-  line-height: 1.02;
+  font-size: clamp(34px, 7.5vw, 96px);
+  line-height: 1.05;
   letter-spacing: -0.05em;
   text-wrap: balance;
-  max-width: 18ch;
+  max-width: 16ch;
 }
 
 html[dir="rtl"] .page-hero h1,
@@ -1724,6 +1737,7 @@ html[dir="rtl"] .clinical-path-steps {
 }
 
 .model-scene-fallback {
+  position: relative;
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -1733,7 +1747,7 @@ html[dir="rtl"] .clinical-path-steps {
 .model-scene-fallback img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
 }
 
@@ -1746,9 +1760,11 @@ html[dir="rtl"] .clinical-path-steps {
   letter-spacing: 0.08em;
 }
 
-.prototype-hint {
+.prototype-hint,
+.model-scene-hint {
   position: absolute;
   inset: auto 0 8px;
+  z-index: 2;
   color: rgba(255, 255, 255, 0.55);
   text-align: center;
   font-size: 12px;
@@ -1902,7 +1918,7 @@ html[dir="rtl"] .clinical-path-steps {
 }
 
 .product-disclaimer {
-  scroll-margin-top: 96px;
+  scroll-margin-top: var(--header-offset);
   padding: 56px clamp(24px, 4.5vw, 72px) 72px;
   background: var(--blue-deep);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
@@ -2075,34 +2091,36 @@ html[dir="rtl"] .company-mark {
 }
 
 .team-section {
-  padding: clamp(90px, 10vw, 150px) clamp(24px, 7vw, 110px);
+  padding: var(--section-space) var(--page-gutter);
   background: var(--blue-deep);
 }
 
 .team-section .section-heading {
-  width: min(100%, 1100px);
+  width: min(100%, var(--page-max));
   margin-inline: auto;
 }
 
 .team-section .section-heading h2 {
-  font-size: clamp(40px, 4.5vw, 60px);
-  max-width: 18ch;
+  font-size: clamp(36px, 4.2vw, 56px);
+  max-width: 16ch;
 }
 
 .team-grid {
-  width: min(100%, 1100px);
+  width: min(100%, var(--page-max));
   margin-inline: auto;
-  margin-top: clamp(56px, 7vw, 88px);
+  margin-top: clamp(40px, 5vw, 64px);
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  column-gap: clamp(40px, 5vw, 72px);
-  row-gap: clamp(64px, 8vw, 104px);
+  gap: 44px 48px;
 }
 
 .team-card {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  column-gap: 26px;
+  align-items: start;
   min-width: 0;
+  max-height: none;
   background: transparent;
   border: 0;
   padding: 0;
@@ -2110,12 +2128,11 @@ html[dir="rtl"] .company-mark {
 
 .team-portrait {
   position: relative;
-  width: 100%;
+  width: 200px;
+  max-width: 100%;
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  background:
-    linear-gradient(160deg, rgba(24, 184, 242, 0.12), transparent 42%),
-    rgba(2, 13, 36, 0.72);
+  background: rgba(2, 13, 36, 0.72);
 }
 
 .team-portrait img {
@@ -2125,69 +2142,72 @@ html[dir="rtl"] .company-mark {
   object-position: center 18%;
 }
 
+.team-card[data-member="gabriel"] .team-portrait img {
+  object-position: center 16%;
+}
+
+.team-card[data-member="nino"] .team-portrait img {
+  object-position: center 20%;
+}
+
+.team-card[data-member="noam"] .team-portrait img {
+  object-position: center 18%;
+}
+
+.team-card[data-member="omri"] .team-portrait img {
+  object-position: center 14%;
+}
+
 .team-card-copy {
   min-width: 0;
-  margin-top: 26px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  gap: 0;
 }
 
 .team-card-copy h3 {
   margin: 0;
-  font-size: clamp(24px, 2.2vw, 32px);
+  font-size: clamp(24px, 2vw, 30px);
   line-height: 1.15;
   letter-spacing: -0.02em;
 }
 
 .team-role {
-  margin: 12px 0 0;
-  display: flex;
-  align-items: flex-start;
-  gap: 10px;
+  margin: 8px 0 0;
   color: var(--cyan-bright);
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 650;
   line-height: 1.45;
 }
 
-.team-role-icon {
-  width: 1.35rem;
-  height: 1.35rem;
-  flex: 0 0 auto;
-  margin-top: 0.12em;
-  object-fit: contain;
-}
-
 .team-credential {
-  margin: 20px 0 0;
-  padding-top: 18px;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
-  color: rgba(255, 255, 255, 0.88);
+  margin: 12px 0 0;
+  color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   font-weight: 700;
-  line-height: 1.55;
+  line-height: 1.5;
 }
 
 .team-bio {
-  margin: 12px 0 0;
-  color: rgba(255, 255, 255, 0.64);
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.78);
   font-size: 15px;
-  line-height: 1.7;
-  max-width: 42ch;
+  line-height: 1.6;
+  max-width: 46ch;
 }
 
 .team-linkedin {
   width: fit-content;
   min-height: 44px;
-  margin-top: auto;
-  padding-top: 22px;
+  margin-top: 12px;
+  padding-top: 0;
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 8px;
   color: var(--cyan-bright);
   font-size: 14px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .team-linkedin::first-letter {
@@ -2195,12 +2215,12 @@ html[dir="rtl"] .company-mark {
 }
 
 .team-linkedin span {
-  color: rgba(255, 255, 255, 0.72);
+  color: rgba(255, 255, 255, 0.78);
   font-weight: 600;
 }
 
 .company-connect {
-  scroll-margin-top: 20px;
+  scroll-margin-top: var(--header-offset);
 }
 
 .company-contact-strip {
@@ -2538,10 +2558,20 @@ html[dir="rtl"] .back-to-top {
   to { transform: scale(1.08) rotate(8deg); opacity: 1; }
 }
 
-@media (max-width: 1050px) and (min-width: 821px) {
+@media (max-width: 1023px) {
   .team-grid {
-    column-gap: 32px;
-    row-gap: 72px;
+    width: min(100%, 720px);
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .team-card {
+    grid-template-columns: 180px minmax(0, 1fr);
+    column-gap: 24px;
+  }
+
+  .team-portrait {
+    width: 180px;
   }
 }
 
@@ -2641,8 +2671,10 @@ html[dir="rtl"] .back-to-top {
   .menu-toggle {
     position: relative;
     z-index: 55;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    min-height: 44px;
     margin-inline-start: 14px;
     display: grid;
     place-content: center;
@@ -3112,16 +3144,22 @@ html[dir="rtl"] .back-to-top {
   .team-grid {
     width: min(100%, 640px);
     grid-template-columns: 1fr;
-    row-gap: 56px;
+    gap: 44px;
+  }
+
+  .team-card {
+    grid-template-columns: 160px minmax(0, 1fr);
+    column-gap: 20px;
   }
 
   .team-portrait {
-    aspect-ratio: 3 / 4;
-    max-height: 520px;
+    width: 160px;
+    aspect-ratio: 4 / 5;
+    max-height: none;
   }
 
   .team-card-copy {
-    margin-top: 22px;
+    margin-top: 0;
   }
 }
 
@@ -3131,8 +3169,8 @@ html[dir="rtl"] .back-to-top {
   }
 
   .language-trigger {
-    min-height: 40px;
-    padding-inline: 8px;
+    min-height: 44px;
+    padding-inline: 10px;
     gap: 6px;
   }
 
@@ -3342,39 +3380,39 @@ html[dir="rtl"] .back-to-top {
   }
 
   .team-grid {
-    margin-top: 40px;
-    row-gap: 48px;
+    margin-top: 36px;
+    gap: 44px;
+  }
+
+  .team-card {
+    grid-template-columns: 1fr;
+    row-gap: 14px;
   }
 
   .team-portrait {
-    aspect-ratio: 4 / 5;
-    max-height: none;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    max-height: 320px;
   }
 
   .team-card-copy {
-    margin-top: 18px;
+    margin-top: 0;
   }
 
   .team-card-copy h3 {
-    font-size: 24px;
-  }
-
-  .team-role-icon {
-    width: 1.2rem;
-    height: 1.2rem;
+    font-size: clamp(22px, 6vw, 26px);
   }
 
   .team-credential {
-    margin-top: 16px;
-    padding-top: 16px;
+    margin-top: 12px;
   }
 
   .team-bio {
-    font-size: 14px;
+    font-size: 15px;
   }
 
   .team-linkedin {
-    padding-top: 18px;
+    margin-top: 12px;
   }
 
   .page-hero-copy .button,
@@ -3468,7 +3506,7 @@ html[dir="rtl"] .back-to-top {
   }
 
   .back-to-top {
-    right: max(16px, env(safe-area-inset-right, 0px));
+    right: max(12px, env(safe-area-inset-right, 0px));
     bottom: calc(16px + env(safe-area-inset-bottom, 0px));
     width: 44px;
     height: 44px;
