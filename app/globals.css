@@ -3734,6 +3734,13 @@ html[dir="rtl"] .back-to-top {
     min-height: 44px;
     padding: 0;
     font-size: 18px;
+    box-shadow: none;
+    filter: none;
+  }
+
+  .back-to-top:hover {
+    box-shadow: none;
+    filter: none;
   }
 
   .back-to-top-label {
