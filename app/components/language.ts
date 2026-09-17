@@ -1,6 +1,7 @@
-export type Language = "en" | "he";
+export type Language = "en" | "he" | "ar" | "ru";
 
 export const LANGUAGE_COOKIE = "plectrum-language";
+/** Arabic and Russian stay in the type/copy, but are hidden from the UI for now. */
 export const supportedLanguages: Language[] = ["en", "he"];
 
 export function isLanguage(value: string | null | undefined): value is Language {

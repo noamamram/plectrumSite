@@ -18,6 +18,7 @@ import {
   LANGUAGE_COOKIE,
   languageDirection,
   readLanguageCookie,
+  supportedLanguages,
 } from "./components/language";
 import { generateRouteMetadata } from "./components/generateRouteMetadata";
 
@@ -38,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
 const languageBootstrap = `(() => {
   try {
     var key = ${JSON.stringify(LANGUAGE_COOKIE)};
-    var supported = ["en", "he", "ar", "ru"];
+    var supported = ${JSON.stringify(supportedLanguages)};
     var match = document.cookie.match(new RegExp("(?:^|; )" + key + "=([^;]+)"));
     var cookieLang = match ? decodeURIComponent(match[1]) : "";
     // Cookie already present: server HTML used it. Do not mutate lang/dir before hydration.
