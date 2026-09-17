@@ -8,7 +8,7 @@ export function isLanguage(value: string | null | undefined): value is Language 
 }
 
 export function languageDirection(language: Language): "ltr" | "rtl" {
-  return language === "he" || language === "ar" ? "rtl" : "ltr";
+  return language === "he" ? "rtl" : "ltr";
 }
 
 export function readLanguageCookie(raw: string | undefined): Language {
