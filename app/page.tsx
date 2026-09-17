@@ -117,7 +117,7 @@ const content = {
 
 export default function Home() {
   const { language } = useLanguage();
-  const t = content[language];
+  const t = language === "he" ? content.he : content.en;
 
   return (
     <SiteShell>
