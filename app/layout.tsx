@@ -14,6 +14,7 @@ import "@fontsource/heebo/600.css";
 import "@fontsource/heebo/700.css";
 import "./globals.css";
 import { LanguageProvider } from "./components/LanguageProvider";
+//note-test
 import {
   LANGUAGE_COOKIE,
   languageDirection,
