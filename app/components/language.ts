@@ -1,7 +1,7 @@
-export type Language = "en" | "he" | "ar" | "ru";
+export type Language = "en" | "he";
 
 export const LANGUAGE_COOKIE = "plectrum-language";
-export const supportedLanguages: Language[] = ["en", "he", "ar", "ru"];
+export const supportedLanguages: Language[] = ["en", "he"];
 
 export function isLanguage(value: string | null | undefined): value is Language {
   return supportedLanguages.includes(value as Language);
