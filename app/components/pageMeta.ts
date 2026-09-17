@@ -3,8 +3,8 @@ import type { Language } from "./language";
 /** Nav-aligned page labels used in document titles: `[label] | Plectrum` */
 export const pageLabels: Record<string, Record<Language, string>> = {
   "/": {
-    en: "Remote Sensory Integration",
-    he: "אינטגרציה חושית מרחוק",
+    en: "Smart Tactile Feedback",
+    he: "וויסות חושי מרחוק",
     ar: "تكامل حسي عن بُعد",
     ru: "Дистанционная сенсорная интеграция",
   },
@@ -15,8 +15,8 @@ export const pageLabels: Record<string, Record<Language, string>> = {
     ru: "Технология",
   },
   "/clinical": {
-    en: "Clinical",
-    he: "היישום הקליני",
+    en: "Applications",
+    he: "תחומי יישום",
     ar: "التطبيق السريري",
     ru: "Клиника",
   },

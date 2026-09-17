@@ -9,7 +9,7 @@ const labels = {
   en: {
     home: "Home",
     technology: "Technology",
-    clinical: "Clinical",
+    clinical: "Applications",
     prototypes: "Prototypes",
     company: "Company",
     partner: "Partner with us",
@@ -20,7 +20,7 @@ const labels = {
   he: {
     home: "בית",
     technology: "טכנולוגיה",
-    clinical: "היישום הקליני",
+    clinical: "תחומי יישום",
     prototypes: "אבות טיפוס",
     company: "החברה",
     partner: "לשותפות איתנו",

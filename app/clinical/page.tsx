@@ -6,73 +6,73 @@ import { useLanguage } from "../components/LanguageProvider";
 import { IllustrativeNote } from "../components/IllustrativeNote";
 
 const copy = {
-  en: {
-    eyebrow: "CLINICAL APPLICATION",
-    title: "Remote care can finally include physical intervention.",
-    intro:
-      "Plectrum's primary focus is professional sensory integration for individuals with autism and sensory processing needs, spanning clinical and home environments. Four working vibration prototypes support our current validation work, while FABTIVE, our patented active fabric, serves as the definitive platform for continuous physical sensation.",
-    cta: "Explore a clinical pilot",
-    problemLabel: "THE TELEHEALTH BLIND SPOT",
-    problemTitle: "The therapist can guide. The fabric can deliver.",
-    problemBody:
-      "Video and audio preserve conversation, but not tactile intervention. Plectrum is designed to let occupational therapists control where, when and how tactile input is delivered through a wearable.",
-    controls: [
+ en: {
+     eyebrow: "APPLICATIONS",
+     title: "Remote sessions can finally include physical touch.",
+     intro:
+      "Plectrum's primary focus is professional sensory support and wellness solutions, spanning professional spaces and home environments. Four working vibration prototypes support our current validation work, while FABTIVE, our patented active fabric, serves as the definitive platform for continuous physical sensation.",
+     cta: "Explore Plectrum pilot",
+     problemLabel: "THE REMOTE SESSION BLIND SPOT",
+     problemTitle: "The companion can guide. The fabric can deliver.",
+     problemBody:
+      "Video and audio preserve conversation, but not tactile touch. Plectrum is designed to let professionals and companions control where, when and how tactile input is delivered through a wearable.",
+     controls: [
       ["Localization", "Select targeted areas using high-resolution, independently controlled vibration in the current prototypes."],
-      ["Pattern", "Configure therapeutic vibration sequences today, using the same clinical logic intended for the future FABTIVE active-fabric platform."],
+      ["Pattern", "Configure sensory sequences today, using the same logic intended for the future FABTIVE active-fabric platform."],
       ["Intensity", "Adapt delivery to the individual and the moment."],
       ["Follow-up", "Monitor sessions and build structured reports over time."],
     ],
-    pathwayLabel: "A CLINICAL WORKFLOW",
-    pathwayTitle: "Designed around the therapist, not around the device.",
-    pathway: [
-      ["Assess", "Define regulation needs and a personalized treatment objective."],
+     pathwayLabel: "A WORKING PROCESS",
+     pathwayTitle: "Designed around the user, not around the device.",
+     pathway: [
+      ["Assess", "Define sensory needs and personal well-being objectives."],
       ["Configure", "Choose placement, intensity and tactile pattern remotely."],
       ["Deliver", "Provide targeted input through the selected wearable."],
-      ["Review", "Use documented sessions to support the next intervention."],
+      ["Review", "Use documented sessions to support the next interaction."],
     ],
-    complianceLabel: "REGULATORY PATH",
-    complianceTitle: "A clear starting classification.",
-    complianceBody:
-      "Plectrum's current vibration-based prototypes are registered and listed as an FDA Class I therapeutic vibrator under 21 CFR 890.5975. The reimbursement strategy references CPT 97533 and remote therapeutic monitoring code CPT 98977 with Modifier 95. The FABTIVE active-fabric platform follows a separate product-development and regulatory path.",
-    pilotLabel: "CLINICAL COLLABORATION",
-    pilotTitle: "Preparing for broader pilot expansion.",
-    pilotBody:
-      "Plectrum has a signed LOI with Hadassah and is preparing for broader pilot activity. We are seeking occupational therapy clinics and medical partners.",
-    pilotCta: "Start a pilot conversation",
+     complianceLabel: "REGULATORY & STANDARDS PATH",
+     complianceTitle: "Preparing for manufacturing standards.",
+     complianceBody:
+      "Plectrum is currently entering the transition phase from prototype to manufacturing, and in this framework aims as a first step to comply with IEC 60601 and ISO 13485 standards. The FABTIVE active-fabric platform follows a separate product-development and regulatory path.",
+     pilotLabel: "PROFESSIONAL COLLABORATION",
+     pilotTitle: "Preparing for broader pilot expansion.",
+     pilotBody:
+      "Plectrum has a signed LOI with Hadassah and is preparing for broader pilot activity. We are seeking professional centers and operational partners.",
+     pilotCta: "Start a pilot conversation",
   },
   he: {
-    eyebrow: "היישום הקליני",
-    title: "טיפול מרחוק יכול סוף־סוף לכלול התערבות פיזית.",
-    intro:
-      "המיקוד העיקרי של Plectrum הוא אינטגרציה חושית מקצועית לאנשים עם אוטיזם וצורכי עיבוד חושי, בקליניקה ובבית. ארבעה אבות טיפוס רטט פעילים תומכים בעבודת האימות הנוכחית, בעוד FABTIVE, הבד האקטיבי הפטנטי שלנו, משמש כפלטפורמה המוגדרת לתחושה פיזית רציפה.",
-    cta: "בדיקת פיילוט קליני",
-    problemLabel: "הנקודה העיוורת של הטיפול מרחוק",
-    problemTitle: "המטפל מנחה. הבד מעביר.",
-    problemBody:
-      "וידאו ואודיו משמרים את השיחה, אך לא את ההתערבות המישושית. Plectrum נועדה לאפשר למרפאים בעיסוק לשלוט היכן, מתי ובאיזו צורה יועבר הקלט המישושי דרך לביש.",
-    controls: [
+     eyebrow: "תחומי היישום",
+     title: "מפגשים מרחוק יכולים לכלול כעת מגע פיזי.",
+     intro:
+      "המיקוד העיקרי של Plectrum هو תמיכה חושית מקצועית ופתרונות רווחה (Wellness), בסביבה מקצועית ובבית. ארבעה אבות טיפוס רטט פעילים תומכים בעבודת האימות הנוכחית, בעוד FABTIVE, הבד האקטיבי הפטנטי שלנו, משמש כפלטפורמה המוגדרת לתחושה פיזית רציפה.",
+     cta: "בדיקת פיילוט",
+     problemLabel: "הנקודה העיוורת של הפעילות מרחוק",
+     problemTitle: "המלווה מנחה. הבד מעביר.",
+     problemBody:
+      "וידאו ואודיו משמרים את השיחה, אך לא מגע פיזי. Plectrum נועדה לאפשר לאנשי מקצוע ולמלווים לשלוט היכן, מתי ובאיזו צורה יועבר הקלט המישושי דרך לביש.",
+     controls: [
       ["מיקום", "בחירה באזורים ממוקדים באמצעות רטט ברזולוציה גבוהה, הנשלט בנפרד, באבות הטיפוס הנוכחיים."],
-      ["דפוס", "הגדרת רצפי רטט טיפוליים כיום, עם אותה לוגיקה קלינית שנועדה לפלטפורמת הבד האקטיבי של FABTIVE בעתיד."],
+      ["דפוס", "הגדרת רצפי תחושה כיום, עם אותה לוגיקה שנועדה לפלטפורמת הבד האקטיבי של FABTIVE בעתיד."],
       ["עוצמה", "התאמת ההפעלה לאדם ולרגע."],
       ["מעקב", "ניטור מפגשים ובניית דיווח מובנה לאורך זמן."],
     ],
-    pathwayLabel: "זרימת עבודה קלינית",
-    pathwayTitle: "מתוכנן סביב המטפל, לא סביב המכשיר.",
-    pathway: [
-      ["הערכה", "הגדרת צורכי הוויסות ומטרה טיפולית אישית."],
+     pathwayLabel: "תהליך עבודה",
+     pathwayTitle: "מתוכנן סביב המשתמש, לא סביב המכשיר.",
+     pathway: [
+      ["הערכה", "הגדרת צורכי הוויסות ומטרות רווחה אישית."],
       ["הגדרה", "בחירת מיקום, עוצמה ודפוס מישושי מרחוק."],
       ["הפעלה", "העברת קלט ממוקד דרך הלביש שנבחר."],
-      ["בחינה", "שימוש בתיעוד המפגשים לתכנון ההתערבות הבאה."],
+      ["בחינה", "שימוש בתיעוד המפגשים לתכנון האינטראקציה הבאה."],
     ],
-    complianceLabel: "המסלול הרגולטורי",
-    complianceTitle: "נקודת פתיחה מוגדרת.",
-    complianceBody:
-      "אבות הטיפוס מבוססי הרטט של Plectrum רשומים ומופיעים ברישומי ה־FDA כמכשיר רטט טיפולי Class I לפי 21 CFR 890.5975. אסטרטגיית ההחזר מתייחסת ל־CPT 97533 ולקוד הניטור הטיפולי מרחוק CPT 98977 עם Modifier 95. פלטפורמת הבד האקטיבי של FABTIVE עוקבת אחר מסלול פיתוח ורגולציה נפרד.",
-    pilotLabel: "שיתוף פעולה קליני",
-    pilotTitle: "נערכים להרחבת פיילוטים.",
-    pilotBody:
-      "ל־Plectrum מכתב כוונות חתום עם הדסה, והיא נערכת להרחבת פעילות הפיילוט. אנחנו מחפשים קליניקות לריפוי בעיסוק ושותפים רפואיים.",
-    pilotCta: "פתיחת שיחה על פיילוט",
+     complianceLabel: "המסלול הרגולטורי והתקני",
+     complianceTitle: "היערכות לתקנים מתקדמים.",
+     complianceBody:
+      "Plectrum נכנסת בימים אלו לשלב שמעבר מאב טיפוס לייצור, ובמסגרתו מכוונת כשלב ראשוני לפעול למענה על תקינה IEC 60601 ו־ISO 13485. פלטפורמת הבד האקטיבי של FABTIVE עוקבת אחר מסלול פיתוח ורגולציה נפרד.",
+     pilotLabel: "שיתוף פעולה מקצועי",
+     pilotTitle: "נערכים להרחבת פיילוטים.",
+     pilotBody:
+      "ל־Plectrum מכתב כוונות חתום עם הדסה, והיא נערכת להרחבת פעילות הפיילוט. אנחנו מחפשים מרכזים מקצועיים ושותפים לפעילות.",
+     pilotCta: "פתיחת שיחה על פיילוט",
   },
   ar: {
     eyebrow: "التطبيق السريري",
