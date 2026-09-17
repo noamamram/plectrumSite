@@ -8,48 +8,61 @@ import { useLanguage } from "./components/LanguageProvider";
 
 const content = {
   en: {
-    title: "Remote Sensory Integration.",
+    title: "Smart Tactile Feedback.",
     subtitle:
-      "A comprehensive platform for software-controlled tactile feedback. Plectrum provides measurable, adaptive physical interventions using precision vibration hardware to bridge the tangibility gap in digital health.",
+      "A smart system for delivering remote tactile sensations. Plectrum bridges the digital and physical worlds through advanced wearable technology that delivers physical touch sensations to the body, enhancing sensory experiences and digital interactions.",
     explore: "Explore the technology",
     partner: "Partner with Plectrum",
-    scroll: "Scroll to feel the story",
-    thesisEyebrow: "THE MISSING MODALITY",
-    thesisTitle: "Digital care can see and hear. Now it can deliver tactile input.",
+    scroll: "Scroll to learn more",
+    thesisEyebrow: "THE MISSING DIMENSION",
+    thesisTitle: "The digital world can see and hear. Now it can also transmit physical sensations.",
     thesisBody:
-      "In sensory integration therapy, tactile input is not an optional supplement. Plectrum transforms physical intervention into a measurable, software-controlled digital modality.",
-    sense: "Sense",
-    senseBody: "Capture response and biometric data from the wearable.",
-    analyze: "Analyze",
-    analyzeBody: "Formulate an adaptive sensory regulation protocol.",
-    respond: "Respond",
-    respondBody: "Deliver targeted tactile input directly through the fabric.",
-    learn: "Record & learn",
-    learnBody: "Turn every interaction into objective clinical insight.",
-    productsEyebrow: "WORKING TODAY · FOUR VIBRATION PROTOTYPES",
-    productsTitle: "Four working wearables built on controlled vibration.",
+      "Tactile input is an essential element in communication and sensory well-being. Plectrum converts sensory integration into measurable, software-controlled digital data.",
+    sense: "Metrics Reading",
+    senseBody:
+      "Reading physiological metrics (such as heart rate, blood pressure, motion, blood oxygen, and future galvanic skin response) via a smartwatch synced with the garment or directly through the garment itself.",
+    analyze: "Analysis & Personalization",
+    analyzeBody:
+      "Personalizing vibration style, intensity, and movement patterns based on user metrics and preferences.",
+    respond: "Sensory Response",
+    respondBody:
+      "Delivering precise, targeted tactile and vibration sensations directly through the wearable.",
+    learn: "Learning & Tracking",
+    learnBody:
+      "Documenting data into measurable insights for personal tracking, setting fine-tuning, and continuous experience enhancement.",
+    productsEyebrow: "OUR PRODUCTS",
+    productsTitle: "Smart wearables built on controlled vibration points.",
     productsBody:
-      "Our current functional prototypes utilize precision vibration to evaluate the software architecture and clinical workflows, operating in parallel with the development of our patented active-fabric technology.",
+      "Our active prototypes utilize targeted vibration to evaluate software workflows and sensory processes, operating in parallel with the ongoing development of active fabric technology.",
     products: [
-      ["Shirt", "Full-torso regulation through high-resolution, independently controlled vibration."],
-      ["Sleeve", "Targeted limb regulation through high-resolution, independently controlled vibration."],
-      ["Protective cap", "Targeted cranial vibration designed to support crisis prevention."],
-      ["Glove", "Focused vibration patterns for fine-motor support."],
+      ["Plectrum CoreShirt", "A snug, skin-friendly tactile shirt for the upper body featuring up to 24 vibration points. Provides remote support for relaxation and sensory balance, operated self-sufficiently or by a companion."],
+      [
+        "Plectrum MultiWrap",
+        "A versatile sleeve for shoulders, limbs, or torso containing up to 24 controlled vibration points. Delivers sensory focus, stress relief, and interactive remote touch experiences, self-operated or companion-led."
+      ],
+      [
+        "Plectrum RelaxCap",
+        "A smart cap for continuous wear designed to support personal well-being and alleviate stress. Operates autonomously or via remote control, helping soothe the user upon detecting strong movements."
+      ],
+      [
+        "Plectrum Glove",
+        "A smart glove combining up to 13 vibration points across the palm and back of the hand to help promote calmness and sensory serenity. Serves as an immersive tool for VR games, controlled self-sufficiently or by a companion."
+      ]
     ],
-    viewModels: "Explore the four working prototypes",
+    viewModels: "Explore our functional prototypes",
     tractionEyebrow: "TRACTION",
-    tractionTitle: "Functional prototypes working now. Patented textile platform ahead.",
+    tractionTitle: "Functional prototypes active today. Patented active fabric platform ahead.",
     traction: [
-      ["4", "working vibration-based prototypes"],
-      ["3", "SDK ecosystems: Android, Windows and XR"],
-      ["IL · US · EU", "patent granted in Israel", "US and Europe in process"],
+      ["4", "active functional prototypes"],
+      ["3", "SDK ecosystems: Android, Windows, and XR"],
+      ["IL · US · EU", "patent granted in Israel", "US and Europe in process"]
     ],
     partnerLine:
-      "Signed LOI with Hadassah · Adaptive protocols developed with IBM",
-    futureEyebrow: "THE PATENTED DESTINATION",
-    futureTitle: "From localized vibration to continuous sensation across the fabric.",
+      "Signed LOIs with Hadassah Medical Center, Aleh, and AKIM",
+    futureEyebrow: "OUR TECHNOLOGY",
+    futureTitle: "The next generation of smart wearables: Active Fabric (FABTIVE).",
     futureBody:
-      "FABTIVE's patent is not about vibration. It is based on proprietary fibers that Plectrum integrates into familiar textile structures, creating a continuous, controllable surface of physical sensation with depth across the fabric.",
+      "Future development: Active fabric integrating magnetic and conductive components directly into textile fibers. Upon completion, the system will enable an internal movement engine within the fabric to deliver continuous, high-resolution touch sensations—enabling the remote transmission of a digital hug.",
     futureNote: "Patent granted in Israel · US and Europe in process · distinct from today's vibration prototypes",
     pathwaysEyebrow: "BUILD THE NEXT LAYER WITH US",
     pathwaysTitle: "Choose your path into Plectrum.",
@@ -61,9 +74,9 @@ const content = {
     ],
   },
   he: {
-    title: "גריה פיזית חכמה.",
+    title: "ויסות חושי מרחוק.",
     subtitle:
-      "מערכת חכמה להעברת תחושת מגע פיזיות מרחוק. Plectrum מחברת בין העולם הדיגיטלי לפיזי בעזרת לבוש טכנולוגי חכם, המעביר תחושות מגע פיזיות לגוף, לשיפור הטיפול והחוויה הדיגיטלית מבוססי גריה חושית פיזית.",
+      "Plectrum מחברת בין העולם הדיגיטלי לפיזי באמצעות לבוש טכנולוגי מתקדם. המערכת מעבירה תחושות מגע לגוף, ומעשירה את הטיפול החושי ואת החוויה הדיגיטלית.",
     explore: "גלו את הטכנולוגיה",
     partner: "שותפות עם Plectrum",
     scroll: "גללו מטה לפרטים",
@@ -87,7 +100,7 @@ const content = {
   productsEyebrow: "המוצרים שלנו",
   productsTitle: "פריטי לבוש חכמים מבוססי נקודות רטט מבוקרות.",
     productsBody:
-      "אבות הטיפוס הפעילים משתמשים ברטט ממוקד לבחינת תהליכי הטיפול והתוכנה, במקביל להמשך פיתוח טכנולוגיית הבד האקטיבי.",
+      "אבות הטיפוס הפעילים מבוססים רטט ממוקד לבחינת תהליכי הטיפול והתוכנה, במקביל להמשך פיתוח טכנולוגיית הבד האקטיבי.",
     products: [
       ["Plectrum CoreShirt", "חולצה תחושתית לפלג הגוף העליון, צמודה, מבד נעים לעור. משלבת עד 24 מוקדי רטט בפלג גוף עליון. המערכת מעניקה תמיכה בתחושת רוגע ואיזון חושי מרחוק, בהפעלה עצמית או על ידי מלווה."],
       ["Plectrum MultiWrap", "שרוול רב-שימושי להתאמה על הכתפיים, הגפיים או הגו, המכיל עד 24 מוקדי רטט מבוקרים. מספק מיקוד חושי, שחרור מתחים וחוויות מגע אינטראקטיביות מרחוק, בהפעלה עצמית או על ידי מלווה."],
