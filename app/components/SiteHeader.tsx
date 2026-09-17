@@ -55,8 +55,9 @@ const labels = {
 const languages = [
   { code: "en", label: "English", dir: "ltr" },
   { code: "he", label: "עברית", dir: "rtl" },
-  { code: "ar", label: "العربية", dir: "rtl" },
-  { code: "ru", label: "Русский", dir: "ltr" },
+  // Temporarily hidden: Arabic and Russian
+  // { code: "ar", label: "العربية", dir: "rtl" },
+  // { code: "ru", label: "Русский", dir: "ltr" },
 ] as const;
 
 export function SiteHeader() {
