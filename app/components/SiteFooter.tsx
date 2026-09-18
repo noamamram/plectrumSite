@@ -7,25 +7,25 @@ import { useLanguage } from "./LanguageProvider";
 const copy = {
   en: {
     line: "Connect. Sense. Interact.",
-    body: "Bridging the tangibility gap in digital health.",
+    body: "Bridging the tangibility gap in digital worlds.",
     contactEyebrow: "START A CONVERSATION",
-    contactTitle: "Bring a physical dimension into what you're building.",
+    contactTitle: "Bring a physical dimension to your experience.",
     email: "Email Gabriel",
     call: "Call us",
     linkedin: "Follow Plectrum",
-    nav: ["Home", "Technology", "Clinical", "Prototypes", "Company"],
+    nav: ["Home", "Technology", "Applications", "Prototypes", "Company"],
     rights: "© 2026 Plectrum. All rights reserved.",
     disclaimerLink: "Product disclaimer",
   },
   he: {
     line: "לחבר. לחוש. לתקשר.",
-    body: "מגשרים על פער המגע בבריאות הדיגיטלית.",
+    body: "מגשרים על פער המגע בעולמות הדיגיטלית.",
     contactEyebrow: "מתחילים שיחה",
-    contactTitle: "הוסיפו ממד פיזי למה שאתם בונים.",
+    contactTitle: "הוסיפו ממד פיזי לחוויה שלכם.",
     email: "שליחת מייל לגבריאל",
     call: "שיחה איתנו",
     linkedin: "לעמוד של Plectrum",
-    nav: ["בית", "טכנולוגיה", "היישום הקליני", "אבות טיפוס", "החברה"],
+    nav: ["בית", "טכנולוגיה", "תחומי יישום", "אבות טיפוס", "החברה"],
     rights: "© 2026 Plectrum. כל הזכויות שמורות.",
     disclaimerLink: "הבהרת מוצר",
   },
@@ -59,7 +59,7 @@ export function SiteFooter() {
   const { language } = useLanguage();
   const pathname = usePathname();
   const t = copy[language];
-  const links = ["/", "/technology", "/clinical", "/prototypes", "/company"];
+  const links = ["/", "/technology", "/Applications", "/prototypes", "/company"];
   const showContactCta = pathname !== "/" && pathname !== "/company";
 
   return (
