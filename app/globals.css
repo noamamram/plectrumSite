@@ -410,9 +410,11 @@ html[dir="rtl"] .header-cta {
   max-width: none;
   aspect-ratio: auto;
   overflow: hidden;
-  background: url("/media/hero-remote-touch-v6.jpg") 78% center / cover no-repeat;
+  background: url("/media/hero-remote-touch-v6.jpg") 82% 40% / cover no-repeat;
   filter: none;
   pointer-events: none;
+  -webkit-mask-image: radial-gradient(ellipse 78% 88% at 72% 48%, #000 32%, rgba(0, 0, 0, 0.55) 52%, transparent 76%);
+  mask-image: radial-gradient(ellipse 78% 88% at 72% 48%, #000 32%, rgba(0, 0, 0, 0.55) 52%, transparent 76%);
 }
 
 .hero-products-visual::before {
@@ -420,7 +422,14 @@ html[dir="rtl"] .header-cta {
 }
 
 .hero-products-visual::after {
-  content: none;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #010517 0%, rgba(1, 5, 23, 0.88) 22%, rgba(1, 5, 23, 0.4) 40%, transparent 58%),
+    linear-gradient(180deg, #010517 0%, rgba(1, 5, 23, 0.65) 12%, transparent 32%),
+    linear-gradient(0deg, #010517 0%, rgba(1, 5, 23, 0.55) 14%, transparent 34%);
+  pointer-events: none;
 }
 
 .hero-copy {
@@ -3014,9 +3023,14 @@ html[dir="rtl"] .back-to-top {
     margin: 34px -22px 0;
     aspect-ratio: 4 / 3;
     align-self: center;
-    background-position: 72% 42%;
+    background-size: cover;
+    background-position: 78% 42%;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+  }
+
+  .hero-products-visual::after {
+    content: none;
   }
 
   .hero-footer-meta {
@@ -3452,7 +3466,8 @@ html[dir="rtl"] .back-to-top {
     height: auto;
     margin: 30px -20px 0;
     aspect-ratio: 4 / 3;
-    background-position: 72% 42%;
+    background-size: cover;
+    background-position: 78% 42%;
   }
 
   .hero::before {
