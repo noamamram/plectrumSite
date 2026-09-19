@@ -410,7 +410,7 @@ html[dir="rtl"] .header-cta {
   max-width: none;
   aspect-ratio: auto;
   overflow: hidden;
-  background: url("/media/hero-remote-touch-v4.png") right center / cover no-repeat;
+  background: url("/media/hero-remote-touch-v6.jpg") 78% center / cover no-repeat;
   filter: none;
   pointer-events: none;
 }
@@ -530,7 +530,7 @@ html[dir="rtl"] .hero h1 {
   max-width: 610px;
   margin: 24px 0 0;
   color: rgba(255, 255, 255, 0.8);
-  font-size: clamp(17px, 1.3vw, 21px);
+  font-size: clamp(18px, 1.45vw, 23px);
   line-height: 1.62;
 }
 
@@ -788,7 +788,7 @@ html[dir="rtl"] .future-copy h2 {
 .section-lead {
   margin: 0 0 6px;
   color: #3e4b61;
-  font-size: clamp(18px, 1.6vw, 23px);
+  font-size: clamp(19px, 1.75vw, 25px);
   line-height: 1.65;
 }
 
@@ -846,6 +846,7 @@ html[dir="rtl"] .loop-step::before {
 .pathway-card p {
   margin: 0;
   color: #506078;
+  font-size: 17px;
   line-height: 1.65;
 }
 
@@ -861,7 +862,7 @@ html[dir="rtl"] .loop-step::before {
   max-width: 690px;
   margin: 26px 0 0;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 19px;
+  font-size: 21px;
   line-height: 1.65;
 }
 
@@ -1038,9 +1039,9 @@ html[dir="rtl"] .product-card {
 }
 
 .product-card p {
-  max-width: 280px;
+  max-width: 300px;
   color: rgba(255, 255, 255, 0.65);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.7;
 }
 
@@ -1129,7 +1130,7 @@ html[dir="rtl"] .traction-metrics article {
   max-width: 720px;
   margin: 28px auto 0;
   color: rgba(255, 255, 255, 0.72);
-  font-size: 19px;
+  font-size: 21px;
   line-height: 1.65;
 }
 
@@ -1280,7 +1281,7 @@ html[dir="rtl"] .prototype-intro h1 {
   max-width: 690px;
   margin: 28px 0 0;
   color: rgba(255, 255, 255, 0.76);
-  font-size: clamp(18px, 1.5vw, 22px);
+  font-size: clamp(19px, 1.65vw, 24px);
   line-height: 1.65;
 }
 
@@ -1389,7 +1390,7 @@ html[dir="rtl"] .technology-hero .page-hero-copy {
 .pilot-section > div > p:not(.eyebrow) {
   margin: 26px 0 0;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.72;
 }
 
@@ -1417,7 +1418,7 @@ html[dir="rtl"] .technology-hero .page-hero-copy {
   max-width: 760px;
   margin: 24px 0 0;
   color: #46566d;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.72;
 }
 
@@ -1461,7 +1462,7 @@ html[dir="rtl"] .technology-hero .page-hero-copy {
 .market-section > p {
   margin: 0;
   color: #46566d;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.75;
 }
 
@@ -1595,6 +1596,7 @@ html[dir="rtl"] .clinical-hero .page-hero-copy {
 .relationship-grid p {
   margin: 0;
   color: #526179;
+  font-size: 17px;
   line-height: 1.65;
 }
 
@@ -1845,7 +1847,7 @@ html[dir="rtl"] .clinical-path-steps {
   margin: 0 0 24px;
   max-width: 36ch;
   color: rgba(255, 255, 255, 0.66);
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.7;
   overflow-wrap: anywhere;
 }
@@ -2029,26 +2031,63 @@ html[dir="rtl"] .company-mark {
   line-height: 1.55;
 }
 
+.relationship-section .section-heading {
+  max-width: min(100%, 72rem);
+}
+
+.relationship-section .section-heading h2 {
+  max-width: none;
+  text-wrap: unset;
+}
+
+@media (min-width: 960px) {
+  html[lang="he"] .relationship-section .section-heading h2 {
+    white-space: nowrap;
+  }
+}
+
 .relationship-grid {
-  margin-top: 78px;
+  margin-top: clamp(32px, 4vw, 48px);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 12px;
 }
 
 .relationship-grid article {
-  min-height: 270px;
-  padding: 32px;
+  grid-column: span 2;
+  min-height: 0;
+  padding: 24px 22px 26px;
   display: flex;
   flex-direction: column;
-  border-inline-end: 1px solid rgba(255, 255, 255, 0.18);
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.relationship-grid article:nth-child(1):nth-last-child(2),
+.relationship-grid article:nth-child(2):last-child {
+  grid-column: span 3;
+}
+
+.relationship-grid article:nth-child(4):nth-last-child(2) {
+  grid-column: 2 / 4;
+}
+
+.relationship-grid article:nth-child(5):last-child {
+  grid-column: 4 / 6;
+}
+
+.relationship-grid article:nth-child(4):last-child {
+  grid-column: 3 / 5;
 }
 
 .relationship-grid article:last-child {
-  border: 0;
+  border: 1px solid rgba(255, 255, 255, 0.14);
 }
 
 .relationship-grid h3 {
+  margin: 0;
   color: white;
 }
 
@@ -2064,7 +2103,7 @@ html[dir="rtl"] .company-mark {
 .market-copy > p:not(.eyebrow) {
   margin: 24px 0 0;
   color: #46566d;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.72;
 }
 
@@ -2975,7 +3014,7 @@ html[dir="rtl"] .back-to-top {
     margin: 34px -22px 0;
     aspect-ratio: 4 / 3;
     align-self: center;
-    background-position: 68% center;
+    background-position: 72% 42%;
     -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
     mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
   }
@@ -3356,6 +3395,15 @@ html[dir="rtl"] .back-to-top {
     grid-template-columns: 1fr;
   }
 
+  .relationship-grid article,
+  .relationship-grid article:nth-child(1):nth-last-child(2),
+  .relationship-grid article:nth-child(2):last-child,
+  .relationship-grid article:nth-child(4):nth-last-child(2),
+  .relationship-grid article:nth-child(5):last-child,
+  .relationship-grid article:nth-child(4):last-child {
+    grid-column: auto;
+  }
+
   .company-contact-strip {
     grid-template-columns: 1fr;
   }
@@ -3367,9 +3415,7 @@ html[dir="rtl"] .back-to-top {
   }
 
   .relationship-grid article {
-    min-height: 190px;
-    border-inline-end: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+    min-height: 0;
   }
 }
 
@@ -3406,7 +3452,7 @@ html[dir="rtl"] .back-to-top {
     height: auto;
     margin: 30px -20px 0;
     aspect-ratio: 4 / 3;
-    background-position: 68% center;
+    background-position: 72% 42%;
   }
 
   .hero::before {
@@ -3471,7 +3517,7 @@ html[dir="rtl"] .back-to-top {
   .company-hero .page-hero-copy > p:not(.eyebrow) {
     max-width: 32rem;
     margin-top: 22px;
-    font-size: 17px;
+    font-size: 18px;
     line-height: 1.62;
   }
 
@@ -3560,12 +3606,12 @@ html[dir="rtl"] .back-to-top {
   }
 
   .market-copy > p:not(.eyebrow) {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.7;
   }
 
   .market-section > p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.7;
   }
 
