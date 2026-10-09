@@ -75,15 +75,15 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       },
     },
     cap: {
-      name: "Plectrum RelaxCap",
+      name: "Plectrum RelaxHat",
       path: "/models/hat.glb",
       tag: "Cranial modulation",
       body: "A smart wearable for continuous use, delivering controlled cranial vibration to support personal well-being and alleviate stress.",
       use: "Operates autonomously or via remote control, helping soothe the user upon detecting strong movements or restlessness.",
       story: {
         opening: "A focused effort to alleviate sensory overload led to a unique wearable design.",
-        body: "Plectrum RelaxCap was created specifically to support personal wellness and restore quiet in the home environment. A smart, autonomous solution that activates during times of restlessness or via remote command, providing fully customizable vibration patterns suited to individual needs.",
-        closing: "Plectrum RelaxCap: smart touch that supports your calm.",
+        body: "Plectrum RelaxHat was created specifically to support personal wellness and restore quiet in the home environment. A smart, autonomous solution that activates during times of restlessness or via remote command, providing fully customizable vibration patterns suited to individual needs.",
+        closing: "Plectrum RelaxHat: smart touch that supports your calm.",
       },
     },
     glove: {
@@ -125,7 +125,7 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       },
     },
     cap: {
-      name: "Plectrum RelaxCap",
+      name: "Plectrum RelaxHat",
       path: "/models/hat.glb",
       tag: "תחושה באזור הראש",
       body: "כובע חכם לשימוש רציף, המעביר רטט מבוקר באזור הראש להקלה על תחושות עומס ומתח.",
@@ -133,7 +133,7 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "החיפוש אחר מענה ממוקד להקלת עומסים תחושתיים הוביל לפיתוח לביש ייחודי.",
         body: "הכובע תוכנן במיוחד לספק תמיכה ברווחה האישית ולהחזיר את השקט לסביבה הביתית והאישית. פתרון אוטונומי ומדויק המופעל בעת צורך או בשליטה מרחוק, ומאפשר התאמה מלאה של עוצמת הרטט ודפוסיו לצרכי המשתמש.",
-        closing: "Plectrum RelaxCap: מגע חכם שתומך בשלווה שלכם.",
+        closing: "Plectrum RelaxHat: מגע חכם שתומך בשלווה שלכם.",
       },
     },
     glove: {

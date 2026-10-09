@@ -41,8 +41,8 @@ const content = {
         "A versatile sleeve for shoulders, limbs, or torso containing up to 24 controlled vibration points. Delivers sensory focus, stress relief, and interactive remote touch experiences, self-operated or companion-led."
       ],
       [
-        "Plectrum RelaxCap",
-        "A smart cap for continuous wear designed to support personal well-being and alleviate stress. Operates autonomously or via remote control, helping soothe the user upon detecting strong movements."
+        "Plectrum RelaxHat",
+        "A smart hat for continuous wear designed to support personal well-being and alleviate stress. Operates autonomously or via remote control, helping soothe the user upon detecting strong movements."
       ],
       [
         "Plectrum Glove",
@@ -104,7 +104,7 @@ const content = {
     products: [
       ["Plectrum CoreShirt", "חולצה תחושתית לפלג הגוף העליון, צמודה, מבד נעים לעור. משלבת עד 24 מוקדי רטט בפלג גוף עליון. המערכת מעניקה תמיכה בתחושת רוגע ואיזון חושי מרחוק, בהפעלה עצמית או על ידי מלווה."],
       ["Plectrum MultiWrap", "שרוול רב-שימושי להתאמה על הכתפיים, הגפיים או הגו, המכיל עד 24 מוקדי רטט מבוקרים. מספק מיקוד חושי, שחרור מתחים וחוויות מגע אינטראקטיביות מרחוק, בהפעלה עצמית או על ידי מלווה."],
-      ["Plectrum RelaxCap", "כובע חכם לשימוש רציף, המיועד לתמוך ברווחה האישית ולהקל על תחושות מתח. המכשיר פועל אוטונומית או בשליטה מרחוק, ועשוי לסייע בהרגעת המשתמש בעת זיהוי תנודות חזקות."],
+      ["Plectrum RelaxHat", "כובע חכם לשימוש רציף, המיועד לתמוך ברווחה האישית ולהקל על תחושות מתח. המכשיר פועל אוטונומית או בשליטה מרחוק, ועשוי לסייע בהרגעת המשתמש בעת זיהוי תנודות חזקות."],
       ["Plectrum Glove", "כפפה חכמה המשלבת עד 13 נקודות רטט על גב ופנים כף היד, המיועדת לסייע ביצירת תחושת רוגע ושקט תחושתי. הכפפה מהווה כלי חווייתי לחיבור למשחקי VR ומערכות מציאות מדומה, וניתנת לשליטה מרחוק על ידי המשתמש עצמו או על ידי מלווה."],
     ],
     viewModels: "צפו באבות הטיפוס שלנו",

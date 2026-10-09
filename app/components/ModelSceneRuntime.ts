@@ -138,7 +138,7 @@ export function mountModelScene(
     mode !== "hero" && modelPath
       ? [{
           path: modelPath,
-          size: mode === "card" ? 2.55 : 3.15,
+          size: mode === "card" ? 2.05 : 2.5,
           position: [0, 0, 0] as const,
         }]
       : models;
