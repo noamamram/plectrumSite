@@ -7,72 +7,72 @@ import { IllustrativeNote } from "../components/IllustrativeNote";
 
 const copy = {
  en: {
-     eyebrow: "APPLICATIONS",
-     title: "Remote sessions can finally include physical touch.",
-     intro:
-      "Plectrum's primary focus is professional sensory support and wellness solutions, spanning professional spaces and home environments. Four working vibration prototypes support our current validation work, while FABTIVE, our patented active fabric, serves as the definitive platform for continuous physical sensation.",
-     cta: "Explore Plectrum pilot",
-     problemLabel: "THE REMOTE SESSION BLIND SPOT",
-     problemTitle: "The companion can guide. The fabric can deliver.",
-     problemBody:
-      "Video and audio preserve conversation, but not tactile touch. Plectrum is designed to let professionals and companions control where, when and how tactile input is delivered through a wearable.",
-     controls: [
-      ["Localization", "Select targeted areas using high-resolution, independently controlled vibration in the current prototypes."],
-      ["Pattern", "Configure sensory sequences today, using the same logic intended for the future FABTIVE active-fabric platform."],
-      ["Intensity", "Adapt delivery to the individual and the moment."],
-      ["Follow-up", "Monitor sessions and build structured reports over time."],
+    eyebrow: "APPLICATIONS",
+    title: "Bridging the physical gap in remote sensory support.",
+    intro:
+      "Plectrum's primary focus is professional assistive wellness, spanning institutional spaces and home environments. The current technological validation utilizes functional smart wearable endpoints, operating in parallel with the development of FABTIVE—the patented active fabric designed for continuous physical sensation.",
+    cta: "Explore institutional pilots",
+    problemLabel: "THE TANGIBILITY GAP",
+    problemTitle: "Digital platforms see and hear. From now on, Plectrum also provides the missing sense-the sense of touch..",
+    problemBody:
+      "Telehealth and remote support became digital years ago, but the physical sense of touch was left behind. Plectrum bridges this gap, enabling the remote transmission of authentic, calming tactile regulation through premium wearable technology.",
+    controls: [
+      ["Localization", "Selecting targeted areas using high-resolution, independently controlled tactile points in the current endpoints."],
+      ["Pattern", "Configuring sensory sequences using the core logic intended for the future FABTIVE active-fabric platform."],
+      ["Intensity", "Adapting tactile delivery to individual sensory profiles and real-time needs."],
+      ["Telemetry", "Monitoring sessions and generating structured, objective wellness reports over time."],
     ],
-     pathwayLabel: "A WORKING PROCESS",
-     pathwayTitle: "Designed around the user, not around the device.",
-     pathway: [
-      ["Assess", "Define sensory needs and personal well-being objectives."],
-      ["Configure", "Choose placement, intensity and tactile pattern remotely."],
-      ["Deliver", "Provide targeted input through the selected wearable."],
-      ["Review", "Use documented sessions to support the next interaction."],
+    pathwayLabel: "ASSISTIVE WORKFLOW",
+    pathwayTitle: "Designed around individual baselines, not rigid devices.",
+    pathway: [
+      ["Assessment", "Defining specific sensory needs and personal wellness objectives."],
+      ["Configuration", "Calibrating placement, intensity, and tactile patterns remotely."],
+      ["Delivery", "Providing targeted physical input through the selected smart wearable."],
+      ["Logging", "Utilizing documented session data to optimize the next interaction and maintain compliance."],
     ],
-     complianceLabel: "REGULATORY & STANDARDS PATH",
-     complianceTitle: "Preparing for manufacturing standards.",
-     complianceBody:
-      "Plectrum is currently entering the transition phase from prototype to manufacturing, and in this framework aims as a first step to comply with IEC 60601 and ISO 13485 standards. The FABTIVE active-fabric platform follows a separate product-development and regulatory path.",
-     pilotLabel: "PROFESSIONAL COLLABORATION",
-     pilotTitle: "Preparing for broader pilot expansion.",
-     pilotBody:
-      "Plectrum has a signed LOI with Hadassah and is preparing for broader pilot activity. We are seeking professional centers and operational partners.",
-     pilotCta: "Start a pilot conversation",
+    complianceLabel: "REGULATORY ALIGNMENT",
+    complianceTitle: "Positioned for Assistive Technology and General Wellness.",
+    complianceBody:
+      "Plectrum is transitioning from prototype to manufacturing, aligning the hardware and software ecosystems with FDA General Wellness guidelines and state-level Assistive Technology (AT) requirements. The FABTIVE active-fabric platform follows a parallel development and validation track.",
+    pilotLabel: "INSTITUTIONAL COLLABORATION",
+    pilotTitle: "Expanding operational pilot programs.",
+    pilotBody:
+      "Supported by strategic agreements with leading institutions such as Hadassah Medical Center, Plectrum is preparing for broader pilot deployments. The company is actively onboarding professional centers and operational partners.",
+    pilotCta: "Initiate a pilot discussion",
   },
   he: {
-     eyebrow: "תחומי היישום",
-     title: "מפגשים מרחוק יכולים לכלול כעת מגע פיזי.",
-     intro:
-      "המיקוד העיקרי של Plectrum תמיכה חושית מקצועית ופתרונות רווחה (Wellness), בסביבה מקצועית ובבית. ארבעה אבות טיפוס רטט פעילים תומכים בעבודת האימות הנוכחית, בעוד FABTIVE, הבד האקטיבי הפטנטי שלנו, משמש כפלטפורמה המוגדרת לתחושה פיזית רציפה.",
-     cta: "בדיקת פיילוט",
-     problemLabel: "הנקודה העיוורת של הפעילות מרחוק",
-     problemTitle: "המלווה מנחה. הבד מעביר.",
-     problemBody:
-      "וידאו ואודיו משמרים את השיחה, אך לא מגע פיזי. Plectrum נועדה לאפשר לאנשי מקצוע ולמלווים לשלוט היכן, מתי ובאיזו צורה יועבר הקלט המישושי דרך לביש.",
-     controls: [
-      ["מיקום", "בחירה באזורים ממוקדים באמצעות רטט ברזולוציה גבוהה, הנשלט בנפרד, באבות הטיפוס הנוכחיים."],
-      ["דפוס", "הגדרת רצפי תחושה כיום, עם אותה לוגיקה שנועדה לפלטפורמת הבד האקטיבי של FABTIVE בעתיד."],
-      ["עוצמה", "התאמת ההפעלה לאדם ולרגע."],
-      ["מעקב", "ניטור מפגשים ובניית דיווח מובנה לאורך זמן."],
+    eyebrow: "תחומי יישום",
+    title: "גישור על הפער הפיזי בתמיכה חושית מרחוק.",
+    intro:
+      "המיקוד המרכזי של פלקטרום הוא פתרונות רווחה מסייעת (Assistive Wellness) למסגרות מוסדיות ולסביבה הביתית. האימות הטכנולוגי הנוכחי נשען על מוצרי קצה חכמים ופעילים, במקביל לפיתוח פלטפורמת FABTIVE – בד אקטיבי מוגן פטנט המיועד ליצירת תחושת מגע רציפה.",
+    cta: "בחינת פיילוט מוסדי",
+    problemLabel: "הפער הפיזי (THE TANGIBILITY GAP)",
+    problemTitle: "הפלטפורמות הדיגיטליות רואות ושומעות. מעכשיו פלקטרום מספקת גם את החוש החסר - חוש המגע.",
+    problemBody:
+      "עולמות התמיכה והליווי מרחוק עברו טרנספורמציה דיגיטלית, אך חוש המגע נותר מאחור. פלקטרום משלימה פער זה, ומאפשרת שידור מרחוק של מגע אותנטי ומרגיע באמצעות טכנולוגיה לבישה מתקדמת.",
+    controls: [
+      ["מיקום", "בחירת אזורים ממוקדים באמצעות נקודות מגע ברזולוציה גבוהה, הנשלטות בנפרד במוצרי הקצה הנוכחיים."],
+      ["דפוס", "הגדרת רצפי מגע המבוססים על הלוגיקה שנועדה לפלטפורמת הבד האקטיבי (FABTIVE) העתידית."],
+      ["עוצמה", "התאמת המשוב הפיזי לפרופיל התחושתי של המשתמש ולצרכים בזמן אמת."],
+      ["טלמטריה", "ניטור פעילות והפקת דוחות רווחה מובנים ואובייקטיביים לאורך זמן."],
     ],
-     pathwayLabel: "תהליך עבודה",
-     pathwayTitle: "מתוכנן סביב המשתמש, לא סביב המכשיר.",
-     pathway: [
-      ["הערכה", "הגדרת צורכי הוויסות ומטרות רווחה אישית."],
-      ["הגדרה", "בחירת מיקום, עוצמה ודפוס מישושי מרחוק."],
-      ["הפעלה", "העברת קלט ממוקד דרך הלביש שנבחר."],
-      ["בחינה", "שימוש בתיעוד המפגשים לתכנון האינטראקציה הבאה."],
+    pathwayLabel: "תהליך עבודה מסייע",
+    pathwayTitle: "מתוכנן סביב המשתמש, לא סביב המכשיר.",
+    pathway: [
+      ["הערכה", "הגדרת צורכי הוויסות החושי ויעדי הרווחה האישית."],
+      ["תצורה", "כיול מיקום, עוצמה ודפוסי מגע מרחוק."],
+      ["הפעלה", "מתן קלט פיזי ממוקד באמצעות הפריט הלביש הנבחר."],
+      ["תיעוד", "שימוש בנתוני הפעילות למיטוב האינטראקציה הבאה ולעמידה בדרישות דיווח חזותיות."],
     ],
-     complianceLabel: "המסלול הרגולטורי והתקני",
-     complianceTitle: "היערכות לתקנים מתקדמים.",
-     complianceBody:
-      "Plectrum נכנסת בימים אלו לשלב שמעבר מאב טיפוס לייצור, ובמסגרתו מכוונת כשלב ראשוני לפעול למענה על תקינה IEC 60601 ו־ISO 13485. פלטפורמת הבד האקטיבי של FABTIVE עוקבת אחר מסלול פיתוח ורגולציה נפרד.",
-     pilotLabel: "שיתוף פעולה מקצועי",
-     pilotTitle: "נערכים להרחבת פיילוטים.",
-     pilotBody:
-      "ל־Plectrum מכתב כוונות חתום עם הדסה, והיא נערכת להרחבת פעילות הפיילוט. אנחנו מחפשים מרכזים מקצועיים ושותפים לפעילות.",
-     pilotCta: "פתיחת שיחה על פיילוט",
+    complianceLabel: "התאמה רגולטורית",
+    complianceTitle: "היערכות לתקני רווחה וטכנולוגיה מסייעת.",
+    complianceBody:
+      "פלקטרום נמצאת בשלבי מעבר מפיתוח לייצור, תוך התאמת החומרה והתוכנה להנחיות ה-General Wellness של ה-FDA ולדרישות טכנולוגיה מסייעת (Assistive Technology) של מסגרות מוסדיות. פלטפורמת הבד האקטיבי עוקבת אחר מסלול פיתוח ורגולציה מקביל.",
+    pilotLabel: "שיתוף פעולה מוסדי",
+    pilotTitle: "הרחבת תוכניות הפיילוט התפעוליות.",
+    pilotBody:
+      "מגובה בהסכמים אסטרטגיים עם מוסדות מובילים כגון מרכז רפואי הדסה, פלקטרום נערכת להרחבת מערך הפיילוטים. החברה מקדמת שיתופי פעולה עם מסגרות מקצועיות ושותפים תפעוליים נוספים.",
+    pilotCta: "פתיחת שיחה על פיילוט מוסדי",
   },
   ar: {
     eyebrow: "التطبيق السريري",

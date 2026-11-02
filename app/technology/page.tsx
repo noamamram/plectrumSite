@@ -9,28 +9,28 @@ import { IllustrativeNote } from "../components/IllustrativeNote";
 import { TextWithNoBreak } from "../components/TextWithNoBreak";
 
 const copy = {
-  en: {
+ en: {
     eyebrow: "PATENTED TECHNOLOGY",
-    title: "A continuous sensory system driven by fiber technology.",
+    title: "Plectrum Technology: Fabtive Active Fabric",
     intro:
-      "We are developing FABTIVE, an active fabric providing a continuous sensory experience and enabling remote transmission of touch. Establishing the ecosystem and clinical validation stages serve as the first phase of our roadmap, currently implemented via vibration-based prototypes.",
-    cta: "Discuss a technology partnership",
+      "FABTIVE is an active fabric in development, designed to provide a continuous sensory experience and enable remote transmission of touch. Establishing the ecosystem and institutional validation stages serves as the first phase of the roadmap, currently implemented via vibration-based prototypes.",
+    cta: "Explore a technology partnership",
     systemLabel: "ONE CONTROL ARCHITECTURE · TWO HARDWARE STAGES",
-    systemTitle: "One control system. Two distinct hardware layers.",
+    systemTitle: "From Vibration to Proprioception. Closed-Loop Assistive Ecosystem.",
     systemBody:
-      "The software, protocols, and clinical workflows are currently tested utilizing point-vibration prototypes. The unique fiber development of FABTIVE will constitute the next hardware layer and integrate these control capabilities directly into the wearable technology.",
+      "High-Fidelity Tactile Input: Moving beyond basic binary vibrations to deliver nuanced, directional, and deep-pressure tactile regulation. Closed-Loop Data: Automatically translating biometric responses into calibrated, personalized wellness protocols.",
     steps: [
-      ["Define", "Translate user goals into a precise sensory protocol."],
-      ["Configure", "Choose location, intensity, timing, and progression."],
-      ["Deliver", "Utilize high-resolution vibration today, transitioning to FABTIVE for continuous physical sensation."],
-      ["Learn", "Turn every session into structured data to adapt the ongoing process."],
+      ["Define", "Translate individual needs into a precise sensory protocol."],
+      ["Configure", "Set location, intensity, timing, and progression."],
+      ["Deliver", "Utilize high-resolution vibration today, transitioning to FABTIVE for a continuous physical sensation."],
+      ["Learn", "Convert every session into structured data to adapt the ongoing process."],
     ],
     fabricLabel: "THE FABTIVE ACTIVE-FABRIC PATENT",
     fabricTitle: "Beyond localized vibration: continuous physical sensation.",
     fabricBody:
       "FABTIVE is Plectrum's active wearable technology, currently in development. It is designed to utilize proprietary fibers integrated into flexible structural layers. The platform aims to create a soft, continuous surface of controllable physical sensation while preserving the natural flexibility of the material.",
     prototypeLabel: "OPERATIONAL TODAY",
-    prototypeTitle: "Vibration-based prototypes for clinical validation",
+    prototypeTitle: "Vibration-based prototypes for institutional validation",
     prototypeBody: "The specification below presents the active systems currently used for testing processes, operating in parallel with the development of the active fabric platform.",
     facts: [
       ["High-resolution vibration", "Independent control at each point, enabling precise programming of frequency and intensity for each actuator independently"],
@@ -44,31 +44,31 @@ const copy = {
       "The FABTIVE active fabric patent has been granted in Israel, with registration processes underway in the US and Europe. This forms the intellectual property foundation beyond the current vibration prototypes.",
     futureTitle: "One patented technology. Multiple commercial applications.",
     futureBody:
-      "Clinical sensory integration is our initial validation focus. Once established, the active fabric platform is designed to scale into XR, gaming, professional training, and defense applications.",
+      "Sensory wellness integration is the initial validation focus. Once established, the active fabric platform is designed to scale into XR, gaming, professional training, transportation and defense applications.",
     futureNote: "The current stage focuses on operational and technological validation.",
   },
   he: {
     eyebrow: "טכנולוגיה מוגנת פטנט",
-    title: "מערכת חושית רציפה, מבוססת טכנולוגיית סיבים",
+    title: "הטכנולוגיה של פלקטרום: הבד האקטיבי Fabtive",
     intro:
-      "אנו מפתחים את FABTIVE, בד אקטיבי המעניק חוויה חושית רציפה ומאפשר העברת תחושות מגע מרחוק. בניית האקוסיסטם ושלבי האימות הקליני מהווים את השלב הראשון במפת הדרכים, ומתבצעים כיום באמצעות אבות טיפוס מבוססי רטט.",
-    cta: "שיחה על שותפות טכנולוגית",
+      "פלקטרום מפתחת את FABTIVE, בד אקטיבי המעניק חוויה חושית רציפה ומאפשר העברת תחושות מגע מרחוק. ביסוס האקו-סיסטם ושלבי האימות המוסדי מהווים את השלב הראשון במפת הדרכים, ומתבצעים כיום באמצעות אבות טיפוס מבוססי רטט.",
+    cta: "תיאום שיחה על שותפות טכנולוגית",
     systemLabel: "מערכת שליטה אחת · שני שלבי חומרה",
-    systemTitle: "מערכת שליטה אחת. שתי שכבות חומרה שונות.",
+    systemTitle: "מוויברציה לפרופריוספציה. אקו-סיסטם סגור של רווחה מסייעת.",
     systemBody:
-      "התוכנה, הפרוטוקולים ותהליכי העבודה הקליניים נבחנים כיום באמצעות אבות טיפוס מבוססי רטט נקודתי. פיתוח הסיבים הייחודי של FABTIVE יהווה את שכבת החומרה הבאה, ויטמיע את אותן יכולות שליטה ישירות בטכנולוגיה הלבישה.",
+      "מעבר מרטט בסיסי למגע עמוק ומדויק: במקום רטט חד-ממדי, המערכת מספקת תבניות מגע מורכבות ומדויקות הדרושות לוויסות חושי אמיתי. אקו-סיסטם סגור מבוסס נתונים: המערכת מנטרת תגובות ביומטריות, מתאימה את תבנית המגע בזמן אמת, ויוצרת פרוטוקולי רווחה מותאמים אישית.",
     steps: [
-     ["הגדרה", "תרגום יעדי המשתמש לפרוטוקול גריה חושית מדויק."],
-     ["תצורה", "בחירת מיקום, עוצמה, תזמון והתקדמות."],
-     ["הפעלה", "שימוש ברטט ברזולוציה גבוהה כיום, ובעתיד מעבר ל-FABTIVE ליצירת תחושה פיזית רציפה."],
-     ["למידה", "הפיכת כל הפעלה לנתונים מובנים לצורך התאמת המשך התהליך."]
+      ["הגדרה", "תרגום צרכי המשתמש לפרוטוקול תמיכה חושי מדויק."],
+      ["תצורה", "הגדרת מיקום, עוצמה, תזמון והתקדמות התהליך."],
+      ["הפעלה", "שימוש ברטט ברזולוציה גבוהה כיום, לקראת מעבר עתידי ל-FABTIVE ליצירת תחושה פיזית רציפה."],
+      ["למידה", "המרת כל הפעלה לנתונים מובנים לצורך התאמת המשך התהליך ודיוק הרווחה האישית."]
     ],
     fabricLabel: "FABTIVE - בד אקטיבי מוגן פטנט",
     fabricTitle: "מעבר לרטט נקודתי: תחושה פיזית רציפה ועמוקה.",
     fabricBody:
       "FABTIVE היא הטכנולוגיה הלבישה האקטיבית של פלקטרום, הנמצאת בימים אלו בפיתוח. הטכנולוגיה מתוכננת להתבסס על סיבים קנייניים שיוטמעו בשכבות מבניות גמישות. הפלטפורמה מיועדת ליצור משטח רך ורציף של תחושה פיזית נשלטת, תוך שמירה על הגמישות הטבעית של החומר.",
-    prototypeLabel: "זמין כיום",
-    prototypeTitle: "אבות טיפוס מבוססי רטט לאימות קליני",
+    prototypeLabel: "פעיל כיום",
+    prototypeTitle: "אבות טיפוס מבוססי רטט לאימות מוסדי",
     prototypeBody: "המפרט להלן מציג את המערכות הפעילות המשמשות כיום לתהליכי בדיקה, ופועלות במקביל לפיתוח פלטפורמת הבד האקטיבי.",
     facts: [
       ["רטט ברזולוציה גבוהה", "שליטה נפרדת בכל נקודה, המאפשרת תכנות מדויק של תדר ועוצמת הרטט לכל מפעיל באופן עצמאי"],
@@ -82,7 +82,7 @@ const copy = {
       "טכנולוגיית הבד האקטיבי FABTIVE מאושרת כפטנט בישראל, ונמצאת בתהליכי רישום בארה״ב ובאירופה. זהו בסיס הקניין הרוחני של המוצר העתידי, המהווה המשך ישיר לאבות הטיפוס הנוכחיים.",
     futureTitle: "טכנולוגיה אחת מוגנת פטנט. מגוון יישומים מסחריים.",
     futureBody:
-      "המיקוד הראשוני שלנו הוא אימות קליני בתחום האינטגרציה החושית. בהמשך, פלטפורמת הבד האקטיבי מיועדת להתרחב לתחומי מציאות מדומה (XR), גיימינג, הדרכות מקצועיות ויישומים ביטחוניים.",
+      "המיקוד הראשוני של החברה הוא אימות מוסדי בתחום הרווחה החושית. לאחר ביסוס הפלטפורמה, הבד האקטיבי מיועד להתרחב ליישומי מציאות מדומה (XR), גיימינג, הדרכות מקצועיות, תחבורה ופיתוחים ביטחוניים.",
     futureNote: "השלב הנוכחי מוקדש לאימות תפעולי וטכנולוגי.",
   },
   ar: {
