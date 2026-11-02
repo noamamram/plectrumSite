@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import Link from "next/link";
 import { SiteShell } from "../components/SiteShell";
 import { useLanguage } from "../components/LanguageProvider";
@@ -164,6 +165,18 @@ const copy = {
   },
 } as const;
 
+function colorFabtive(text: string) {
+  return text.split(/(FABTIVE)/g).map((part, index) =>
+    part === "FABTIVE" ? (
+      <bdi className="brand-cyan" dir="ltr" key={index}>
+        {part}
+      </bdi>
+    ) : (
+      <Fragment key={index}>{part}</Fragment>
+    ),
+  );
+}
+
 export default function TechnologyPage() {
   const { language } = useLanguage();
   const t = copy[language];
@@ -174,7 +187,7 @@ export default function TechnologyPage() {
         <div className="page-hero-copy">
           <p className="eyebrow">{t.eyebrow}</p>
           <h1>{t.title}</h1>
-          <p>{t.intro}</p>
+          <p>{language === "he" || language === "en" ? colorFabtive(t.intro) : t.intro}</p>
           <a className="button button-primary" href="mailto:gabriel@plectrum.biz?subject=Plectrum%20technology%20partnership">
             {t.cta}<span aria-hidden="true">→</span>
           </a>

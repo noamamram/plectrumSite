@@ -1294,6 +1294,10 @@ html[dir="rtl"] .prototype-intro h1 {
   line-height: 1.65;
 }
 
+.page-hero-copy .brand-cyan {
+  color: var(--cyan-bright);
+}
+
 .page-hero-copy .button {
   margin-top: 36px;
 }
