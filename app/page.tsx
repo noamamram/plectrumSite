@@ -35,7 +35,7 @@ const content = {
     productsBody:
       "Plectrum's comfortable smart garments deliver physical feedback activated via a dedicated application, blending seamlessly into daily life without the appearance of medical gear.",
     products: [
-      ["Plectrum CoreShirt", "A smart shirt providing soothing upper-body support for a calm and focused routine"],
+      ["Plectrum Smart Shirt", "A smart shirt providing soothing upper-body support for a calm and focused routine"],
       [
         "Plectrum Smart Sleeve",
         "A versatile, easy-to-wear sleeve that delivers targeted touch feedback for immediate stress relief."
