@@ -8,50 +8,50 @@ import { useLanguage } from "./components/LanguageProvider";
 
 const content = {
   en: {
-    title: "Smart Tactile Feedback.",
+    title: "Calming Behavioral Crises from Afar",
     subtitle:
-      "A smart system for delivering remote tactile sensations. Plectrum bridges the digital and physical worlds through advanced wearable technology that delivers physical touch sensations to the body, enhancing sensory experiences and digital interactions.",
+      "Plectrum brings physical support to the digital world. Plectrum's smart wearables deliver soothing, remote touch sensations to help manage daily stress, support a balanced routine, and provide tracking and data measurement throughout the hours of product usage.",
     explore: "Explore the technology",
     partner: "Partner with Plectrum",
     scroll: "Scroll to learn more",
-    thesisEyebrow: "THE MISSING DIMENSION",
-    thesisTitle: "The digital world can see and hear. Now it can also transmit physical sensations.",
+    thesisEyebrow: "THE TANGIBILITY GAP",
+    thesisTitle: "The digital world can see and hear. Now it can also touch",
     thesisBody:
-      "Tactile input is an essential element in communication and sensory well-being. Plectrum converts sensory integration into measurable, software-controlled digital data.",
-    sense: "Metrics Reading",
+      "Unmonitored daily routines can easily lead to sensory overload. Plectrum turns everyday sensory support into an active, measurable experience that keeps routines calm and balanced.",
+    sense: "Smart Trackig",
     senseBody:
-      "Reading physiological metrics (such as heart rate, blood pressure, motion, blood oxygen, and future galvanic skin response) via a smartwatch synced with the garment or directly through the garment itself.",
+      "Monitoring daily metrics to identify sensory stress early, translating feelings into clear data.",
     analyze: "Analysis & Personalization",
     analyzeBody:
-      "Personalizing vibration style, intensity, and movement patterns based on user metrics and preferences.",
-    respond: "Sensory Response",
+      "Plectrum's application automatically adapts the physical feedback to fit individual sensory preferences in real-time.",
+    respond: "Soothing Touch",
     respondBody:
-      "Delivering precise, targeted tactile and vibration sensations directly through the wearable.",
+      "Delivering gentle, targeted touch sensations through everyday smart clothing to proactively calm tension.",
     learn: "Learning & Tracking",
     learnBody:
-      "Documenting data into measurable insights for personal tracking, setting fine-tuning, and continuous experience enhancement.",
-    productsEyebrow: "OUR PRODUCTS",
-    productsTitle: "Smart wearables built on controlled vibration points.",
+      "Automatically logging daily events to create simple, shareable wellness reports for families and support frameworks.",
+    productsEyebrow: "PLECTRUM PRODUCTS",
+    productsTitle: "Everyday Smart Wearables",
     productsBody:
-      "Our active prototypes utilize targeted vibration to evaluate software workflows and sensory processes, operating in parallel with the ongoing development of active fabric technology.",
+      "Plectrum's comfortable smart garments deliver physical feedback activated via a dedicated application, blending seamlessly into daily life without the appearance of medical gear.",
     products: [
-      ["Plectrum CoreShirt", "A snug, skin-friendly tactile shirt for the upper body featuring up to 24 vibration points. Provides remote support for relaxation and sensory balance, operated self-sufficiently or by a companion."],
+      ["Plectrum CoreShirt", "A smart shirt providing soothing upper-body support for a calm and focused routine"],
       [
-        "Plectrum MultiWrap",
-        "A versatile sleeve for shoulders, limbs, or torso containing up to 24 controlled vibration points. Delivers sensory focus, stress relief, and interactive remote touch experiences, self-operated or companion-led."
+        "Plectrum Smart Sleeve",
+        "A versatile, easy-to-wear sleeve that delivers targeted touch feedback for immediate stress relief."
       ],
       [
-        "Plectrum RelaxCap",
-        "A smart cap for continuous wear designed to support personal well-being and alleviate stress. Operates autonomously or via remote control, helping soothe the user upon detecting strong movements."
+        "Plectrum Smart Cap",
+        "A casual hat equipped with smart sensors to gently manage sensory overload in any environment."
       ],
       [
-        "Plectrum Glove",
-        "A smart glove combining up to 13 vibration points across the palm and back of the hand to help promote calmness and sensory serenity. Serves as an immersive tool for VR games, controlled self-sufficiently or by a companion."
+        "Plectrum Smart Glove",
+        "A wearable glove that provides calming sensations to the hands, helping to anchor focus and relaxation."
       ]
     ],
     viewModels: "Explore our functional prototypes",
-    tractionEyebrow: "TRACTION",
-    tractionTitle: "Functional prototypes active today. Patented active fabric platform ahead.",
+    tractionEyebrow: "Ready for Impact",
+    tractionTitle: "Smart Cap & Sleeve ready for programs / Dedicated tracking software / Patented active fabric IP / Backed by strategic partnerships.",
     traction: [
       ["4", "active functional prototypes"],
       ["3", "SDK ecosystems: Android, Windows, and XR"],
@@ -59,10 +59,10 @@ const content = {
     ],
     partnerLine:
       "Signed LOIs with Hadassah Medical Center, Aleh, and AKIM",
-    futureEyebrow: "OUR TECHNOLOGY",
-    futureTitle: "The next generation of smart wearables: Active Fabric (FABTIVE).",
+    futureEyebrow: "PLECTRUM TECHNOLOGY",
+    futureTitle: "Fabtive™: The Active Fabric",
     futureBody:
-      "Future development: Active fabric integrating magnetic and conductive components directly into textile fibers. Upon completion, the system will enable an internal movement engine within the fabric to deliver continuous, high-resolution touch sensations—enabling the remote transmission of a digital hug.",
+      "Moving past simple buzzing. Fabtive is a smart material that creates deep, programmable touch sensations. It enables a genuine, remote 'digital hug', perfectly synchronized with the Plectrum wellness platform.",
     futureNote: "Patent granted in Israel · US and Europe in process · distinct from today's vibration prototypes",
     pathwaysEyebrow: "BUILD THE NEXT LAYER WITH US",
     pathwaysTitle: "Choose your path into Plectrum.",
@@ -74,42 +74,42 @@ const content = {
     ],
   },
   he: {
-    title: "ויסות חושי מרחוק.",
+    title: "הרגעת משברים התנהגותיים מרחוק",
     subtitle:
-      "Plectrum מחברת בין העולם הדיגיטלי לפיזי באמצעות לבוש טכנולוגי מתקדם. המערכת מעבירה תחושות מגע לגוף, ומעשירה את הטיפול החושי ואת החוויה הדיגיטלית.",
+      "פלקטרום מביאה תמיכה פיזית לעולם הדיגיטלי. הלבוש החכם מבית פלקטרום מספק תחושת מגע מרגיעה מרחוק, המסייעת לשמור על שגרה מאוזנת, להפחית מתחים ביומיום ולספק מעקב ומדידת נתונים לאורך שעות השימוש במוצר.",
     explore: "גלו את הטכנולוגיה",
-    partner: "שותפות עם Plectrum",
+    partner: "שותפים לדרך",
     scroll: "גללו מטה לפרטים",
-    thesisEyebrow: "המימד החסר",
-    thesisTitle: "העולם הדיגיטלי יודע לראות ולשמוע. עכשיו הוא גם יודע לשדר תחושות פיזיות.",
+    thesisEyebrow: "הפער הפיזי",
+    thesisTitle: "העולם הדיגיטלי רואה ושומע. עכשיו הוא גם יכול לגעת.",
     thesisBody:
-      "גירוי חושי פיזי הוא חלק חיוני בטיפול ובתקשורת. Plectrum הופכת את האינטגרציה החושית למידע דיגיטלי שניתן למדוד ולשלוט בו מרחוק בעזרת תוכנה.",
-    sense: "קריאת מדדים",
+      "חוסר מעקב בשגרת היום-יום עלול להוביל לעומס חושי. פלקטרום הופכת את התמיכה התחושתית לחוויה אקטיבית ומדידה, המסייעת לשמירה על רוגע ואיזון.",
+    sense: "זיהוי ומעקב",
   senseBody:
-    "קריאת מדדים פיזיולוגיים (כגון דופק, לחץ דם, תנועה, רמת חמצן בדם ובעתיד מוליכות עורית) באמצעות שעון חכם המסתנכרן עם הבגד או דרך הבגד עצמו.",
+    "מעקב אחר מדדים יומיומיים לזיהוי מוקדם של עומס חושי, ותרגום תחושות לנתונים ברורים.",
     
-  analyze: "ניתוח והתאמה",
+  analyze: "התאמה אישית",
   analyzeBody:
-    "התאמה אישית של אופי הרטט, העוצמה ודפוסי התנועה בהתאם למדדי המשתמש ורצונו.",
-  respond: "מענה תחושתי",
+    "המערכת של פלקטרום מתאימה אוטומטית את המשוב הפיזי לרגישות ולהעדפות הייחודיות של כל משתמש בזמן אמת.",
+  respond: "מגע מרגיע",
   respondBody:
-    "העברת תחושות מגע ורטט מדויקות וממוקדות ישירות דרך הלבוש.",
+    "העברת תחושות מגע עדינות ומדויקות דרך ביגוד חכם ליומיום, לשם הרגעת מתחים באופן יזום.",
   learn: "למידה ומעקב",
   learnBody:
-    "תיעוד הנתונים והפיכתם למידע מדיד המאפשר מעקב אישי, דיוק ההגדרות ושיפור החוויה לאורך זמן.",
-  productsEyebrow: "המוצרים שלנו",
-  productsTitle: "פריטי לבוש חכמים מבוססי נקודות רטט מבוקרות.",
+    "תיעוד אוטומטי של אירועים יומיומיים והפקת דוחות וולנס פשוטים למשפחות ולמסגרות תומכות.",
+  productsEyebrow: "המוצרים של פלקטרום",
+  productsTitle: "לבוש חכם ליומיום",
     productsBody:
-      "אבות הטיפוס הפעילים מבוססים רטט ממוקד לבחינת תהליכי הטיפול והתוכנה, במקביל להמשך פיתוח טכנולוגיית הבד האקטיבי.",
+      "פריטי הלבוש החכמים של פלקטרום מספקים משוב פיזי המופעל באמצעות אפליקציה ייעודית, ומשתלבים בטבעיות בחיי היומיום ללא נראות של מכשור רפואי.",
     products: [
-      ["Plectrum CoreShirt", "חולצה תחושתית לפלג הגוף העליון, צמודה, מבד נעים לעור. משלבת עד 24 מוקדי רטט בפלג גוף עליון. המערכת מעניקה תמיכה בתחושת רוגע ואיזון חושי מרחוק, בהפעלה עצמית או על ידי מלווה."],
-      ["Plectrum MultiWrap", "שרוול רב-שימושי להתאמה על הכתפיים, הגפיים או הגו, המכיל עד 24 מוקדי רטט מבוקרים. מספק מיקוד חושי, שחרור מתחים וחוויות מגע אינטראקטיביות מרחוק, בהפעלה עצמית או על ידי מלווה."],
-      ["Plectrum RelaxCap", "כובע חכם לשימוש רציף, המיועד לתמוך ברווחה האישית ולהקל על תחושות מתח. המכשיר פועל אוטונומית או בשליטה מרחוק, ועשוי לסייע בהרגעת המשתמש בעת זיהוי תנודות חזקות."],
-      ["Plectrum Glove", "כפפה חכמה המשלבת עד 13 נקודות רטט על גב ופנים כף היד, המיועדת לסייע ביצירת תחושת רוגע ושקט תחושתי. הכפפה מהווה כלי חווייתי לחיבור למשחקי VR ומערכות מציאות מדומה, וניתנת לשליטה מרחוק על ידי המשתמש עצמו או על ידי מלווה."],
+      ["חולצה חכמה", "מספקת תמיכה מרגיעה לפלג הגוף העליון, לשמירה על שגרה רגועה וממוקדת."],
+      ["שרוול חכם", "שרוול נוח ורב-שימושי המספק משוב מגע ממוקד לשחרור מהיר של מתחים."],
+      ["כובע חכם", "כובע יומיומי ורגיל למראה, המצויד בחיישנים חכמים לוויסות עדין של עומס חושי בכל סביבה."],
+      ["כפפה חכמה", "מספקת תחושות הרגעה לידיים, ומסייעת למקד ולעגן את הרוגע התחושתי."],
     ],
     viewModels: "צפו באבות הטיפוס שלנו",
-    tractionEyebrow: "התקדמות",
-    tractionTitle: "אבות טיפוס פועלים כיום. טכנולוגיית בד אקטיבי בעתיד .",
+    tractionEyebrow: "מוכנים להתנסויות בשטח",
+    tractionTitle: "כובע ושרוול חכמים מוכנים לתוכניות תמיכה / תוכנת מעקב ייעודית מבוססת ענן / פטנט מאושר על טכנולוגיית בד אקטיבי / מגובה בשותפויות אסטרטגיות.",
     traction: [
       ["4", "אבות טיפוס פעילים"],
       ["3", "סביבות פיתוח: Android, Windows ומציאות מדומה (XR)"],
@@ -117,16 +117,16 @@ const content = {
     ],
     partnerLine:
       "LOI's: בית חולים הדסה עין-כרם, עמותת עלה, עמותת אקים",
-    futureEyebrow: "הטכנולוגיה שלנו",
-    futureTitle: "הדור הבא של הלבוש הטכנולוגי: Active Fabric או כמו שאנחנו קוראים לו Fabtive.",
+    futureEyebrow: "הטכנולוגיה של פלקטרום",
+    futureTitle: "פאבטיב (Fabtive™): הבד האקטיבי",
     futureBody:
-      "פיתוח עתידי: בד אקטיבי המשלב רכיבים מגנטיים ומוליכים בסיבי הטקסטיל. עם השלמת הפיתוח, המערכת תאפשר מחולל תנועה פנימי בבד להעברת תחושות מגע רציפות ברזולוציה גבוהה, עד לכדי שידור חיבוק דיגיטלי מרחוק.",
+      "טכנולוגיה המתקדמת מעבר לרטט פשוט. פאבטיב הוא חומר חכם המייצר תחושות מגע עמוקות ומדויקות. החומר מאפשר העברת 'חיבוק דיגיטלי' ממשי מרחוק, המסונכרן באופן מושלם עם פלטפורמת הרווחה של פלקטרום.",
     futureNote: "פטנט מאושר בישראל · בתהליך רישום בארה״ב ואירופה",
     pathwaysEyebrow: "הצטרפו אלינו",
-    pathwaysTitle: "דרכים לשיתוף פעולה עם Plectrum.",
+    pathwaysTitle: "דרכים לשיתוף פעולה עם פלקטרום.",
     pathways: [
       ["משקיעים", "למדו על ההזדמנות העסקית ותאמו פגישה.", "שיחת משקיעים", "investor"],
-      ["שותפים קליניים", "הצטרפו לפיילוט הקליני שלנו לילדים לשנת 2026.", "פרטי פיילוט קליני", "clinical-pilot"],
+      ["שותפים", "הצטרפו לפיילוט שלנו לשנת 2027.", "פרטי פיילוט", "pilot"],
       ["שותפים טכנולוגיים", "שלבו את הבד החכם שלנו במערכות שלכם.", "שיחת שותפות", "technology-partner"],
       ["פגישה עם הצוות", "תאמו איתנו שיחת היכרות קצרה.", "תיאום פגישה", "meeting"],
     ],
