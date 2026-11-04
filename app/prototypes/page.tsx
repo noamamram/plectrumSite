@@ -58,7 +58,7 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       use: "Provides comprehensive sensory support and tension relief for structured daily routines, operated independently or remotely.",
       story: {
         opening: "The requirement for comprehensive sensory balance led to a full-torso technological solution.",
-        body: "The Smart Shirt is designed to deliver a continuous, controlled touch sensation that supports overall well-being. It offers full personalization of tactile intensity across the chest, back, shoulders, and arms. Active fabric (Fabtive) technology is currently in development and will represent a significant leap forward for the platform. Expanding on the capabilities introduced by the Smart Cap and Smart Sleeve, the Smart Shirt will enter manufacturing and pilot phases in the next stage.",
+        body: "The Smart Shirt is designed to deliver a continuous, controlled touch sensation that supports overall well-being. It offers full personalization of tactile intensity across the chest, back, shoulders, and arms. Active fabric (Fabtive) technology is currently in development and will represent a significant leap forward for the platform. Expanding on the capabilities introduced by the Smart Beanie and Smart Sleeve, the Smart Shirt will enter manufacturing and pilot phases in the next stage.",
         closing: "Plectrum Smart Shirt: Technology that wraps the body in quiet.",
       },
     },
@@ -70,20 +70,20 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       use: "De-escalates tension and provides sensory focus in a flexible, compact form factor, managed locally or via remote control.",
       story: {
         opening: "Institutional and home environments require versatile, immediate sensory support.",
-        body: "The Smart Sleeve serves as a primary commercial MVP, engineered to offer maximum flexibility in delivering personalized tactile feedback. It supports continuity between professional facilities and daily home life. This product leads the initial institutional pilot programs alongside the Smart Cap, paving the way for the future integration of advanced active fabric capabilities.",
+        body: "The Smart Sleeve serves as a primary commercial MVP, engineered to offer maximum flexibility in delivering personalized tactile feedback. It supports continuity between professional facilities and daily home life. This product leads the initial institutional pilot programs alongside the Smart Beanie, paving the way for the future integration of advanced active fabric capabilities.",
         closing: "Plectrum Smart Sleeve: Flexible, on-demand sensory support.",
       },
     },
     cap: {
-      name: "Plectrum Smart Cap",
+      name: "Plectrum Smart Beanie",
       path: "/models/hat.glb",
       tag: "Discreet cranial regulation",
-      body: "An unobtrusive daily smart cap delivering controlled cranial tactile feedback to support personal well-being and alleviate sensory overload.",
+      body: "An unobtrusive daily Smart Beanie delivering controlled cranial tactile feedback to support personal well-being and alleviate sensory overload.",
       use: "Operates autonomously or via remote command, actively preventing sensory distress in any environment without clinical stigma.",
       story: {
         opening: "The need for discreet, continuous sensory management inspired a casual wearable design.",
-        body: "The Smart Cap is created specifically to support personal wellness without the appearance of medical gear. It activates during times of restlessness or via remote command, providing fully customizable tactile patterns. This product leads the initial institutional pilot programs alongside the Smart Sleeve, setting a strong foundation for the platform's next-generation developments.",
-        closing: "Plectrum Smart Cap: Smart touch for sustained calm.",
+        body: "The Smart Beanie is created specifically to support personal wellness without the appearance of medical gear. It activates during times of restlessness or via remote command, providing fully customizable tactile patterns. This product leads the initial institutional pilot programs alongside the Smart Sleeve, setting a strong foundation for the platform's next-generation developments.",
+        closing: "Plectrum Smart Beanie: Smart touch for sustained calm.",
       },
     },
     glove: {
@@ -94,14 +94,14 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       use: "Provides essential sensory grounding and detailed tactile guidance for daily activities and digital environments.",
       story: {
         opening: "The requirement for targeted tactile feedback at the extremities inspired an interactive smart glove.",
-        body: "The Smart Glove delivers programmed stimulation that fosters calm and focus. It serves as an experiential tool for both daily routines and immersive environments, allowing full customization of tactile sequences. Following the successful deployment of the Smart Cap and Smart Sleeve, this product will enter manufacturing and pilot phases to further expand the platform's tactile reach.",
+        body: "The Smart Glove delivers programmed stimulation that fosters calm and focus. It serves as an experiential tool for both daily routines and immersive environments, allowing full customization of tactile sequences. Following the successful deployment of the Smart Beanie and Smart Sleeve, this product will enter manufacturing and pilot phases to further expand the platform's tactile reach.",
         closing: "Plectrum Smart Glove: Precise touch for restored balance.",
       },
     },
   },
   he: {
     shirt: {
-      name: "חולצה חכמה",
+      name: "Plectrum Smart Shirt",
       path: "/models/shirt.glb",
       tag: "תמיכה היקפית לפלג הגוף העליון",
       body: "חולצה חכמה המשלבת נקודות מגע נשלטות בפלג הגוף העליון, לתמיכה בתחושת רווחה ורוגע.",
@@ -109,11 +109,11 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "הצורך באיזון חושי היקפי הוביל ליצירת פתרון טכנולוגי עוטף.",
         body: "החולצה החכמה תוכננה לספק תחושת מגע מבוקרת ומתמשכת התומכת ברווחת המשתמש, ומאפשרת התאמה אישית מלאה של תבניות המגע בבטן, בגב, בכתפיים ובזרועות. טכנולוגיית הבד האקטיבי (Fabtive) נמצאת כעת בפיתוח ותהווה קפיצת מדרגה טכנולוגית לפלטפורמה. בהמשך להשקת הכובע והשרוול, החולצה תיכנס לשלבי ייצור ופיילוט כדי להרחיב את יכולות המערכת.",
-        closing: "חולצה חכמה: טכנולוגיה שעוטפת בשקט.",
+        closing: "Plectrum Smart Shirt: טכנולוגיה שעוטפת בשקט.",
       },
     },
     sleeve: {
-      name: "שרוול חכם",
+      name: "Plectrum Smart Sleeve",
       path: "/models/sleeve.glb",
       tag: "ויסות ממוקד ונייד",
       body: "שרוול חכם ורב-שימושי, שנועד לספק משוב טקטילי ממוקד לשחרור מהיר של מתחים.",
@@ -121,11 +121,11 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "הדרישה לתמיכה תחושתית מיידית ויומיומית הובילה לפיתוח מעטפת מודולרית.",
         body: "השרוול החכם מהווה מוצר מסחרי מרכזי, המעניק גמישות מרבית במתן גירוי חושי מותאם אישית. הפתרון תומך ברציפות השימוש בין מסגרות מקצועיות לסביבה הביתית. השרוול מוביל את תוכניות הפיילוט המוסדיות הראשונות של פלקטרום, יחד עם הכובע החכם, וסולל את הדרך לשילוב עתידי של יכולות הבד האקטיבי.",
-        closing: "שרוול חכם: תמיכה גמישה וזמינה בכל עת.",
+        closing: "Plectrum Smart Sleeve: תמיכה גמישה וזמינה בכל עת.",
       },
     },
     cap: {
-      name: "כובע חכם",
+      name: "Plectrum Smart Beanie",
       path: "/models/hat.glb",
       tag: "ויסות תחושתי דיסקרטי",
       body: "כובע חכם לשימוש יומיומי, המספק משוב מגע מבוקר באזור הראש לתמיכה ברווחה האישית ולהקלת עומס חושי.",
@@ -133,11 +133,11 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "הצורך בוויסות חושי רציף ללא נראות חריגה הוביל לפיתוח פריט לבוש יומיומי.",
         body: "הכובע החכם נוצר כדי לספק תמיכה ברווחה האישית תוך שמירה על מראה רגיל לחלוטין. הפתרון מופעל בעת צורך או בפקודה מרחוק, ומאפשר התאמה מלאה של דפוסי המגע. הכובע מוביל את תוכניות הפיילוט המוסדיות הראשונות, יחד עם השרוול החכם, ומהווה בסיס יציב לשלבי הפיתוח הבאים של הפלטפורמה.",
-        closing: "כובע חכם: מגע חכם התומך בשלווה מתמשכת.",
+        closing: "Plectrum Smart Beanie: מגע חכם התומך בשלווה מתמשכת.",
       },
     },
     glove: {
-      name: "כפפה חכמה",
+      name: "Plectrum Smart Glove",
       path: "/models/glove.glb",
       tag: "מיקוד חושי בקצות האצבעות",
       body: "כפפה חכמה המשלבת נקודות מגע מתוכנתות בכף היד, ליצירת עוגן תחושתי וקידום רוגע.",
@@ -145,13 +145,13 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "הדרישה למשוב ממוקד בקצוות הגוף הובילה לפיתוח כפפה אינטראקטיבית.",
         body: "הכפפה החכמה מספקת גירוי מתוכנת המשרה רוגע ותומך במיקוד. הפתרון משמש ככלי חווייתי לסביבה היומיומית ולמערכות דיגיטליות, עם התאמה אישית מלאה של תבניות המגע. בהמשך להשקה המוצלחת של הכובע והשרוול החכמים, הכפפה תיכנס לשלבי ייצור ופיילוט כדי להרחיב את המעטפת התחושתית של הפלטפורמה.",
-        closing: "כפפה חכמה: מגע מדויק להחזרת האיזון.",
+        closing: "Plectrum Smart Glove: מגע מדויק להחזרת האיזון.",
       },
     },
   },
   ar: {
     shirt: {
-      name: "قميص",
+      name: "Plectrum Smart Shirt",
       path: "/models/shirt.glb",
       tag: "كامل الجذع",
       body: "تنظيم لكامل الجذع عبر اهتزاز بدقة عالية يُتحكم به بشكل مستقل.",
@@ -159,11 +159,11 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "أدت الحاجة الأساسية إلى الهدوء والإشراف إلى ابتكار حل تكنولوجي محيط.",
         body: "صُمم قميص Plectrum لتوفير إحساس لمسي مستمر يساعد على الدعم الحسي للمستخدم. حل ذكي ومستقل ودقيق يهدف إلى الإسهام في شعور الهدوء لدى المستخدم ومحيطه، وتحسين جودة الحياة بوجه عام. تتيح المنظومة تخصيصًا شخصيًا كاملًا ومستمرًا لشدة الاهتزاز وأنماطه وفق احتياجات كل مستخدم، دون الاقتصار على أنماط ثابتة مسبقًا.",
-        closing: "قميص Plectrum: تقنية تحيط بالهدوء.",
+        closing: "Plectrum Smart Shirt: تقنية تحيط بالهدوء.",
       },
     },
     sleeve: {
-      name: "كُم",
+      name: "Plectrum Smart Sleeve",
       path: "/models/sleeve.glb",
       tag: "طرف موجه",
       body: "مدخلات حسية موضعية على امتداد الذراع عبر اهتزاز بدقة عالية يُتحكم به بشكل مستقل.",
@@ -171,11 +171,11 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "متطلبات مهنية طرحها مباشرةً معالجو العلاج الوظيفي في الميدان أدت إلى ابتكار أداة دعم علاجية مطلوبة.",
         body: "صُمم كُم Plectrum لإتاحة المرونة في تقديم تحفيز حسي مخصص. حل ذكي ومتعدد الاستخدامات ودقيق مخصص للاستخدام اليومي السهل، بهدف دعم استمرارية الرعاية بين العيادة والبيئة الطبيعية والمساعدة على تحسين جودة الحياة. تتيح المنظومة تخصيصًا شخصيًا كاملًا ومستمرًا لشدة الاهتزاز وأنماطه وفق احتياجات كل مستخدم، دون الاقتصار على أنماط ثابتة مسبقًا.",
-        closing: "كُم Plectrum: دعم مرن في أي مكان وأي وقت.",
+        closing: "Plectrum Smart Sleeve: دعم مرن في أي مكان وأي وقت.",
       },
     },
     cap: {
-      name: "قبعة واقية",
+      name: "Plectrum Smart Beanie",
       path: "/models/hat.glb",
       tag: "تعديل للرأس",
       body: "منتج واقٍ قابل للارتداء يوصل اهتزازًا متحكمًا به للرأس لدعم الوقاية من الأزمات.",
@@ -183,11 +183,11 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "ليالٍ كاملة من الصراع حوّلت حاجة شخصية إلى حل رائد.",
         body: "صُممت قبعة Plectrum خصيصًا لتلبية الحاجة الحسية، بهدف المساعدة على تحسين جودة الحياة واستعادة الهدوء في المنزل. حل ذكي ومستقل ودقيق يهدف إلى دعم المستخدم في حالات عدم الهدوء أو القلق أو نوبات الانفعال، والمساعدة على خلق بيئة أكثر هدوءًا. تتيح المنظومة تخصيصًا شخصيًا كاملًا ومستمرًا لشدة الاهتزاز وأنماطه وفق احتياجات كل مستخدم، دون الاقتصار على أنماط ثابتة مسبقًا.",
-        closing: "قبعة Plectrum: لمسة ذكية تدعم هدوءكم.",
+        closing: "Plectrum Smart Beanie: لمسة ذكية تدعم هدوءكم.",
       },
     },
     glove: {
-      name: "قفاز",
+      name: "Plectrum Smart Glove",
       path: "/models/glove.glb",
       tag: "حركة دقيقة",
       body: "أنماط اهتزاز مركزة لدعم تدخلات المهارات الحركية الدقيقة.",
@@ -195,13 +195,13 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "البحث المستمر عن تحفيز حسي في أطراف الأصابع أدى إلى تطوير حل مركّز.",
         body: "صُمم قفاز Plectrum لتوفير تغذية راجعة اهتزازية لمسية تساعد على خلق شعور بالهدوء وتدعم القدرة على التركيز. حل ذكي وسهل الوصول ودقيق يهدف إلى المساعدة في التنظيم الحسي في حالات القلق، والإسهام في تحسين جودة الحياة اليومية. تتيح المنظومة تخصيصًا شخصيًا كاملًا ومستمرًا لشدة الاهتزاز وأنماطه وفق احتياجات كل مستخدم، دون الاقتصار على أنماط ثابتة مسبقًا.",
-        closing: "قفاز Plectrum: لمسة دقيقة تساعد على استعادة التوازن.",
+        closing: "Plectrum Smart Glove: لمسة دقيقة تساعد على استعادة التوازن.",
       },
     },
   },
   ru: {
     shirt: {
-      name: "Футболка",
+      name: "Plectrum Smart Shirt",
       path: "/models/shirt.glb",
       tag: "Весь корпус",
       body: "Регуляция корпуса через высокоточную, независимо управляемую вибрацию.",
@@ -209,11 +209,11 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "Базовая потребность в спокойствии и контроле привела к созданию обволакивающего технологического решения.",
         body: "Футболка Plectrum создана, чтобы обеспечить непрерывное ощущение прикосновения, поддерживающее сенсорный опыт пользователя. Умное, автономное и точное решение, призванное способствовать ощущению спокойствия у человека и его окружения и улучшать общее качество жизни. Система позволяет полностью и непрерывно персонализировать интенсивность и рисунки вибрации под уникальные потребности каждого пользователя и не ограничена заранее заданными шаблонами.",
-        closing: "Футболка Plectrum: технология, которая обволакивает тишиной.",
+        closing: "Plectrum Smart Shirt: технология, которая обволакивает тишиной.",
       },
     },
     sleeve: {
-      name: "Рукав",
+      name: "Plectrum Smart Sleeve",
       path: "/models/sleeve.glb",
       tag: "Локальное воздействие",
       body: "Локальная сенсорная стимуляция руки через высокоточную, независимо управляемую вибрацию.",
@@ -221,11 +221,11 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "Профессиональные запросы, поступившие напрямую от эрготерапевтов на местах, привели к созданию востребованного вспомогательного терапевтического инструмента.",
         body: "Рукав Plectrum создан, чтобы обеспечить гибкость в подаче персонализированной сенсорной стимуляции. Умное, универсальное и точное решение для удобного повседневного применения — поддерживать непрерывность терапии между клиникой и естественной средой и помогать улучшать качество жизни. Система позволяет полностью и непрерывно персонализировать интенсивность и рисунки вибрации под уникальные потребности каждого пользователя и не ограничена заранее заданными шаблонами.",
-        closing: "Рукав Plectrum: гибкая поддержка в любом месте и в любое время.",
+        closing: "Plectrum Smart Sleeve: гибкая поддержка в любом месте и в любое время.",
       },
     },
     cap: {
-      name: "Защитная шапочка",
+      name: "Plectrum Smart Beanie",
       path: "/models/hat.glb",
       tag: "Краниальная модуляция",
       body: "Защитное носимое устройство с управляемой вибрацией в области головы для предотвращения кризисов.",
@@ -233,11 +233,11 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "Целые ночи борьбы превратили личную потребность в прорывное решение.",
         body: "Шапочка Plectrum создана специально, чтобы отвечать на сенсорную потребность, помогать улучшать качество жизни и возвращать спокойствие в дом. Умное, автономное и точное решение, предназначенное поддерживать пользователя в состояниях беспокойства, тревоги или вспышек и помогать создавать более спокойную среду. Система позволяет полностью и непрерывно персонализировать интенсивность и рисунки вибрации под уникальные потребности каждого пользователя и не ограничена заранее заданными шаблонами.",
-        closing: "Шапочка Plectrum: умное прикосновение, поддерживающее ваше спокойствие.",
+        closing: "Plectrum Smart Beanie: умное прикосновение, поддерживающее ваше спокойствие.",
       },
     },
     glove: {
-      name: "Перчатка",
+      name: "Plectrum Smart Glove",
       path: "/models/glove.glb",
       tag: "Мелкая моторика",
       body: "Сфокусированные рисунки вибрации для поддержки мелкой моторики.",
@@ -245,7 +245,7 @@ const products: Record<"en" | "he" | "ar" | "ru", Record<ProductId, Omit<Product
       story: {
         opening: "Постоянный поиск сенсорной стимуляции на кончиках пальцев привёл к разработке сфокусированного решения.",
         body: "Перчатка Plectrum создана, чтобы обеспечивать вибротактильную обратную связь, способствующую ощущению спокойствия и поддерживающую способность к концентрации. Умное, доступное и точное решение, призванное помогать сенсорной регуляции в состояниях беспокойства и улучшать повседневное качество жизни. Система позволяет полностью и непрерывно персонализировать интенсивность и рисунки вибрации под уникальные потребности каждого пользователя и не ограничена заранее заданными шаблонами.",
-        closing: "Перчатка Plectrum: точное прикосновение, помогающее восстановить баланс.",
+        closing: "Plectrum Smart Glove: точное прикосновение, помогающее восстановить баланс.",
       },
     },
   },
@@ -257,6 +257,7 @@ const copy = {
     title: "Four products. One controlled-vibration platform.",
     intro:
       "Explore Plectrum's current functional prototypes in 3D. These four working prototypes deliver localized, high-resolution vibration today and are distinct from FABTIVE, the patented active-fabric platform under development for continuous physical sensation across the fabric.",
+    pilotNote: "Field pilots with the Smart Beanie and Smart Sleeve are planned to begin in 2027.",
     rotate: "Drag or move to explore",
     rotateTouch: "Swipe to explore",
     overview: "Select a prototype",
@@ -265,7 +266,7 @@ const copy = {
     storyExpand: "Read the full story",
     storyCollapse: "Show less",
     specs: "CURRENT VIBRATION PLATFORM",
-    specTitle: "The initial pilots are launching with the sleeve and the cap; subsequently, production will shift to the glove and the shirt for dedicated pilot programs. In about two years, Plectrum aims to upgrade the products to feature its unique active fabric.",
+    specTitle: "The initial pilots are planned to launch in 2027 with the sleeve and the Smart Beanie; subsequently, production will shift to the glove and the shirt for dedicated pilot programs. In about two years, Plectrum aims to upgrade the products to feature its unique active fabric.",
     specItems: [
       ["High-resolution vibration", "independently controlled delivery"],
       ["3.5-5.2V DC", "operating range · up to 1.2A"],
@@ -282,6 +283,7 @@ const copy = {
     title: "ארבעה מוצרים. פלטפורמת רטט נשלטת אחת.",
     intro:
       "גלו בתלת־ממד את אבות הטיפוס הפונקציונליים הנוכחיים של Plectrum. ארבעת אבות הטיפוס הפעילים מספקים כיום רטט מקומי ברזולוציה גבוהה, והם נפרדים מ־FABTIVE, פלטפורמת הבד האקטיבי הפטנטית שבפיתוח לתחושה פיזית רציפה על פני הבד.",
+    pilotNote: "בשנת 2027 מתוכננת תחילת הפיילוטים בשטח עם הכובע החכם Smart Beanie והשרוול החכם Smart Sleeve.",
     rotate: "הזיזו כדי לחקור",
     rotateTouch: "החליקו כדי לחקור",
     overview: "בחרו אב טיפוס",
@@ -290,7 +292,7 @@ const copy = {
     storyExpand: "קריאת הסיפור המלא",
     storyCollapse: "הצג פחות",
     specs: "פלטפורמת הרטט הנוכחית",
-    specTitle: "הפיילוטים הראשונים יוצאים לדרך עם השרוול והכובע , בהמשך יעברו לייצור הכפפה והחלוצה לעריכת פיילוטים ייעודים עבורם.",
+    specTitle: "הפיילוטים הראשונים יוצאים לדרך עם השרוול והכובע, בהמשך יעברו לייצור הכפפה והחולצה לעריכת פיילוטים ייעודיים עבורם.",
     specItems: [
       ["רטט ברזולוציה גבוהה", "העברה הנשלטת בנפרד"],
       ["3.5-5.2V DC", "טווח הפעלה · עד 1.2A"],
@@ -307,6 +309,7 @@ const copy = {
     title: "أربعة منتجات. منصة اهتزاز متحكم بها واحدة.",
     intro:
       "استكشف نماذج Plectrum الأولية الوظيفية الحالية في 3D. توفر هذه النماذج الأربعة اهتزازًا موضعيًا عالي الدقة اليوم، وهي مختلفة عن FABTIVE، منصة النسيج النشط المحمية ببراءة قيد التطوير للإحساس الجسدي المستمر عبر القماش.",
+    pilotNote: "",
     rotate: "اسحب أو حرّك للاستكشاف",
     rotateTouch: "اسحب للاستكشاف",
     overview: "اختر نموذجًا أوليًا",
@@ -332,6 +335,7 @@ const copy = {
     title: "Четыре продукта. Одна платформа управляемой вибрации.",
     intro:
       "Изучите в 3D текущие функциональные прототипы Plectrum. Эти четыре работающих прототипа обеспечивают локальную высокоточную вибрацию сегодня и отличаются от FABTIVE — запатентованной платформы активной ткани для непрерывного физического ощущения по всей ткани.",
+    pilotNote: "",
     rotate: "Перетаскивайте модель",
     rotateTouch: "Проведите, чтобы изучить",
     overview: "Выберите прототип",
@@ -404,6 +408,7 @@ export default function PrototypesPage() {
           <p className="eyebrow">{t.eyebrow}</p>
           <h1>{t.title}</h1>
           <p>{t.intro}</p>
+          {t.pilotNote ? <p className="prototype-pilot-note">{t.pilotNote}</p> : null}
         </div>
         <div className="prototype-selector" role="tablist" aria-label={t.eyebrow}>
           {list.map((item, index) => (
@@ -420,7 +425,7 @@ export default function PrototypesPage() {
               key={item.id}
             >
               <span>0{index + 1}</span>
-              {item.name}
+              <bdi dir="ltr">{item.name}</bdi>
             </button>
           ))}
         </div>
@@ -451,7 +456,7 @@ export default function PrototypesPage() {
         </div>
         <aside className="prototype-copy" aria-live="polite">
           <span className="prototype-tag">{product.tag}</span>
-          <h2>{product.name}</h2>
+          <h2><bdi dir="ltr">{product.name}</bdi></h2>
           <p className="prototype-body">{product.body}</p>
           <strong className="prototype-focus">{t.focus}</strong>
           <p className="prototype-use">{product.use}</p>
@@ -464,7 +469,7 @@ export default function PrototypesPage() {
         aria-live="polite"
       >
         <p className="eyebrow dark">{t.storyLabel}</p>
-        <h2 id="prototype-story-heading">{product.name}</h2>
+        <h2 id="prototype-story-heading"><bdi dir="ltr">{product.name}</bdi></h2>
         <p className="prototype-story-opening">{product.story.opening}</p>
         <div className="prototype-story-details" id="prototype-story-details">
           <p className="prototype-story-body">{product.story.body}</p>

@@ -13,7 +13,7 @@ const copy = {
       "Plectrum's primary focus is professional assistive wellness, spanning institutional spaces and home environments. The current technological validation utilizes functional smart wearable endpoints, operating in parallel with the development of FABTIVE—the patented active fabric designed for continuous physical sensation.",
     cta: "Explore institutional pilots",
     problemLabel: "THE TANGIBILITY GAP",
-    problemTitle: "Digital platforms see and hear. From now on, Plectrum also provides the missing sense-the sense of touch..",
+    problemTitle: "Digital platforms see and hear. From now on, Plectrum also provides the missing sense-the sense of touch.",
     problemBody:
       "Telehealth and remote support became digital years ago, but the physical sense of touch was left behind. Plectrum bridges this gap, enabling the remote transmission of authentic, calming tactile regulation through premium wearable technology.",
     controls: [
@@ -147,6 +147,9 @@ const copy = {
 export default function ClinicalPage() {
   const { language } = useLanguage();
   const t = copy[language];
+  const tangibilityImageAlt = language === "he"
+    ? "ילד חובש את ה־Smart Beanie של Plectrum בזמן שאשת מקצוע מפעילה ממשק בטאבלט"
+    : "A child wearing the Plectrum Smart Beanie while a professional operates a tablet interface";
 
   return (
     <SiteShell>
@@ -174,10 +177,29 @@ export default function ClinicalPage() {
         </div>
       </section>
 
-      <section className="light-section">
-        <div className="section-grid">
-          <div><p className="eyebrow dark">{t.problemLabel}</p><h2>{t.problemTitle}</h2></div>
-          <p className="section-lead">{t.problemBody}</p>
+      <section className="light-section clinical-gap-section">
+        <div className="clinical-gap-feature">
+          <div className="clinical-gap-copy">
+            <p className="eyebrow dark">
+              {language === "he" ? (
+                <>הפער הפיזי <bdi className="no-break" dir="ltr">(THE TANGIBILITY GAP)</bdi></>
+              ) : t.problemLabel}
+            </p>
+            <h2>{t.problemTitle}</h2>
+            <p className="section-lead">{t.problemBody}</p>
+          </div>
+          <figure className="clinical-gap-visual">
+            {/* eslint-disable-next-line @next/next/no-img-element -- local optimized WebP with layered CSS edge fades */}
+            <img
+              className="clinical-gap-image"
+              src="/media/plectrum-smart-beanie-experience.webp"
+              alt={tangibilityImageAlt}
+              width={1448}
+              height={1086}
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
         </div>
         <div className="clinical-control-grid">
           {t.controls.map(([title, body], index) => (

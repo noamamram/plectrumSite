@@ -8,7 +8,7 @@ import { useLanguage } from "./components/LanguageProvider";
 
 const content = {
   en: {
-    title: "Calming Behavioral Crises from Afar",
+    title: "Bringing the Sense of Touch into the Digital World",
     subtitle:
       "Plectrum brings physical support to the digital world. Plectrum's smart wearables deliver soothing, remote touch sensations to help manage daily stress, support a balanced routine, and provide tracking and data measurement throughout the hours of product usage.",
     explore: "Explore the technology",
@@ -18,7 +18,7 @@ const content = {
     thesisTitle: "The digital world can see and hear. Now it can also touch",
     thesisBody:
       "Unmonitored daily routines can easily lead to sensory overload. Plectrum turns everyday sensory support into an active, measurable experience that keeps routines calm and balanced.",
-    sense: "Smart Trackig",
+    sense: "Smart Tracking",
     senseBody:
       "Monitoring daily metrics to identify sensory stress early, translating feelings into clear data.",
     analyze: "Analysis & Personalization",
@@ -41,7 +41,7 @@ const content = {
         "A versatile, easy-to-wear sleeve that delivers targeted touch feedback for immediate stress relief."
       ],
       [
-        "Plectrum Smart Cap",
+        "Plectrum Smart Beanie",
         "A casual hat equipped with smart sensors to gently manage sensory overload in any environment."
       ],
       [
@@ -51,7 +51,7 @@ const content = {
     ],
     viewModels: "Explore our functional prototypes",
     tractionEyebrow: "Ready for Impact",
-    tractionTitle: "Smart Cap & Sleeve ready for programs / Dedicated tracking software / Patented active fabric IP / Backed by strategic partnerships.",
+    tractionTitle: "Smart Beanie & Smart Sleeve ready for programs / Dedicated tracking software / Patented active fabric IP / Backed by strategic partnerships.",
     traction: [
       ["4", "active functional prototypes"],
       ["3", "SDK ecosystems: Android, Windows, and XR"],
@@ -68,13 +68,13 @@ const content = {
     pathwaysTitle: "Choose your path into Plectrum.",
     pathways: [
       ["Investors", "Review the opportunity and schedule a focused conversation.", "Investment conversation", "investor"],
-      ["Clinical partners", "Join the 2026 pilot program for pediatric occupational therapy.", "Explore a clinical pilot", "clinical-pilot"],
+      ["Clinical partners", "Join the 2027 pilot program for pediatric occupational therapy.", "Explore a clinical pilot", "clinical-pilot"],
       ["Technology partners", "Integrate active fabric into textile, XR, or software ecosystems.", "Discuss a partnership", "technology-partner"],
       ["Meet the team", "Start with a direct 30-minute conversation.", "Schedule a meeting", "meeting"],
     ],
   },
   he: {
-    title: "הרגעת משברים התנהגותיים מרחוק",
+    title: "מכניסים את חוש המגע לעולם הדיגיטלי",
     subtitle:
       "פלקטרום מביאה תמיכה פיזית לעולם הדיגיטלי. הלבוש החכם מבית פלקטרום מספק תחושת מגע מרגיעה מרחוק, המסייעת לשמור על שגרה מאוזנת, להפחית מתחים ביומיום ולספק מעקב ומדידת נתונים לאורך שעות השימוש במוצר.",
     explore: "גלו את הטכנולוגיה",
@@ -102,14 +102,14 @@ const content = {
     productsBody:
       "פריטי הלבוש החכמים של פלקטרום מספקים משוב פיזי המופעל באמצעות אפליקציה ייעודית, ומשתלבים בטבעיות בחיי היומיום ללא נראות של מכשור רפואי.",
     products: [
-      ["חולצה חכמה", "מספקת תמיכה מרגיעה לפלג הגוף העליון, לשמירה על שגרה רגועה וממוקדת."],
-      ["שרוול חכם", "שרוול נוח ורב-שימושי המספק משוב מגע ממוקד לשחרור מהיר של מתחים."],
-      ["כובע חכם", "כובע יומיומי ורגיל למראה, המצויד בחיישנים חכמים לוויסות עדין של עומס חושי בכל סביבה."],
-      ["כפפה חכמה", "מספקת תחושות הרגעה לידיים, ומסייעת למקד ולעגן את הרוגע התחושתי."],
+      ["Plectrum Smart Shirt", "מספקת תמיכה מרגיעה לפלג הגוף העליון, לשמירה על שגרה רגועה וממוקדת."],
+      ["Plectrum Smart Sleeve", "שרוול נוח ורב-שימושי המספק משוב מגע ממוקד לשחרור מהיר של מתחים."],
+      ["Plectrum Smart Beanie", "כובע יומיומי ורגיל למראה, המצויד בחיישנים חכמים לוויסות עדין של עומס חושי בכל סביבה."],
+      ["Plectrum Smart Glove", "מספקת תחושות הרגעה לידיים, ומסייעת למקד ולעגן את הרוגע התחושתי."],
     ],
     viewModels: "צפו באבות הטיפוס שלנו",
     tractionEyebrow: "מוכנים להתנסויות בשטח",
-    tractionTitle: "כובע ושרוול חכמים מוכנים לתוכניות תמיכה / תוכנת מעקב ייעודית מבוססת ענן / פטנט מאושר על טכנולוגיית בד אקטיבי / מגובה בשותפויות אסטרטגיות.",
+    tractionTitle: "Smart Beanie ו־Smart Sleeve מוכנים לתוכניות תמיכה / תוכנת מעקב ייעודית מבוססת ענן / פטנט מאושר על טכנולוגיית בד אקטיבי / מגובה בשותפויות אסטרטגיות.",
     traction: [
       ["4", "אבות טיפוס פעילים"],
       ["3", "סביבות פיתוח: Android, Windows ומציאות מדומה (XR)"],
@@ -213,7 +213,7 @@ export default function Home() {
                 poster="/media/hero-products-v3.png"
                 label={name}
               />
-              <h3>{name}</h3>
+              <h3><bdi dir="ltr">{name}</bdi></h3>
               <p>{body}</p>
             </article>
           ))}

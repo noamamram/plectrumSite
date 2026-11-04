@@ -15,7 +15,6 @@ const copy = {
     milestones: [
       ["4", "operational wearable endpoints"],
       ["2027", "institutional pilot program launch"],
-      ["$700K", "Pre-Seed funding round"],
       ["IL · US · EU", "Patent granted in Israel; US and Europe in process"],
     ],
     relationshipsLabel: "VALIDATION & PARTNERSHIPS",
@@ -26,6 +25,7 @@ const copy = {
       ["AKIM", "Signed Letter of Intent."],
       ["RayQ", "Signed NDA, MOU established."],
       ["Aleh", "Signed Letter of Intent."],
+      ["HackAutism", ""],
     ],
     marketLabel: "COMMERCIAL PATHWAY",
     marketTitle: "A dual-engine entry into government-funded wellness.",
@@ -96,7 +96,6 @@ const copy = {
     milestones: [
       ["4", "מוצרי קצה לבישים ופעילים"],
       ["2027", "השקת תוכניות פיילוט מוסדיות"],
-      ["$700K", "סבב הגיוס הנוכחי (Pre-Seed)"],
       ["ישראל · ארה״ב · אירופה", "פטנט אושר בישראל; ארה״ב ואירופה בתהליכי רישום"],
     ],
     relationshipsLabel: "אימות ושותפויות",
@@ -107,6 +106,7 @@ const copy = {
       ["עמותת אקים", "מכתב כוונות חתום."],
       ["RayQ", "נחתם NDA, גובש מסמך הבנות."],
       ["עמותת עלה", "מכתב כוונות חתום."],
+      ["האקוטיזם", ""],
     ],
     marketLabel: "האסטרטגיה המסחרית",
     marketTitle: "חדירה ממוקדת באמצעות ערוצי מימון ממשלתיים.",
@@ -348,7 +348,12 @@ export default function CompanyPage() {
       <section className="blue-section relationship-section">
         <div className="section-heading"><p className="eyebrow">{t.relationshipsLabel}</p><h2>{t.relationshipsTitle}</h2></div>
         <div className="relationship-grid">
-          {t.relationships.map(([name, body]) => <article key={name}><h3>{name}</h3><p>{body}</p></article>)}
+          {t.relationships.map(([name, body]) => (
+            <article className="relationship-card" key={name}>
+              <h3>{name}</h3>
+              {body ? <p>{body}</p> : null}
+            </article>
+          ))}
         </div>
       </section>
 
