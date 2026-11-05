@@ -58,7 +58,7 @@ const content = {
       ["IL · US · EU", "patent granted in Israel", "US and Europe in process"]
     ],
     partnerLine:
-      "Signed LOIs with Hadassah Medical Center, Aleh, and AKIM",
+      "Signed LOIs with Hadassah Medical Center and Aleh",
     futureEyebrow: "PLECTRUM TECHNOLOGY",
     futureTitle: "Fabtive™: The Active Fabric",
     futureBody:
@@ -116,7 +116,7 @@ const content = {
       ["ישראל · ארה״ב · אירופה", "פטנט מאושר בישראל", "בתהליך רישום בארה״ב ואירופה"],
     ],
     partnerLine:
-      "LOI's: בית חולים הדסה עין-כרם, עמותת עלה, עמותת אקים",
+      "LOI's: בית חולים הדסה עין-כרם, עמותת עלה",
     futureEyebrow: "הטכנולוגיה של פלקטרום",
     futureTitle: "פאבטיב (Fabtive™): הבד האקטיבי",
     futureBody:

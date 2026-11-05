@@ -2153,41 +2153,100 @@ html[dir="rtl"] .company-mark {
 .relationship-grid {
   margin-top: clamp(32px, 4vw, 48px);
   display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.relationship-grid.relationship-grid--partners {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .relationship-grid article {
-  grid-column: span 2;
-  min-height: 0;
-  padding: 24px 22px 26px;
+  min-height: 230px;
+  padding: 18px 18px 22px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   border: 1px solid rgba(255, 255, 255, 0.14);
   border-radius: 14px;
   background: rgba(255, 255, 255, 0.04);
 }
 
-.relationship-grid article:nth-child(1):nth-last-child(2),
-.relationship-grid article:nth-child(2):last-child {
-  grid-column: span 3;
-}
-
-.relationship-grid article:nth-child(4):nth-last-child(2) {
-  grid-column: 2 / 4;
-}
-
-.relationship-grid article:nth-child(5):last-child {
-  grid-column: 4 / 6;
-}
-
-.relationship-grid article:nth-child(4):last-child {
-  grid-column: 3 / 5;
-}
-
 .relationship-grid article:last-child {
   border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.relationship-grid article.relationship-card--text-only {
+  justify-content: center;
+}
+
+.relationship-logo {
+  height: 118px;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  direction: ltr;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.relationship-logo img {
+  width: 100%;
+  height: 70px;
+  max-width: 220px;
+  max-height: 70px;
+  margin: 0 auto;
+  display: block;
+  flex: 0 1 auto;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.relationship-logo--square img {
+  width: 76px;
+  height: 76px;
+  max-width: 76px;
+  max-height: 76px;
+}
+
+.relationship-logo--tall {
+  padding-block: 16px;
+}
+
+.relationship-logo--tall img {
+  width: 70px;
+  height: 80px;
+  max-width: 70px;
+  max-height: 80px;
+}
+
+.relationship-logo--wide img {
+  height: 62px;
+  max-height: 62px;
+}
+
+.relationship-logo--paired {
+  padding-block: 10px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.relationship-logo--paired img {
+  width: 100%;
+  height: 44px;
+  max-width: 190px;
+  max-height: 44px;
+}
+
+.relationship-logo--buzzy img {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(37%) saturate(2182%) hue-rotate(182deg) brightness(90%) contrast(102%);
+}
+
+.relationship-grid article.relationship-card--community {
+  grid-column: 2;
+  margin-top: 14px;
 }
 
 .relationship-grid h3 {
@@ -2918,6 +2977,20 @@ html[dir="rtl"] .back-to-top {
     border-bottom: 1px solid rgba(255, 255, 255, 0.16);
   }
 
+  .relationship-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .relationship-grid.relationship-grid--partners {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .relationship-grid article.relationship-card--community {
+    grid-column: 1 / -1;
+    width: calc(50% - 7px);
+    justify-self: center;
+  }
+
   .prototype-page {
     grid-template-columns: 260px minmax(420px, 1fr);
   }
@@ -3550,6 +3623,10 @@ html[dir="rtl"] .back-to-top {
     grid-template-columns: 1fr;
   }
 
+  .relationship-grid.relationship-grid--partners {
+    grid-template-columns: 1fr;
+  }
+
   .relationship-grid article,
   .relationship-grid article:nth-child(1):nth-last-child(2),
   .relationship-grid article:nth-child(2):last-child,
@@ -3557,6 +3634,12 @@ html[dir="rtl"] .back-to-top {
   .relationship-grid article:nth-child(5):last-child,
   .relationship-grid article:nth-child(4):last-child {
     grid-column: auto;
+  }
+
+  .relationship-grid article.relationship-card--community {
+    grid-column: auto;
+    width: 100%;
+    margin-top: 18px;
   }
 
   .company-contact-strip {
@@ -3796,6 +3879,48 @@ html[dir="rtl"] .back-to-top {
     border: 1px solid rgba(255, 255, 255, 0.14);
     border-radius: 12px;
     background: rgba(2, 18, 48, 0.2);
+  }
+
+  .relationship-logo {
+    height: 108px;
+    padding: 16px 22px;
+  }
+
+  .relationship-logo img {
+    height: 62px;
+    max-width: 210px;
+    max-height: 62px;
+  }
+
+  .relationship-logo--wide img {
+    height: 56px;
+    max-height: 56px;
+  }
+
+  .relationship-logo--paired {
+    padding-block: 10px;
+    gap: 4px;
+  }
+
+  .relationship-logo--paired img {
+    width: 100%;
+    height: 40px;
+    max-width: 180px;
+    max-height: 40px;
+  }
+
+  .relationship-logo--square img {
+    width: 70px;
+    height: 70px;
+    max-width: 70px;
+    max-height: 70px;
+  }
+
+  .relationship-logo--tall img {
+    width: 64px;
+    height: 74px;
+    max-width: 64px;
+    max-height: 74px;
   }
 
   .relationship-grid h3 {

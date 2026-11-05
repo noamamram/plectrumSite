@@ -20,12 +20,13 @@ const copy = {
     relationshipsLabel: "VALIDATION & PARTNERSHIPS",
     relationshipsTitle: "Institutional and technological momentum.",
     relationships: [
-      ["Hadassah", "Signed Letter of Intent."],
-      ["TEFRON", "Signed NDA, MOU established."],
-      ["AKIM", "Signed Letter of Intent."],
-      ["RayQ", "Signed NDA, MOU established."],
-      ["Aleh", "Signed Letter of Intent."],
-      ["HackAutism", ""],
+      ["Hadassah & Hadasit", "Signed Letter of Intent.", "/partners/hadassah-new.png", "relationship-logo--paired", "/partners/hadasit-normalized.png"],
+      ["TEFRON", "Signed NDA, MOU established.", "/partners/tefron.png", "relationship-logo--square"],
+      ["RayQ", "Signed NDA, MOU established.", "/partners/ray-q-normalized.png", "relationship-logo--wide"],
+      ["Aleh", "Signed Letter of Intent.", "/partners/aleh-normalized.png", "relationship-logo--tall"],
+      ["Buzzy", "", "/partners/buzzy.png", "relationship-logo--wide relationship-logo--buzzy"],
+      ["ALUT", "", "/partners/alut.png", "relationship-logo--wide"],
+      ["HackAutism", "", "/partners/hackautism.png", "relationship-logo--wide"],
     ],
     marketLabel: "COMMERCIAL PATHWAY",
     marketTitle: "A dual-engine entry into government-funded wellness.",
@@ -101,12 +102,13 @@ const copy = {
     relationshipsLabel: "אימות ושותפויות",
     relationshipsTitle: "מומנטום מוסדי וטכנולוגי.",
     relationships: [
-      ["הדסה", "מכתב כוונות חתום."],
-      ["TEFRON", "נחתם NDA, גובש מסמך הבנות."],
-      ["עמותת אקים", "מכתב כוונות חתום."],
-      ["RayQ", "נחתם NDA, גובש מסמך הבנות."],
-      ["עמותת עלה", "מכתב כוונות חתום."],
-      ["האקוטיזם", ""],
+      ["הדסה והדסית", "מכתב כוונות חתום.", "/partners/hadassah-new.png", "relationship-logo--paired", "/partners/hadasit-normalized.png"],
+      ["TEFRON", "נחתם NDA, גובש מסמך הבנות.", "/partners/tefron.png", "relationship-logo--square"],
+      ["RayQ", "נחתם NDA, גובש מסמך הבנות.", "/partners/ray-q-normalized.png", "relationship-logo--wide"],
+      ["עמותת עלה", "מכתב כוונות חתום.", "/partners/aleh-normalized.png", "relationship-logo--tall"],
+      ["Buzzy", "", "/partners/buzzy.png", "relationship-logo--wide relationship-logo--buzzy"],
+      ["אלו״ט", "", "/partners/alut.png", "relationship-logo--wide"],
+      ["האקוטיזם", "", "/partners/hackautism.png", "relationship-logo--wide"],
     ],
     marketLabel: "האסטרטגיה המסחרית",
     marketTitle: "חדירה ממוקדת באמצעות ערוצי מימון ממשלתיים.",
@@ -183,8 +185,8 @@ const copy = {
     relationshipsLabel: "التحقق والعلاقات",
     relationshipsTitle: "زخم سريري وتقني.",
     relationships: [
-      ["هداسا", "خطاب نوايا موقع."],
-      ["IBM", "تطوير بروتوكولات علاج تكيفية بالتعاون المشترك."],
+      ["هداسا", "خطاب نوايا موقع.", "/partners/hadassah-new.png", "relationship-logo--wide"],
+      ["IBM", "تطوير بروتوكولات علاج تكيفية بالتعاون المشترك.", "", ""],
     ],
     marketLabel: "المسار التجاري",
     marketTitle: "دخول مركز إلى سوق قابل للقياس.",
@@ -261,8 +263,8 @@ const copy = {
     relationshipsLabel: "ВАЛИДАЦИЯ И ПАРТНЁРСТВА",
     relationshipsTitle: "Клиническая и технологическая динамика.",
     relationships: [
-      ["Hadassah", "Подписанное письмо о намерениях."],
-      ["IBM", "Совместная разработка адаптивных протоколов лечения."],
+      ["Hadassah", "Подписанное письмо о намерениях.", "/partners/hadassah-new.png", "relationship-logo--wide"],
+      ["IBM", "Совместная разработка адаптивных протоколов лечения.", "", ""],
     ],
     marketLabel: "КОММЕРЧЕСКИЙ ПУТЬ",
     marketTitle: "Сфокусированный выход на измеримый рынок.",
@@ -347,9 +349,18 @@ export default function CompanyPage() {
 
       <section className="blue-section relationship-section">
         <div className="section-heading"><p className="eyebrow">{t.relationshipsLabel}</p><h2>{t.relationshipsTitle}</h2></div>
-        <div className="relationship-grid">
-          {t.relationships.map(([name, body]) => (
-            <article className="relationship-card" key={name}>
+        <div className="relationship-grid relationship-grid--partners">
+          {t.relationships.map(([name, body, logo, logoClass, secondaryLogo]) => (
+            <article
+              className={`relationship-card${logo ? "" : " relationship-card--text-only"}${secondaryLogo ? " relationship-card--paired" : ""}${logo.includes("hackautism") ? " relationship-card--community" : ""}`}
+              key={name}
+            >
+              {logo ? (
+                <div className={`relationship-logo ${logoClass}`}>
+                  <Image src={logo} alt="" width={280} height={120} loading="lazy" />
+                  {secondaryLogo ? <Image src={secondaryLogo} alt="" width={280} height={120} loading="lazy" /> : null}
+                </div>
+              ) : null}
               <h3>{name}</h3>
               {body ? <p>{body}</p> : null}
             </article>
