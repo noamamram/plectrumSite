@@ -51,7 +51,13 @@ const content = {
     ],
     viewModels: "Explore our functional prototypes",
     tractionEyebrow: "Ready for Impact",
-    tractionTitle: "Smart Beanie & Smart Sleeve ready for programs / Dedicated tracking software / Patented active fabric IP / Backed by strategic partnerships.",
+    tractionTitle: "Smart Beanie & Smart Sleeve",
+    tractionPoints: [
+      "Ready for support programs",
+      "Dedicated cloud-based tracking software",
+      "Granted patent for active fabric technology",
+      "Backed by strategic partnerships",
+    ],
     traction: [
       ["4", "active functional prototypes"],
       ["3", "SDK ecosystems: Android, Windows, and XR"],
@@ -60,7 +66,7 @@ const content = {
     partnerLine:
       "Signed LOIs with Hadassah Medical Center and Aleh",
     futureEyebrow: "PLECTRUM TECHNOLOGY",
-    futureTitle: "Fabtive™: The Active Fabric",
+    futureTitle: "Fabtive: The Active Fabric",
     futureBody:
       "Moving past simple buzzing. Fabtive is a smart material that creates deep, programmable touch sensations. It enables a genuine, remote 'digital hug', perfectly synchronized with the Plectrum wellness platform.",
     futureNote: "Patent granted in Israel · US and Europe in process · distinct from today's vibration prototypes",
@@ -109,7 +115,13 @@ const content = {
     ],
     viewModels: "צפו באבות הטיפוס שלנו",
     tractionEyebrow: "מוכנים להתנסויות בשטח",
-    tractionTitle: "Smart Beanie ו־Smart Sleeve מוכנים לתוכניות תמיכה / תוכנת מעקב ייעודית מבוססת ענן / פטנט מאושר על טכנולוגיית בד אקטיבי / מגובה בשותפויות אסטרטגיות.",
+    tractionTitle: "Smart Beanie ו־Smart Sleeve",
+    tractionPoints: [
+      "מוכנים לתוכניות תמיכה",
+      "תוכנת מעקב ייעודית מבוססת ענן",
+      "פטנט מאושר על טכנולוגיית בד אקטיבי",
+      "מגובה בשותפויות אסטרטגיות",
+    ],
     traction: [
       ["4", "אבות טיפוס פעילים"],
       ["3", "סביבות פיתוח: Android, Windows ומציאות מדומה (XR)"],
@@ -118,7 +130,7 @@ const content = {
     partnerLine:
       "LOI's: בית חולים הדסה עין-כרם, עמותת עלה",
     futureEyebrow: "הטכנולוגיה של פלקטרום",
-    futureTitle: "פאבטיב (Fabtive™): הבד האקטיבי",
+    futureTitle: "פאבטיב (Fabtive): הבד האקטיבי",
     futureBody:
       "טכנולוגיה המתקדמת מעבר לרטט פשוט. פאבטיב הוא חומר חכם המייצר תחושות מגע עמוקות ומדויקות. החומר מאפשר העברת 'חיבוק דיגיטלי' ממשי מרחוק, המסונכרן באופן מושלם עם פלטפורמת הרווחה של פלקטרום.",
     futureNote: "פטנט מאושר בישראל · בתהליך רישום בארה״ב ואירופה",
@@ -229,7 +241,10 @@ export default function Home() {
       <section className="light-section traction-section">
         <div className="section-heading compact">
           <p className="eyebrow dark">{t.tractionEyebrow}</p>
-          <h2>{t.tractionTitle}</h2>
+          <h2><bdi dir="ltr">{t.tractionTitle}</bdi></h2>
+          <ul className="traction-highlights">
+            {t.tractionPoints.map((point) => <li key={point}>{point}</li>)}
+          </ul>
         </div>
         <div className="traction-metrics">
           {t.traction.map(([number, label, suffix]) => (

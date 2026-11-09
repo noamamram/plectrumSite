@@ -7,7 +7,7 @@ import { useLanguage } from "../components/LanguageProvider";
 const copy = {
  en: {
     eyebrow: "COMPANY",
-    title: "Building the physical layer of assistive wellness.",
+    title: "Building the physical layer that changes the world and delivers well-being.",
     intro:
       "Plectrum combines software, assistive support practices, and wearable endpoints to make physical sensory regulation measurable, controllable, and remotely accessible. The company is actively developing FABTIVE, a patented active-fabric platform for continuous physical sensation.",
     tractionLabel: "CURRENT STATUS",
@@ -89,7 +89,7 @@ const copy = {
   },
   he: {
     eyebrow: "החברה",
-    title: "בניית השכבה הפיזית של עולם הרווחה המסייעת.",
+    title: "בניית השכבה הפיזית שמשנה את העולם ומעניקה רווחה",
     intro:
       "פלקטרום משלבת בין תוכנה, פרקטיקות תמיכה ומוצרי קצה לבישים כדי להפוך את הוויסות החושי למדיד, נשלט ונגיש מרחוק. במקביל, פלקטרום מפתחת את FABTIVE, פלטפורמת בד אקטיבי מוגנת פטנט לתחושת מגע רציפה.",
     tractionLabel: "סטטוס נוכחי",

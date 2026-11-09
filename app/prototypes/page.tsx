@@ -266,7 +266,7 @@ const copy = {
     storyExpand: "Read the full story",
     storyCollapse: "Show less",
     specs: "CURRENT VIBRATION PLATFORM",
-    specTitle: "The initial pilots are planned to launch in 2027 with the sleeve and the Smart Beanie; subsequently, production will shift to the glove and the shirt for dedicated pilot programs. In about two years, Plectrum aims to upgrade the products to feature its unique active fabric.",
+    specTitle: "The initial pilots are launching with the Smart Sleeve and Smart Beanie.",
     specItems: [
       ["High-resolution vibration", "independently controlled delivery"],
       ["3.5-5.2V DC", "operating range · up to 1.2A"],
@@ -292,7 +292,7 @@ const copy = {
     storyExpand: "קריאת הסיפור המלא",
     storyCollapse: "הצג פחות",
     specs: "פלטפורמת הרטט הנוכחית",
-    specTitle: "הפיילוטים הראשונים יוצאים לדרך עם השרוול והכובע, בהמשך יעברו לייצור הכפפה והחולצה לעריכת פיילוטים ייעודיים עבורם.",
+    specTitle: "הפיילוטים הראשונים יוצאים לדרך עם השרוול והכובע.",
     specItems: [
       ["רטט ברזולוציה גבוהה", "העברה הנשלטת בנפרד"],
       ["3.5-5.2V DC", "טווח הפעלה · עד 1.2A"],

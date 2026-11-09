@@ -883,6 +883,35 @@ html[dir="rtl"] .loop-step::before {
   text-wrap: pretty;
 }
 
+.traction-highlights {
+  max-width: 780px;
+  margin: 30px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 13px;
+  list-style: none;
+}
+
+.traction-highlights li {
+  position: relative;
+  padding-inline-start: 28px;
+  color: #46566d;
+  font-size: clamp(18px, 1.6vw, 22px);
+  line-height: 1.5;
+}
+
+.traction-highlights li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 2px;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 0 5px rgba(24, 184, 242, 0.11);
+}
+
 html[dir="rtl"] .traction-section .section-heading {
   text-align: right;
 }
@@ -1699,6 +1728,65 @@ html[dir="rtl"] .clinical-gap-copy h2 {
   max-width: 980px;
   margin: 78px 0 0 auto;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.clinical-path-layout {
+  display: grid;
+  grid-template-columns: minmax(360px, 0.92fr) minmax(0, 1.08fr);
+  gap: clamp(46px, 6vw, 96px);
+  align-items: center;
+  direction: ltr;
+}
+
+.clinical-path-content {
+  min-width: 0;
+  direction: ltr;
+}
+
+html[dir="rtl"] .clinical-path-content {
+  direction: rtl;
+  text-align: right;
+}
+
+.clinical-path-content .section-heading {
+  max-width: 720px;
+}
+
+.clinical-path-layout .clinical-path-steps,
+html[dir="rtl"] .clinical-path-layout .clinical-path-steps {
+  max-width: none;
+  margin: 48px 0 0;
+}
+
+.clinical-path-visual {
+  position: relative;
+  min-width: 0;
+  margin: 0;
+  align-self: center;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border: 1px solid rgba(88, 215, 255, 0.22);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 30px 80px rgba(0, 8, 28, 0.36);
+}
+
+.clinical-path-visual::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, transparent 66%, rgba(4, 24, 56, 0.22)),
+    radial-gradient(circle at 12% 88%, rgba(88, 215, 255, 0.18), transparent 30%);
+}
+
+.clinical-path-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 html[dir="rtl"] .clinical-path-steps {
@@ -3019,6 +3107,27 @@ html[dir="rtl"] .back-to-top {
 }
 
 @media (max-width: 820px) {
+  .clinical-path-layout {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .clinical-path-content {
+    order: 1;
+  }
+
+  .clinical-path-visual {
+    order: 2;
+    width: min(100%, 680px);
+    margin-inline: auto;
+    border-radius: 20px;
+  }
+
+  .clinical-path-layout .clinical-path-steps,
+  html[dir="rtl"] .clinical-path-layout .clinical-path-steps {
+    margin-top: 38px;
+  }
+
   .site-header {
     position: absolute;
     height: 82px;
@@ -3690,6 +3799,22 @@ html[dir="rtl"] .back-to-top {
     line-height: 1.25;
   }
 
+  .traction-highlights {
+    margin-top: 24px;
+    gap: 11px;
+  }
+
+  .traction-highlights li {
+    padding-inline-start: 24px;
+    font-size: 17px;
+    line-height: 1.5;
+  }
+
+  .traction-highlights li::before {
+    width: 7px;
+    height: 7px;
+  }
+
   .clinical-gap-feature {
     gap: 24px;
   }
@@ -4045,6 +4170,10 @@ html[dir="rtl"] .back-to-top {
 
   .clinical-path-steps article {
     grid-template-columns: 54px 1fr;
+  }
+
+  .clinical-path-visual {
+    border-radius: 16px;
   }
 
   .prototype-page {
