@@ -2315,6 +2315,17 @@ html[dir="rtl"] .company-mark {
   max-height: 62px;
 }
 
+.relationship-logo--alut {
+  padding: 16px 24px;
+}
+
+.relationship-logo--alut img {
+  width: auto;
+  height: 80px;
+  max-width: 190px;
+  max-height: 80px;
+}
+
 .relationship-logo--paired {
   padding-block: 10px;
   flex-direction: column;
@@ -4020,6 +4031,17 @@ html[dir="rtl"] .back-to-top {
   .relationship-logo--wide img {
     height: 56px;
     max-height: 56px;
+  }
+
+  .relationship-logo--alut {
+    padding: 14px 22px;
+  }
+
+  .relationship-logo--alut img {
+    width: auto;
+    height: 72px;
+    max-width: 180px;
+    max-height: 72px;
   }
 
   .relationship-logo--paired {
