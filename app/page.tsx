@@ -8,7 +8,7 @@ import { useLanguage } from "./components/LanguageProvider";
 
 const content = {
   en: {
-    title: "Calming Behavioral Crises from Afar",
+    title: "Remote Wellness via Advanced Wearable Technology.",
     subtitle:
       "Plectrum brings physical support to the digital world. Plectrum's smart wearables deliver soothing, remote touch sensations to help manage daily stress, support a balanced routine, and provide tracking and data measurement throughout the hours of product usage.",
     explore: "Explore the technology",
@@ -74,7 +74,7 @@ const content = {
     ],
   },
   he: {
-    title: "הרגעת משברים התנהגותיים מרחוק",
+    title: "רווחה ושלווה מרחוק באמצעות לבוש טכנולוגי.",
     subtitle:
       "פלקטרום מביאה תמיכה פיזית לעולם הדיגיטלי. הלבוש החכם מבית פלקטרום מספק תחושת מגע מרגיעה מרחוק, המסייעת לשמור על שגרה מאוזנת, להפחית מתחים ביומיום ולספק מעקב ומדידת נתונים לאורך שעות השימוש במוצר.",
     explore: "גלו את הטכנולוגיה",
