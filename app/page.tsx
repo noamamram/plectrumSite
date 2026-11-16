@@ -8,7 +8,7 @@ import { useLanguage } from "./components/LanguageProvider";
 
 const content = {
   en: {
-    title: "Bringing the Sense of Touch into the Digital World",
+    title: "Remote Wellness via Advanced Wearables.",
     subtitle:
       "Plectrum brings physical support to the digital world. Plectrum's smart wearables deliver soothing, remote touch sensations to help manage daily stress, support a balanced routine, and provide tracking and data measurement throughout the hours of product usage.",
     explore: "Explore the technology",
@@ -18,7 +18,7 @@ const content = {
     thesisTitle: "The digital world can see and hear. Now it can also touch",
     thesisBody:
       "Unmonitored daily routines can easily lead to sensory overload. Plectrum turns everyday sensory support into an active, measurable experience that keeps routines calm and balanced.",
-    sense: "Smart Tracking",
+    sense: "Smart Trackig",
     senseBody:
       "Monitoring daily metrics to identify sensory stress early, translating feelings into clear data.",
     analyze: "Analysis & Personalization",
@@ -41,7 +41,7 @@ const content = {
         "A versatile, easy-to-wear sleeve that delivers targeted touch feedback for immediate stress relief."
       ],
       [
-        "Plectrum Smart Beanie",
+        "Plectrum Smart Cap",
         "A casual hat equipped with smart sensors to gently manage sensory overload in any environment."
       ],
       [
@@ -51,22 +51,16 @@ const content = {
     ],
     viewModels: "Explore our functional prototypes",
     tractionEyebrow: "Ready for Impact",
-    tractionTitle: "Smart Beanie & Smart Sleeve",
-    tractionPoints: [
-      "Ready for support programs",
-      "Dedicated cloud-based tracking software",
-      "Granted patent for active fabric technology",
-      "Backed by strategic partnerships",
-    ],
+    tractionTitle: "Smart Cap & Sleeve ready for programs / Dedicated tracking software / Patented active fabric IP / Backed by strategic partnerships.",
     traction: [
       ["4", "active functional prototypes"],
       ["3", "SDK ecosystems: Android, Windows, and XR"],
       ["IL · US · EU", "patent granted in Israel", "US and Europe in process"]
     ],
     partnerLine:
-      "Signed LOIs with Hadassah Medical Center and Aleh",
+      "Signed LOIs with Hadassah Medical Center, Aleh, and AKIM",
     futureEyebrow: "PLECTRUM TECHNOLOGY",
-    futureTitle: "Fabtive: The Active Fabric",
+    futureTitle: "Fabtive™: The Active Fabric",
     futureBody:
       "Moving past simple buzzing. Fabtive is a smart material that creates deep, programmable touch sensations. It enables a genuine, remote 'digital hug', perfectly synchronized with the Plectrum wellness platform.",
     futureNote: "Patent granted in Israel · US and Europe in process · distinct from today's vibration prototypes",
@@ -74,13 +68,13 @@ const content = {
     pathwaysTitle: "Choose your path into Plectrum.",
     pathways: [
       ["Investors", "Review the opportunity and schedule a focused conversation.", "Investment conversation", "investor"],
-      ["Clinical partners", "Join the 2027 pilot program for pediatric occupational therapy.", "Explore a clinical pilot", "clinical-pilot"],
+      ["Clinical partners", "Join the 2026 pilot program for pediatric occupational therapy.", "Explore a clinical pilot", "clinical-pilot"],
       ["Technology partners", "Integrate active fabric into textile, XR, or software ecosystems.", "Discuss a partnership", "technology-partner"],
       ["Meet the team", "Start with a direct 30-minute conversation.", "Schedule a meeting", "meeting"],
     ],
   },
   he: {
-    title: "מכניסים את חוש המגע לעולם הדיגיטלי",
+    title: "רווחה ושלווה מרחוק באמצעות לבוש טכנולוגי.",
     subtitle:
       "פלקטרום מביאה תמיכה פיזית לעולם הדיגיטלי. הלבוש החכם מבית פלקטרום מספק תחושת מגע מרגיעה מרחוק, המסייעת לשמור על שגרה מאוזנת, להפחית מתחים ביומיום ולספק מעקב ומדידת נתונים לאורך שעות השימוש במוצר.",
     explore: "גלו את הטכנולוגיה",
@@ -108,29 +102,23 @@ const content = {
     productsBody:
       "פריטי הלבוש החכמים של פלקטרום מספקים משוב פיזי המופעל באמצעות אפליקציה ייעודית, ומשתלבים בטבעיות בחיי היומיום ללא נראות של מכשור רפואי.",
     products: [
-      ["Plectrum Smart Shirt", "מספקת תמיכה מרגיעה לפלג הגוף העליון, לשמירה על שגרה רגועה וממוקדת."],
-      ["Plectrum Smart Sleeve", "שרוול נוח ורב-שימושי המספק משוב מגע ממוקד לשחרור מהיר של מתחים."],
-      ["Plectrum Smart Beanie", "כובע יומיומי ורגיל למראה, המצויד בחיישנים חכמים לוויסות עדין של עומס חושי בכל סביבה."],
-      ["Plectrum Smart Glove", "מספקת תחושות הרגעה לידיים, ומסייעת למקד ולעגן את הרוגע התחושתי."],
+      ["חולצה חכמה", "מספקת תמיכה מרגיעה לפלג הגוף העליון, לשמירה על שגרה רגועה וממוקדת."],
+      ["שרוול חכם", "שרוול נוח ורב-שימושי המספק משוב מגע ממוקד לשחרור מהיר של מתחים."],
+      ["כובע חכם", "כובע יומיומי ורגיל למראה, המצויד בחיישנים חכמים לוויסות עדין של עומס חושי בכל סביבה."],
+      ["כפפה חכמה", "מספקת תחושות הרגעה לידיים, ומסייעת למקד ולעגן את הרוגע התחושתי."],
     ],
     viewModels: "צפו באבות הטיפוס שלנו",
     tractionEyebrow: "מוכנים להתנסויות בשטח",
-    tractionTitle: "Smart Beanie ו־Smart Sleeve",
-    tractionPoints: [
-      "מוכנים לתוכניות תמיכה",
-      "תוכנת מעקב ייעודית מבוססת ענן",
-      "פטנט מאושר על טכנולוגיית בד אקטיבי",
-      "מגובה בשותפויות אסטרטגיות",
-    ],
+    tractionTitle: "כובע ושרוול חכמים מוכנים לתוכניות תמיכה / תוכנת מעקב ייעודית מבוססת ענן / פטנט מאושר על טכנולוגיית בד אקטיבי / מגובה בשותפויות אסטרטגיות.",
     traction: [
       ["4", "אבות טיפוס פעילים"],
       ["3", "סביבות פיתוח: Android, Windows ומציאות מדומה (XR)"],
       ["ישראל · ארה״ב · אירופה", "פטנט מאושר בישראל", "בתהליך רישום בארה״ב ואירופה"],
     ],
     partnerLine:
-      "LOI's: בית חולים הדסה עין-כרם, עמותת עלה",
+      "LOI's: בית חולים הדסה עין-כרם, עמותת עלה, עמותת אקים",
     futureEyebrow: "הטכנולוגיה של פלקטרום",
-    futureTitle: "פאבטיב (Fabtive): הבד האקטיבי",
+    futureTitle: "פאבטיב (Fabtive™): הבד האקטיבי",
     futureBody:
       "טכנולוגיה המתקדמת מעבר לרטט פשוט. פאבטיב הוא חומר חכם המייצר תחושות מגע עמוקות ומדויקות. החומר מאפשר העברת 'חיבוק דיגיטלי' ממשי מרחוק, המסונכרן באופן מושלם עם פלטפורמת הרווחה של פלקטרום.",
     futureNote: "פטנט מאושר בישראל · בתהליך רישום בארה״ב ואירופה",
@@ -225,7 +213,7 @@ export default function Home() {
                 poster="/media/hero-products-v3.png"
                 label={name}
               />
-              <h3><bdi dir="ltr">{name}</bdi></h3>
+              <h3>{name}</h3>
               <p>{body}</p>
             </article>
           ))}
@@ -241,10 +229,7 @@ export default function Home() {
       <section className="light-section traction-section">
         <div className="section-heading compact">
           <p className="eyebrow dark">{t.tractionEyebrow}</p>
-          <h2><bdi dir="ltr">{t.tractionTitle}</bdi></h2>
-          <ul className="traction-highlights">
-            {t.tractionPoints.map((point) => <li key={point}>{point}</li>)}
-          </ul>
+          <h2>{t.tractionTitle}</h2>
         </div>
         <div className="traction-metrics">
           {t.traction.map(([number, label, suffix]) => (
