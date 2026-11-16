@@ -8,7 +8,7 @@ import { useLanguage } from "./components/LanguageProvider";
 
 const content = {
   en: {
-    title: "Remote Wellness via Advanced Wearable Technology.",
+    title: "Remote Wellness via Advanced Wearables.",
     subtitle:
       "Plectrum brings physical support to the digital world. Plectrum's smart wearables deliver soothing, remote touch sensations to help manage daily stress, support a balanced routine, and provide tracking and data measurement throughout the hours of product usage.",
     explore: "Explore the technology",
