@@ -22,6 +22,7 @@ import {
   supportedLanguages,
 } from "./components/language";
 import { generateRouteMetadata } from "./components/generateRouteMetadata";
+import { Analytics } from "@vercel/analytics/next";
 
 export async function generateMetadata(): Promise<Metadata> {
   const meta = await generateRouteMetadata("/");
@@ -70,6 +71,7 @@ export default async function RootLayout({
       </head>
       <body>
         <LanguageProvider initialLanguage={language}>{children}</LanguageProvider>
+        <Analytics />
       </body>
     </html>
   );
