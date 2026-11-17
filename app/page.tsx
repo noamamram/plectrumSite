@@ -60,7 +60,7 @@ const content = {
     partnerLine:
       "Signed LOIs with Hadassah Medical Center, Aleh, and AKIM",
     futureEyebrow: "PLECTRUM TECHNOLOGY",
-    futureTitle: "Fabtive™: The Active Fabric",
+    futureTitle: "Fabtive: The Active Fabric",
     futureBody:
       "Moving past simple buzzing. Fabtive is a smart material that creates deep, programmable touch sensations. It enables a genuine, remote 'digital hug', perfectly synchronized with the Plectrum wellness platform.",
     futureNote: "Patent granted in Israel · US and Europe in process · distinct from today's vibration prototypes",
@@ -118,7 +118,7 @@ const content = {
     partnerLine:
       "LOI's: בית חולים הדסה עין-כרם, עמותת עלה, עמותת אקים",
     futureEyebrow: "הטכנולוגיה של פלקטרום",
-    futureTitle: "פאבטיב (Fabtive™): הבד האקטיבי",
+    futureTitle: "פאבטיב (Fabtive): הבד האקטיבי",
     futureBody:
       "טכנולוגיה המתקדמת מעבר לרטט פשוט. פאבטיב הוא חומר חכם המייצר תחושות מגע עמוקות ומדויקות. החומר מאפשר העברת 'חיבוק דיגיטלי' ממשי מרחוק, המסונכרן באופן מושלם עם פלטפורמת הרווחה של פלקטרום.",
     futureNote: "פטנט מאושר בישראל · בתהליך רישום בארה״ב ואירופה",
