@@ -36,7 +36,7 @@ export const pageLabels: Record<string, Record<Language, string>> = {
 
 const descriptions: Record<string, Record<Language, string>> = {
   "/": {
-    en: "Plectrum enables measurable, software-controlled physical intervention through precision vibration prototypes and the patented FABTIVE active-fabric platform.",
+    en: "Plectrum brings physical support to the digital world. Plectrum's smart wearables deliver soothing, remote touch sensations to help manage daily stress, support a balanced routine, and provide tracking and data measurement throughout the hours of product usage.",
     he: "Plectrum מאפשרת התערבות פיזית מדידה הנשלטת בתוכנה באמצעות אבות טיפוס של רטט מדויק ופלטפורמת FABTIVE לבד אקטיבי.",
     ar: "تتيح Plectrum تدخلاً جسديًا قابلاً للقياس والتحكم عبر نماذج اهتزاز دقيقة ومنصة FABTIVE للنسيج النشط.",
     ru: "Plectrum обеспечивает измеримое программное физическое вмешательство через вибрационные прототипы и запатентованную платформу активной ткани FABTIVE.",
@@ -68,6 +68,9 @@ const descriptions: Record<string, Record<Language, string>> = {
 };
 
 export function localizedTitle(route: string, language: Language): string {
+  if (route === "/" && language === "en") {
+    return "Remote Wellness via Advanced Wearables.";
+  }
   if (route === "/") {
     return `Plectrum | ${pageLabels["/"][language]}`;
   }
